@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第99回 簿記(会計) 解説</title>
+  <link rel="stylesheet" href="crs/bookkeeping-accounting-99.css" />
+  <link rel="stylesheet" href="crs/header.css" />
+</head>
+
+<body class="page-wrapper">
+  <header class="header">
+    <a href="top.html" class="logo">
+      <img class="header__logo--img" src="img/index_logo 1.png" alt="ロゴ" width="240px" height="auto" />
+    </a>
+    <nav class="header__nav" id="header__nav">
+      <ul>
+        <li>
+          <a href="sab.html">
+            <span class="nav__en">全商検定</span>
+            <span class="nav__jp">過去問解説</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">GUIDELINES</span>
+            <span class="nav__jp">各検定の指針</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">INFORMATION</span>
+            <span class="nav__jp">進路情報</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">COLUMN</span>
+            <span class="nav__jp">コラム・その他</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">全商主催</span>
+            <span class="nav__jp">各競技大会について</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 
+  レスポンシブ
+  -->
+  <header class="header__res">
+    <a href="top.html" class="logo">
+      <img src="./assets/img/logo.svg" alt="ロゴ" width="300px" height="auto" />
+    </a>
+    <nav class="header__nav">
+      <ul class="heder__nav--list">
+        <li>
+          <a href="sab.html">
+            <span class="nav__en">全商検定</span>
+            <span class="nav__jp">過去問解説</span>
+          </a>
+        </li>
+        <li>
+          <a href="works.html">
+            <span class="nav__en">GUIDELINES</span>
+            <span class="nav__jp">各検定の指針</span>
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <span class="nav__en">INFORMATION</span>
+            <span class="nav__jp">進路情報</span>
+          </a>
+        </li>
+        <li>
+          <a href="company.html">
+            <span class="nav__en">COLUMN</span>
+            <span class="nav__jp">コラム・その他</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <span class="nav__en">全商主催</span>
+            <span class="nav__jp">各競技大会について</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </header>
+
+  <div id="root">
+    <div class="app-container">
+      <div class="content-wrapper">
+        <!-- Header Section -->
+        <header class="main-header">
+          <div class="header-content">
+            <h1 class="header-title reveal">
+              <span>第99回</span>
+              <span>簿記(会計)</span>
+            </h1>
+
+            <div class="header-meta">
+              <p>第99回（令和７年１月26日施行）</p>
+              <p>全商簿記検定試験　会計部門　解説</p>
+              <p style="padding-top: 0.5rem;">問題の出典</p>
+              <p>全国高等学校協会主催第99回簿記検定試験　１級　会計部門</p>
+              <a href="https://zensho.or.jp/puf/download/exam/pastexam/2025/bk_99_1_acc.pdf" target="_blank"
+                rel="noopener noreferrer">
+                https://zensho.or.jp/puf/download/exam/pastexam/2025/bk_99_1_acc.pdf
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 3h6v6" />
+                  <path d="M10 14 21 3" />
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Sidebar Buttons -->
+          <aside class="sidebar">
+            <button class="sidebar-button">過去問解説</button>
+            <button class="sidebar-button">論点別解説</button>
+            <button class="sidebar-button">検定紹介</button>
+          </aside>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+          <!-- Abbreviations Section -->
+          <section class="abbreviation-section">
+            <h3 class="section-subtitle">解説内で使用する略語について</h3>
+            <table class="abbreviation-table">
+              <tbody>
+                <tr>
+                  <td class="abbr-code">B/S</td>
+                  <td>貸借対照表</td>
+                </tr>
+                <tr>
+                  <td class="abbr-code">P/L</td>
+                  <td>損益計算書</td>
+                </tr>
+                <tr>
+                  <td class="abbr-code">S/S</td>
+                  <td>株主資本等変動計算書</td>
+                </tr>
+                <tr>
+                  <td class="abbr-code">F/S</td>
+                  <td>財務諸表</td>
+                </tr>
+                <tr>
+                  <td class="abbr-code">C/F</td>
+                  <td>キャッシュフロー（計算書）</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- Question 1 Section -->
+          <section class="question-section q1-section">
+            <div class="question-main-title">
+              第１問
+            </div>
+
+            <div class="question-header">
+              (1)
+            </div>
+
+            <div class="answer-badge-wrapper">
+              <span class="answer-badge-label">a</span>
+              <span class="answer-badge-text">ア・イ</span>
+            </div>
+
+            <div class="content-box-gray">
+              株主総会提出のためや租税目的のためなど，利用目的の違いから異なる形式の財務諸表を作成する必要がある場合，それらの内容は信頼しうる <span class="highlight-blue">(ア)</span>
+              に基づいて作成されたものであって，政策の考慮のために事実の真実な表示をゆがめてはならない。これを <span class="highlight-blue">(イ)</span> の原則という。
+            </div>
+
+            <div class="content-title-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-green-600">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a4 4 0 0 0-4-4H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a4 4 0 0 1 4-4h6z"></path>
+              </svg>
+              <span>内容：単一性の原則</span>
+            </div>
+
+            <div class="content-box-blue">
+              <p class="quote-text">
+                株主総会提出のため、信用目的のため、租税目的のため等種々の目的のために異なる形式の財務諸表を作成する必要がある場合、それらの内容は、信頼しうる会計記録に基づいて作成されたものであって、政策の考慮のために事実の真実な表示をゆがめてはならない。
+              </p>
+              <p class="quote-source">
+                （企業会計原則　第一　一般原則　七）
+              </p>
+            </div>
+
+            <p class="explanation-text">
+              損益計算書と貸借対照表を作ろうとしたときに、「P/Lは利益が大きくなるように、B/Sは純資産が大きくなるように、ちょっと改ざんして作ろう」なんてやったら、財務諸表を見る人は困っちゃう。だから、そんなことが起こらないように、F/Sを作るときは、信頼できる、単一（どれも同じ）の正しい会計記録をもとにしようね。というのがこの原則だよ。
+            </p>
+
+            <div class="answer-red-underline">
+              ア：３（会計記録）　イ：６（単一性）
+            </div>
+
+            <!-- Question 1 (b) Section -->
+            <div class="answer-badge-wrapper" style="margin-top: 2rem;">
+              <span class="answer-badge-label">b</span>
+              <span class="answer-badge-text">ウ・エ</span>
+            </div>
+
+            <div class="content-box-gray">
+              損益計算書の作成にあたっては，収益項目とそれに関連する費用項目とを対応表示させなければならない。これを <span class="highlight-blue">(ウ)</span>
+              の原則といい，たとえば，売上高と <span class="highlight-blue">(エ)</span> を対応させて，表示するのはこの原則によるものである。
+            </div>
+
+            <div class="content-title-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-green-600">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a4 4 0 0 0-4-4H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a4 4 0 0 1 4-4h6z"></path>
+              </svg>
+              <span>内容：費用収益対応の原則</span>
+            </div>
+
+            <div class="content-box-blue">
+              <p class="quote-text">
+                費用及び収益は、その発生源泉に従って明瞭に分類し、各収益項目とそれに関連する費用項目とを損益計算書に対応表示しなければならない。
+              </p>
+              <p class="quote-source">
+                （企業会計原則　第二　損益計算書原則　一C）
+              </p>
+            </div>
+
+            <p class="explanation-text">
+              損益計算書を作るときは、収益を費用に対応させて表示させないといけないという原則だよ。<br />
+              売上高に関連する費用項目は「売上原価」だね。
+            </p>
+
+            <div class="answer-red-underline">
+              ウ：７（費用収益対応）　エ：１（売上原価）
+            </div>
+
+            <div class="question-header">
+              (2)
+            </div>
+
+            <div class="answer-badge-wrapper">
+              <span class="answer-badge-label">a</span>
+            </div>
+
+            <div class="accounting-cards-grid">
+              <div class="accounting-card">
+                <span class="card-label">ASSETS</span>
+                <span class="card-title">資産</span>
+              </div>
+              <div class="accounting-card">
+                <span class="card-label">LIABILITIES</span>
+                <span class="card-title">負債</span>
+              </div>
+              <div class="accounting-card">
+                <span class="card-label">REVENUES</span>
+                <span class="card-title">収益</span>
+              </div>
+              <div class="accounting-card">
+                <span class="card-label">EXPENSES</span>
+                <span class="card-title">費用</span>
+              </div>
+            </div>
+
+            <div class="answer-red-underline">
+              3（収益）
+            </div>
+
+            <div class="answer-badge-wrapper">
+              <span class="answer-badge-label">b</span>
+            </div>
+
+            <p class="explanation-text">
+              資産を実際に取得して（取得が実現して）収益が実現するという考え方を「実現主義」というよ。
+            </p>
+
+            <div class="answer-red-underline">
+              2（実現主義）
+            </div>
+          </section>
+
+          <!-- Question 2 Section -->
+          <section class="question-section">
+            <div class="question-main-title">
+              第２問
+            </div>
+
+            <div class="question-subheader-blue">
+              (1) 連結会計
+            </div>
+
+            <p class="explanation-text">
+              連結会計について詳しくは<a href="#" class="text-link">こちら</a>
+            </p>
+            <p class="explanation-text">
+              連結会計では、個別財務諸表の合算をして、連結修正仕訳を行い、それをもとに金額を修正して連結F/Sを作成します。
+            </p>
+            <p class="explanation-text">
+              この順番を念頭に入れれば、連結修正仕訳というのは、個別F/Sを合算した際に、多く・少なく計上した分を直すという役割があります。
+            </p>
+
+            <div class="content-title-orange">
+              開始仕訳（投資と資本の相殺消去）
+            </div>
+
+            <p class="explanation-text">
+              連結初年度の開始仕訳では、投資と資本の相殺消去のみを行います。
+            </p>
+            <p class="explanation-text">
+              子会社分の純資産と子会社株式を消去し、のれんと非支配株主持分を計上します。
+            </p>
+
+            <table class="journal-table">
+              <tbody>
+                <tr>
+                  <td class="journal-label">資本金</td>
+                  <td class="journal-value">20,000</td>
+                  <td class="journal-label">子会社株式</td>
+                  <td class="journal-value">23,900</td>
+                </tr>
+                <tr>
+                  <td class="journal-label">利益剰余金</td>
+                  <td class="journal-value">7,500</td>
+                  <td class="journal-label">非支配株主持分</td>
+                  <td class="journal-value">5,500</td>
+                </tr>
+                <tr>
+                  <td class="journal-label">のれん</td>
+                  <td class="journal-value">1,900</td>
+                  <td class="journal-label"></td>
+                  <td class="journal-value"></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="explanation-box-green">
+              <p>資本金・利益剰余金 S/Sより</p>
+              <p>子会社株式 資料 ii より</p>
+              <p>のれん 23,900 - (20,000 + 7,500) × 0.8 = <span class="underline-black">1,900</span></p>
+              <p>非支配株主持分 (20,000 + 7,500) × 0.2 = <span class="underline-black">5,500</span> or 貸借差額</p>
+            </div>
+
+            <div class="content-title-orange">
+              子会社当期純利益の非支配株主への按分
+            </div>
+
+            <p class="explanation-text">
+              子会社の利益のうち、非支配株主の持分割合に相当する利益については、非支配株主に帰属する当期純利益として費用みたくな計上して、非支配株主持分を増加させるよ
+            </p>
+
+            <table class="journal-table">
+              <tr>
+                <td class="journal-label">非支配株主に帰属する当期純利益</td>
+                <td class="journal-value">600</td>
+                <td class="journal-label">非支配株主持分</td>
+                <td class="journal-value">600</td>
+              </tr>
+            </table>
+
+            <div class="explanation-box-green">
+              S社P/Lより 当期純利益 3,000<br />
+              3,000 × 0.2 = <span class="underline-black">600</span>
+            </div>
+
+            <div class="content-title-orange">
+              剰余金の配当の修正
+            </div>
+
+            <p class="explanation-text">
+              子会社から親会社への配当金は連結会社っていう大きな枠で見ると会社の中での取引だから消去するよ。非支配株主持分への配当も、連結上は剰余金の減少ではなく非支配株主持分の減少として考えるよ
+            </p>
+
+            <table class="journal-table">
+              <tr>
+                <td class="journal-label">受取配当金</td>
+                <td class="journal-value">2,000</td>
+                <td class="journal-label">利益剰余金</td>
+                <td class="journal-value">2,500</td>
+              </tr>
+              <tr>
+                <td class="journal-label">非支配株主持分</td>
+                <td class="journal-value">500</td>
+                <td class="journal-label"></td>
+                <td class="journal-value"></td>
+              </tr>
+            </table>
+
+            <div class="explanation-box-green">
+              S/SよりS社配当金 2,500<br />
+              親会社に対する配当金 2,500 × 0.8 = <span class="underline-black">2,000</span> (受取配当金を減額修正)<br />
+              非支配株主に対する配当金 2,500 × 0.2 = <span class="underline-black">500</span> (非支配株主持分を減額修正)
+            </div>
+
+            <div class="content-title-orange">
+              のれんの償却
+            </div>
+
+            <table class="journal-table">
+              <tr>
+                <td class="journal-label">のれん償却</td>
+                <td class="journal-value">190</td>
+                <td class="journal-label">のれん</td>
+                <td class="journal-value">190</td>
+              </tr>
+            </table>
+
+            <div class="explanation-box-green">
+              開始仕訳より のれん 1,900<br />
+              資料 ii より償却期間10年 1,900 ÷ 10 = <span class="underline-black">190</span>
+            </div>
+
+            <div class="content-title-orange">
+              F/S作成
+            </div>
+
+            <p class="explanation-text">
+              個別F/Sと連結修正仕訳をもとに連結F/Sを作成します。
+            </p>
+
+            <div class="content-sub-header">
+              連結P/L
+            </div>
+
+            <div class="explanation-box-green">
+              売上高 個別P/Lより 87,300 + 36,000 = <span class="text-red-600 font-bold">123,300</span> <span
+                class="item-badge">ア</span><br />
+              のれん償却 190<br />
+              当期純利益 7,810 (貸借差額)<br />
+              非支配株主に帰属する当期純利益 600<br />
+              親会社株主に帰属する当期純利益 <span class="text-red-600 font-bold">7,210</span> (貸借差額) <span class="item-badge">イ</span>
+            </div>
+
+            <div class="content-sub-header">
+              連結S/S
+            </div>
+
+            <div class="explanation-box-green">
+              非支配株主持分当期首残高 5,500 (開始仕訳)<br />
+              親会社株主に帰属する当期純利益当期変動額 7,210 (連結P/Lより)<br />
+              非支配株主持分当期変動額 500 (配当の修正)<br />
+              利益剰余金当期末残高 15,000 - 4,000 + 7,210 = 18,210<br />
+              非支配株主持分当期末残高 5,500 + 600 - 500 = 5,600
+            </div>
+
+            <div class="content-sub-header">
+              連結B/S
+            </div>
+
+            <div class="explanation-box-green">
+              のれん 1,900 - 190 = <span class="text-red-600 font-bold">1,710</span> (開始仕訳 - のれん償却) <span
+                class="item-badge">ウ</span><br />
+              資本金 50,000 + 20,000 - 20,000 = 50,000 (個別B/S合計 - 開始仕訳)<br />
+              利益剰余金 18,210 (連結S/S期末残高)<br />
+              非支配株主持分 <span class="text-red-600 font-bold">5,600</span> (連結S/S期末残高) <span class="item-badge">エ</span>
+            </div>
+
+            <div class="answer-summary-red">
+              ア：123,300　イ：7,210　ウ：1,710　エ：5,600
+            </div>
+
+            <div class="question-subheader-blue">
+              (2) 企業分析
+            </div>
+
+            <p class="explanation-text">
+              このような問題は、収益性・安全性の分析に係る各指標がそれぞれどのような計算式で求められるのか、財務諸表はどのような構成になっているのか知っておく必要があるよ。
+            </p>
+            <p class="explanation-text">
+              (まとめた記事を後で貼る)
+            </p>
+            <p class="explanation-text">
+              多くは「(分母)(分子)率」という名前の構成になっているので、わからなくても考えてみる価値はあるよ！
+            </p>
+
+            <div class="analysis-item-header">
+              <span class="analysis-item-label">a</span>
+              <span class="analysis-item-title">ア 売上高総利益率</span>
+            </div>
+
+            <div class="formula-box">
+              売上総利益率 = 売上総利益 ÷ 売上高
+            </div>
+
+            <p class="explanation-text">
+              この計算式で求められるんだけど、売上総利益の金額が不明だね。
+            </p>
+            <p class="explanation-text">
+              売上総利益は 売上高から売上原価を引いた金額だよ。
+            </p>
+            <p class="explanation-text">
+              B社売上高 28,800 - 売上原価 16,848 = 11,952
+            </p>
+            <p class="explanation-text">
+              11,952 ÷ 28,800 = 0.415 = 41.5%
+            </p>
+
+            <div class="answer-red-bold-underline">
+              ア(B社売上高総利益率) 41.5%
+            </div>
+
+            <div class="analysis-item-header">
+              <span class="analysis-item-label">b</span>
+              <span class="analysis-item-title">イ 売上高純利益率</span>
+            </div>
+
+            <div class="formula-box">
+              売上高純利益率 = 当期純利益(税引後) ÷ 売上高
+            </div>
+
+            <p class="explanation-text">
+              ここでは、問題文に「税引後当期純利益を用いて」とあるので、税引後の値を使う。
+            </p>
+            <p class="explanation-text">
+              A社当期純利益 2,080 ÷ 売上高 26,000 = 0.080 = 8.0%
+            </p>
+
+            <div class="answer-red-bold-underline">
+              イ(A社売上高純利益率) 8.0%
+            </div>
+
+            <div class="analysis-item-header">
+              <span class="analysis-item-label">c</span>
+              <span class="analysis-item-title">ウ・エ 損益計算書の読み取り</span>
+            </div>
+
+            <p class="explanation-text">
+              特別利益か特別損失のどちらが発生したかは、経常利益と税引前当期純利益を比較しないとわからないね。まずはB社の税引前当期純利益を求めよう。
+            </p>
+            <p class="explanation-text">
+              税引前当期純利益 - 法人税等 = 当期純利益なんだから、当期純利益に法人税等の金額を足せば求まるね。
+            </p>
+            <p class="explanation-text">
+              2,016 + 864 = 2,880 (B社税引前当期純利益)
+            </p>
+            <p class="explanation-text">
+              B社の経常利益と税引前当期純利益を比較すると、税引前当期純利益のほうが金額が小さい。ということは、特別損失が発生しているということだね。通常ない損失が発生したら、もちろん純利益は減少に転じるよ。
+            </p>
+
+            <div class="answer-red-bold-underline">
+              ウ 2.特別損失　エ 1.減少
+            </div>
+
+            <div class="analysis-item-header">
+              <span class="analysis-item-label">d</span>
+              <span class="analysis-item-title">オ 自己資本比率</span>
+            </div>
+
+            <div class="formula-box">
+              (本問において) 自己資本 = 資本金 + 資本剰余金 + 利益剰余金<br />
+              自己資本比率 = 自己資本 ÷ 総資産
+            </div>
+
+            <p class="explanation-text">
+              「自己資本」は、株主資本を指し、新株予約権と非支配株主持分は含めないことが多いです。本問においては、純資産として計上されているのが、資本金・資本剰余金・利益剰余金の3つであり、一般にそれらは自己資本と呼ばれること、A社自己資本比率が上記の計算結果が問題文に提示される数値と合致することから、上のように設定されているとして考えます。
+            </p>
+
+            <p class="explanation-text">
+              B社B/Sより
+            </p>
+            <p class="explanation-text">
+              資本金 97,000 + 資本剰余金 10,300 + 利益剰余金 12,040 = 自己資本合計 119,340
+            </p>
+            <p class="explanation-text">
+              119,340 ÷ 221,000 = 0.540 = 54.0%
+            </p>
+
+            <div class="answer-red-bold-underline">
+              オ(B社自己資本比率) 54.0%
+            </div>
+
+            <div class="analysis-item-header">
+              <span class="analysis-item-label">e</span>
+              <span class="analysis-item-title">カ 固定比率</span>
+            </div>
+
+            <div class="formula-box">
+              固定比率 = 固定資産 ÷ 自己資本
+            </div>
+
+            <p class="explanation-text">
+              A社固定資産額
+            </p>
+            <p class="explanation-text">
+              A社の固定資産に該当するのは、建物・備品・特許権・投資有価証券の4つだね。
+            </p>
+            <p class="explanation-text">
+              すべての金額を合計すると、
+            </p>
+            <p class="explanation-text">
+              96,320 + 21,744 + 600 + 1,300 = 119,964
+            </p>
+            <p class="explanation-text">
+              自己資本はさっきと同じように、(ここでは) 資本金・資本剰余金・利益剰余金の3つだから
+            </p>
+            <p class="explanation-text">
+              66,400 + 6,100 + 7,476 = 79,976
+            </p>
+            <p class="explanation-text">
+              ∴ 119,964 ÷ 79,976 = 1.500 = 150.0%
+            </p>
+            <p class="explanation-text">
+              問題文にもある通り、自己資本額よりも固定資産額のほうが大きいということは、固定資産の取得が自分のお金でまかなえてないということになるね。
+            </p>
+
+            <div class="answer-red-bold-underline">
+              力(A社固定比率) 150.0%
+            </div>
+
+            <div class="analysis-item-header">
+              <span class="analysis-item-label">f</span>
+              <span class="analysis-item-title">キ 流動比率　ク 安全性の分析</span>
+            </div>
+
+            <div class="formula-box">
+              流動比率 = 流動資産 ÷ 流動負債
+            </div>
+
+            <p class="explanation-text">
+              流動資産・負債というのは、
+            </p>
+            <ul class="explanation-text list-disc ml-8" style="list-style-type: disc;">
+              <li>通常の営業活動で増減する資産・負債</li>
+              <li>上に該当しなくとも、1年以内に現金化される資産・返済する負債</li>
+            </ul>
+            <p class="explanation-text">
+              のことを指すよ。
+            </p>
+            <p class="explanation-text">
+              この問題においては、現金預金から前払費用までの資産、買掛金から未払法人税等までの負債がそれぞれ流動資産・流動負債に該当するよ。
+            </p>
+            <p class="explanation-text">
+              B社の流動資産合計は
+            </p>
+            <p class="explanation-text">
+              88,195 + 2,746 + 38,174 + 1,980 + 214 + 186 = 131,495
+            </p>
+            <p class="explanation-text">
+              流動負債合計は
+            </p>
+            <p class="explanation-text">
+              22,800 + 13,220 + 4,013 + 19,000 + 467 = 59,500
+            </p>
+            <p class="explanation-text">
+              131,495 ÷ 59,500 = 2.210 = 221.0%
+            </p>
+            <p class="explanation-text">
+              このことから、B社のほうがA社よりも流動比率が高いことがわかるね。
+            </p>
+            <p class="explanation-text">
+              また、流動比率が高いということは、短期的な視点で見ると、獲得するキャッシュのほうが多いということで、安全性が高いということができるんだ。
+            </p>
+            <p class="explanation-text">
+              ということは、より流動比率が高いB社のほうが、安全性が高いといえるね。
+            </p>
+
+            <div class="answer-red-bold-underline">
+              キ(B社流動比率) 221.0%　ク 2.B社
+            </div>
+
+            <div class="question-subheader-blue">
+              (3) 売価還元法
+            </div>
+
+            <div class="formula-box">
+              期末原価率 = (期首商品原価 + 当期仕入原価) ÷ (期首商品売価 + 当期仕入分売価)
+            </div>
+
+            <p class="explanation-text">
+              売価還元法は、期首商品と当期仕入分の原価率から、期末商品の原価を算定する方法だよ。
+            </p>
+            <p class="explanation-text">
+              上の公式にのっとってやると
+            </p>
+            <p class="explanation-text">
+              (1,573,000 + 18,029,000) ÷ (2,420,000 + 26,620,000) = 0.675 = 67.5%
+            </p>
+            <p class="explanation-text">
+              原価率は67.5%ということがわかったね。これを期末棚卸分の売価にかければ、計算上の原価が求まるよ。
+            </p>
+            <p class="explanation-text">
+              2,840,000 × 67.5% = 1,917,000
+            </p>
+
+            <div class="answer-red-bold-underline">
+              期末商品原価 1,917,000
+            </div>
+          </section>
+
+          <!-- Question 3 Section -->
+          <section class="question-section">
+            <div class="question-main-title">
+              第３問
+            </div>
+
+            <div class="question-header">
+              (1)
+            </div>
+
+            <div class="analysis-item-header">
+              <span class="analysis-item-title">勘定の分類</span>
+            </div>
+
+            <p class="explanation-text">
+              元帳勘定残高のうち、
+            </p>
+            <p class="explanation-text">
+              <strong>現金から長期貸付金までが資産</strong>
+            </p>
+            <p class="explanation-text">
+              <strong>支払手形から退職給付引当金までが負債</strong>
+            </p>
+            <p class="explanation-text">
+              <strong>資本金から繰越利益剰余金までが純資産</strong>
+            </p>
+            <p class="explanation-text">
+              <strong>売上から固定資産売却益までが収益</strong>
+            </p>
+            <p class="explanation-text">
+              <strong>仕入から固定資産売却損までが費用</strong>
+            </p>
+            <p class="explanation-text">
+              に該当するよ。それぞれの勘定科目がどの区分に分類されるのか、しっかり把握しておこう！
+            </p>
+
+            <div class="question-header" style="margin-top: 2rem;">
+              (2)
+            </div>
+
+            <div class="content-title-orange">
+              付記事項①
+            </div>
+
+            <p class="explanation-text">
+              仮受金と売掛金をともに減らす。
+            </p>
+
+            <table class="journal-table">
+              <tbody>
+                <tr>
+                  <td class="journal-label">仮受金</td>
+                  <td class="journal-value">74,400</td>
+                  <td class="journal-label">売掛金</td>
+                  <td class="journal-value">74,400</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="content-title-orange">
+              ②
+            </div>
+
+            <p class="explanation-text">
+              これらの事項は何を意味しているかというと、会計期末はR6/3/31で、この貸付金の返済期日はR6/8/31。つまり、1年以内に帰ってくる貸付金ということだね。<br />
+              これが今は長期貸付金の区分に計上されているから、決算でB/Sを作るときには、短期貸付金の欄に組み入れないといけないよっていうことを示しているんだ。
+            </p>
+
+            <div class="content-title-orange" style="margin-top: 2rem;">
+              決算整理事項 a.期末商品棚卸高
+            </div>
+
+            <p class="explanation-text">
+              所謂しーくりくりしーをやるよ<br />
+              まずは、繰越商品（期首の商品）を当期の売上原価に組み入れて、期末の商品を当期の売上原価から除外しよう。期末商品の計算は帳簿残高で行うよ。<br />
+              その後、実地棚卸数量が帳簿量より減っていたら、その分に原価をかけて棚卸減耗損を。<br />
+              正味売却価額が原価より減少していたら、その分に実地棚卸数量をかけて商品評価損を計上してね。(評価益は計上しないよ)<br />
+              指示にある通り、棚卸減耗損・商品評価損は最終的には売上原価に計上されるよ。
+            </p>
+
+            <table class="journal-table">
+              <tbody>
+                <tr>
+                  <td class="journal-label">仕入</td>
+                  <td class="journal-value">2,976,000</td>
+                  <td class="journal-label">繰越商品</td>
+                  <td class="journal-value">2,976,000</td>
+                </tr>
+                <tr>
+                  <td class="journal-label">繰越商品</td>
+                  <td class="journal-value">3,165,000</td>
+                  <td class="journal-label">仕入</td>
+                  <td class="journal-value">3,165,000</td>
+                </tr>
+                <tr>
+                  <td class="journal-label">棚卸減耗損</td>
+                  <td class="journal-value">60,000</td>
+                  <td class="journal-label">繰越商品</td>
+                  <td class="journal-value">140,000</td>
+                </tr>
+                <tr>
+                  <td class="journal-label">商品評価損</td>
+                  <td class="journal-value">80,000</td>
+                  <td class="journal-label"></td>
+                  <td class="journal-value"></td>
+                </tr>
+                <tr>
+                  <td class="journal-label">売上原価</td>
+                  <td class="journal-value">140,000</td>
+                  <td class="journal-label">棚卸減耗損</td>
+                  <td class="journal-value">60,000</td>
+                </tr>
+                <tr>
+                  <td class="journal-label"></td>
+                  <td class="journal-value"></td>
+                  <td class="journal-label">商品評価損</td>
+                  <td class="journal-value">80,000</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="explanation-box-green">
+              2,976,000 → 繰越商品残高より<br />
+              @¥1,500 × 990個 + @¥2,100 × 800個 = <span class="underline-black">3,165,000</span><br />
+              @¥1,500 × (950 - 990)個 = <span class="underline-black">△60,000</span> (棚卸減耗損)<br />
+              @¥(2,000 - 2,100) × 800個 = <span class="underline-black">△80,000</span> (商品評価損)
+            </div>
+          </section>
+
+          <!-- Question 4 Section -->
+          <section class="question-section">
+            <div class="question-main-title">
+              第４問
+            </div>
+
+            <div class="analysis-item-header">
+              <span class="analysis-item-label">a</span>
+              <span class="analysis-item-title">保証債務と小切手の振出</span>
+            </div>
+
+            <p class="explanation-text">
+              保証債務というのは、自分が裏書譲渡した手形の振出人が、手形の金額を支払えず、自分が支払わないといけなくなった時のためにプールしておくお金のことだよ。<br />
+              小切手を振り出したら当座預金の減少になるよ。
+            </p>
+
+            <table class="journal-table">
+              <tbody>
+                <tr>
+                  <td class="journal-label">仕入</td>
+                  <td class="journal-value">400,000</td>
+                  <td class="journal-label">受取手形</td>
+                  <td class="journal-value">300,000</td>
+                </tr>
+                <tr>
+                  <td class="journal-label"></td>
+                  <td class="journal-value"></td>
+                  <td class="journal-label">当座預金</td>
+                  <td class="journal-value">100,000</td>
+                </tr>
+                <tr>
+                  <td class="journal-label">保証債務費用</td>
+                  <td class="journal-value">3,000</td>
+                  <td class="journal-label">保証債務</td>
+                  <td class="journal-value">3,000</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="explanation-box-green">
+              受取手形 300,000 × 1% = 3,000
+            </div>
+
+            <div class="analysis-item-header" style="margin-top: 2rem;">
+              <span class="analysis-item-label">b</span>
+              <span class="analysis-item-title">端数利息</span>
+            </div>
+
+            <p class="explanation-text">
+              端数利息とは<br />
+              最後の利払日から、購入日までその証券を持っていたということは、その分の利息を受け取る権利があるよね。だけど、次の利払日に証券を持っていないと、利息が受け取れない。だから、購入者が将来受け取る利息のうち、売却者が持っていた日数に応じた分を代わりに支払うんだよ。<br />
+              将来利息を受け取れば、有価証券利息は貸方に計上される。そのうち売却者が受け取るに相当する分
+            </p>
+
+            <table class="journal-table">
+              <tbody>
+                <tr>
+                  <td class="journal-label">売買目的有価証券</td>
+                  <td class="journal-value">6,461,000</td>
+                  <td class="journal-label">当座預金</td>
+                  <td class="journal-value">6,487,000</td>
+                </tr>
+                <tr>
+                  <td class="journal-label">有価証券利息</td>
+                  <td class="journal-value">26,000</td>
+                  <td class="journal-label"></td>
+                  <td class="journal-value"></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="explanation-box-green">
+              有価証券の購入額<br />
+              6,500,000 × 99.20 / 100 = 6,448,000<br />
+              6,448,000 + 13,000 = <span class="underline-black">6,461,000</span><br /><br />
+              端数利息の金額<br />
+              6,487,000 - 6,461,000 = <span class="underline-black">26,000</span>
+            </div>
+
+            <div class="analysis-item-header" style="margin-top: 2rem;">
+              <span class="analysis-item-label">c</span>
+              <span class="analysis-item-title">固定資産の買い換え</span>
+            </div>
+
+            <p class="explanation-text">
+              備品を買い入れたんだから、借方に備品。<br />
+              備品を手放したんだから貸方に備品。こっちは簿価（この場合は購入価格）で計上してね。<br />
+              で、備品を手放したんだからそれに対応する減価償却累計額も記録する必要はなくなるね。だから借方に、対応する減価償却累計額を書くよ。<br />
+              備品の残存価値と下取り代金を比較して、下取り代金のほうが大きかったら差額を固定資産売却益、少なかったら固定資産売却損として記録しよう。<br />
+              まだ払っていないお金は未払金だよ。営業取引じゃないからね。
+            </p>
+
+            <table class="journal-table">
+              <tbody>
+                <tr>
+                  <td class="journal-label">備品</td>
+                  <td class="journal-value">3,450,000</td>
+                  <td class="journal-label">備品</td>
+                  <td class="journal-value">3,200,000</td>
+                </tr>
+                <tr>
+                  <td class="journal-label">備品減価償却累計額</td>
+                  <td class="journal-value">2,160,000</td>
+                  <td class="journal-label">未払金</td>
+                  <td class="journal-value">2,580,000</td>
+                </tr>
+                <tr>
+                  <td class="journal-label">固定資産売却損</td>
+                  <td class="journal-value">170,000</td>
+                  <td class="journal-label"></td>
+                  <td class="journal-value"></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="explanation-box-green">
+              3,200,000 - 2,160,000 = 1,040,000<br />
+              870,000 - 1,040,000 = <span class="underline-black">△170,000</span> (固定資産売却損)<br />
+              3,450,000 - 870,000 = <span class="underline-black">2,580,000</span> (未払金)
+            </div>
+
+            <div class="analysis-item-header" style="margin-top: 2rem;">
+              <span class="analysis-item-label">d</span>
+              <span class="analysis-item-title">リース取引</span>
+            </div>
+
+            <p class="explanation-text">
+              締結しただけだから、リース資産とリース債務を計上するだけだよ。<br />
+              計上する金額は、貸手の購入価額か、リース料総額の現在価値と見積現金購入価額のいずれか低いほうなんだけど、見積現金購入価額しか提示されてないからこの金額を使おう！
+            </p>
+
+            <table class="journal-table">
+              <tbody>
+                <tr>
+                  <td class="journal-label">リース資産</td>
+                  <td class="journal-value">6,600,000</td>
+                  <td class="journal-label">リース債務</td>
+                  <td class="journal-value">6,600,000</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="analysis-item-header" style="margin-top: 2rem;">
+              <span class="analysis-item-label">e</span>
+              <span class="analysis-item-title">利益剰余金の配当</span>
+            </div>
+
+            <p class="explanation-text">
+              剰余金の配当を行うときには、配当する金額の1/10の金額を利益準備金に積み立てるよ。<br />
+              ただし、準備金の合計額は資本金の1/4の金額を超えないようにしてね。
+            </p>
+
+            <table class="journal-table">
+              <tbody>
+                <tr>
+                  <td class="journal-label">繰越利益剰余金</td>
+                  <td class="journal-value">3,010,000</td>
+                  <td class="journal-label">未払配当金</td>
+                  <td class="journal-value">2,400,000</td>
+                </tr>
+                <tr>
+                  <td class="journal-label"></td>
+                  <td class="journal-value"></td>
+                  <td class="journal-label">利益準備金</td>
+                  <td class="journal-value">240,000</td>
+                </tr>
+                <tr>
+                  <td class="journal-label"></td>
+                  <td class="journal-value"></td>
+                  <td class="journal-label">別途積立金</td>
+                  <td class="journal-value">370,000</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="explanation-box-green">
+              2,400,000 × 1/10 = 240,000<br />
+              58,000,000 × 1/4 - (7,500,000 + 2,750,000) > 240,000<br />
+              ∴ 利益準備金の積立額 <span class="underline-black">240,000</span>
+            </div>
+
+            <div class="analysis-item-header" style="margin-top: 2rem;">
+              <span class="analysis-item-label">f</span>
+              <span class="analysis-item-title">仕入割引</span>
+            </div>
+
+            <p class="explanation-text">
+              買掛金の支払いを早期に行うことにより受けた割引は、「仕入割引」勘定（収益）に計上するよ。<br />
+              ちなみに、商品を多く購入したことによって受けた割引は「仕入割戻」（仕入のマイナス）勘定だよ。
+            </p>
+
+            <table class="journal-table">
+              <tbody>
+                <tr>
+                  <td class="journal-label">買掛金</td>
+                  <td class="journal-value">250,000</td>
+                  <td class="journal-label">当座預金</td>
+                  <td class="journal-value">245,000</td>
+                </tr>
+                <tr>
+                  <td class="journal-label"></td>
+                  <td class="journal-value"></td>
+                  <td class="journal-label">仕入割引</td>
+                  <td class="journal-value">5,000</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="explanation-box-green">
+              250,000 × 2% = 5,000 (仕入割引)
+            </div>
+
+            <div class="analysis-item-header" style="margin-top: 2rem;">
+              <span class="analysis-item-label">g</span>
+              <span class="analysis-item-title">その他有価証券の時価評価（税効果会計）</span>
+            </div>
+
+            <p class="explanation-text">
+              その他有価証券を時価評価した差額は、（全部時価評価法の場合）すべて純資産に計上されます。<br />
+              もし評価差額が他の有価証券のように収益として計上されれば、税金が発生しますので、税額控除後の値が純資産に、税金相当額は負債（未払法人税等）に計上されます。<br />
+              そうなると、税効果会計を適用しないB/Sと結果が対応しません。（負債が少ない／純資産が多い）<br />
+              この差異の整合性をB/S上で図るためにその他有価証券には税効果会計が適用されるのです。
+            </p>
+
+            <table class="journal-table">
+              <tbody>
+                <tr>
+                  <td class="journal-label">その他有価証券</td>
+                  <td class="journal-value">720,000</td>
+                  <td class="journal-label">その他有価証券評価差額金</td>
+                  <td class="journal-value">504,000</td>
+                </tr>
+                <tr>
+                  <td class="journal-label"></td>
+                  <td class="journal-value"></td>
+                  <td class="journal-label">繰延税金負債</td>
+                  <td class="journal-value">216,000</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="explanation-box-green">
+              (1,120 - 940) × 4,000 = <span class="underline-black">720,000</span> (評価差額)<br />
+              720,000 × 30% = <span class="underline-black">216,000</span> (繰延税金負債)
+            </div>
+          </section>
+
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-text">&copy; 2026 全商関係hp. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+  <script>
+    // Simple Intersection Observer for reveal animations
+    const observerOptions = {
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          // If it's a section, also activate its children with delay
+          const delays = entry.target.querySelectorAll('.reveal-delay');
+          delays.forEach((el, index) => {
+            setTimeout(() => {
+              el.classList.add('active');
+            }, 300 + (index * 100));
+          });
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第72回 プログラミング 解説</title>
+  <link rel="stylesheet" href="crs/programming-1-72.css" />
+  <link rel="stylesheet" href="crs/header.css" />
+</head>
+
+<body class="page-wrapper">
+  <header class="header">
+    <a href="top.html" class="logo">
+      <img class="header__logo--img" src="img/index_logo 1.png" alt="ロゴ" width="240px" height="auto" />
+    </a>
+    <nav class="header__nav" id="header__nav">
+      <ul>
+        <li>
+          <a href="sab.html">
+            <span class="nav__en">全商検定</span>
+            <span class="nav__jp">過去問解説</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">GUIDELINES</span>
+            <span class="nav__jp">各検定の指針</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">INFORMATION</span>
+            <span class="nav__jp">進路情報</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">COLUMN</span>
+            <span class="nav__jp">コラム・その他</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">全商主催</span>
+            <span class="nav__jp">各競技大会について</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 
+  レスポンシブ
+  -->
+  <header class="header__res">
+    <a href="top.html" class="logo">
+      <img src="./assets/img/logo.svg" alt="ロゴ" width="300px" height="auto" />
+    </a>
+    <nav class="header__nav">
+      <ul class="heder__nav--list">
+        <li>
+          <a href="sab.html">
+            <span class="nav__en">全商検定</span>
+            <span class="nav__jp">過去問解説</span>
+          </a>
+        </li>
+        <li>
+          <a href="works.html">
+            <span class="nav__en">GUIDELINES</span>
+            <span class="nav__jp">各検定の指針</span>
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <span class="nav__en">INFORMATION</span>
+            <span class="nav__jp">進路情報</span>
+          </a>
+        </li>
+        <li>
+          <a href="company.html">
+            <span class="nav__en">COLUMN</span>
+            <span class="nav__jp">コラム・その他</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <span class="nav__en">全商主催</span>
+            <span class="nav__jp">各競技大会について</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </header>
+
+  <div id="root">
+    <div class="app-container">
+      <div class="content-wrapper">
+        <!-- Header Section -->
+        <header class="main-header">
+          <div class="header-content">
+            <h1 class="header-title reveal">
+              <span>第72回</span>
+              <span>プログラミング</span>
+            </h1>
+
+            <div class="header-meta">
+              <p>第72回（令和７年１月19日施行）</p>
+              <p>全商情報処理検定試験　プログラミング部門　解説</p>
+              <p style="padding-top: 0.5rem;">問題の出典</p>
+              <p>全国高等学校協会主催第72回情報処理検定試験　プログラミング部門</p>
+              <a href="https://zensho.or.jp/puf/download/exam/pastexam/2024/info_72_1_pro.pdf" target="_blank"
+                rel="noopener noreferrer">
+                https://zensho.or.jp/puf/download/exam/pastexam/2024/info_72_1_pro.pdf
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 3h6v6" />
+                  <path d="M10 14 21 3" />
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Sidebar Buttons -->
+          <aside class="sidebar">
+            <button class="sidebar-button">過去問解説</button>
+            <button class="sidebar-button">論点別解説</button>
+            <button class="sidebar-button">検定紹介</button>
+          </aside>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+          <!-- Question Section [1] -->
+          <section class="section-container">
+            <div class="section-title-box">
+              <h3 class="section-title">【１】用語問題</h3>
+            </div>
+
+            <!-- Question 1 -->
+            <div class="question-item">
+              <div class="question-number">1</div>
+              <div class="question-box">複数のモジュールで構成されるプログラムのテストを行う際，最下位にあるモジュールから結合テストを始め，上位モジュールと結合しながら動作を検証するテスト。
+              </div>
+              <div class="commentary-box">
+                <p>下（ボトム）から上へあがっていく（アップ）テストだね</p>
+              </div>
+              <div class="answer-wrapper">
+                <p class="answer-text">答え　ク．ボトムアップテスト</p>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-item">
+              <div class="question-number">2</div>
+              <div class="question-box">信頼性の高い部品を採用したり，十分なテストを実施したりして，故障や障害の原因となる要素を極力排除しようとする考え方。</div>
+              <div class="commentary-box">
+                <p>故障や障害の原因（フォールト）をできるだけ排除、つまり回避（アボイダンス）しようとする考え方だね。</p>
+                <p>病気にならないように、生活習慣を見直したり、マスクや手洗いうがいをしたりして、できるだけ病気になる原因を遠ざけようとするのに似てるね。</p>
+              </div>
+              <div class="answer-wrapper">
+                <p class="answer-text">答え　シ．フォールトアボイダンス</p>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-item">
+              <div class="question-number">3</div>
+              <div class="question-box">クライアント側の端末には必要最小限の機能のみを備え，アプリケーションソフトウェアやデータなどはサーバ側で管理するシステム。</div>
+              <div class="commentary-box">
+                <p>クライアントは必要最小限の機能だけ、つまり中身のない薄っぺらい（シン）クライアントということだね。</p>
+                <p>会社の持ち出しパソコンとかをこういう感じにすると、パソコンが盗まれても大事なデータは会社本部にあるから、被害を抑えられるといったメリットがあるよ。</p>
+              </div>
+              <div class="answer-wrapper">
+                <p class="answer-text">答え　エ．シンクライアント</p>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question-item">
+              <div class="question-number">4</div>
+              <div class="question-box">目的のデータが格納されているメモリ上の位置を記憶する変数。</div>
+              <div class="commentary-box">
+                <p>位置（ポイント）を記憶するもの（-er）だね。</p>
+              </div>
+              <div class="answer-wrapper">
+                <p class="answer-text">答え　コ．ポインタ</p>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question-item">
+              <div class="question-number">5</div>
+              <div class="question-box">システムに実装する機能をモジュールごとに分割したり，処理やデータの流れ，入出力の設計などを行ったりする開発工程。</div>
+              <div class="commentary-box">
+                <div class="overflow-x-auto">
+                  <table class="info-table">
+                    <tbody>
+                      <tr>
+                        <td class="table-header-cell">要件定義</td>
+                        <td class="table-data-cell">必要なこと決めるよ〜</td>
+                      </tr>
+                      <tr>
+                        <td class="table-header-cell">外部設計</td>
+                        <td class="table-data-cell">画面のデザイン決めたりするよ〜</td>
+                      </tr>
+                      <tr>
+                        <td class="table-header-cell">内部設計</td>
+                        <td class="table-data-cell">データの処理方法決めるよ〜</td>
+                      </tr>
+                      <tr>
+                        <td class="table-header-cell">プログラム設計</td>
+                        <td class="table-data-cell">今まで決めたことを実現するためにどうするか決めるよ</td>
+                      </tr>
+                      <tr>
+                        <td class="table-header-cell">プログラミング</td>
+                        <td class="table-data-cell">実際にプログラム書くよ</td>
+                      </tr>
+                      <tr>
+                        <td class="table-header-cell">テスト</td>
+                        <td class="table-data-cell">作ったやつちょっと動かしてみるよ</td>
+                      </tr>
+                      <tr>
+                        <td class="table-header-cell">運用・保守</td>
+                        <td class="table-data-cell">アプデ・メンテだね</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p>こんな感じで開発工程は進んでいくんだけど、ユーザに見えない裏側の設計は「内部設計」の段階に当たるよ</p>
+                <p>LINEのトーク画面のデザインを考えるのは外部設計だけど、トークの内容をどうやって相手に送るか考えるのは内部設計だよ</p>
+              </div>
+              <div class="answer-wrapper">
+                <p class="answer-text">答え　ウ．内部設計</p>
+              </div>
+            </div>
+
+            <!-- Other Terms Section -->
+            <div class="other-terms-section">
+              <div class="other-terms-header">
+                <h3 class="other-terms-title">その他用語</h3>
+              </div>
+              <div class="other-terms-list">
+                <div class="term-item">
+                  <p class="term-name">ア．外部設計</p>
+                  <p>(5)にあるように、画面などユーザに見える部分の設計を行うよ</p>
+                </div>
+                <div class="term-item">
+                  <p class="term-name">イ．フォールトトレラント</p>
+                  <p>
+                    耐障害性と訳されて、障害を回避するのではなく、もし障害が起こってもなんとかなるようにする感じだよ。フォールトアボイダンスが病気を”避ける”行動なら、フォールトトレラントはワクチンを打つなど病気にかかっても”大事にならないようにする”行動に当たるよ。
+                  </p>
+                </div>
+                <div class="term-item">
+                  <p class="term-name">オ．単体テスト</p>
+                  <p>モジュールの一つ一つだけで個別に行うテストだよ。</p>
+                </div>
+                <div class="term-item">
+                  <p class="term-name">カ．トップダウンテスト</p>
+                  <p>ボトムアップテストが下から上に行くテストなら、こっちは上位モジュールから下位モジュールにかけて行うテストだよ</p>
+                </div>
+                <div class="term-item">
+                  <p class="term-name">キ．NAS</p>
+                  <p>Network Attached Storageの略で、ネットワークに直接接続された記憶装置のことだよ。iCloudみたいなものって考えてもらえばいいかな</p>
+                </div>
+                <div class="term-item">
+                  <p class="term-name">ケ．リスト</p>
+                  <p>複数の値を保存できる変数だよ</p>
+                </div>
+                <div class="term-item">
+                  <p class="term-name">サ．スタブ</p>
+                  <p>トップダウンテストを行うときに、まだ出来上がってない下位モジュールの代わりに使われるものだよ。とりあえずリハーサルしたいけどまだ到着してないひな壇芸人の代わりに置かれるADみたいな感じ</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Question Section [2] -->
+          <section class="section-container">
+            <div class="section-title-box">
+              <h3 class="section-title">【２】用語問題</h3>
+            </div>
+
+            <!-- Question 1 -->
+            <div class="question-item">
+              <div class="question-number">1</div>
+              <div class="question-box">DMZ</div>
+              <div class="commentary-box">
+                <p>De-Militarized Zone（非武装地帯）の略で、社内おいてる情報なんだけどアクセスはだれでも可能な部分のことだよ。会社のホームページなんかがここに置かれることが多いね。</p>
+                <p>会社のエントランスってその会社の商品とかが置かれてて、だれでも見れる形にはなってる。でも、一応そこは会社の敷地内だし、エントランスより先に行くことはできないよね。</p>
+                <p>社内でも共用地ってわけでもない中間的な場所だね。</p>
+              </div>
+              <div class="answer-wrapper">
+                <p class="answer-text">答え　ウ</p>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-item">
+              <div class="question-number">2</div>
+              <div class="question-box">リユーザブル</div>
+              <div class="commentary-box">
+                <p>直訳すると「再使用可能」という意味になるよ。</p>
+                <p>プログラムの性質で、何回同じ処理をしても同じ結果が返ってくる→同じ目的で「再使用」できるようなものを指すよ。</p>
+              </div>
+              <div class="answer-wrapper">
+                <p class="answer-text">答え　コ</p>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-item">
+              <div class="question-number">3</div>
+              <div class="question-box">ホワイトボックステスト</div>
+              <div class="commentary-box">
+                <p>白い箱のテスト...？</p>
+                <p>対義語はブラックボックステスト。中身が分かったうえでテストするということは、内部構造に着目してテストデータを作るということだよね。</p>
+                <p>逆に言えば、ブラックボックステストは内部構造関係なくテストをするということになるから、入力に対して求められる出力のことを考え、正常に動いていると判断できるに足るテストデータを作るんだよ。</p>
+              </div>
+              <div class="answer-wrapper">
+                <p class="answer-text">答え　キ</p>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question-item">
+              <div class="question-number">4</div>
+              <div class="question-box">サブネットマスク</div>
+              <div class="commentary-box">
+                <p>サブネット（会社内部に作られたネットワークのグループみたいな感じだよ）を判別するために使用されるのがサブネットマスクだよ。</p>
+                <p>IPアドレスとサブネットマスクを掛け合わせることで、そのIPアドレスを持つ機器が、どのネットワークに属するのか判断できるんだ。</p>
+              </div>
+              <div class="answer-wrapper">
+                <p class="answer-text">答え　サ</p>
+              </div>
+            </div>
+          </section>
+
+          <div class="final-section">
+            <p class="final-text">おつかれさまでした</p>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-text">&copy; 2026 全商関係hp. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+  <script>
+    // Simple Intersection Observer for reveal animations
+    const observerOptions = {
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          // If it's a section, also activate its children with delay
+          const delays = entry.target.querySelectorAll('.reveal-delay');
+          delays.forEach((el, index) => {
+            setTimeout(() => {
+              el.classList.add('active');
+            }, 300 + (index * 100));
+          });
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+
+</html>

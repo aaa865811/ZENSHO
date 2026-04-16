@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第16回 財務諸表分析 解説</title>
+  <link rel="stylesheet" href="crs/Financial-statement-analysis16.css" />
+  <link rel="stylesheet" href="crs/header.css" />
+</head>
+
+<body class="page-wrapper">
+  <header class="header">
+    <a href="top.html" class="logo">
+      <img class="header__logo--img" src="img/index_logo 1.png" alt="ロゴ" width="240px" height="auto" />
+    </a>
+    <nav class="header__nav" id="header__nav">
+      <ul>
+        <li>
+          <a href="sab.html">
+            <span class="nav__en">全商検定</span>
+            <span class="nav__jp">過去問解説</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">GUIDELINES</span>
+            <span class="nav__jp">各検定の指針</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">INFORMATION</span>
+            <span class="nav__jp">進路情報</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">COLUMN</span>
+            <span class="nav__jp">コラム・その他</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">全商主催</span>
+            <span class="nav__jp">各競技大会について</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 
+  レスポンシブ
+  -->
+  <header class="header__res">
+    <a href="top.html" class="logo">
+      <img src="./assets/img/logo.svg" alt="ロゴ" width="300px" height="auto" />
+    </a>
+    <nav class="header__nav">
+      <ul class="heder__nav--list">
+        <li>
+          <a href="sab.html">
+            <span class="nav__en">全商検定</span>
+            <span class="nav__jp">過去問解説</span>
+          </a>
+        </li>
+        <li>
+          <a href="works.html">
+            <span class="nav__en">GUIDELINES</span>
+            <span class="nav__jp">各検定の指針</span>
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <span class="nav__en">INFORMATION</span>
+            <span class="nav__jp">進路情報</span>
+          </a>
+        </li>
+        <li>
+          <a href="company.html">
+            <span class="nav__en">COLUMN</span>
+            <span class="nav__jp">コラム・その他</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <span class="nav__en">全商主催</span>
+            <span class="nav__jp">各競技大会について</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </header>
+
+  <div id="root">
+    <div class="app-container">
+      <div class="content-wrapper">
+        <!-- Header Section -->
+        <header class="main-header">
+          <div class="header-content">
+            <h1 class="header-title reveal">
+              <span>第16回</span>
+              <span>財務諸表分析</span>
+            </h1>
+            <div class="header-meta">
+              <p>第16回（令和６年12月8日施行）</p>
+              <p>全商財務諸表分析検定試験　解説</p>
+              <p style="padding-top: 0.5rem;">問題の出典</p>
+              <p>全国商業高等学校協会主催 第16回 財務諸表分析検定試験</p>
+              <a href="https://zensho.or.jp/puf/download/exam/pastexam/2024/ac_16_bunseki_exa.pdf" target="_blank"
+                rel="noopener noreferrer">
+                https://zensho.or.jp/puf/download/exam/pastexam/2024/ac_16_bunseki_exa.pdf
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 3h6v6" />
+                  <path d="M10 14 21 3" />
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Sidebar Buttons -->
+          <aside class="sidebar">
+            <button class="sidebar-button">過去問解説</button>
+            <button class="sidebar-button">論点別解説</button>
+            <button class="sidebar-button">検定紹介</button>
+          </aside>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+          <!-- General Instructions / Abbreviations -->
+          <section class="instruction-section">
+            <p>解説注に出てくる略語について：</p>
+            <div class="table-container">
+              <table class="data-table">
+                <thead>
+                  <tr class="table-header-row">
+                    <th class="table-cell table-cell-header">略語</th>
+                    <th class="table-cell table-cell-header">正式名称</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="table-cell table-cell-label">B/S</td>
+                    <td class="table-cell table-cell-left">貸借対照表</td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell table-cell-label">P/L</td>
+                    <td class="table-cell table-cell-left">損益計算書</td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell table-cell-label">C/F</td>
+                    <td class="table-cell table-cell-left">キャッシュフロー（計算書）</td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell table-cell-label">F/S</td>
+                    <td class="table-cell table-cell-left">財務諸表</td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell table-cell-label">(前・後) T/B</td>
+                    <td class="table-cell table-cell-left">(決算整理前・後) 残高試算表</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="instruction-note">また、各問題に予想配点を付してある（全商協会は配点を公表していないため、受験結果と異なる場合がある）</p>
+          </section>
+
+          <!-- Question Section [1] -->
+          <section class="question-section reveal">
+            <div class="question-title-container">
+              <h3 class="question-title">【1】予想配点：８点</h3>
+            </div>
+            <div class="question-disclaimer">
+              表示の都合上、試験問題文で太字下線となっている部分は、ダブルクォーテーションで括って表記をしている。
+            </div>
+
+            <!-- Subsection (1) -->
+            <div class="subsection">
+              <div class="question-header">
+                <span>(1) 予想配点：２点</span>
+              </div>
+              <div class="question-box">
+                他の要素と関連づけて分析する（財務諸表のさまざまな数値や金額の割合を用いる）方法を“趨勢”分析という。
+              </div>
+
+              <div class="formula-box">
+                <p class="formula-title">用語解説</p>
+                <p class="formula-text">趨勢（すうせい）＝ あるものの動き、勢い</p>
+              </div>
+
+              <div class="explanation-text">
+                <p>趨勢分析とは、ある時点を基準にして、成長度合をはかる手法です。</p>
+                <p>問題文は<span class="bold underline-accent">比率分析</span>の説明をしています。</p>
+
+                <div class="step-box">
+                  <h4 class="step-title">ポイント</h4>
+                  <p>「関連づけて分析する」「割合を用いる」というキーワードは比率分析の特徴です。</p>
+                </div>
+              </div>
+
+              <div class="final-answer-container reveal-delay">
+                <p class="final-answer">
+                  答え　比率
+                </p>
+              </div>
+            </div>
+
+            <!-- Subsection (2) -->
+            <div class="subsection subsection-mt-large">
+              <div class="question-header">
+                <span>(2) 予想配点：２点</span>
+              </div>
+              <div class="question-box">
+                “連単倍率”は， 子会社 の個別財務諸表に対する連結財務諸表の数値の割合を比較する倍率である。
+              </div>
+
+              <div class="explanation-text">
+                <p>
+                  連単倍率とは、「連」結決算と親会社「単」体の決算を比較して、子会社・関連会社がグループ全体に与える影響をみる指標。（つまり、<span
+                    class="underline">親会社の個別指標に対する</span>連結財務諸表の数値の割合を比較する）
+                </p>
+                <p>連単倍率 ＝ 連結純利益 ÷ 親会社単体利益</p>
+                <p>１倍を下回る→子会社は赤字である。</p>
+              </div>
+
+              <div class="final-answer-container reveal-delay">
+                <p class="final-answer">
+                  答え　親会社
+                </p>
+              </div>
+            </div>
+
+            <!-- Subsection (3) -->
+            <div class="subsection subsection-mt-large">
+              <div class="question-header">
+                <span>(3) 予想配点：１点</span>
+              </div>
+              <div class="question-box">
+                当座資産を「現金預金＋受取手形＋売掛金＋有価証券」と定義するならば，当座比率の数値は必ず流動比率の数値“以下”になる。
+              </div>
+
+              <div class="formula-box">
+                <p class="formula-text">当座比率 ＝ 当座資産 ÷ 流動負債</p>
+                <p class="formula-text">流動比率 ＝ 流動資産 ÷ 流動負債</p>
+              </div>
+
+              <div class="explanation-text">
+                <p>割り算において、割るものが一緒なら、割られるものの数値が小さければ、値も小さくなる。</p>
+                <p>
+                  流動資産は当座資産に入らないものも含まれるから、当座資産の値は流動資産以下となる。（当座資産＝流動資産となる場合もある）
+                </p>
+                <p>よって、当座比率 ≦ 流動比率 であるため、問題文は正しい。</p>
+              </div>
+
+              <div class="final-answer-container reveal-delay">
+                <p class="final-answer">
+                  答え　〇
+                </p>
+              </div>
+            </div>
+
+            <!-- Subsection (4) -->
+            <div class="subsection subsection-mt-large">
+              <div class="question-header">
+                <span>(4) 予想配点：２点</span>
+              </div>
+              <div class="question-box">
+                「資産－負債＝純資産」という，純資産を計算する会計学上の見方を“収益費用”アプローチという。
+              </div>
+
+              <div class="explanation-text">
+                <p>収益費用アプローチとは、「期間収益から期間費用を引いて、期間利益を求める」という見方。</p>
+                <p>問題文は「資産負債アプローチ」の説明である。</p>
+              </div>
+
+              <div class="final-answer-container reveal-delay">
+                <p class="final-answer">
+                  A. 資産負債
+                </p>
+              </div>
+            </div>
+
+            <!-- Subsection (5) -->
+            <div class="subsection subsection-mt-large">
+              <div class="question-header">
+                <span>(5) 予想配点：１点</span>
+              </div>
+              <div class="question-box">
+                ＲＯＡとは，Return On "Assets"の英語表記の略語である。
+              </div>
+
+              <div class="explanation-text">
+                <p>ROAとは、日本語で総資産利益率といい、総資産を総利益で除して求めることができる。</p>
+                <p>利益を生み出すために、保有資産をどの程度効率的に使えているかを表している。</p>
+                <p>日本語からもわかるように、問題文は正しい。</p>
+              </div>
+
+              <div class="final-answer-container reveal-delay">
+                <p class="final-answer">
+                  A. 〇
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <div class="closing-section">
+            <p class="closing-text">おつかれさまでした</p>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-text">&copy; 2026 全商関係hp. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+  <script>
+    // Simple Intersection Observer for reveal animations
+    const observerOptions = {
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          // If it's a section, also activate its children with delay
+          const delays = entry.target.querySelectorAll('.reveal-delay');
+          delays.forEach((el, index) => {
+            setTimeout(() => {
+              el.classList.add('active');
+            }, 300 + (index * 100));
+          });
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+
+</html>
