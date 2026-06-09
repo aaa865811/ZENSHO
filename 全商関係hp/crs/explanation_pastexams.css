@@ -1,5 +1,6 @@
 :root {
   --font-serif: "Noto Serif JP", "Hiragino Mincho ProN", "MS Mincho", serif;
+  --font-gothic: "BIZ UDGothic";
   --color-slate-900: #0f172a;
   --color-emerald-50: #ecfdf5;
   --color-emerald-100: #d1fae5;
@@ -31,6 +32,18 @@ body {
   body {
     font-size: 1.125rem;
   }
+}
+
+.biz-udgothic-regular {
+  font-family: "BIZ UDGothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.biz-udgothic-bold {
+  font-family: "BIZ UDGothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .page-container {
@@ -89,7 +102,7 @@ body {
 }
 
 .section-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-gothic);
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 500;
@@ -140,9 +153,9 @@ body {
 
 .exam-button-text {
   color: var(--color-emerald-600);
-  font-family: var(--font-serif);
+  font-family: var(--font-gothic);
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: -0.01em;
 }
 
@@ -211,7 +224,7 @@ body {
 
 .sub-exam-card-text {
   color: var(--color-emerald-600);
-  font-family: var(--font-serif);
+  font-family: var(--font-gothic);
   font-size: 1rem;
   font-weight: 500;
 }
