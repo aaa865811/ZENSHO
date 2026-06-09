@@ -1,0 +1,240 @@
+:root {
+  --font-serif: "Noto Serif JP", "Hiragino Mincho ProN", "MS Mincho", serif;
+  --color-slate-900: #0f172a;
+  --color-emerald-50: #ecfdf5;
+  --color-emerald-100: #d1fae5;
+  --color-emerald-200: #a7f3d0;
+  --color-emerald-300: #6ee7b7;
+  --color-emerald-400: #34d399;
+  --color-emerald-500: #10b981;
+  --color-emerald-600: #059669;
+  --color-emerald-700: #047857;
+  --color-bg-light: #e6f7ef;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-slate-900);
+  background-color: white;
+  font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.125rem;
+  }
+}
+
+.page-container {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .page-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-container {
+    padding-top: 120px;
+    padding-bottom: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.content-wrapper {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .section {
+    margin-bottom: 4rem;
+  }
+}
+
+.section-header {
+  display: inline-block;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--color-emerald-500);
+  padding-bottom: 0.25rem;
+}
+
+@media (min-width: 1024px) {
+  .section-header {
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--color-emerald-500);
+    padding-bottom: 0.5rem;
+  }
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: var(--color-emerald-600);
+}
+
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+.section-content {
+  background-color: var(--color-bg-light);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.accordion-item {
+  width: 100%;
+}
+
+.exam-button {
+  width: 100%;
+  background-color: white;
+  border-radius: 0.25rem;
+  border: 1px solid var(--color-emerald-500);
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  list-style: none;
+  transition: all 200ms ease;
+}
+
+.exam-button::-webkit-details-marker {
+  display: none;
+}
+
+.exam-button:hover {
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1);
+}
+
+.exam-button-text {
+  color: var(--color-emerald-600);
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.icon-circle-outline {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-emerald-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-emerald-600);
+  transition: transform 300ms ease;
+}
+
+.accordion-item[open] .icon-circle-outline {
+  transform: rotate(90deg);
+}
+
+/* SVG Icon Styles */
+.icon-chevron-right {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.icon-chevron-down {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.sub-items-container {
+  padding: 1rem 0 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sub-exam-card {
+  width: fit-content;
+  min-width: 240px;
+  background-color: white;
+  border: 1px solid var(--color-emerald-500);
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.sub-exam-card:hover {
+  background-color: var(--color-emerald-50);
+  transform: translateX(4px);
+}
+
+.sub-exam-card-text {
+  color: var(--color-emerald-600);
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.sub-card-icon {
+  color: var(--color-emerald-600);
+  margin-left: 0.75rem;
+}
+
+.sub-exam-button-text {
+  color: var(--color-emerald-700);
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  text-align: left;
+}
+
+@media (min-width: 1024px) {
+  .sub-exam-button-text {
+    font-size: 1.125rem;
+  }
+}
+
+.sub-icon {
+  color: var(--color-emerald-500);
+  margin-left: 0.5rem;
+}
