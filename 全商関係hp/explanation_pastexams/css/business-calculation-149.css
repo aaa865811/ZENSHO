@@ -132,9 +132,11 @@ img {
   background-color: #e5e7eb;
 }
 
+/*
 .main-content {
-  max-width: 64rem; /* Increased from 48rem */
+  max-width: 64rem;  Increased from 48rem
 }
+*/
 
 /* Question Styles */
 .question-section {
@@ -332,6 +334,42 @@ img {
   opacity: 1;
   transform: scale(1);
 }
+
+.video-aside {
+    position: sticky;
+    top: 90px;
+    width: 704px;
+    height: 392px;
+}
+
+.video-sec {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  margin: 0 auto;
+}
+
+.video-box {
+  width: 60%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .video-box {
+    position: static;
+    margin-bottom: 30px;
+    width: 352px;
+    height: 196px;
+  }
+}
+
 
 /* Utilities */
 .bold { font-weight: 700; }
