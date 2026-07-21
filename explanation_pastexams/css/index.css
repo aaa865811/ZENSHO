@@ -208,6 +208,30 @@ body {
   gap: 0.75rem;
 }
 
+/* 内側アコーディオンも、通常の部門カードと同じ間隔に揃える */
+.accordion-item > details.sub-items-container {
+  padding: 1rem 0 0;
+  gap: 0.5rem;
+}
+
+.accordion-item > details.sub-items-container + details.sub-items-container {
+  padding-top: 0.75rem;
+}
+
+.accordion-item > details.sub-items-container + .sub-exam-card,
+.accordion-item > .sub-exam-card + .sub-exam-card {
+  margin-top: 0.75rem;
+}
+
+/* 部門内の回次は、部門名のすぐ下に表示する */
+.accordion-item > details.sub-items-container > .article-button {
+  margin-bottom: 0;
+}
+
+.accordion-item > details.sub-items-container > .article-button + .article-button {
+  margin-top: 0.25rem;
+}
+
 .sub-exam-card {
   width: fit-content;
   min-width: 240px;
