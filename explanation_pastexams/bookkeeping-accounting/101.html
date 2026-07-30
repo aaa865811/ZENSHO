@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 
 <head>
@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="../../css/header.css" />
 </head>
 
-<body class="page-wrapper">
+<body class="page-wrapper exam-learning-page bookkeeping-learning-page" id="top">
   <header class="header">
     <a href="../../index.html" class="logo">
-      <img class="header__logo--img" src="../../img/index_logo 1.png" alt="ロゴ" width="240px" height="auto" />
+      <img class="header__logo--img" src="../../img/ZenSho-PAST.png" alt="ロゴ" width="240px" height="auto" />
     </a>
     <nav class="header__nav" id="header__nav">
       <ul>
@@ -101,54 +101,33 @@
   <div id="root">
     <div class="app-container">
       <div class="content-wrapper">
-        <!-- Header Section -->
-        <header class="main-header">
-          <div class="header-content">
-            <h1 class="header-title reveal">
-              <span>第101回</span>
-              <span>簿記(会計)</span>
-            </h1>
-
-            <div class="header-meta">
-              <p>第99回（令和７年１月26日施行）</p>
-              <p>全商簿記検定試験　会計部門　解説</p>
-              <p style="padding-top: 0.5rem;">問題の出典</p>
-              <p>全国高等学校協会主催第101回簿記検定試験　１級　会計部門</p>
-              <a href="https://zensho.or.jp/puf/download/exam/pastexam/2026/bk_101_1_acc.pdf" target="_blank"
-                rel="noopener noreferrer">
-                https://zensho.or.jp/puf/download/exam/pastexam/2026/bk_101_1_acc.pdf
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M15 3h6v6" />
-                  <path d="M10 14 21 3" />
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                </svg>
-              </a>
-            </div>
+        <header aria-labelledby="page-title" class="exam-hero main-header">
+          <div class="hero header-content">
+            <p class="eyebrow">全商検定 過去問解説</p>
+            <h1 class="header-title" id="page-title">第101回 簿記実務検定試験<br/>1級 会計部門 解説</h1>
+            <p class="lead">令和8年1月25日施行。動画を視聴しながら、会計理論・連結会計・財務諸表・仕訳の各設問を順番に確認できます。</p>
           </div>
-
-          <!-- Sidebar Buttons -->
-          <aside class="sidebar">
-            <button class="sidebar-button">過去問解説</button>
-            <button class="sidebar-button">論点別解説</button>
-            <button class="sidebar-button">検定紹介</button>
-          </aside>
         </header>
 
-        <!-- Main Content -->
-        <section class="page">
-          <aside class="video-aside-sp">
-            <div class="video-sec">
-              <iframe class="video-box" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/KAma8fiVtBE?si=RYuhV8UtDIhnwSIe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section class="page exam-learning-layout">
+          <main class="exam-main main-content">
+            <div class="source-box">
+              <p><strong>出典：</strong>全国商業高等学校協会主催 第101回 簿記実務検定試験 1級会計部門</p>
+              <a class="text-link" href="https://zensho.or.jp/puf/download/exam/pastexam/2026/bk_101_1_acc.pdf" rel="noopener noreferrer" target="_blank">問題PDF　　　</a>
+              <a class="text-link" href="https://zensho.or.jp/puf/download/exam/pastexam/2026/bk_101_an.pdf" rel="noopener noreferrer" target="_blank">解答PDF　　　</a>
+              <p class="source-note">本記事は全商協会による公式解説ではありません。</p>
             </div>
-          </aside>
-          <main class="main-content">
-
-
+            <h2 id="question-list">設問一覧</h2>
+            <nav aria-label="設問へのリンク" class="question-nav bookkeeping-question-nav">
+              <a href="#q1">1</a>
+              <a href="#q2">2</a>
+              <a href="#q3">3</a>
+              <a href="#q4">4</a>
+            </nav>
 
             <!-- Abbreviations Section -->
-            <section class="abbreviation-section">
-              <h3 class="section-subtitle">解説内で使用する略語について</h3>
+            <section class="abbreviation-section" id="abbreviations">
+              <h2 class="section-subtitle">解説内で使用する略語について</h2>
               <table class="abbreviation-table">
                 <tbody>
                   <tr>
@@ -176,9 +155,9 @@
             </section>
 
             <!-- Question 1 Section -->
-            <section class="question-section reveal">
+            <section aria-labelledby="q1-title" class="question-section q1-section reveal" id="q1">
               <div class="question-main-title">
-                第１問
+                <h2 id="q1-title">第１問</h2>
               </div>
 
               <div class="question-header">
@@ -306,9 +285,9 @@
             </section>
 
             <!-- Question 2 Section -->
-            <section class="question-section">
+            <section aria-labelledby="q2-title" class="question-section reveal" id="q2">
               <div class="question-main-title">
-                第２問
+                <h2 id="q2-title">第２問</h2>
               </div>
 
               <div class="question-subheader-blue">
@@ -713,9 +692,9 @@
             </section>
 
             <!-- Question 3 Section -->
-            <section class="question-section">
+            <section aria-labelledby="q3-title" class="question-section reveal" id="q3">
               <div class="question-main-title">
-                第３問
+                <h2 id="q3-title">第３問</h2>
               </div>
 
               <div class="question-header">
@@ -842,9 +821,9 @@
             </section>
 
             <!-- Question 4 Section -->
-            <section class="question-section">
+            <section aria-labelledby="q4-title" class="question-section reveal" id="q4">
               <div class="question-main-title">
-                第４問
+                <h2 id="q4-title">第４問</h2>
               </div>
 
               <div class="analysis-item-header">
@@ -1089,46 +1068,130 @@
             </section>
 
           </main>
-          <aside class="video-aside">
-            <div class="video-sec">
-              <iframe class="video-box" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/KAma8fiVtBE?si=RYuhV8UtDIhnwSIe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+          <aside aria-label="解説動画とページ内目次" class="exam-learning-aside">
+            <section aria-labelledby="bookkeeping-video-title" class="exam-video-panel">
+              <h2 id="bookkeeping-video-title">解説動画</h2>
+              <iframe
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                class="exam-video-frame"
+                referrerpolicy="strict-origin-when-cross-origin"
+                src="https://www.youtube.com/embed/KAma8fiVtBE?si=RYuhV8UtDIhnwSIe"
+                title="第101回 簿記実務検定試験 1級会計部門 解説動画"></iframe>
+            </section>
+            <nav aria-labelledby="bookkeeping-toc-title" class="exam-desktop-toc">
+              <h2 id="bookkeeping-toc-title">このページの目次</h2>
+              <ul class="exam-toc-overview">
+                <li><a href="#question-list">設問一覧</a></li>
+                <li><a href="#abbreviations">解説内の略語</a></li>
+              </ul>
+              <p class="exam-toc-label">問題別解説</p>
+              <ol class="exam-toc-questions">
+                <li><a href="#q1">1</a></li>
+                <li><a href="#q2">2</a></li>
+                <li><a href="#q3">3</a></li>
+                <li><a href="#q4">4</a></li>
+              </ol>
+            </nav>
           </aside>
         </section>
       </div>
     </div>
   </div>
 
-  <footer class="site-footer">
+  <button aria-label="ページ上部へ戻る" class="page-top-button" id="pageTopButton" title="ページ上部へ戻る" type="button">
+    <svg aria-hidden="true" height="24" viewbox="0 0 24 24" width="24">
+      <path d="M6 15l6-6 6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"></path>
+    </svg>
+    <span>上へ</span>
+  </button>
+
+  <footer class="exam-footer site-footer">
     <div class="footer-content">
+      <p class="footer-text">本解説は、公式問題・公式解答を参照して独自に作成した学習用コンテンツです。全国商業高等学校協会による公式解説・認定教材ではありません。</p>
       <p class="footer-text">&copy; 2026 全商関係hp. All Rights Reserved.</p>
     </div>
   </footer>
   <script src="../../js/main.js"></script>
   <script>
-    // Simple Intersection Observer for reveal animations
-    const observerOptions = {
-      threshold: 0.1
-    };
+    (() => {
+      const topButton = document.getElementById('pageTopButton');
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-          // If it's a section, also activate its children with delay
-          const delays = entry.target.querySelectorAll('.reveal-delay');
-          delays.forEach((el, index) => {
-            setTimeout(() => {
-              el.classList.add('active');
-            }, 300 + (index * 100));
-          });
+      const updateTopButton = () => {
+        if (topButton) {
+          topButton.classList.toggle('is-visible', window.scrollY > 480);
         }
-      });
-    }, observerOptions);
+      };
 
-    document.querySelectorAll('.reveal').forEach(el => {
-      observer.observe(el);
-    });
+      if (topButton) {
+        topButton.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        window.addEventListener('scroll', updateTopButton, { passive: true });
+        updateTopButton();
+      }
+
+      const tocLinks = Array.from(document.querySelectorAll('.exam-desktop-toc a[href^="#"]'));
+      const tocTargets = tocLinks
+        .map((link) => ({
+          link,
+          target: document.querySelector(link.getAttribute('href'))
+        }))
+        .filter((item) => item.target);
+      let tocUpdatePending = false;
+
+      const updateCurrentTocItem = () => {
+        if (!tocTargets.length) {
+          return;
+        }
+
+        let currentItem = tocTargets[0];
+        const headerOffset = 180;
+
+        tocTargets.forEach((item) => {
+          if (item.target.getBoundingClientRect().top <= headerOffset) {
+            currentItem = item;
+          }
+        });
+
+        tocTargets.forEach((item) => {
+          const isCurrent = item === currentItem;
+          item.link.classList.toggle('is-current', isCurrent);
+          if (isCurrent) {
+            item.link.setAttribute('aria-current', 'location');
+          } else {
+            item.link.removeAttribute('aria-current');
+          }
+        });
+        tocUpdatePending = false;
+      };
+
+      const requestTocUpdate = () => {
+        if (!tocUpdatePending) {
+          tocUpdatePending = true;
+          window.requestAnimationFrame(updateCurrentTocItem);
+        }
+      };
+
+      window.addEventListener('scroll', requestTocUpdate, { passive: true });
+      window.addEventListener('resize', requestTocUpdate);
+      updateCurrentTocItem();
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.08 });
+
+        document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+      } else {
+        document.querySelectorAll('.reveal').forEach((element) => element.classList.add('active'));
+      }
+    })();
   </script>
 </body>
 

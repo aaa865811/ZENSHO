@@ -180,6 +180,33 @@ body {
   transform: rotate(90deg);
 }
 
+/* 開いた内容をやわらかく表示する */
+@keyframes accordion-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-0.35rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.accordion-item[open] > .sub-items-container,
+.accordion-item[open] > details.sub-items-container,
+details.sub-items-container[open] > .article-button {
+  animation: accordion-reveal 220ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .accordion-item[open] > .sub-items-container,
+  .accordion-item[open] > details.sub-items-container,
+  details.sub-items-container[open] > .article-button {
+    animation: none;
+  }
+}
+
 /* SVG Icon Styles */
 .icon-chevron-right {
   width: 24px;
@@ -211,7 +238,7 @@ body {
 /* 内側アコーディオンも、通常の部門カードと同じ間隔に揃える */
 .accordion-item > details.sub-items-container {
   padding: 1rem 0 0;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .accordion-item > details.sub-items-container + details.sub-items-container {
@@ -229,7 +256,7 @@ body {
 }
 
 .accordion-item > details.sub-items-container > .article-button + .article-button {
-  margin-top: 0.25rem;
+  margin-top: 1rem;
 }
 
 .sub-exam-card {

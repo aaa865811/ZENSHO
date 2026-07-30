@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 
 <head>
@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="../../css/header.css" />
 </head>
 
-<body class="page-wrapper">
+<body class="page-wrapper exam-learning-page" id="top">
   <header class="header">
     <a href="../../index.html" class="logo">
-      <img class="header__logo--img" src="../../img/index_logo 1.png" alt="ロゴ" width="240px" height="auto" />
+      <img class="header__logo--img" src="../../img/ZenSho-PAST.png" alt="ロゴ" width="240px" height="auto" />
     </a>
     <nav class="header__nav" id="header__nav">
       <ul>
@@ -102,9 +102,9 @@
     <div class="app-container">
       <div class="content-wrapper">
         <!-- Header Section -->
-        <header class="main-header">
-          <div class="header-content">
-            <h1 class="header-title reveal">
+        <header aria-labelledby="page-title" class="exam-hero main-header">
+          <div class="hero header-content">
+            <h1 class="header-title reveal" id="page-title">
               <span>第16回</span>
               <span>財務諸表分析</span>
             </h1>
@@ -127,15 +127,10 @@
           </div>
 
           <!-- Sidebar Buttons -->
-          <aside class="sidebar">
-            <button class="sidebar-button">過去問解説</button>
-            <button class="sidebar-button">論点別解説</button>
-            <button class="sidebar-button">検定紹介</button>
-          </aside>
         </header>
 
         <!-- Main Content -->
-        <main class="main-content">
+        <main class="main-content" id="main-content">
           <!-- General Instructions / Abbreviations -->
           <section class="instruction-section">
             <p>解説注に出てくる略語について：</p>
@@ -320,8 +315,9 @@
     </div>
   </div>
 
-  <footer class="site-footer">
+  <footer class="exam-footer site-footer" id="page-footer">
     <div class="footer-content">
+      <p class="footer-text">本解説は、公式問題等を参照して独自に作成した学習用コンテンツです。全国商業高等学校協会による公式解説・認定教材ではありません。</p>
       <p class="footer-text">&copy; 2026 全商関係hp. All Rights Reserved.</p>
     </div>
   </footer>

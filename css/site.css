@@ -2280,9 +2280,10 @@ html {
  * このCSSでは、試験解説ページ本体だけを .exam- で始まるクラスに限定して装飾する。
  */
 .exam-hero {
-  padding-top: 118px;
   border-bottom: 1px solid var(--exam-line);
   background: linear-gradient(135deg, #f8fbff 0%, #eef5ff 100%);
+  align-items: center;
+  padding-left: 20px;
 }
 
 .exam-hero .hero,
@@ -2294,7 +2295,7 @@ html {
 }
 
 .exam-hero .hero {
-  padding: 52px 0 44px;
+  padding-top: 30px;
 }
 
 .exam-hero .eyebrow {
@@ -2846,4 +2847,381 @@ html {
   border-radius: 0.5rem;
   background-color: #f2f2f2;
   font-style: normal;
+}
+
+/* 第152回：追従動画エリアとPC用ページ内目次 */
+.exam-learning-page .exam-learning-aside {
+  color: var(--exam-ink);
+  line-height: 1.55;
+}
+
+.exam-learning-page .exam-video-panel,
+.exam-learning-page .exam-desktop-toc {
+  overflow: hidden;
+  border: 1px solid var(--exam-line);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(32, 36, 42, 0.08);
+}
+
+.exam-learning-page .exam-video-panel h2,
+.exam-learning-page .exam-desktop-toc h2 {
+  margin: 0;
+  padding: 12px 16px;
+  color: #fff;
+  background: var(--exam-accent-dark);
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.exam-learning-page .exam-video-placeholder,
+.exam-learning-page .exam-video-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.exam-learning-page .exam-video-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px;
+  border: 0;
+  background:
+    linear-gradient(135deg, rgba(35, 90, 159, 0.08), rgba(24, 69, 121, 0.16)),
+    #f6f9fd;
+  color: var(--exam-accent-dark);
+  text-align: left;
+}
+
+.exam-learning-page .exam-video-placeholder__icon {
+  display: grid;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--exam-accent);
+  font-size: 1.2rem;
+  line-height: 1;
+  text-indent: 3px;
+  box-shadow: 0 6px 16px rgba(35, 90, 159, 0.24);
+}
+
+.exam-learning-page .exam-video-placeholder__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.exam-learning-page .exam-video-placeholder__text strong {
+  font-size: 0.98rem;
+}
+
+.exam-learning-page .exam-video-placeholder__text > span {
+  color: var(--exam-muted);
+  font-size: 0.78rem;
+}
+
+.exam-learning-page .exam-video-frame {
+  display: block;
+  border: 0;
+  background: #111;
+}
+
+.exam-learning-page .exam-desktop-toc {
+  margin-top: 18px;
+}
+
+.exam-learning-page .exam-toc-overview,
+.exam-learning-page .exam-toc-questions {
+  margin: 0;
+  list-style: none;
+}
+
+.exam-learning-page .exam-toc-overview {
+  padding: 10px 12px 4px;
+}
+
+.exam-learning-page .exam-toc-overview li + li {
+  border-top: 1px solid var(--exam-line);
+}
+
+.exam-learning-page .exam-toc-overview a {
+  display: block;
+  padding: 8px 9px;
+  border-radius: 6px;
+  color: var(--exam-ink);
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: color 160ms ease, background-color 160ms ease;
+}
+
+.exam-learning-page .exam-toc-label {
+  margin: 8px 16px 6px;
+  color: var(--exam-muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.exam-learning-page .exam-toc-questions {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 6px;
+  padding: 0 12px 14px;
+}
+
+.exam-learning-page .exam-toc-questions a {
+  display: grid;
+  min-height: 34px;
+  place-items: center;
+  border: 1px solid var(--exam-line);
+  border-radius: 6px;
+  color: var(--exam-accent-dark);
+  background: var(--exam-soft);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: border-color 160ms ease, color 160ms ease, background-color 160ms ease;
+}
+
+.exam-learning-page .exam-toc-overview a:hover,
+.exam-learning-page .exam-toc-overview a:focus-visible,
+.exam-learning-page .exam-toc-overview a.is-current,
+.exam-learning-page .exam-toc-questions a:hover,
+.exam-learning-page .exam-toc-questions a:focus-visible,
+.exam-learning-page .exam-toc-questions a.is-current {
+  border-color: var(--exam-accent);
+  color: #fff;
+  background: var(--exam-accent);
+  outline: none;
+}
+
+.exam-learning-page #usage-title,
+.exam-learning-page #legend-title,
+.exam-learning-page #question-list,
+.exam-learning-page #answers,
+.exam-learning-page .problem[id] {
+  scroll-margin-top: 110px;
+}
+
+@media (min-width: 769px) {
+  .exam-learning-page .exam-learning-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
+    gap: 30px;
+    align-items: start;
+    width: 100%;
+  }
+
+  .exam-learning-page .exam-learning-layout > .exam-main {
+    width: 100%;
+    min-width: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .exam-learning-page .exam-learning-aside {
+    position: sticky;
+    top: 96px;
+    max-height: calc(100vh - 112px);
+    padding-right: 4px;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+  }
+}
+
+@media (max-width: 768px) {
+  .exam-learning-page .exam-learning-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .exam-learning-page .exam-learning-layout > .exam-main {
+    order: 2;
+  }
+
+  .exam-learning-page .exam-learning-aside {
+    position: sticky;
+    top: 78px;
+    z-index: 90;
+    order: 1;
+    width: min(100% - 20px, 1040px);
+    margin: 0 auto 14px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 8px 18px rgba(32, 36, 42, 0.1);
+    backdrop-filter: blur(8px);
+  }
+
+  .exam-learning-page .exam-video-panel {
+    border-radius: 9px;
+    box-shadow: none;
+  }
+
+  .exam-learning-page .exam-video-panel h2 {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .exam-learning-page .exam-video-placeholder,
+  .exam-learning-page .exam-video-frame {
+    height: min(20vh, 180px);
+    min-height: 128px;
+    aspect-ratio: auto;
+  }
+
+  .exam-learning-page .exam-video-placeholder {
+    padding: 12px;
+  }
+
+  .exam-learning-page .exam-video-placeholder__icon {
+    flex-basis: 40px;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .exam-learning-page .exam-desktop-toc {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .exam-learning-page .exam-video-placeholder__text > span {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .exam-learning-page .exam-toc-overview a,
+  .exam-learning-page .exam-toc-questions a {
+    transition: none;
+  }
+}
+
+/* 第101回 簿記実務検定 1級会計部門 */
+.bookkeeping-learning-page .exam-main {
+  gap: 0;
+}
+
+.bookkeeping-learning-page .bookkeeping-question-nav {
+  grid-template-columns: repeat(4, minmax(52px, 1fr));
+  max-width: 360px;
+}
+
+.bookkeeping-learning-page .abbreviation-section {
+  margin-top: 32px;
+  padding: 20px 22px;
+  border: 1px solid var(--exam-line);
+  border-radius: 10px;
+  background: var(--exam-soft);
+}
+
+.bookkeeping-learning-page .abbreviation-section .section-subtitle {
+  margin: 0 0 16px;
+  color: var(--exam-ink);
+  font-size: clamp(1.2rem, 2.6vw, 1.45rem);
+  line-height: 1.45;
+}
+
+.bookkeeping-learning-page .question-section {
+  margin-top: 32px;
+  padding: 24px;
+  border: 1px solid var(--exam-line);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(32, 36, 42, 0.07);
+}
+
+.bookkeeping-learning-page .question-main-title {
+  margin: 0 0 8px;
+  padding: 0 0 10px;
+  border: 0;
+  border-bottom: 3px solid var(--exam-accent);
+  color: var(--exam-ink);
+  background: transparent;
+}
+
+.bookkeeping-learning-page .question-main-title h2 {
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  line-height: 1.4;
+}
+
+.bookkeeping-learning-page .exam-toc-questions {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.bookkeeping-learning-page #question-list,
+.bookkeeping-learning-page #abbreviations,
+.bookkeeping-learning-page .question-section[id] {
+  scroll-margin-top: 110px;
+}
+
+@media (max-width: 768px) {
+  .bookkeeping-learning-page .abbreviation-section,
+  .bookkeeping-learning-page .question-section {
+    padding: 18px 15px;
+  }
+
+  .bookkeeping-learning-page .bookkeeping-question-nav {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    max-width: none;
+  }
+}
+
+/* 検定解説ページ共通ヘッダー／フッター */
+.exam-learning-page .exam-hero .hero {
+  width: auto;
+  min-width: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.exam-learning-page .exam-hero .header-meta {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--exam-line);
+}
+
+.exam-learning-page .exam-hero .sidebar {
+  flex: 0 0 16rem;
+}
+
+.exam-learning-page .exam-hero .sidebar-button {
+  display: block;
+  border: 1px solid var(--exam-line);
+  border-radius: 8px;
+  color: var(--exam-ink);
+  background: #fff;
+  text-decoration: none;
+}
+
+.exam-learning-page .exam-hero .sidebar-button:hover,
+.exam-learning-page .exam-hero .sidebar-button:focus-visible {
+  border-color: var(--exam-accent);
+  color: var(--exam-accent-dark);
+  background: var(--exam-accent-soft);
+  outline: none;
+}
+
+.exam-learning-page .exam-hero .sidebar-button.is-current {
+  border-color: var(--exam-accent);
+  color: #fff;
+  background: var(--exam-accent);
+}
+
+.exam-learning-page .exam-footer {
+  margin-top: 0;
+}
+
+@media (max-width: 767px) {
+  .exam-learning-page .exam-hero .sidebar {
+    flex-basis: auto;
+    width: 100%;
+  }
 }

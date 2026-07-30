@@ -12,7 +12,7 @@
 <body class="page-wrapper exam-learning-page" id="top">
   <header class="header">
     <a class="logo" href="../../index.html">
-      <img alt="ロゴ" class="header__logo--img" height="auto" src="../../img/index_logo 1.png" width="240px"/>
+      <img alt="ロゴ" class="header__logo--img" src="../../img/ZenSho-PAST.png"/>
     </a>
     <nav class="header__nav" id="header__nav">
       <ul>
@@ -99,16 +99,11 @@
         <header aria-labelledby="page-title" class="exam-hero main-header">
           <div class="hero header-content">
             <p class="eyebrow">全商検定 過去問解説</p>
-            <h1 class="header-title" id="page-title">第152回 ビジネス計算実務検定試験<br/>1級 ビジネス計算部門 解説</h1>
+            <h1 class="header-title" id="page-title">第152回 ビジネス計算実務検定試験<br/>１級 ビジネス計算部門 解説</h1>
             <p class="lead">令和8年6月21日施行。商業高校生が類題にも応用できる一般的な解法と、設問ごとの計算過程を説明します。</p>
           </div>
-          <aside aria-label="ページ内メニュー" class="sidebar">
-            <a class="sidebar-button is-current" href="../index.html">過去問解説</a>
-            <a class="sidebar-button" href="#question-list">設問一覧</a>
-            <a class="sidebar-button" href="#answers">正答一覧</a>
-          </aside>
         </header>
-        <section class="page">
+        <section class="page exam-learning-layout">
           <main class="exam-main main-content">
             <section aria-labelledby="usage-title" class="instruction-section reveal">
               <h2 id="usage-title">解答するときの注意</h2>
@@ -733,7 +728,56 @@
                 <p class="note">各期の積立金利息は円未満四捨五入です。丸めた金額を使って次の欄を計算します。</p>
                 <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>年末積立なので第1期の利息は0円です。第2期から前期末合計高に利率を掛けます。</p></aside><div class="answer">答え　第4期末の積立金合計高 ¥2,590,644（表は上記のとおり）</div>
               </section>
-            </main><aside aria-hidden="true" class="content-sidebar"></aside></section></div></div></div>
+            </main>
+            <aside aria-label="解説動画とページ内目次" class="exam-learning-aside">
+              <section aria-labelledby="exam-video-title" class="exam-video-panel">
+                <h2 id="exam-video-title">解説動画</h2>
+                <!-- 動画完成後、このプレースホルダーを .exam-video-frame の iframe に差し替えます。 -->
+                <div aria-label="解説動画は準備中です" class="exam-video-placeholder" role="img">
+                  <span aria-hidden="true" class="exam-video-placeholder__icon">▶</span>
+                  <span class="exam-video-placeholder__text">
+                    <strong>解説動画は準備中です</strong>
+                    <span>公開後、この場所で動画を視聴しながら解説を読めます。</span>
+                  </span>
+                </div>
+              </section>
+              <nav aria-labelledby="exam-toc-title" class="exam-desktop-toc">
+                <h2 id="exam-toc-title">このページの目次</h2>
+                <ul class="exam-toc-overview">
+                  <li><a href="#usage-title">解答するときの注意</a></li>
+                  <li><a href="#legend-title">解説の凡例</a></li>
+                  <li><a href="#question-list">設問一覧</a></li>
+                  <li><a href="#answers">正答一覧</a></li>
+                </ul>
+                <p class="exam-toc-label">問題別解説</p>
+                <ol class="exam-toc-questions">
+                  <li><a href="#q1">1</a></li>
+                  <li><a href="#q2">2</a></li>
+                  <li><a href="#q3">3</a></li>
+                  <li><a href="#q4">4</a></li>
+                  <li><a href="#q5">5</a></li>
+                  <li><a href="#q6">6</a></li>
+                  <li><a href="#q7">7</a></li>
+                  <li><a href="#q8">8</a></li>
+                  <li><a href="#q9">9</a></li>
+                  <li><a href="#q10">10</a></li>
+                  <li><a href="#q11">11</a></li>
+                  <li><a href="#q12">12</a></li>
+                  <li><a href="#q13">13</a></li>
+                  <li><a href="#q14">14</a></li>
+                  <li><a href="#q15">15</a></li>
+                  <li><a href="#q16">16</a></li>
+                  <li><a href="#q17">17</a></li>
+                  <li><a href="#q18">18</a></li>
+                  <li><a href="#q19">19</a></li>
+                  <li><a href="#q20">20</a></li>
+                </ol>
+              </nav>
+            </aside>
+          </section>
+        </div>
+      </div>
+    </div>
             <button aria-label="ページ上部へ戻る" class="page-top-button" id="pageTopButton" title="ページ上部へ戻る" type="button">
               <svg aria-hidden="true" height="24" viewbox="0 0 24 24" width="24">
                 <path d="M6 15l6-6 6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"></path>
@@ -764,6 +808,52 @@
                 window.addEventListener('scroll', updateTopButton, { passive: true });
                 updateTopButton();
               }
+
+              const tocLinks = Array.from(document.querySelectorAll('.exam-desktop-toc a[href^="#"]'));
+              const tocTargets = tocLinks
+                .map((link) => ({
+                  link,
+                  target: document.querySelector(link.getAttribute('href'))
+                }))
+                .filter((item) => item.target);
+              let tocUpdatePending = false;
+
+              const updateCurrentTocItem = () => {
+                if (!tocTargets.length) {
+                  return;
+                }
+
+                let currentItem = tocTargets[0];
+                const headerOffset = 180;
+
+                tocTargets.forEach((item) => {
+                  if (item.target.getBoundingClientRect().top <= headerOffset) {
+                    currentItem = item;
+                  }
+                });
+
+                tocTargets.forEach((item) => {
+                  const isCurrent = item === currentItem;
+                  item.link.classList.toggle('is-current', isCurrent);
+                  if (isCurrent) {
+                    item.link.setAttribute('aria-current', 'location');
+                  } else {
+                    item.link.removeAttribute('aria-current');
+                  }
+                });
+                tocUpdatePending = false;
+              };
+
+              const requestTocUpdate = () => {
+                if (!tocUpdatePending) {
+                  tocUpdatePending = true;
+                  window.requestAnimationFrame(updateCurrentTocItem);
+                }
+              };
+
+              window.addEventListener('scroll', requestTocUpdate, { passive: true });
+              window.addEventListener('resize', requestTocUpdate);
+              updateCurrentTocItem();
 
               if ('IntersectionObserver' in window) {
                 const observer = new IntersectionObserver((entries) => {

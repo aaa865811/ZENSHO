@@ -11,7 +11,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: rgb(255 255 255);
+  background-color: #eefff1;
   top: 0;
   position: fixed;
   z-index: 1000;
@@ -22,6 +22,34 @@
 
 .logo {
   margin-left: 20px;
+}
+
+/* PC用ロゴの表示枠 */
+.header>.logo {
+  flex: 0 0 400px;
+  width: 400px;
+  height: 70px;
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+/* 枠からはみ出す部分を切り、中央を表示 */
+.header>.logo .header__logo--img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* ナビゲーションが狭い画面に収まりやすいようにする */
+.header>.header__nav {
+  min-width: 0;
+}
+
+.header>.header__nav ul {
+  gap: clamp(18px, 3vw, 42px);
+  margin-right: clamp(20px, 4vw, 60px);
 }
 
 .header__nav ul {
@@ -227,6 +255,37 @@
   }
   .mainvisual h1 {
     font-size: 2rem;
+  }
+}
+
+/*
+ * 全ページ共通フッター
+ * 第152回ビジネス計算ページの体裁を、site.cssを読み込まないページにも適用する。
+ */
+.exam-footer {
+  margin-top: 0;
+  padding: 28px 0 48px;
+  border-top: 1px solid var(--exam-line, #d8dee8);
+  color: var(--exam-muted, #667085);
+  background: #fff;
+  font-family: "BIZ UDGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.exam-footer .footer-content {
+  width: min(1040px, calc(100% - 32px));
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.exam-footer .footer-text {
+  margin: 0.3rem 0;
+}
+
+@media (max-width: 760px) {
+  .exam-footer .footer-content {
+    width: min(100% - 20px, 1040px);
   }
 }
 
