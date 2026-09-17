@@ -3102,6 +3102,10 @@ html {
   }
 }
 
+.official-question__space ol{
+  list-style-type: none;
+}
+
 /* 第101回 簿記実務検定 1級会計部門 */
 .bookkeeping-learning-page .exam-main {
   gap: 0;
@@ -3225,3 +3229,89 @@ html {
     width: 100%;
   }
 }
+
+/* =========================================================
+   解説動画：表示／非表示切り替え
+   - PC：初期表示（JS側）
+   - スマホ：初期非表示（JS側）
+   - 利用者の選択は localStorage に保存
+   ========================================================= */
+.exam-learning-page .exam-video-panel__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.exam-learning-page .exam-video-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex: 0 0 auto;
+  min-height: 32px;
+  padding: 5px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  border-radius: 999px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.exam-learning-page .exam-video-toggle:hover,
+.exam-learning-page .exam-video-toggle:focus-visible {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.24);
+  outline: none;
+}
+
+.exam-learning-page .exam-video-toggle__icon {
+  display: inline-block;
+  font-size: 0.88rem;
+  transform: rotate(0deg);
+  transition: transform 160ms ease;
+}
+
+.exam-learning-page .exam-video-body {
+  display: block;
+}
+
+.exam-learning-page .exam-video-panel.is-collapsed .exam-video-body {
+  display: none;
+}
+
+.exam-learning-page .exam-video-panel.is-collapsed .exam-video-toggle__icon {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .exam-learning-page .exam-video-panel__heading {
+    padding: 7px 9px;
+  }
+
+  .exam-learning-page .exam-video-toggle {
+    min-height: 30px;
+    padding: 4px 9px;
+    font-size: 0.75rem;
+  }
+
+  .exam-learning-page .exam-video-panel.is-collapsed {
+    box-shadow: none;
+  }
+
+  .exam-learning-page .exam-video-panel.is-collapsed .exam-video-panel__heading {
+    margin: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .exam-learning-page .exam-video-toggle,
+  .exam-learning-page .exam-video-toggle__icon {
+    transition: none;
+  }
+}
+
