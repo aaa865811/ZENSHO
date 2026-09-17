@@ -1,18 +1,18 @@
 <!DOCTYPE html>
+
 <html lang="ja">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>第16回 財務諸表分析 解説</title>
-  <link rel="stylesheet" href="../../css/site.css" />
-  <link rel="stylesheet" href="../../css/header.css" />
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="第16回（令和6年度）全商 財務諸表分析検定試験。公式問題・審査基準を参照し、収益性・安全性・成長性の分析指標と株式投資指標の算式、代入値、計算過程、注意点まで説明する学習用解説。" name="description"/>
+  <title>第16回 財務諸表分析検定試験 解説</title>
+  <link href="../../css/site.css" rel="stylesheet"/>
+  <link href="../../css/header.css" rel="stylesheet"/>
 </head>
-
 <body class="page-wrapper exam-learning-page" id="top">
   <header class="header">
-    <a href="../../index.html" class="logo">
-      <img class="header__logo--img" src="../../img/ZenSho-PAST.png" alt="ロゴ" width="240px" height="auto" />
+    <a class="logo" href="../../index.html">
+      <img alt="ロゴ" class="header__logo--img" src="../../img/ZenSho-PAST.png"/>
     </a>
     <nav class="header__nav" id="header__nav">
       <ul>
@@ -49,13 +49,9 @@
       </ul>
     </nav>
   </header>
-
-  <!--
-  レスポンシブ
-  -->
   <header class="header__res">
-    <a href="../../index.html" class="logo">
-      <img class="header__logo--img" src="../../img/index_logo 1.png" alt="ロゴ" width="auto" height="auto" />
+    <a class="logo" href="../../index.html">
+      <img alt="ロゴ" class="header__logo--img" height="auto" src="../../img/index_logo 1.png" width="auto"/>
     </a>
     <nav class="header__nav">
       <ul class="heder__nav--list">
@@ -97,260 +93,645 @@
       <div class="line3"></div>
     </div>
   </header>
-
   <div id="root">
     <div class="app-container">
       <div class="content-wrapper">
-        <!-- Header Section -->
         <header aria-labelledby="page-title" class="exam-hero main-header">
           <div class="hero header-content">
-            <h1 class="header-title reveal" id="page-title">
-              <span>第16回</span>
-              <span>財務諸表分析</span>
-            </h1>
-            <div class="header-meta">
-              <p>第16回（令和６年12月8日施行）</p>
-              <p>全商財務諸表分析検定試験　解説</p>
-              <p style="padding-top: 0.5rem;">問題の出典</p>
-              <p>全国商業高等学校協会主催 第16回 財務諸表分析検定試験</p>
-              <a href="https://zensho.or.jp/puf/download/exam/pastexam/2024/ac_16_bunseki_exa.pdf" target="_blank"
-                rel="noopener noreferrer">
-                https://zensho.or.jp/puf/download/exam/pastexam/2024/ac_16_bunseki_exa.pdf
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M15 3h6v6" />
-                  <path d="M10 14 21 3" />
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                </svg>
-              </a>
-            </div>
+            <p class="eyebrow">全商検定 過去問解説</p>
+            <h1 class="header-title" id="page-title">第16回 財務諸表分析検定試験<br/>解説</h1>
+            <p class="lead">令和6年12月8日施行。各分析指標について、名称・算式・代入値・計算結果の順に示し、類題にも応用できる考え方と設問ごとの判断過程を説明します。</p>
           </div>
-
-          <!-- Sidebar Buttons -->
         </header>
-
-        <!-- Main Content -->
-        <main class="main-content" id="main-content">
-          <!-- General Instructions / Abbreviations -->
-          <section class="instruction-section">
-            <p>解説注に出てくる略語について：</p>
-            <div class="table-container">
-              <table class="data-table">
-                <thead>
-                  <tr class="table-header-row">
-                    <th class="table-cell table-cell-header">略語</th>
-                    <th class="table-cell table-cell-header">正式名称</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="table-cell table-cell-label">B/S</td>
-                    <td class="table-cell table-cell-left">貸借対照表</td>
-                  </tr>
-                  <tr>
-                    <td class="table-cell table-cell-label">P/L</td>
-                    <td class="table-cell table-cell-left">損益計算書</td>
-                  </tr>
-                  <tr>
-                    <td class="table-cell table-cell-label">C/F</td>
-                    <td class="table-cell table-cell-left">キャッシュフロー（計算書）</td>
-                  </tr>
-                  <tr>
-                    <td class="table-cell table-cell-label">F/S</td>
-                    <td class="table-cell table-cell-left">財務諸表</td>
-                  </tr>
-                  <tr>
-                    <td class="table-cell table-cell-label">(前・後) T/B</td>
-                    <td class="table-cell table-cell-left">(決算整理前・後) 残高試算表</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="instruction-note">また、各問題に予想配点を付してある（全商協会は配点を公表していないため、受験結果と異なる場合がある）</p>
-          </section>
-
-          <!-- Question Section [1] -->
-          <section class="question-section reveal">
-            <div class="question-title-container">
-              <h3 class="question-title">【1】予想配点：８点</h3>
-            </div>
-            <div class="question-disclaimer">
-              表示の都合上、試験問題文で太字下線となっている部分は、ダブルクォーテーションで括って表記をしている。
-            </div>
-
-            <!-- Subsection (1) -->
-            <div class="subsection">
-              <div class="question-header">
-                <span>(1) 予想配点：２点</span>
-              </div>
-              <div class="question-box">
-                他の要素と関連づけて分析する（財務諸表のさまざまな数値や金額の割合を用いる）方法を“趨勢”分析という。
-              </div>
-
-              <div class="formula-box">
-                <p class="formula-title">用語解説</p>
-                <p class="formula-text">趨勢（すうせい）＝ あるものの動き、勢い</p>
-              </div>
-
-              <div class="explanation-text">
-                <p>趨勢分析とは、ある時点を基準にして、成長度合をはかる手法です。</p>
-                <p>問題文は<span class="bold underline-accent">比率分析</span>の説明をしています。</p>
-
-                <div class="step-box">
-                  <h4 class="step-title">ポイント</h4>
-                  <p>「関連づけて分析する」「割合を用いる」というキーワードは比率分析の特徴です。</p>
+        <section class="page exam-learning-layout">
+          <main class="exam-main main-content">
+            <section aria-labelledby="usage-title" class="instruction-section reveal">
+              <h2 id="usage-title">解答するときの注意</h2>
+              <p>％・回・日は「小数点第2位を四捨五入し、第1位まで」が原則です。小数第1位が0でも「9.0％」のように書きます。マイナスは数値の前に「△」を付けます。</p>
+              <p>安全性指標（流動比率・負債比率・固定長期適合率）は期末値で計算し、回転率・回転期間は期首・期末の<strong>平均有高</strong>を使います。問題文の「留意事項」に指標の定義（売上債権の範囲、年間営業日数など）が示されているときは、その定義を最優先します。</p>
+            </section>
+            <section aria-labelledby="legend-title" class="legend-section reveal">
+              <h2 id="legend-title">解説の凡例</h2>
+              <p class="legend-intro">すべての問題で、次の表示を共通して使用します。</p>
+              <div class="legend-grid">
+                <div class="legend-card">
+                  <strong>問題文</strong>
+                  <p>各設問の問題文・資料を示します。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>一般的な解法</strong>
+                  <p>同じ指標・論点の問題に共通して使える算式と判断手順です。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>計算・判断</strong>
+                  <p>この問題の数値を当てはめ、代入値と途中結果を省略せず示します。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>注意点</strong>
+                  <p>期末値と平均値の使い分け、指標の定義、端数処理、単位などの失点しやすい箇所です。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>正答</strong>
+                  <p>公式の審査基準に基づく最終的な解答です。</p>
                 </div>
               </div>
-
-              <div class="final-answer-container reveal-delay">
-                <p class="final-answer">
-                  答え　比率
-                </p>
-              </div>
+            </section>
+            <div class="source-box">
+              <p><strong>出典：</strong>公益財団法人 全国商業高等学校協会主催 令和6年度 第16回 財務諸表分析検定試験（2024年12月8日実施）</p>
+              <a href="https://zensho.or.jp/puf/download/exam/pastexam/2024/ac_16_bunseki_exa.pdf" target="_blank" rel="noopener noreferrer" class="text-link">問題PDF　　　</a>
+              <a href="https://zensho.or.jp/puf/download/exam/pastexam/2024/ac_16_bunseki_yousi.pdf" target="_blank" rel="noopener noreferrer" class="text-link">解答用紙PDF　　　</a>
+              <a href="https://zensho.or.jp/puf/download/exam/pastexam/2024/ac_16_bunseki_ans.pdf" target="_blank" rel="noopener noreferrer" class="text-link">解答PDF　　　</a>
+              <p class="source-note">本記事は全商協会による公式解説ではありません。</p>
             </div>
+            <h2 id="question-list">設問一覧</h2>
+            <nav aria-label="設問へのリンク" class="question-nav">
+              <a href="#q1">1</a>
+              <a href="#q2">2</a>
+              <a href="#q3">3</a>
+              <a href="#q4">4</a>
+              <a href="#q5">5</a>
+            </nav>
+            <h2 id="answers">正答一覧</h2>
+            <div aria-label="表（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+              <table class="summary-table">
+                <thead>
+                  <tr><th>番号</th><th>主な論点</th><th>正答</th></tr></thead>
+                  <tbody>
+                    <tr><td>1</td><td>用語の正誤</td><td>⑴ 比率　⑵ 親会社　⑶ 〇　⑷ 資産負債　⑸ 〇</td></tr>
+                    <tr><td>2 問1</td><td>対前年度比と売上高予測</td><td>(1) カ (2) オ (3) キ (4) コ (5) ス (6) サ</td></tr>
+                    <tr><td>2 問2</td><td>売上高利益率</td><td>(ａ) 35.6％ (ｂ) 64.4％ (ｃ) 23.6％ (ｄ) 40.8％</td></tr>
+                    <tr><td>2 問3</td><td>経営成績の判断</td><td>① イ ② ア ③ ア ④ ア</td></tr>
+                    <tr><td>3 問1</td><td>安全性指標</td><td>① 160.4％ ② 61.3％ ③ 87.8％ ④ 97.1％ ⑤ 718.1％ ⑥ 3,347.7％ ⑦ 67.9％ ⑧ 1,161.1％ ⑨ 0.5％ ⑩ 0.6％ ⑪ △5.8％ ⑫ △1.5％</td></tr>
+                    <tr><td>3 問2</td><td>安全性の考察（選択）</td><td>(1) キ (2) タ (3) ケ (4) サ (5) セ (6) ソ (7) ソ (8) ア (9) エ (10) テ</td></tr>
+                    <tr><td>3 問3〜5</td><td>棚卸資産回転率・固定長期適合率の要因・改善策の効果</td><td>問3 Ⅰ ア Ⅱ イ Ⅲ ア Ⅳ ア Ⅴ イ Ⅵ ア　問4 ウ　問5 46.8％</td></tr>
+                    <tr><td>4</td><td>成長企業の分析</td><td>① イ ② ク ③ ツ ④ ス ⑤ キ ⑥ サ ⑦ ケ ⑧ ソ</td></tr>
+                    <tr><td>5 問1</td><td>1株当たり指標・ＲＯＥ</td><td>(1) 922.1円 (2) 80.0円 (3) 70.4円 (4) 7.6％</td></tr>
+                    <tr><td>5 問2</td><td>配当利回り・配当性向・ＰＢＲ・ＰＥＲ</td><td>ａ 1.7％ ｂ 113.6％ ｃ 5.0倍 ｄ 66.0倍　① ア ② ウ ③ イ ④ イ ⑤ エ ⑥ ア</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <h2 id="explanations">設問別解説</h2>
 
-            <!-- Subsection (2) -->
-            <div class="subsection subsection-mt-large">
-              <div class="question-header">
-                <span>(2) 予想配点：２点</span>
-              </div>
-              <div class="question-box">
-                “連単倍率”は， 子会社 の個別財務諸表に対する連結財務諸表の数値の割合を比較する倍率である。
-              </div>
+              <section class="problem question-section reveal" id="q1">
+                <div class="problem-head">
+                  <span class="number">1</span>
+                  <h3>財務諸表分析の基本用語の正誤を判断する</h3>
+                </div>
 
-              <div class="explanation-text">
-                <p>
-                  連単倍率とは、「連」結決算と親会社「単」体の決算を比較して、子会社・関連会社がグループ全体に与える影響をみる指標。（つまり、<span
-                    class="underline">親会社の個別指標に対する</span>連結財務諸表の数値の割合を比較する）
-                </p>
-                <p>連単倍率 ＝ 連結純利益 ÷ 親会社単体利益</p>
-                <p>１倍を下回る→子会社は赤字である。</p>
-              </div>
+                <!-- BEGIN OFFICIAL QUESTION 1 -->
+                <section aria-labelledby="q1-official-question-title" class="official-question official-question--placeholder">
+                  <div class="official-question__header">
+                    <h4 id="q1-official-question-title">問題文</h4>
+                  </div>
+                  <blockquote class="official-question__body">
+                    <!-- 第1問の問題文欄 -->
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>次の⑴～⑸について，下線部が正しいときは〇を記入し，誤っているときは訂正しなさい。ただし，正しいものを訂正した場合は誤答とし，すべてに〇を記入した場合は5問全部を無効とする。</p>
+<ol>
+<li>⑴　他の要素と関連づけて分析する（財務諸表のさまざまな数値や金額の割合を用いる）方法を<u>趨勢分析</u>という。</li>
+<li>⑵　連単倍率は，<u>子会社</u>の個別財務諸表に対する連結財務諸表の数値の割合を比較する倍率である。</li>
+<li>⑶　当座資産を「現金預金＋受取手形＋売掛金＋有価証券」と定義するならば，当座比率の数値は必ず流動比率の数値<u>以下</u>になる。</li>
+<li>⑷　「資産－負債＝純資産」という，純資産を計算する会計学上の見方を<u>収益費用</u>アプローチという。</li>
+<li>⑸　ＲＯＡとは，<u>Return On Assets</u>の英語表記の略語である。</li>
+</ol>
+                    </div>
+                  </blockquote>
+                </section>
+                <!-- END OFFICIAL QUESTION 1 -->
+                <section aria-label="問題1の一般的な解法" class="general-method">
+                  <h4>一般的な解法</h4>
+                  <p class="method-title">用語の正誤判定問題</p>
+                  <ol><li>分析方法の名称は「何と何を比べるか」で区別する：実数分析／比率分析、趨勢分析（時系列）、比較分析（他社）。</li><li>倍率・比率は分子と分母が何かを思い出す。連単倍率 ＝ 連結の数値 ÷ 親会社個別の数値。</li><li>誤りなら下線部を置き換える正しい語句だけを書く。正しいものを訂正すると誤答になる。</li></ol>
+                </section>
+<p class="point">⑴ 数値や金額の割合（比率）を用いて他の要素と関連づける方法は<strong>比率分析</strong>です。趨勢分析は基準年度を100とした時系列の比較なので誤りです。→ 比率</p>
+<p class="point">⑵ 連単倍率は、<strong>親会社</strong>の個別財務諸表に対する連結財務諸表の数値の割合です。→ 親会社</p>
+<p class="point">⑶ 当座資産は流動資産の一部（棚卸資産などを除いたもの）なので、当座比率は流動比率以下になります。正しいので〇です。</p>
+<p class="point">⑷ 「資産 － 負債 ＝ 純資産」と、資産・負債から純資産（利益）をとらえる見方は<strong>資産負債</strong>アプローチです。収益費用アプローチは収益と費用の差額で利益をとらえる見方です。→ 資産負債</p>
+<p class="point">⑸ ＲＯＡは Return On Assets（総資産利益率）の略です。正しいので〇です。</p>
+                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>⑴は「時系列」なら趨勢分析、「割合」なら比率分析という言い換えに気づけるかがポイントです。⑵は連単倍率が親会社と連結を比べる指標であることを確認しましょう。⑷は「資産負債アプローチ／収益費用アプローチ」のどちらが貸借対照表を重視する見方かを問う頻出論点です。</p></aside><div class="answer">答え　⑴ 比率　⑵ 親会社　⑶ 〇　⑷ 資産負債　⑸ 〇</div>
+              </section>
 
-              <div class="final-answer-container reveal-delay">
-                <p class="final-answer">
-                  答え　親会社
-                </p>
-              </div>
-            </div>
+              <section class="problem question-section reveal" id="q2">
+                <div class="problem-head">
+                  <span class="number">2</span>
+                  <h3>対前年度比から売上高を予測し，売上高利益率の推移を分析する</h3>
+                </div>
 
-            <!-- Subsection (3) -->
-            <div class="subsection subsection-mt-large">
-              <div class="question-header">
-                <span>(3) 予想配点：１点</span>
-              </div>
-              <div class="question-box">
-                当座資産を「現金預金＋受取手形＋売掛金＋有価証券」と定義するならば，当座比率の数値は必ず流動比率の数値“以下”になる。
-              </div>
+                <!-- BEGIN OFFICIAL QUESTION 2 -->
+                <section aria-labelledby="q2-official-question-title" class="official-question official-question--placeholder">
+                  <div class="official-question__header">
+                    <h4 id="q2-official-question-title">問題文</h4>
+                  </div>
+                  <blockquote class="official-question__body">
+                    <!-- 第2問の問題文欄 -->
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>食品販売を展開しているＡ社の下記の〈資料1〉・〈資料2〉は，要約損益計算書・分析指標を第×1年度から第×4年度と第×5年度見込までのものを示したものである。これらをもとに，次の設問に答えなさい。なお，計算上端数が生じた場合，金額は百万円未満を四捨五入する。％は小数点第2位を四捨五入し，第1位まで解答すること。ただし，小数点第1位の数値がないときは，例えば，9.0％のように解答すること。</p>
+<div aria-label="資料1 要約損益計算書（単位：百万円）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>要約損益計算書</th><th>第×1年度</th><th>第×2年度</th><th>第×3年度</th><th>第×4年度</th><th>第×5年度見込</th></tr></thead><tbody>
+<tr><td>売上高</td><td>4,560</td><td>4,870</td><td>5,110</td><td>5,320</td><td>（？）</td></tr>
+<tr><td>売上原価</td><td>1,365</td><td>1,464</td><td>1,850</td><td>1,896</td><td>1,668</td></tr>
+<tr><td>売上総利益</td><td>3,195</td><td>3,406</td><td>3,260</td><td>3,424</td><td>（？）</td></tr>
+<tr><td>販売費及び一般管理費</td><td>1,002</td><td>1,142</td><td>1,187</td><td>1,254</td><td>1,352</td></tr>
+<tr><td>営業利益</td><td>2,193</td><td>2,264</td><td>2,073</td><td>2,170</td><td>（？）</td></tr>
+</tbody></table></div>
+<div aria-label="資料2 分析指標" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>分析指標</th><th>第×1年度</th><th>第×2年度</th><th>第×3年度</th><th>第×4年度</th><th>第×5年度見込</th></tr></thead><tbody>
+<tr><td>売上高売上原価率</td><td>29.9％</td><td>30.1％</td><td>36.2％</td><td>（ａ）％</td><td>（？）％</td></tr>
+<tr><td>売上高売上総利益率</td><td>70.1％</td><td>69.9％</td><td>63.8％</td><td>（ｂ）％</td><td>（？）％</td></tr>
+<tr><td>売上高販売費及び一般管理費率</td><td>22.0％</td><td>23.4％</td><td>23.2％</td><td>（ｃ）％</td><td>（？）％</td></tr>
+<tr><td>売上高営業利益率</td><td>48.1％</td><td>46.5％</td><td>40.6％</td><td>（ｄ）％</td><td>（？）％</td></tr>
+</tbody></table></div>
+<p><strong>問1</strong>　次の文章の（1）から（6）にあてはまる数値や語句を〔解答群〕から選び，記号で答えなさい。</p>
+<p>〈資料1〉要約損益計算書により，Ａ社は，売上高の実績にもとづいて第×5年度の予測を行った。そこで過去4年間の売上高の実績における対前年度比の平均をもとに求めることにした。各年度の対前年度比は，第×2年度が（？）％・第×3年度が（1）％・第×4年度が（2）％である。対前年度比の平均を求めると第×5年度は（3）％である。この比率を使うと第×5年度の売上高（見込）は（4）百万円となる。</p>
+<p>他方，Ａ社の第×3年度の売上高が増加したにもかかわらず，売上高売上総利益率が低下している。原因は売上原価の伸び率が，売上高の伸び率よりも（5）からである。その原因として，仕入価額や仕入れに要した運送料・保険料・荷造費などの（6）が考えられる。</p>
+<p>〔解答群〕ア．93.6　イ．95.0　ウ．95.3　エ．96.1　オ．104.1　カ．104.9　キ．105.3　ク．106.8　ケ．5,054　コ．5,602　サ．上昇　シ．下落　ス．大きい　セ．小さい</p>
+<p><strong>問2</strong>　〈資料1〉要約損益計算書をもとに〈資料2〉分析指標の第×4年度の（ａ）から（ｄ）にあてはまる数値を計算しなさい。</p>
+<p><strong>問3</strong>　文章中の①から④の【　】欄について，適切な語句を記号で選びなさい。</p>
+<p>第×5年度の予測からＡ社の経営成績のよしあしが判断される。〈資料2〉分析指標により，第×4年度の実績と比較し比率を分析したところ，売上高売上原価率は①【ア．増加　イ．減少】し，売上高販売費及び一般管理費率は②【ア．増加　イ．減少】している。そこで，③【ア．本業　イ．本業以外】で儲けた利益である営業利益を含んだ売上高営業利益率を比較し分析した結果，Ａ社は業績が④【ア．改善　イ．悪化】していると判断される。</p>
+                    </div>
+                  </blockquote>
+                </section>
+                <!-- END OFFICIAL QUESTION 2 -->
+                <section aria-label="問題2の一般的な解法" class="general-method">
+                  <h4>一般的な解法</h4>
+                  <p class="method-title">対前年度比による予測と売上高利益率の分析</p>
+                  <ol><li>対前年度比 ＝ 当年度売上高 ÷ 前年度売上高 × 100。複数年の平均伸び率で翌年度を予測する：予測売上高 ＝ 当年度売上高 × 平均対前年度比。</li><li>売上高○○率 ＝ ○○ ÷ 売上高 × 100。原価率 ＋ 売上総利益率 ＝ 100％、売上総利益率 － 販管費率 ＝ 営業利益率 の関係で検算できる。</li><li>利益率の低下は「費用の伸び率 ＞ 売上高の伸び率」が原因。どの費用が伸びたかを損益計算書の行で特定する。</li></ol>
+                </section>
+<p class="point"><strong>問1</strong>　対前年度比を各年度で計算します。</p>
+<div class="formula">第×2年度：4,870 ÷ 4,560 × 100 = 106.8％<br/>（1）第×3年度：5,110 ÷ 4,870 × 100 = 104.92… → 104.9％ → カ<br/>（2）第×4年度：5,320 ÷ 5,110 × 100 = 104.10… → 104.1％ → オ<br/>（3）平均：(106.8 ＋ 104.9 ＋ 104.1) ÷ 3 = 105.26… → 105.3％ → キ<br/>（4）第×5年度売上高（見込）：5,320 × 1.053 = 5,601.96 → 5,602百万円 → コ</div>
+<p class="point">第×3年度は売上高が 4,870 → 5,110（＋4.9％）なのに対し、売上原価は 1,464 → 1,850（＋26.4％）と大きく伸びています。原価の伸び率が売上高の伸び率より<strong>大きい</strong>（5：ス）ので売上総利益率が低下しました。原因として仕入価額や仕入諸掛の<strong>上昇</strong>（6：サ）が考えられます。</p>
+<p class="point"><strong>問2</strong>　第×4年度の売上高 5,320 を分母にします。</p>
+<div class="formula">（ａ）売上高売上原価率：1,896 ÷ 5,320 × 100 = 35.63… → 35.6％<br/>（ｂ）売上高売上総利益率：3,424 ÷ 5,320 × 100 = 64.36… → 64.4％（100 － 35.6 = 64.4 ✓）<br/>（ｃ）売上高販売費及び一般管理費率：1,254 ÷ 5,320 × 100 = 23.57… → 23.6％<br/>（ｄ）売上高営業利益率：2,170 ÷ 5,320 × 100 = 40.78… → 40.8％（64.4 － 23.6 = 40.8 ✓）</div>
+<p class="point"><strong>問3</strong>　第×5年度見込の指標を計算して第×4年度と比べます。売上高 5,602、売上総利益 5,602 － 1,668 ＝ 3,934、営業利益 3,934 － 1,352 ＝ 2,582 です。</p>
+<div class="formula">売上高売上原価率：1,668 ÷ 5,602 × 100 = 29.8％（35.6％ → 29.8％：① 減少 → イ）<br/>売上高販売費及び一般管理費率：1,352 ÷ 5,602 × 100 = 24.1％（23.6％ → 24.1％：② 増加 → ア）<br/>③ 営業利益は本業で儲けた利益 → ア<br/>売上高営業利益率：2,582 ÷ 5,602 × 100 = 46.1％（40.8％ → 46.1％：④ 改善 → ア）</div>
+                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>（3）の平均は3つの対前年度比を平均します（第×1年度は前年がないので含めません）。（4）は 5,320 × 105.3％ で、5,110 を使わないよう注意しましょう。問3は第×5年度見込の売上高を問1で求めた 5,602 で計算する必要があり、問1を間違えると連動して誤答になります。</p></aside><div class="answer">答え　問1 (1) カ (2) オ (3) キ (4) コ (5) ス (6) サ　問2 (ａ) 35.6％ (ｂ) 64.4％ (ｃ) 23.6％ (ｄ) 40.8％　問3 ① イ ② ア ③ ア ④ ア</div>
+              </section>
 
-              <div class="formula-box">
-                <p class="formula-text">当座比率 ＝ 当座資産 ÷ 流動負債</p>
-                <p class="formula-text">流動比率 ＝ 流動資産 ÷ 流動負債</p>
-              </div>
+              <section class="problem question-section reveal" id="q3">
+                <div class="problem-head">
+                  <span class="number">3</span>
+                  <h3>安全性指標を計算し，債務超過に近い企業の財政状態を分析する</h3>
+                </div>
 
-              <div class="explanation-text">
-                <p>割り算において、割るものが一緒なら、割られるものの数値が小さければ、値も小さくなる。</p>
-                <p>
-                  流動資産は当座資産に入らないものも含まれるから、当座資産の値は流動資産以下となる。（当座資産＝流動資産となる場合もある）
-                </p>
-                <p>よって、当座比率 ≦ 流動比率 であるため、問題文は正しい。</p>
-              </div>
+                <!-- BEGIN OFFICIAL QUESTION 3 -->
+                <section aria-labelledby="q3-official-question-title" class="official-question official-question--placeholder">
+                  <div class="official-question__header">
+                    <h4 id="q3-official-question-title">問題文</h4>
+                  </div>
+                  <blockquote class="official-question__body">
+                    <!-- 第3問の問題文欄 -->
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>〈資料〉に示したグラフおよび財務諸表により，次の問1から問5に答えなさい。なお，解答にあたっては以下の事項に留意すること。</p>
+<ol>
+<li>各分析指標の数値は，算出結果のみを解答すること。（計算式は不要）</li>
+<li>各分析指標の数値は，％または回および日の小数点第2位を四捨五入し，第1位まで解答すること。ただし，小数点第1位の数値がないときは，例えば，9.0％のように解答すること。</li>
+<li>マイナスの場合には，数値の前に「△」をつけること。例えばマイナス5.3％の場合は「△5.3％」と解答すること。</li>
+<li>棚卸資産回転率は，売上高を用いて計算すること。</li>
+<li>棚卸資産平均回転期間は，棚卸資産平均有高を1日平均売上高で除して計算すること。</li>
+<li>年間営業日は，365日で計算すること。</li>
+<li>売上債権は，売掛金＋電子記録債権－貸倒引当金で計算すること。</li>
+</ol>
+<p><strong>問1</strong>　アパレルファッション製造販売Ａ社の×4年（前期）および×5年（当期）の安全性に関する次のａからｆの分析指標を求め，〈資料〉に示したグラフの①から⑫に入る数値を答えなさい。<br/>ａ 流動比率　ｂ 総資産負債比率　ｃ 純資産負債比率　ｄ 固定長期適合率（その他の包括利益累計額は含まない）　ｅ 売上高支払利息比率　ｆ 売上高営業キャッシュ・フロー比率</p>
+<p><strong>問2</strong>　次のＡ社の概要と安全性について考察した文章中の（1）から（10）に，適切な語句・分析指標名・数値を［解答群］から記号を選び答えなさい。なお，同じ記号を2回以上用いてもよい。</p>
+<p>バッグやジュエリーを主力商品とするアパレルファッション製造販売のＡ社は，20代の若い女性をターゲットに急成長を続けたが，10年程前より人気にかげりが見え始め，近年は苦戦が続いている。そこに新型コロナウイルス感染症の影響も受け，×2年には大手ファッションメーカーＫ社の子会社となった。経営陣は，新たな基幹システムの構築・物流拠点の統合化・店舗の統廃合などの改革を進めているが，経営改善の見通しはまだ立っていない。</p>
+<p>分析指標を用い短期の安全性を分析してみる。流動比率は，×4年（前期）に対し×5年（当期）は急激に低下している。この指標は，数値が高いほど支払能力が高いと判断されるが，アメリカでは（1）とも言われ，（2）％を超えることが望ましいとされている。さらに厳密に支払能力を測定するため（3）とも呼ばれている当座比率も求めてみると，×4年（前期）が（4）％に対し×5年（当期）は（5）％とこちらも低下している。この比率は少なくとも（6）％以上が望ましいとされており，即座の支払能力にだいぶ問題がある。</p>
+<p>続いて長期の安全性を分析してみる。総資産のうちどれだけ負債が占めているかをみる総資産負債比率は，×5年（当期）は95％を超え極めて危険な状態であることを示している。この比率が（7）％を超えることを（8）といい保有している総資産より負債が大きい状態となる。また，固定資産を調達するための資金を安全な源泉でどのくらいまかなっているのかをみる固定長期適合率を計算してみると，この指標も×4年（前期）に比べて<u>ａ．×5年（当期）は急激に悪化</u>しており，（9）の返済のために固定資産を売却しなければならない目安の100％をはるかに超えている状態である。</p>
+<p>キャッシュ・フロー計算書の数値も用いて分析してみる。営業活動によるキャッシュ・フローの金額は（10）期続けてマイナス数値となっていて，売上高から経常的な営業資金を得られておらず，安全性の観点から好ましくない状態が続いていると言える。さらに，売上高支払利息比率もこの5年間上昇してきており，販売努力による<u>ｂ．資金が有利子負債により拘束されている</u>と考えられ，安全性に問題がある。</p>
+<p>このようにＡ社の財政状態は，極めて危険な状態に陥っていると言え，経営陣による経営改善の成否は今後の財務諸表を注視する必要がある。</p>
+<p>［解答群］ア．債務超過　イ．財政困窮　ウ．純資産　エ．流動負債　オ．固定負債　カ．固定比率　キ．銀行家比率　ク．自己資本比率　ケ．酸性試験比率　コ．ＤＥレシオ　サ．57.9　シ．60.1　ス．23.1　セ．22.2　ソ．100　タ．200　チ．300　ツ．2　テ．3　ト．4</p>
+<p><strong>問3</strong>　問2の下線部ｂと同様に，棚卸資産に資金が拘束され安全性に問題をもたらしていないかを確認するため，棚卸資産回転率（売上高対棚卸資産）を計算して分析してみることにした。下記の文章中Ⅰ～Ⅵの【　】欄について，ア・イのうち適切な語句および数値の記号を解答欄に記入しなさい。なお，指標の計算にあたっては，計算の最終段階で回および日の小数点第2位を四捨五入し，第1位まで解答すること。</p>
+<p>この指標は，棚卸資産が売上高に対して何回転しているかを表し，Ⅰ【ア．収益性　イ．安全性】の指標として扱われることも多いが，この回転数が高いことは，売上高を生み出す棚卸資産に資金が滞留している時間が短く，拘束されている資金が少なくて済んでおり，資産の減少をもたらす負債も少なくて済むので，企業のⅡ【ア．収益性　イ．安全性】を測る指標ともいえる。</p>
+<p>Ａ社の棚卸資産回転率を計算してみると，×4年（前期）は3.3回，×5年（当期）はⅢ【ア．3.9　イ．4.4】回で当期は前期に比べて高くなっている。また，棚卸資産平均回転期間も求めてみる。この指標は，日単位で表され，この日数が少ないほど拘束される資金も少ないことを示している。Ａ社の棚卸資産平均回転期間を求めてみると，×4年（前期）は，Ⅳ【ア．111.5　イ．101.3】日，×5年（当期）はⅤ【ア．82.8　イ．93.6】日で当期は前期に比べて短くなっている。Ａ社は，高級ブランドに位置付けられており，棚卸資産回転率はファストファッションブランドなどと比較して低く，平均回転期間はⅥ【ア．長い　イ．短い】が，同種他社の数値と比較しても決して優良な数値ではない。したがって，これらの指標は，前期に比べて当期は良化しているが，Ａ社の安全性が高まっているとは言えない状況である。</p>
+<p><strong>問4</strong>　問2の下線部ａについて，固定長期適合率は×4年（前期）と比較して×5年（当期）の指標が急激に悪化したが，その原因について説明している下のア～エの文章のうち，最も正しいと思われるものはどれか，［解答群］から1つ選んで記号で答えなさい。</p>
+<p>［解答群］<br/>ア．短期借入金の返済などのため，×5年（当期）は×4年（前期）と比較して，現金および預金が10億円ほど減少するなど流動資産が減少したため。<br/>イ．×5年（当期）は，遊休地や不要設備などの売却を進め，固定資産が減少したため。<br/>ウ．×4年（前期）の長期借入金の返済時期が1年以内となったので，×5年（当期）は流動負債に表示が変更されたため。<br/>エ．経営再建のため積極的に投資を行い，Ｍ＆Ａや新規店舗の開業を行ったため。</p>
+<p><strong>問5</strong>　Ａ社の当期の有価証券報告書には，以下のような財務改善に関する注記事項が記載された。なお，下記の注記事項における対応策は×5年度末時点で実施されておらず，〈資料〉の財務諸表の数値には反映されていない。</p>
+<p>注記事項：財務面におきましては，×5年4月開催の取締役会において，×5年5月30日開催の当社定時株主総会での承認可決を条件として，当社は株式会社Ｋ（当社親会社）からの資金調達を含む財務体質の改善施策を決議いたしました。<br/>① 株式会社Ｋ（当社親会社）との間で，引受契約書を締結し，第三者割当の方法により，総額18億円のＡ種種類株式を発行すること<br/>② Ａ種種類株式に関する規定の新設等に係る定款の一部変更を行うこと<br/>③ Ａ種種類株式の払込みの日を効力発生日として，資本金及び資本準備金の額を減少し，その他資本剰余金へ振り替え，本資本金等の額の減少により増加したその他資本剰余金の一部で繰越利益剰余金の欠損を填補すること<br/>④ ×5年5月30日開催の当社定時株主総会に，Ａ種種類株式の発行，本定款変更，本資本金等の額の減少及び本剰余金の処分に係る各議案を付議すること<br/>（注1）Ａ種種類株式とは，一般的な普通株式と権利の内容が異なる株式のこと。</p>
+<p>仮に上記改善策が実施された場合，純資産固定負債比率は，×5年（当期）の純資産固定負債比率に比べて何％分改善されるか計算しなさい。<br/>※計算に関する留意事項　Ⅰ 上記注記事項のデータ以外の数値は，当期のデータと変わらないものとする。　Ⅱ 解答は，計算の最終段階で％の小数点第2位を四捨五入し，第1位まで行うこと。　Ⅲ 純資産固定負債比率は低い方が望ましいので，仮に×5年の数値が60.0％で，改善策実施後の数値が40.0％とした場合，60.0％－40.0％で20.0％分改善と解答すること。</p>
+<p>〈資料〉グラフの数値</p>
+<div aria-label="資料 グラフの数値" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>指標（グラフ）</th><th>×1年</th><th>×2年</th><th>×3年</th><th>×4年（前期）</th><th>×5年（当期）</th></tr></thead><tbody>
+<tr><td>ａ 流動比率</td><td>139.9％</td><td>78.8％</td><td>174.1％</td><td>①</td><td>②</td></tr>
+<tr><td>ｂ 総資産負債比率</td><td>77.4％</td><td>95.9％</td><td>71.7％</td><td>③</td><td>④</td></tr>
+<tr><td>ｃ 純資産負債比率</td><td>341.6％</td><td>2,339.4％</td><td>269.5％</td><td>⑤</td><td>⑥</td></tr>
+<tr><td>ｄ 固定長期適合率</td><td>55.6％</td><td>290.6％</td><td>68.9％</td><td>⑦</td><td>⑧</td></tr>
+<tr><td>ｅ 売上高支払利息比率</td><td>0.1％</td><td>0.1％</td><td>0.3％</td><td>⑨</td><td>⑩</td></tr>
+<tr><td>ｆ 売上高営業キャッシュ・フロー比率</td><td>1.4％</td><td>3.1％</td><td>△1.9％</td><td>⑪</td><td>⑫</td></tr>
+</tbody></table></div>
+<p>Ａ社の要約連結貸借対照表（単位：百万円）</p>
+<div aria-label="要約連結貸借対照表（資産の部）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>資産の部</th><th>×4年（前期）</th><th>×5年（当期）</th></tr></thead><tbody>
+<tr><td>流動資産</td><td></td><td></td></tr>
+<tr><td>　現金及び預金</td><td>3,186</td><td>2,182</td></tr>
+<tr><td>　売掛金</td><td>1,038</td><td>1,196</td></tr>
+<tr><td>　電子記録債権</td><td>4</td><td>91</td></tr>
+<tr><td>　商品及び製品</td><td>7,043</td><td>5,728</td></tr>
+<tr><td>　仕掛品</td><td>2</td><td>0</td></tr>
+<tr><td>　原材料及び貯蔵品</td><td>91</td><td>84</td></tr>
+<tr><td>　前払費用</td><td>158</td><td>130</td></tr>
+<tr><td>　その他</td><td>183</td><td>151</td></tr>
+<tr><td>　貸倒引当金</td><td>△1</td><td>△1</td></tr>
+<tr><td>　流動資産合計</td><td>11,704</td><td>9,561</td></tr>
+<tr><td>固定資産</td><td></td><td></td></tr>
+<tr><td>　有形固定資産</td><td></td><td></td></tr>
+<tr><td>　　建物（純額）</td><td>1,626</td><td>1,435</td></tr>
+<tr><td>　　車両運搬具（純額）</td><td>1</td><td>1</td></tr>
+<tr><td>　　備品（純額）</td><td>69</td><td>49</td></tr>
+<tr><td>　　土地</td><td>3,412</td><td>2,949</td></tr>
+<tr><td>　　建設仮勘定</td><td>12</td><td>1</td></tr>
+<tr><td>　　その他（純額）</td><td>2</td><td>1</td></tr>
+<tr><td>　　有形固定資産合計</td><td>5,122</td><td>4,436</td></tr>
+<tr><td>　無形固定資産</td><td></td><td></td></tr>
+<tr><td>　　商標権</td><td>1,165</td><td>55</td></tr>
+<tr><td>　　ソフトウェア</td><td>347</td><td>281</td></tr>
+<tr><td>　　その他</td><td>16</td><td>15</td></tr>
+<tr><td>　　無形固定資産合計</td><td>1,528</td><td>351</td></tr>
+<tr><td>　投資その他の資産</td><td></td><td></td></tr>
+<tr><td>　　投資有価証券</td><td>28</td><td>28</td></tr>
+<tr><td>　　差入保証金</td><td>1,863</td><td>1,698</td></tr>
+<tr><td>　　長期前払費用</td><td>27</td><td>15</td></tr>
+<tr><td>　　繰延税金資産</td><td>－</td><td>16</td></tr>
+<tr><td>　　その他</td><td>294</td><td>237</td></tr>
+<tr><td>　　投資その他の資産合計</td><td>2,212</td><td>1,994</td></tr>
+<tr><td>　固定資産合計</td><td>8,862</td><td>6,781</td></tr>
+<tr><td>資産合計</td><td>20,566</td><td>16,342</td></tr>
+</tbody></table></div>
+<div aria-label="要約連結貸借対照表（負債・純資産の部）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>負債・純資産の部</th><th>×4年（前期）</th><th>×5年（当期）</th></tr></thead><tbody>
+<tr><td>流動負債</td><td></td><td></td></tr>
+<tr><td>　買掛金</td><td>654</td><td>796</td></tr>
+<tr><td>　電子記録債務</td><td>51</td><td>103</td></tr>
+<tr><td>　短期借入金</td><td>3,914</td><td>2,754</td></tr>
+<tr><td>　1年内返済予定長期借入金</td><td>400</td><td>9,934</td></tr>
+<tr><td>　未払費用</td><td>1,708</td><td>1,248</td></tr>
+<tr><td>　未払法人税等</td><td>116</td><td>208</td></tr>
+<tr><td>　契約負債</td><td>－</td><td>120</td></tr>
+<tr><td>　賞与引当金</td><td>186</td><td>213</td></tr>
+<tr><td>　その他</td><td>266</td><td>212</td></tr>
+<tr><td>　流動負債合計</td><td>7,295</td><td>15,588</td></tr>
+<tr><td>固定負債</td><td></td><td></td></tr>
+<tr><td>　長期借入金</td><td>9,934</td><td>－</td></tr>
+<tr><td>　繰延税金負債</td><td>389</td><td>55</td></tr>
+<tr><td>　資産除去債務</td><td>133</td><td>134</td></tr>
+<tr><td>　その他</td><td>301</td><td>91</td></tr>
+<tr><td>　固定負債合計</td><td>10,757</td><td>280</td></tr>
+<tr><td>負債合計</td><td>18,052</td><td>15,868</td></tr>
+<tr><td>株主資本</td><td></td><td></td></tr>
+<tr><td>　資本金</td><td>2,132</td><td>2,132</td></tr>
+<tr><td>　資本剰余金</td><td>7,921</td><td>7,921</td></tr>
+<tr><td>　利益剰余金</td><td>△7,750</td><td>△9,748</td></tr>
+<tr><td>　自己株式</td><td>0</td><td>△1</td></tr>
+<tr><td>　株主資本合計</td><td>2,303</td><td>304</td></tr>
+<tr><td>その他の包括利益累計額</td><td></td><td></td></tr>
+<tr><td>　その他有価証券評価差額金</td><td>0</td><td>1</td></tr>
+<tr><td>　為替換算調整勘定</td><td>△77</td><td>△212</td></tr>
+<tr><td>　その他の包括利益累計額合計</td><td>△77</td><td>△211</td></tr>
+<tr><td>非支配株主持分</td><td>288</td><td>381</td></tr>
+<tr><td>純資産合計</td><td>2,514</td><td>474</td></tr>
+<tr><td>負債・純資産合計</td><td>20,566</td><td>16,342</td></tr>
+</tbody></table></div>
+<div aria-label="追加情報（単位：百万円）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>追加情報</th><th>金額</th></tr></thead><tbody>
+<tr><td>前期首棚卸資産</td><td>8,357</td></tr>
+<tr><td>前期末営業活動によるキャッシュ・フロー</td><td>△1,476</td></tr>
+<tr><td>当期末営業活動によるキャッシュ・フロー</td><td>△379</td></tr>
+</tbody></table></div>
+<div aria-label="要約連結損益計算書（単位：百万円）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>要約連結損益計算書</th><th>×4年（前期）</th><th>×5年（当期）</th></tr></thead><tbody>
+<tr><td>売上高</td><td>25,366</td><td>25,241</td></tr>
+<tr><td>売上原価</td><td>12,217</td><td>11,881</td></tr>
+<tr><td>売上総利益</td><td>13,149</td><td>13,360</td></tr>
+<tr><td>販売費及び一般管理費</td><td>15,905</td><td>15,078</td></tr>
+<tr><td>営業損失（△）</td><td>△2,756</td><td>△1,718</td></tr>
+<tr><td>営業外収益</td><td></td><td></td></tr>
+<tr><td>　受取利息</td><td>8</td><td>13</td></tr>
+<tr><td>　受取配当金</td><td>5</td><td>0</td></tr>
+<tr><td>　為替差益</td><td>151</td><td>164</td></tr>
+<tr><td>　不動産賃借料</td><td>118</td><td>121</td></tr>
+<tr><td>　補助金収入</td><td>161</td><td>47</td></tr>
+<tr><td>　その他</td><td>49</td><td>30</td></tr>
+<tr><td>　営業外収益合計</td><td>492</td><td>375</td></tr>
+<tr><td>営業外費用</td><td></td><td></td></tr>
+<tr><td>　支払利息</td><td>136</td><td>140</td></tr>
+<tr><td>　支払手数料</td><td>6</td><td>5</td></tr>
+<tr><td>　不動産賃借費用</td><td>39</td><td>37</td></tr>
+<tr><td>　その他</td><td>51</td><td>24</td></tr>
+<tr><td>　営業外費用合計</td><td>232</td><td>206</td></tr>
+<tr><td>経常損失（△）</td><td>△2,496</td><td>△1,549</td></tr>
+<tr><td>特別利益</td><td></td><td></td></tr>
+<tr><td>　固定資産売却益</td><td>0</td><td>684</td></tr>
+<tr><td>　投資有価証券売却益</td><td>92</td><td>0</td></tr>
+<tr><td>　その他</td><td>0</td><td>0</td></tr>
+<tr><td>　特別利益合計</td><td>92</td><td>684</td></tr>
+<tr><td>特別損失</td><td></td><td></td></tr>
+<tr><td>　固定資産除却損</td><td>7</td><td>7</td></tr>
+<tr><td>　固定資産売却損</td><td>0</td><td>1</td></tr>
+<tr><td>　減損損失</td><td>1,612</td><td>1,244</td></tr>
+<tr><td>　その他</td><td>33</td><td>0</td></tr>
+<tr><td>　特別損失合計</td><td>1,652</td><td>1,252</td></tr>
+<tr><td>税金等調整前当期純利益</td><td>△4,056</td><td>△2,117</td></tr>
+<tr><td>法人税，住民税および事業税</td><td>74</td><td>160</td></tr>
+<tr><td>法人税等調整額</td><td>△39</td><td>△350</td></tr>
+<tr><td>法人税等合計</td><td>35</td><td>△190</td></tr>
+<tr><td>当期純損失（△）</td><td>△4,091</td><td>△1,927</td></tr>
+<tr><td>非支配株主に帰属する当期純利益</td><td>61</td><td>68</td></tr>
+<tr><td>親会社株主に帰属する当期純損失（△）</td><td>△4,152</td><td>△1,995</td></tr>
+</tbody></table></div>
+                    </div>
+                  </blockquote>
+                </section>
+                <!-- END OFFICIAL QUESTION 3 -->
+                <section aria-label="問題3の一般的な解法" class="general-method">
+                  <h4>一般的な解法</h4>
+                  <p class="method-title">安全性指標の計算と解釈</p>
+                  <ol><li>短期安全性：流動比率 ＝ 流動資産 ÷ 流動負債、当座比率 ＝ 当座資産（現金預金 ＋ 売上債権 ＋ 有価証券）÷ 流動負債。いずれも期末値。</li><li>長期安全性：総資産負債比率 ＝ 負債 ÷ 総資産、純資産負債比率 ＝ 負債 ÷ 純資産、固定長期適合率 ＝ 固定資産 ÷（純資産 ＋ 固定負債）。問題文で純資産の範囲（株主資本のみ等）が指定されていればそれに従う。</li><li>回転率 ＝ 売上高 ÷ 平均有高、平均回転期間（日）＝ 平均有高 ÷（売上高 ÷ 365）。キャッシュ・フロー比率 ＝ 営業ＣＦ ÷ 売上高。</li></ol>
+                </section>
+<p class="point"><strong>問1</strong>　ｄの固定長期適合率は「その他の包括利益累計額は含まない」指示なので、純資産は<strong>株主資本合計</strong>（非支配株主持分も含めない）を使います。</p>
+<div class="formula">ａ 流動比率 ＝ 流動資産 ÷ 流動負債 × 100<br/>① 11,704 ÷ 7,295 × 100 = 160.43… → 160.4％<br/>② 9,561 ÷ 15,588 × 100 = 61.33… → 61.3％</div>
+<div class="formula">ｂ 総資産負債比率 ＝ 負債合計 ÷ 資産合計 × 100<br/>③ 18,052 ÷ 20,566 × 100 = 87.77… → 87.8％<br/>④ 15,868 ÷ 16,342 × 100 = 97.09… → 97.1％</div>
+<div class="formula">ｃ 純資産負債比率 ＝ 負債合計 ÷ 純資産合計 × 100<br/>⑤ 18,052 ÷ 2,514 × 100 = 718.05… → 718.1％<br/>⑥ 15,868 ÷ 474 × 100 = 3,347.67… → 3,347.7％</div>
+<div class="formula">ｄ 固定長期適合率 ＝ 固定資産 ÷（株主資本合計 ＋ 固定負債合計）× 100<br/>⑦ 8,862 ÷ (2,303 ＋ 10,757) × 100 = 8,862 ÷ 13,060 × 100 = 67.85… → 67.9％<br/>⑧ 6,781 ÷ (304 ＋ 280) × 100 = 6,781 ÷ 584 × 100 = 1,161.13… → 1,161.1％</div>
+<div class="formula">ｅ 売上高支払利息比率 ＝ 支払利息 ÷ 売上高 × 100<br/>⑨ 136 ÷ 25,366 × 100 = 0.53… → 0.5％<br/>⑩ 140 ÷ 25,241 × 100 = 0.55… → 0.6％</div>
+<div class="formula">ｆ 売上高営業キャッシュ・フロー比率 ＝ 営業活動によるＣＦ ÷ 売上高 × 100<br/>⑪ △1,476 ÷ 25,366 × 100 = △5.81… → △5.8％<br/>⑫ △379 ÷ 25,241 × 100 = △1.50… → △1.5％</div>
+<p class="point"><strong>問2</strong>　当座資産は留意事項7の定義に従い、現金及び預金 ＋（売掛金 ＋ 電子記録債権 － 貸倒引当金）で計算します（有価証券はありません）。</p>
+<div class="formula">（1）流動比率の別名：銀行家比率 → キ　（2）望ましい水準：200％ → タ<br/>（3）当座比率の別名：酸性試験比率 → ケ<br/>（4）×4年当座比率：(3,186 ＋ 1,038 ＋ 4 － 1) ÷ 7,295 × 100 = 4,227 ÷ 7,295 × 100 = 57.94… → 57.9％ → サ<br/>（5）×5年当座比率：(2,182 ＋ 1,196 ＋ 91 － 1) ÷ 15,588 × 100 = 3,468 ÷ 15,588 × 100 = 22.24… → 22.2％ → セ<br/>（6）当座比率の目安：100％ → ソ<br/>（7）（8）総資産負債比率が100％を超える状態 ＝ 債務超過 → ソ・ア<br/>（9）固定長期適合率が100％超 ＝ 固定資産の一部を流動負債で調達 → 流動負債 → エ<br/>（10）営業ＣＦはグラフより×3年・×4年・×5年の3期連続マイナス → 3 → テ</div>
+<p class="point"><strong>問3</strong>　棚卸資産は商品及び製品 ＋ 仕掛品 ＋ 原材料及び貯蔵品です。×4年末 7,043 ＋ 2 ＋ 91 ＝ 7,136、×5年末 5,728 ＋ 0 ＋ 84 ＝ 5,812、前期首は追加情報の 8,357 です。</p>
+<div class="formula">Ⅰ 回転率は本来「収益性」の指標 → ア　Ⅱ 資金拘束の観点では「安全性」 → イ<br/>×4年 平均棚卸資産：(8,357 ＋ 7,136) ÷ 2 = 7,746.5 → 回転率 25,366 ÷ 7,746.5 = 3.27… → 3.3回（問題文どおり）<br/>Ⅲ ×5年 平均棚卸資産：(7,136 ＋ 5,812) ÷ 2 = 6,474 → 25,241 ÷ 6,474 = 3.89… → 3.9回 → ア<br/>Ⅳ ×4年 回転期間：7,746.5 ÷ (25,366 ÷ 365) = 7,746.5 ÷ 69.49… = 111.46… → 111.5日 → ア<br/>Ⅴ ×5年 回転期間：6,474 ÷ (25,241 ÷ 365) = 6,474 ÷ 69.15… = 93.61… → 93.6日 → イ<br/>Ⅵ 高級ブランドは回転率が低く回転期間は長い → ア</div>
+<p class="point"><strong>問4</strong>　固定長期適合率の分母は「株主資本 ＋ 固定負債」です。×4年に固定負債だった長期借入金 9,934 が、返済期限が1年以内になったため×5年は流動負債（1年内返済予定長期借入金）に振り替わり、固定負債合計が 10,757 → 280 に激減しました。これが分母を小さくして比率を急上昇させた主因です。</p>
+<div class="formula">問4 → ウ（ア・イは分母や分子を改善する方向、エは資料に投資増加の事実がない）</div>
+<p class="point"><strong>問5</strong>　純資産固定負債比率 ＝ 固定負債 ÷ 純資産 × 100 です。18億円 ＝ 1,800百万円の種類株式発行で純資産が増えます（資本金・資本準備金の減少と欠損填補は純資産の内訳が変わるだけで合計は変わりません）。</p>
+<div class="formula">×5年（当期）：280 ÷ 474 × 100 = 59.07…％<br/>改善策実施後：純資産 474 ＋ 1,800 = 2,274 → 280 ÷ 2,274 × 100 = 12.31…％<br/>改善幅：59.07… － 12.31… = 46.76… → 46.8％分改善</div>
+                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>⑦⑧の固定長期適合率は、純資産合計（2,514・474）で計算すると 66.4％・1,157.6％ となり不正解です。「その他の包括利益累計額は含まない」の指示は<strong>株主資本合計</strong>を使う合図で、非支配株主持分も含めません。問2（4）（5）は貸倒引当金 △1 を引き忘れると 58.0％ になり選択肢にありません。問5は「計算の最終段階で四捨五入」なので、59.1 － 12.3 ＝ 46.8 ではなく丸める前の値で差を取ります（本問では結果は同じ）。</p></aside><div class="answer">答え　問1 ① 160.4％ ② 61.3％ ③ 87.8％ ④ 97.1％ ⑤ 718.1％ ⑥ 3,347.7％ ⑦ 67.9％ ⑧ 1,161.1％ ⑨ 0.5％ ⑩ 0.6％ ⑪ △5.8％ ⑫ △1.5％　問2 (1) キ (2) タ (3) ケ (4) サ (5) セ (6) ソ (7) ソ (8) ア (9) エ (10) テ　問3 Ⅰ ア Ⅱ イ Ⅲ ア Ⅳ ア Ⅴ イ Ⅵ ア　問4 ウ　問5 46.8％</div>
+              </section>
 
-              <div class="final-answer-container reveal-delay">
-                <p class="final-answer">
-                  答え　〇
-                </p>
-              </div>
-            </div>
+              <section class="problem question-section reveal" id="q4">
+                <div class="problem-head">
+                  <span class="number">4</span>
+                  <h3>成長企業の損益・預り金・自己資本比率・キャッシュ・フローを読み解く</h3>
+                </div>
 
-            <!-- Subsection (4) -->
-            <div class="subsection subsection-mt-large">
-              <div class="question-header">
-                <span>(4) 予想配点：２点</span>
-              </div>
-              <div class="question-box">
-                「資産－負債＝純資産」という，純資産を計算する会計学上の見方を“収益費用”アプローチという。
-              </div>
+                <!-- BEGIN OFFICIAL QUESTION 4 -->
+                <section aria-labelledby="q4-official-question-title" class="official-question official-question--placeholder">
+                  <div class="official-question__header">
+                    <h4 id="q4-official-question-title">問題文</h4>
+                  </div>
+                  <blockquote class="official-question__body">
+                    <!-- 第4問の問題文欄 -->
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>Ａ社の〈資料1〉・〈資料2〉により問に答えなさい。</p>
+<p>〈資料1〉<br/>○ Ａ社の概要：2X13年に（株）Ａゾウとして出発し，後に「Ａカリ」に社名を変更した。オンライン上で個人同士がフリーマーケット（フリマ）のように物品売買を行う「Ａカリ」（フリマアプリ）のサービス開始。アメリカ版「Ａカリ」，電子決済サービス「Ａペイ」を加えた3事業を展開し，フリマアプリという新しいコンセプトで急成長を遂げている。<br/>○ Ａ社の主なできごと：創業から6期目の2X18年に，業績赤字が続くなかで上場した日本では珍しいユニコーン企業（上場前に企業価値が10億ドル以上あるベンチャー企業）として注目を集めた。また，2X20年にＢ社（車のカスタマイズを共有するサイトの会社）を買収する。<br/>○ Ａ社の販売戦略：2X19年，キャッシュレス決済サービス「Ａペイ」をスタート。Ａペイの決済手数料を得るビジネスモデルを開始。同年9月には月間利用者数が2,000万人を突破した。<br/>○ Ａカリの主な収入源：フリマアプリを使って出品者が商品を販売した時の「販売手数料」と購入者が支払う「購入手数料」である。それぞれの手数料を10％に設定している。（例：Ａカリで1万円の物が売れたら，1,000円を販売手数料として徴収し，購入者からも購入手数料として1,000円を徴収している。）</p>
+<p><strong>問</strong>　下記の文章の①～⑧の中に最もあてはまる語・数値を〔解答群〕の中から記号で選びなさい。なお，②・⑤は，％の小数点第2位を四捨五入し，第1位まで計算すること。ただし，小数点第1位の数値がないときは，例えば，10.0％のように解答すること。</p>
+<p>○ Ａ社の2X20年6月期をみると（①）という結果になった。これは，前期・当期ともに売上高の伸び率以上に，費用（販売費及び一般管理費）の伸び率（（②）％）が高いからである。そのために，利益が食いつぶされてしまっている状態である。また，売上高について見ると，この3期間で大きく成長している。2X20年6月期には2X18年6月期と比較すると2倍以上の規模となっている。売上高成長率と併せて考えると，（③）であることの表れであるとみられる。</p>
+<p>○ Ａ社は，ユーザーが出品した商品の売上金を「預り金」として管理している。これはユーザーのお金で，いずれ返さなくてはならない「負債」である。ユーザーが増えて商品が売れるほど，預り金が増えて負債も，総資産（現金及び預金など）も増えていく構造である。利益となるのは，ユーザーが商品を買ったときやＡペイ決済をしたときの手数料である。すなわち預り金が多くなるほど，利益を生むチャンスも（④）ということである。</p>
+<p>○ 会社の安全性を示す指標である自己資本比率〈（株主資本＋その他の包括利益累計額）÷総資本で計算〉の推移に注目してみると，2X17年は8.1％，2X18年は（⑤）％と急激に高くなった。これは，東証マザーズへの上場で大幅な（⑥）をしたためである。その後は，利益剰余金が減ったことと，預り金を含めた負債が増えたことで，自己資本比率は低下したと推測される。</p>
+<p>○ キャッシュ・フロー計算書では，2X20年6月期のフリー・キャッシュ・フローを計算すると（⑦）百万円である。また，各期の財務活動によるキャッシュ・フローと現金及び現金同等物の期末残高をみると，株式上場によって得た潤沢な資金などでキャッシュをしっかりと保有していることがわかる。この3期間だけでみても財務活動によるキャッシュ・フローの累計金額が960億円以上のプラスになっている。一方，投資活動によるキャッシュ・フローは常にマイナスである。資金調達したお金を（⑧）につぎ込んでいることがわかる。</p>
+<p>〔解答群〕ア 増収増益　イ 増収減益　ウ 減収増益　エ 減収減益　オ 32.0　カ 45.1　キ 46.2　ク 50.0　ケ 9,880　コ 15,186　サ 増資　シ 減資　ス 増える　セ 減る　ソ 投資　タ 積立　チ 衰退企業　ツ 成長企業　テ 消費</p>
+<p>〈資料2〉</p>
+<div aria-label="要約連結損益計算書（単位：百万円）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>要約連結損益計算書</th><th>2X18年6月期</th><th>2X19年6月期</th><th>2X20年6月期</th></tr></thead><tbody>
+<tr><td>売上高</td><td>35,765</td><td>51,683</td><td>76,275</td></tr>
+<tr><td>売上原価</td><td>6,806</td><td>12,864</td><td>20,661</td></tr>
+<tr><td>売上総利益</td><td>28,959</td><td>38,819</td><td>55,614</td></tr>
+<tr><td>販売費及び一般管理費</td><td>33,381</td><td>50,968</td><td>76,452</td></tr>
+<tr><td>営業損失（△）</td><td>△4,422</td><td>△12,149</td><td>△20,838</td></tr>
+<tr><td>営業外収益</td><td>37</td><td>91</td><td>211</td></tr>
+<tr><td>営業外費用</td><td>355</td><td>112</td><td>295</td></tr>
+<tr><td>経常損失（△）</td><td>△4,740</td><td>△12,170</td><td>△20,922</td></tr>
+<tr><td>特別損失</td><td>193</td><td>396</td><td>1,127</td></tr>
+<tr><td>税金等調整前当期純損失（△）</td><td>△4,933</td><td>△12,566</td><td>△22,049</td></tr>
+<tr><td>法人税等合計</td><td>2,106</td><td>1,197</td><td>2,440</td></tr>
+<tr><td>当期純損失（△）</td><td>△7,039</td><td>△13,763</td><td>△24,489</td></tr>
+<tr><td>非支配株主に帰属する当期純損失（△）</td><td>－</td><td>－</td><td>△186</td></tr>
+<tr><td>親会社株主に帰属する当期純損失（△）</td><td>△7,039</td><td>△13,763</td><td>△24,303</td></tr>
+</tbody></table></div>
+<div aria-label="要約連結貸借対照表（単位：百万円）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>要約連結貸借対照表</th><th>2X18年6月期</th><th>2X19年6月期</th><th>2X20年6月期</th></tr></thead><tbody>
+<tr><td>現金及び預金</td><td>109,157</td><td>125,578</td><td>135,747</td></tr>
+<tr><td>その他の流動資産</td><td>5,069</td><td>26,235</td><td>33,528</td></tr>
+<tr><td>流動資産合計</td><td>114,226</td><td>151,813</td><td>169,275</td></tr>
+<tr><td>有形固定資産</td><td>1,037</td><td>1,883</td><td>2,905</td></tr>
+<tr><td>無形固定資産</td><td>120</td><td>1,081</td><td>679</td></tr>
+<tr><td>投資その他の資産</td><td>2,368</td><td>8,908</td><td>25,152</td></tr>
+<tr><td>固定資産合計</td><td>3,525</td><td>11,872</td><td>28,736</td></tr>
+<tr><td>資産合計</td><td>117,751</td><td>163,685</td><td>198,011</td></tr>
+<tr><td>預り金</td><td>2,223</td><td>45,818</td><td>83,954</td></tr>
+<tr><td>その他流動負債</td><td>42,081</td><td>15,196</td><td>26,174</td></tr>
+<tr><td>流動負債合計</td><td>44,304</td><td>61,014</td><td>110,128</td></tr>
+<tr><td>固定負債</td><td>19,024</td><td>51,734</td><td>52,516</td></tr>
+<tr><td>負債合計</td><td>63,328</td><td>112,748</td><td>162,644</td></tr>
+<tr><td>資本金</td><td>34,803</td><td>40,110</td><td>41,440</td></tr>
+<tr><td>資本剰余金</td><td>34,783</td><td>40,089</td><td>41,396</td></tr>
+<tr><td>利益剰余金</td><td>△15,288</td><td>△29,097</td><td>△51,870</td></tr>
+<tr><td>株主資本合計</td><td>54,298</td><td>51,102</td><td>30,966</td></tr>
+<tr><td>その他の包括利益累計額</td><td>125</td><td>△165</td><td>3,819</td></tr>
+<tr><td>非支配株主持分</td><td>－</td><td>－</td><td>582</td></tr>
+<tr><td>純資産合計</td><td>54,423</td><td>50,937</td><td>35,367</td></tr>
+<tr><td>負債純資産合計</td><td>117,751</td><td>163,685</td><td>198,011</td></tr>
+</tbody></table></div>
+<div aria-label="要約連結キャッシュ・フロー計算書（単位：百万円）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>要約連結キャッシュ・フロー計算書</th><th>2X18年6月期</th><th>2X19年6月期</th><th>2X20年6月期</th></tr></thead><tbody>
+<tr><td>営業活動によるキャッシュ・フロー</td><td>△3,437</td><td>△7,289</td><td>12,533</td></tr>
+<tr><td>投資活動によるキャッシュ・フロー</td><td>△1,944</td><td>△2,805</td><td>△2,653</td></tr>
+<tr><td>財務活動によるキャッシュ・フロー</td><td>63,617</td><td>32,102</td><td>465</td></tr>
+<tr><td>その他</td><td>58</td><td>△391</td><td>13</td></tr>
+<tr><td>現金及び現金同等物の増減額</td><td>58,294</td><td>21,617</td><td>10,358</td></tr>
+<tr><td>現金及び現金同等物の期首残高</td><td>50,863</td><td>109,157</td><td>130,774</td></tr>
+<tr><td>現金及び現金同等物の期末残高</td><td>109,157</td><td>130,774</td><td>141,132</td></tr>
+</tbody></table></div>
+                    </div>
+                  </blockquote>
+                </section>
+                <!-- END OFFICIAL QUESTION 4 -->
+                <section aria-label="問題4の一般的な解法" class="general-method">
+                  <h4>一般的な解法</h4>
+                  <p class="method-title">成長性・安全性・キャッシュ・フローの総合読解</p>
+                  <ol><li>増収・減収は売上高の増減、増益・減益は利益（損失なら赤字幅の拡大＝減益）の増減で判断する。伸び率 ＝ 当期 ÷ 前期 × 100。</li><li>自己資本比率 ＝（株主資本 ＋ その他の包括利益累計額）÷ 総資本 × 100。問題文の定義どおりの範囲で分子を作る。</li><li>フリー・キャッシュ・フロー ＝ 営業活動によるＣＦ ＋ 投資活動によるＣＦ。財務ＣＦのプラスは資金調達、投資ＣＦのマイナスは投資を意味する。</li></ol>
+                </section>
+<div class="formula">① 2X20年6月期：売上高 51,683 → 76,275（増収）、当期純損失 △13,763 → △24,489（損失拡大＝減益）→ 増収減益 → イ<br/>② 販管費の伸び率：76,452 ÷ 50,968 × 100 = 150.00… → 150.0％ → ク<br/>（参考）売上高の伸び率：76,275 ÷ 51,683 × 100 = 147.6％ ＜ 150.0％<br/>③ 売上高が2X18年の35,765から76,275へ2倍以上 → 成長企業 → ツ<br/>④ 預り金が増えるほど手数料収入の機会も増える → 増える → ス</div>
+<div class="formula">⑤ 2X18年の自己資本比率：(54,298 ＋ 125) ÷ 117,751 × 100 = 54,423 ÷ 117,751 × 100 = 46.21… → 46.2％ → キ<br/>⑥ 上場による資金調達 ＝ 増資 → サ</div>
+<div class="formula">⑦ 2X20年6月期のフリー・キャッシュ・フロー：12,533 ＋ (△2,653) = 9,880百万円 → ケ<br/>⑧ 投資活動によるＣＦが常にマイナス ＝ 投資につぎ込んでいる → ソ</div>
+<p class="note">⑤は2X18年に非支配株主持分がないため、分子は純資産合計54,423と同じになります。2X20年は非支配株主持分582があるので、同じ定義で計算すると (30,966 ＋ 3,819) ÷ 198,011 ＝ 17.6％ です。</p>
+                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>①は損失が拡大した年度なので「減益」と判断します。赤字だからといって「減収」にはなりません（売上高は増えています）。②は売上高ではなく<strong>販売費及び一般管理費</strong>の伸び率です。⑤は問題文の定義に従い、その他の包括利益累計額125を株主資本に加えます（株主資本だけで計算すると46.1％で選択肢にありません）。</p></aside><div class="answer">答え　① イ　② ク　③ ツ　④ ス　⑤ キ　⑥ サ　⑦ ケ　⑧ ソ</div>
+              </section>
 
-              <div class="explanation-text">
-                <p>収益費用アプローチとは、「期間収益から期間費用を引いて、期間利益を求める」という見方。</p>
-                <p>問題文は「資産負債アプローチ」の説明である。</p>
-              </div>
+              <section class="problem question-section reveal" id="q5">
+                <div class="problem-head">
+                  <span class="number">5</span>
+                  <h3>株主資本等変動計算書から1株当たり指標・ROE・配当利回り・PBR・PERを求める</h3>
+                </div>
 
-              <div class="final-answer-container reveal-delay">
-                <p class="final-answer">
-                  A. 資産負債
-                </p>
-              </div>
-            </div>
-
-            <!-- Subsection (5) -->
-            <div class="subsection subsection-mt-large">
-              <div class="question-header">
-                <span>(5) 予想配点：１点</span>
-              </div>
-              <div class="question-box">
-                ＲＯＡとは，Return On "Assets"の英語表記の略語である。
-              </div>
-
-              <div class="explanation-text">
-                <p>ROAとは、日本語で総資産利益率といい、総資産を総利益で除して求めることができる。</p>
-                <p>利益を生み出すために、保有資産をどの程度効率的に使えているかを表している。</p>
-                <p>日本語からもわかるように、問題文は正しい。</p>
-              </div>
-
-              <div class="final-answer-container reveal-delay">
-                <p class="final-answer">
-                  A. 〇
-                </p>
-              </div>
-            </div>
+                <!-- BEGIN OFFICIAL QUESTION 5 -->
+                <section aria-labelledby="q5-official-question-title" class="official-question official-question--placeholder">
+                  <div class="official-question__header">
+                    <h4 id="q5-official-question-title">問題文</h4>
+                  </div>
+                  <blockquote class="official-question__body">
+                    <!-- 第5問の問題文欄 -->
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>大手外食チェーン店Ｉ社の有価証券報告書の〈資料1〉・〈資料2〉にもとづいて，次の問1・問2に答えなさい。また，解答する上で端数が生じた場合は，円，倍，％ともに小数点第2位を四捨五入し，第1位まで解答すること。ただし，小数点第1位の数値がないときは，例えば9.0％のように解答すること。なお，△印はマイナスを示している。〈資料1〉・〈資料2〉の？の部分は，各自計算して求めること。</p>
+<p>〈資料1〉Ｉ社の有価証券報告書から一部抜粋</p>
+<div aria-label="資料1" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>Ｉ社 第××期（20X2年3月）</th><th>金額</th></tr></thead><tbody>
+<tr><td>売上高（千円）</td><td>40,800,977</td></tr>
+<tr><td>経常利益（千円）</td><td>4,127,367</td></tr>
+<tr><td>当期純利益（千円）</td><td>？</td></tr>
+<tr><td>資本金（千円）</td><td>1,503,270</td></tr>
+<tr><td>当期末純資産額（千円）</td><td>？</td></tr>
+<tr><td>当期末総資産額（千円）</td><td>40,766,062</td></tr>
+<tr><td>1株当たり純資産額（円）</td><td>（1）</td></tr>
+<tr><td>1株当たり配当額（円）</td><td>（2）</td></tr>
+<tr><td>1株当たり当期純利益（円）</td><td>（3）</td></tr>
+<tr><td>株価収益率（％）</td><td>？</td></tr>
+<tr><td>配当性向（％）</td><td>？</td></tr>
+<tr><td>ＲＯＥ（％）</td><td>（4）</td></tr>
+<tr><td>当期末株価（1株当たり）（円）</td><td>4,648</td></tr>
+<tr><td>当期末発行済株式数（株）</td><td>31,926,000</td></tr>
+</tbody></table></div>
+<p>※1 Ｉ社の前期末発行済株式総数は，当期末と同じである。　※2 自己株式は考慮しない。　※3 純資産＝株主資本とする。</p>
+<p>〈資料2〉株主資本等変動計算書　事業年度（自 20X1年4月1日　至 20X2年3月31日）</p>
+<div aria-label="資料2 株主資本等変動計算書（単位：千円）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>株主資本等変動計算書</th><th>資本金</th><th>資本準備金</th><th>その他資本剰余金</th><th>繰越利益剰余金</th><th>自己株式</th><th>株主資本合計</th><th>純資産合計</th></tr></thead><tbody>
+<tr><td>当期首残高</td><td>1,503,270</td><td>1,388,470</td><td>756</td><td>26,916,521</td><td>△2,574</td><td>29,806,443</td><td>29,806,443</td></tr>
+<tr><td>剰余金の配当</td><td></td><td></td><td></td><td>△2,553,505</td><td></td><td>△2,553,505</td><td>△2,553,505</td></tr>
+<tr><td>当期純利益</td><td></td><td></td><td></td><td>2,248,749</td><td></td><td>2,248,749</td><td>2,248,749</td></tr>
+<tr><td>自己株式の取得</td><td></td><td></td><td></td><td></td><td>△96,595</td><td>△96,595</td><td>△96,595</td></tr>
+<tr><td>自己株式の処分</td><td></td><td></td><td>△248</td><td></td><td>33,916</td><td>33,668</td><td>33,668</td></tr>
+<tr><td>当期変動額合計</td><td>－</td><td>－</td><td>△248</td><td>△304,756</td><td>△62,679</td><td>？</td><td>？</td></tr>
+<tr><td>当期末残高</td><td>1,503,270</td><td>1,388,470</td><td>508</td><td>26,611,765</td><td>△65,253</td><td>？</td><td>？</td></tr>
+</tbody></table></div>
+<p><strong>問1</strong>　〈資料1〉のＩ社の（1）1株当たり純資産額，（2）1株当たり配当額，（3）1株当たり当期純利益，（4）ＲＯＥを求めなさい。</p>
+<p><strong>問2</strong>　次の会話文のａからｄにあてはまる数値を計算し，解答欄に記入しなさい。また，①から⑥の【　】欄については，適切な語句の記号を選び解答欄に記入しなさい。</p>
+<p>Ａさん：「Ｂさん，誕生日おめでとう。今日たしか誕生日だったよね？」<br/>Ｂさん：「うん。今日で成人になったし，将来の資産形成のために株式投資について勉強したいと思ってるんだ。」<br/>Ａさん：「そうだね。将来の資産形成のためには，株式投資は重要だと思うよ」<br/>Ｂさん：「でも，どうやって始めたらいいかよくわからないんだよね。Ａさん確か詳しかったよね？　ちょっと教えてくれない？」<br/>Ａさん：「いいよ。まずは，証券会社に口座を開設して，そこで株を買ったり売ったりするんだよ」<br/>Ｂさん：「証券会社って，どこがいいのかな？」<br/>Ａさん：「いろんな証券会社があるけど，手数料が安いところや，初心者向けの情報提供があるところがおすすめだよ。Ｂさんも成人になったからすぐ作れるよ。」<br/>Ｂさん：「なるほど。何を目安にして株式投資を始めたらいいのかな？」<br/>Ａさん：「株式投資の目的としては，キャピタル・ゲインとインカム・ゲインの獲得が挙げられるんだ。キャピタル・ゲインは，株式を売買して得られる利益のことだよ。また，インカム・ゲインというのは，銀行に預金していると利子が付くのと同じように，株を保有していると得られる配当金のことなんだ。この配当金は，銀行などの利息と比べるために比率でみることが重要なんだ。」<br/>Ｂさん：「ああ，それって配当利回りのことだね」<br/>Ａさん：「よく知ってるね。じゃあ，このＩ社の〈資料1〉と〈資料2〉を使って計算してみようか。」<br/>Ｂさん：「うん。」<br/>Ａさん：「配当利回りは，1株あたり配当金を株価で割った値で，投資家が株を購入するかどうかを決めるときによく用いられるんだ。Ｉ社の配当利回りを計算してみると（ａ）％になるから，これは今の銀行の普通預金の利息よりもだいぶ良いね」<br/>Ｂさん：「なるほど。」<br/>Ａさん：「配当は，株主への利益の還元だから企業が当期純利益のうちどのくらいを配当にあてたかを知ることも大事だ。それを知るための指標が配当性向で，Ｉ社の配当性向を計算すると（ｂ）％になるよ。」<br/>Ｂさん：「ふーん。でもこのＩ社の数値って，1年間の当期純利益より大きい金額を配当をしてるってこと？もうけた利益以上の配当しても大丈夫なの？」<br/>Ａさん：「うん。〈資料2〉の株主資本変動計算書を見てわかるように，企業には当期純利益のほかに留保している資金があるからね。Ｉ社は株主に気を遣って配当を多くしているんだ。また，企業によってはＲＯＥの数値目標を設定している会社もあるんだ。利益がでていれば配当額を多くするとＲＯＥの数値は①【ア．高く　イ．低く】なるんだ。」<br/>Ｂさん：「よくわかったよ。じゃあもうひとつのキャピタル・ゲインのほうだけど，株価ってどうやって決まるの？」<br/>Ａさん：「企業の業績や将来性，世界経済の動向などいろんな要因が影響しているので，株価の動向を予想するのはなかなか難しいけど，分析指標を使って自分なりの予想をすればいいと思うよ。」<br/>Ｂさん：「どんな指標があるの？」<br/>Ａさん：「企業の株価が純資産に比べて相対的に高いか安いかを測る物差しとして，株価純資産倍率という指標があるんだ。この指標は②【ア．ＥＰＳ　イ．ＢＰＳ　ウ．ＰＢＲ　エ．ＰＥＲ】とも表現され通常何倍と表現するんだ。一般に指標が高いほど割高，低いほど割安と見られるよ。この指標を使ってＩ社の株価純資産倍率を計算してみると（ｃ）倍になるね。同業他社企業の平均は，6.7倍なので，Ｉ社の市場での評価はだいぶ③【ア．高い　イ．低い】と言えるね。」<br/>Ｂさん：「つまり，相対的に④【ア．割高　イ．割安】ってこと？」<br/>Ａさん：「そうだね」<br/>Ｂさん：「他にはなにかある？」<br/>Ａさん：「あとは，企業の利益水準に比べて株価が相対的に割高か割安かを測る物差しとして，株価収益率があるよ。この指標は⑤【ア．ＥＰＳ　イ．ＢＰＳ　ウ．ＰＢＲ　エ．ＰＥＲ】とも表現され，こちらも通常何倍と表現するよ。この比率は，⑥【ア．ＥＰＳ　イ．ＢＰＳ　ウ．ＰＢＲ　エ．ＰＥＲ】とも略される1株当たり当期純利益に対して今の株価が何年分に相当するかを示しているんだ。だから一般に指標が高いほど割高，低いほど割安とみられるよ。こちらもＩ社の株価収益率を計算してみると（ｄ）倍になるね。同業他社企業の平均は，67.2倍なので，だいたい平均値と言えるね。」<br/>Ｂさん：「少しはイメージできるかも。ありがとう。でもなかなか市場での資産の変動価格をこまめにチェックする時間がとれないと思うから，投資をしたら一つの銘柄を長く保有して，まずはインカム・ゲインを中心に考えて投資を始めてみるよ。定期的な収入が得られるのも楽しみだしね。」<br/>Ａさん：「株式投資は，初めは難しく感じるかもしれないけど，徐々に理解していくことで楽しみながら投資できるようになると思うよ。」</p>
+                    </div>
+                  </blockquote>
+                </section>
+                <!-- END OFFICIAL QUESTION 5 -->
+                <section aria-label="問題5の一般的な解法" class="general-method">
+                  <h4>一般的な解法</h4>
+                  <p class="method-title">株式投資指標の計算問題</p>
+                  <ol><li>株主資本等変動計算書から当期純利益・配当金総額・当期末純資産を読み取る。当期末純資産 ＝ 当期首残高 ＋ 当期変動額合計。</li><li>1株当たり指標 ＝ 金額 ÷ 発行済株式数。千円単位の金額は円に直して（× 1,000）から株数で割る。ＲＯＥ ＝ 当期純利益 ÷ 純資産 × 100。</li><li>配当利回り ＝ 1株当たり配当金 ÷ 株価、配当性向 ＝ 配当金総額 ÷ 当期純利益、ＰＢＲ ＝ 株価 ÷ 1株当たり純資産、ＰＥＲ ＝ 株価 ÷ 1株当たり当期純利益。</li></ol>
+                </section>
+<p class="point"><strong>資料の？を埋める</strong>　株主資本等変動計算書から、当期純利益 2,248,749千円、配当金総額 2,553,505千円が読み取れます。当期末純資産は当期首残高に当期変動額を加えます。</p>
+<div class="formula">当期変動額合計：△2,553,505 ＋ 2,248,749 － 96,595 ＋ 33,668 = △367,683<br/>当期末純資産：29,806,443 － 367,683 = 29,438,760千円<br/>（確認）1,503,270 ＋ 1,388,470 ＋ 508 ＋ 26,611,765 － 65,253 = 29,438,760 ✓</div>
+<div class="formula">問1<br/>（1）1株当たり純資産額：29,438,760,000円 ÷ 31,926,000株 = 922.09… → 922.1円<br/>（2）1株当たり配当額：2,553,505,000円 ÷ 31,926,000株 = 79.98… → 80.0円<br/>（3）1株当たり当期純利益：2,248,749,000円 ÷ 31,926,000株 = 70.43… → 70.4円<br/>（4）ＲＯＥ：2,248,749 ÷ 29,438,760 × 100 = 7.63… → 7.6％</div>
+<p class="note">ＲＯＥの分母を期首・期末平均（29,622,601.5千円）にしても 7.59… → 7.6％ で同じ結果になります。</p>
+<div class="formula">問2<br/>（ａ）配当利回り：79.98… ÷ 4,648 × 100 = 1.72… → 1.7％<br/>（ｂ）配当性向：2,553,505 ÷ 2,248,749 × 100 = 113.55… → 113.6％（1株当たりでも 80.0 ÷ 70.4 ≒ 113.6％）<br/>① 配当を多くすると純資産（分母）が減り、ＲＯＥは高くなる → ア<br/>② 株価純資産倍率 ＝ ＰＢＲ → ウ<br/>（ｃ）ＰＢＲ：4,648 ÷ 922.09… = 5.04… → 5.0倍<br/>③ 同業平均6.7倍より低い → イ　④ 割安 → イ<br/>⑤ 株価収益率 ＝ ＰＥＲ → エ　⑥ 1株当たり当期純利益 ＝ ＥＰＳ → ア<br/>（ｄ）ＰＥＲ：4,648 ÷ 70.43… = 65.99… → 66.0倍</div>
+                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>当期末純資産を当期首残高29,806,443のまま使ってしまう誤りが多い問題です。「？」は株主資本等変動計算書の当期変動額（配当・当期純利益・自己株式の取得と処分）をすべて反映して求めます。配当性向が100％を超えるのは当期純利益以上の配当をしているためで、計算ミスではありません。ＰＥＲは資料1では「％」と表記されていますが会話文の指示どおり「倍」で答えます。</p></aside><div class="answer">答え　問1 (1) 922.1円 (2) 80.0円 (3) 70.4円 (4) 7.6％　問2 ａ 1.7％　ｂ 113.6％　ｃ 5.0倍　ｄ 66.0倍　① ア ② ウ ③ イ ④ イ ⑤ エ ⑥ ア</div>
+              </section>
+            </main>
+            <aside aria-label="解説動画とページ内目次" class="exam-learning-aside">
+              <section aria-labelledby="exam-video-title" class="exam-video-panel">
+                <h2 id="exam-video-title">解説動画</h2>
+                <!-- 動画完成後、このプレースホルダーを .exam-video-frame の iframe に差し替えます。 -->
+                <div aria-label="解説動画は準備中です" class="exam-video-placeholder" role="img">
+                  <span aria-hidden="true" class="exam-video-placeholder__icon">▶</span>
+                  <span class="exam-video-placeholder__text">
+                    <strong>解説動画は準備中です</strong>
+                    <span>公開後、この場所で動画を視聴しながら解説を読めます。</span>
+                  </span>
+                </div>
+              </section>
+              <nav aria-labelledby="exam-toc-title" class="exam-desktop-toc">
+                <h2 id="exam-toc-title">このページの目次</h2>
+                <ul class="exam-toc-overview">
+                  <li><a href="#usage-title">解答するときの注意</a></li>
+                  <li><a href="#legend-title">解説の凡例</a></li>
+                  <li><a href="#question-list">設問一覧</a></li>
+                  <li><a href="#answers">正答一覧</a></li>
+                </ul>
+                <p class="exam-toc-label">問題別解説</p>
+                <ol class="exam-toc-questions">
+                  <li><a href="#q1">1</a></li>
+                  <li><a href="#q2">2</a></li>
+                  <li><a href="#q3">3</a></li>
+                  <li><a href="#q4">4</a></li>
+                  <li><a href="#q5">5</a></li>
+                </ol>
+              </nav>
+            </aside>
           </section>
-
-          <div class="closing-section">
-            <p class="closing-text">おつかれさまでした</p>
-          </div>
-        </main>
+        </div>
       </div>
     </div>
-  </div>
+            <button aria-label="ページ上部へ戻る" class="page-top-button" id="pageTopButton" title="ページ上部へ戻る" type="button">
+              <svg aria-hidden="true" height="24" viewbox="0 0 24 24" width="24">
+                <path d="M6 15l6-6 6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"></path>
+              </svg>
+              <span>上へ</span>
+            </button>
+            <footer class="exam-footer site-footer">
+              <div class="footer-content">
+                <p class="footer-text">本解説は、公式問題・公式解式を参照して独自に作成した学習用コンテンツです。全国商業高等学校協会による公式解説・認定教材ではありません。</p>
+                <p class="footer-text">© 2026 全商関係hp. All Rights Reserved.</p>
+              </div>
+            </footer>
+            <script src="../../js/main.js"></script>
+            <script>
+            (() => {
+              const topButton = document.getElementById('pageTopButton');
 
-  <footer class="exam-footer site-footer" id="page-footer">
-    <div class="footer-content">
-      <p class="footer-text">本解説は、公式問題等を参照して独自に作成した学習用コンテンツです。全国商業高等学校協会による公式解説・認定教材ではありません。</p>
-      <p class="footer-text">&copy; 2026 全商関係hp. All Rights Reserved.</p>
-    </div>
-  </footer>
-  <script src="../../js/main.js"></script>
-  <script>
-    // Simple Intersection Observer for reveal animations
-    const observerOptions = {
-      threshold: 0.1
-    };
+              const updateTopButton = () => {
+                if (topButton) {
+                  topButton.classList.toggle('is-visible', window.scrollY > 480);
+                }
+              };
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-          // If it's a section, also activate its children with delay
-          const delays = entry.target.querySelectorAll('.reveal-delay');
-          delays.forEach((el, index) => {
-            setTimeout(() => {
-              el.classList.add('active');
-            }, 300 + (index * 100));
-          });
-        }
-      });
-    }, observerOptions);
+              if (topButton) {
+                topButton.addEventListener('click', () => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+                window.addEventListener('scroll', updateTopButton, { passive: true });
+                updateTopButton();
+              }
 
-    document.querySelectorAll('.reveal').forEach(el => {
-      observer.observe(el);
-    });
-  </script>
-</body>
+              const tocLinks = Array.from(document.querySelectorAll('.exam-desktop-toc a[href^="#"]'));
+              const tocTargets = tocLinks
+                .map((link) => ({
+                  link,
+                  target: document.querySelector(link.getAttribute('href'))
+                }))
+                .filter((item) => item.target);
+              let tocUpdatePending = false;
 
-</html>
+              const updateCurrentTocItem = () => {
+                if (!tocTargets.length) {
+                  return;
+                }
 
+                let currentItem = tocTargets[0];
+                const headerOffset = 180;
 
+                tocTargets.forEach((item) => {
+                  if (item.target.getBoundingClientRect().top <= headerOffset) {
+                    currentItem = item;
+                  }
+                });
 
+                tocTargets.forEach((item) => {
+                  const isCurrent = item === currentItem;
+                  item.link.classList.toggle('is-current', isCurrent);
+                  if (isCurrent) {
+                    item.link.setAttribute('aria-current', 'location');
+                  } else {
+                    item.link.removeAttribute('aria-current');
+                  }
+                });
+                tocUpdatePending = false;
+              };
 
+              const requestTocUpdate = () => {
+                if (!tocUpdatePending) {
+                  tocUpdatePending = true;
+                  window.requestAnimationFrame(updateCurrentTocItem);
+                }
+              };
+
+              window.addEventListener('scroll', requestTocUpdate, { passive: true });
+              window.addEventListener('resize', requestTocUpdate);
+              updateCurrentTocItem();
+
+              if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries) => {
+                  entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                      entry.target.classList.add('active');
+                      observer.unobserve(entry.target);
+                    }
+                  });
+                }, { threshold: 0.08 });
+
+                document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+              } else {
+                document.querySelectorAll('.reveal').forEach((element) => element.classList.add('active'));
+              }
+            })();
+            </script>
+          </body>
+          </html>

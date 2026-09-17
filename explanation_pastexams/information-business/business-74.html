@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="令和7年度 第74回（2026年1月18日実施）全商 情報処理検定試験 1級 ビジネス情報。問題PDF末尾の審査基準を参照し、用語（RASIS・FTP・共有ロック・VoIP・ウォータフォール）、計算（画像容量・伝送効率）、アローダイアグラム・PPM・PaaS、SQL（UPDATE・HAVING・NOT EXISTS）、表計算関数（RANDBETWEEN・FLOOR・DMAX・OFFSET・ソルバー）、レンタカー料金見積計算表の全35問について、正答の根拠と誤答の理由を説明する学習用解説。" name="description"/>
+  <title>第74回 情報処理検定試験 1級 ビジネス情報 解説</title>
+  <link href="../../css/site.css" rel="stylesheet"/>
+  <link href="../../css/header.css" rel="stylesheet"/>
+</head>
+<body class="page-wrapper exam-learning-page" id="top">
+  <header class="header">
+    <a class="logo" href="../../index.html">
+      <img alt="ロゴ" class="header__logo--img" src="../../img/ZenSho-PAST.png"/>
+    </a>
+    <nav class="header__nav" id="header__nav">
+      <ul>
+        <li>
+          <a href="../index.html">
+            <span class="nav__en">全商検定</span>
+            <span class="nav__jp">過去問解説</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">GUIDELINES</span>
+            <span class="nav__jp">各検定の指針</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">INFORMATION</span>
+            <span class="nav__jp">進路情報</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">COLUMN</span>
+            <span class="nav__jp">コラム・その他</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">全商主催</span>
+            <span class="nav__jp">各競技大会について</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <header class="header__res">
+    <a class="logo" href="../../index.html">
+      <img alt="ロゴ" class="header__logo--img" height="auto" src="../../img/index_logo 1.png" width="auto"/>
+    </a>
+    <nav class="header__nav">
+      <ul class="heder__nav--list">
+        <li>
+          <a href="../index.html">
+            <span class="nav__en">全商検定</span>
+            <span class="nav__jp">過去問解説</span>
+          </a>
+        </li>
+        <li>
+          <a href="works.html">
+            <span class="nav__en">GUIDELINES</span>
+            <span class="nav__jp">各検定の指針</span>
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <span class="nav__en">INFORMATION</span>
+            <span class="nav__jp">進路情報</span>
+          </a>
+        </li>
+        <li>
+          <a href="company.html">
+            <span class="nav__en">COLUMN</span>
+            <span class="nav__jp">コラム・その他</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <span class="nav__en">全商主催</span>
+            <span class="nav__jp">各競技大会について</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </header>
+  <div id="root">
+    <div class="app-container">
+      <div class="content-wrapper">
+        <header aria-labelledby="page-title" class="exam-hero main-header">
+          <div class="hero header-content">
+            <p class="eyebrow">全商検定 過去問解説</p>
+            <h1 class="header-title" id="page-title">第74回 情報処理検定試験<br/>1級 ビジネス情報 解説</h1>
+            <p class="lead">令和7年度 第74回（2026年1月18日実施）。【1】〜【3】用語・計算（各2点）、【4】〜【5】経営分析・SQL（各3点）、【6】〜【7】表計算（各4点）の合計100点について、正答の根拠と他の選択肢が不適切な理由を説明します。</p>
+          </div>
+        </header>
+        <section class="page exam-learning-layout">
+          <main class="exam-main main-content">
+            <section aria-labelledby="usage-title" class="instruction-section reveal">
+              <h2 id="usage-title">解答するときの注意</h2>
+              <p>記号で答える問題のほか、数値（【3】5、【7】問5）や関数名・SQL句を記述する問題（【5】問3、【6】問1、【7】問3・問4）があります。審査基準では記述問題の大文字・小文字・コンマの有無は問われません。</p>
+              <p>【5】問4と【7】の複数解答問題は、問ごとにすべて正答して得点になります。関数式・SQLは全角・半角や記号を正確に読み取ってください。</p>
+            </section>
+            <section aria-labelledby="legend-title" class="legend-section reveal">
+              <h2 id="legend-title">解説の凡例</h2>
+              <p class="legend-intro">すべての問題で、次の表示を共通して使用します。</p>
+              <div class="legend-grid">
+                <div class="legend-card">
+                  <strong>問題文</strong>
+                  <p>各設問の問題文と選択肢、表・式を示します。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>一般的な解法</strong>
+                  <p>同じ分野の問題に共通して使える判断基準です。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>判断・計算</strong>
+                  <p>設問ごとに、正答の根拠、計算過程、他の選択肢が不適切な理由を示します。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>注意点</strong>
+                  <p>関数の引数や条件式の境界値など失点しやすい箇所です。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>正答</strong>
+                  <p>問題PDF末尾の審査基準に基づく最終的な解答です。</p>
+                </div>
+              </div>
+            </section>
+            <div class="source-box">
+              <p><strong>出典：</strong>公益財団法人 全国商業高等学校協会主催 令和7年度 第74回 情報処理検定試験 ビジネス情報 第１級</p>
+              <a href="https://zensho.or.jp/puf/download/exam/pastexam/2025/info_74_1_bus.pdf" target="_blank" rel="noopener noreferrer" class="text-link">問題・解答用紙・解答PDF　　　</a>
+              <p class="source-note">本記事は全商協会による公式解説ではありません。</p>
+            </div>
+            <h2 id="question-list">設問一覧</h2>
+            <nav aria-label="設問へのリンク" class="question-nav">
+              <a href="#q1">1</a>
+              <a href="#q2">2</a>
+              <a href="#q3">3</a>
+              <a href="#q4">4</a>
+              <a href="#q5">5</a>
+              <a href="#q6">6</a>
+              <a href="#q7">7</a>
+            </nav>
+            <h2 id="answers">正答一覧</h2>
+            <div aria-label="表（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+              <table class="summary-table">
+                <thead>
+                  <tr><th>番号</th><th>主な論点</th><th>正答</th></tr></thead>
+                  <tbody>
+                    <tr><td>【1】</td><td>用語選択</td><td>１ ア　２ ク　３ シ　４ ウ　５ ケ</td></tr>
+                    <tr><td>【2】</td><td>用語と説明文</td><td>１ イ　２ カ　３ エ　４ オ　５ コ</td></tr>
+                    <tr><td>【3】</td><td>用語・計算</td><td>１ ア　２ ウ　３ ア　４ イ　５ 80％</td></tr>
+                    <tr><td>【4】</td><td>設計・分析手法</td><td>問１ ウ　問２ ア　問３ イ　問４ エ　問５ イ</td></tr>
+                    <tr><td>【5】</td><td>SQL</td><td>問１ ウ　問２ イ　問３ HAVING　問４ ⒜イ ⒝ア ⒞エ　問５ ウ</td></tr>
+                    <tr><td>【6】</td><td>表計算関数</td><td>問１ 0　問２ ウ　問３ ア　問４ ウ　問５ イ</td></tr>
+                    <tr><td>【7】</td><td>料金見積計算表</td><td>問１ ウ　問２ ア　問３ MONTH　問４ SUBSTITUTE　問５ 23,620</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <h2 id="explanations">設問別解説</h2>
+
+              <section class="problem question-section reveal" id="q1">
+                <div class="problem-head">
+                  <span class="number">1</span>
+                  <h3>【1】用語選択（信頼性・FTP・共有ロック・VoIP・ウォータフォールモデル）</h3>
+                </div>
+
+                <!-- BEGIN OFFICIAL QUESTION 1 -->
+                <section aria-labelledby="q1-official-question-title" class="official-question official-question--placeholder">
+                  <div class="official-question__header">
+                    <h4 id="q1-official-question-title">問題文</h4>
+                  </div>
+                  <blockquote class="official-question__body">
+                    <!-- 第1問の問題文欄 -->
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>次の説明文に最も適した答えを解答群から選び，記号で答えなさい。</p>
+<p>１．RASISの示す評価指標の一つで，システムが安定して稼働し，故障が発生しにくいことを示す。平均故障間隔を指標として判断する。<br/>２．ネットワークを介し，特定のコンピュータ間でファイルを転送するためのプロトコル。Webサーバへのファイルのアップロードやダウンロードなどに使われる。<br/>３．データベースにおいてデータの整合性を保つために用いる排他制御の一つで，他のトランザクションではデータの参照が可能だが，更新や削除ができない。<br/>４．TCP/IPを利用して音声通話をするための技術。音声をデジタルデータに変換，パケット化して送信し，受信時に再変換して音声通話を実現する。<br/>５．システム開発の手法の一つで，全体をいくつかの工程に分割して上流の工程から順次開発を進め，それぞれの工程が完了後は，原則として前の工程に戻らない手法。</p>
+<p>解答群</p>
+<table>
+<tr><td>　ア．信頼性　</td><td>　イ．DMZ　</td><td>　ウ．VoIP　</td></tr>
+<tr><td>　エ．ERP　</td><td>　オ．プロトタイピングモデル　</td><td>　カ．保守性　</td></tr>
+<tr><td>　キ．専有ロック　</td><td>　ク．FTP　</td><td>　ケ．ウォータフォールモデル　</td></tr>
+<tr><td>　コ．VPN　</td><td>　サ．MIME　</td><td>　シ．共有ロック　</td></tr></table>
+                    </div>
+                  </blockquote>
+                </section>
+                <!-- END OFFICIAL QUESTION 1 -->
+                <section aria-label="問題1の一般的な解法" class="general-method">
+                  <h4>一般的な解法</h4>
+                  <p class="method-title">用語問題の判断基準</p>
+                  <ol><li>RASIS＝Reliability（信頼性・MTBF）、Availability（可用性）、Serviceability（保守性・MTTR）、Integrity（完全性）、Security（安全性）。</li><li>ロックの種類：共有ロック＝参照は可・更新は不可、専有ロック＝参照も更新も不可。</li><li>開発手法：ウォータフォール（前工程に戻らない）、プロトタイピング（試作品で確認）、スパイラル（繰り返し）。</li></ol>
+                </section>
+<div aria-label="設問別の判断" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>設問</th><th>正答</th><th>正答の根拠</th><th>他の選択肢・注意</th></tr></thead><tbody>
+<tr><td>１</td><td>ア</td><td>平均故障間隔（MTBF）で判断する指標は信頼性。</td><td>保守性はMTTR（平均修復時間）で判断する。</td></tr>
+<tr><td>２</td><td>ク</td><td>ファイル転送のプロトコルはFTP。</td><td></td></tr>
+<tr><td>３</td><td>シ</td><td>他のトランザクションが参照はできるが更新できないのは共有ロック。</td><td>専有ロックは参照もできない。</td></tr>
+<tr><td>４</td><td>ウ</td><td>TCP/IPで音声通話を行う技術はVoIP。</td><td></td></tr>
+<tr><td>５</td><td>ケ</td><td>上流から順に進め前工程に戻らないのはウォータフォールモデル。</td><td>プロトタイピングは試作を繰り返す。</td></tr>
+</tbody></table></div>
+<p>その他の選択肢の解説</p>
+<div aria-label="設問別の判断2" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>記号</th><th>意味・解説</th></tr></thead><tbody>
+<tr><td>イ</td><td>DeMilitarized Zone[非武装地帯]の略。<br>公開情報を内部サーバに置く際などに設定される。</td></tr>
+<tr><td>エ</td><td>Enterprise Resource Planning[企業資源計画]の略。<br>ヒトモノカネの会社の経営資源を管理して全体最適化を実現するための経営手法</td></tr>
+<tr><td>コ</td><td>Virtual Private Network[仮想専用回線]の略。<br>セキュアな通信を行うためなどに使用される。</td></tr>
+<tr><td>サ</td><td>Mlutipurpose Internet Mail Extensionsの略。<br>メールに様々なデータを載せることができるようにする拡張仕様。</td></tr>
+</tbody></table></div>
+                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>３は「参照が可能」という一語で共有ロックと専有ロックを区別します。専有ロック中は参照もできません。</p></aside><div class="answer">答え　１ ア　２ ク　３ シ　４ ウ　５ ケ</div>
+              </section>
+
+              <section class="problem question-section reveal" id="q2">
+                <div class="problem-head">
+                  <span class="number">2</span>
+                  <h3>【2】用語と説明文の対応（内部設計・ブラックボックステスト・チェックポイント・公開鍵暗号方式・レスポンスタイム）</h3>
+                </div>
+
+                <!-- BEGIN OFFICIAL QUESTION 2 -->
+                <section aria-labelledby="q2-official-question-title" class="official-question official-question--placeholder">
+                  <div class="official-question__header">
+                    <h4 id="q2-official-question-title">問題文</h4>
+                  </div>
+                  <blockquote class="official-question__body">
+                    <!-- 第2問の問題文欄 -->
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>次のＡ群の語句に最も関係の深い説明文をＢ群から選び，記号で答えなさい。</p>
+<p>＜Ａ群＞　１．内部設計　２．ブラックボックステスト　３．チェックポイント　４．公開鍵暗号方式　５．レスポンスタイム</p>
+<p>＜Ｂ群＞<br/>ア．システムに処理要求をしてからすべての実行結果を受信するまでの時間のことで，処理の開始と終了が明確な場合に参考となる性能要件。<br/>イ．システム開発において，クライアントやユーザの要望を受けて操作画面や帳票を設計した後に，入出力のためのデータの処理方法やプログラムで処理する内容を設計する工程。<br/>ウ．プログラムの内部構造に着目し，使用する命令や処理の流れなどが設計どおりに動作しているかを確認するテスト。<br/>エ．データベースにおいて，データの追加や変更をディスクに書き込む処理を行ったタイミングのことで，一定の間隔で設定される。<br/>オ．暗号化してデータを送受信する際，暗号化と復号にそれぞれ異なる鍵を使用する暗号方式で，この方式を用いてn人が相互に通信する場合，必要な鍵データの数の計算方法は2nである。<br/>カ．入力データから出力された結果のみに着目し，仕様書どおりの出力結果が得られるかを確認するテスト。<br/>キ．システム開発において，クライアントやユーザが必要としている事項をまとめた内容をもとに，操作画面や帳票など，目に触れる部分の仕様を設計する工程。<br/>ク．データベースにおいて，データの更新や削除を行う際に，整合性を確保するため分けることができない処理を一つにまとめた処理単位。<br/>ケ．暗号化してデータを送受信する際，暗号化と復号に同一の鍵を使用する暗号方式で，この方式を用いてn人が相互に通信する場合，必要な鍵データの数の計算方法は，n(n-1)/2である。<br/>コ．システムに処理要求を送信してから最初の応答が返ってくるまでの時間のことで，遅延，待ち時間など応答速度の参考となる性能要件。</p>
+                    </div>
+                  </blockquote>
+                </section>
+                <!-- END OFFICIAL QUESTION 2 -->
+                <section aria-label="問題2の一般的な解法" class="general-method">
+                  <h4>一般的な解法</h4>
+                  <p class="method-title">対になる用語の区別</p>
+                  <ol><li>外部設計（画面・帳票など目に触れる部分）→ 内部設計（処理方法・プログラム内容）。</li><li>ブラックボックステスト＝出力結果のみ、ホワイトボックステスト＝内部構造。</li><li>チェックポイント＝ディスク書き込みのタイミング、トランザクション＝分割できない処理単位。<li>公開鍵方式は鍵数2n、共通鍵方式はn(n-1)/2。</li><li>ターンアラウンドタイム＝全結果受信まで、レスポンスタイム＝最初の応答まで。</li></ol>
+                </section>
+<div aria-label="設問別の判断" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>設問</th><th>正答</th><th>正答の根拠</th><th>他の選択肢・注意</th></tr></thead><tbody>
+<tr><td>１</td><td>イ</td><td>外部設計の後に処理方法やプログラム内容を設計するのが内部設計。</td><td>キは外部設計。</td></tr>
+<tr><td>２</td><td>カ</td><td>出力結果のみに着目するのがブラックボックステスト。</td><td>ウはホワイトボックステスト。</td></tr>
+<tr><td>３</td><td>エ</td><td>ディスクに書き込むタイミングがチェックポイント。</td><td>クはトランザクション。</td></tr>
+<tr><td>４</td><td>オ</td><td>異なる鍵を使い鍵数が2nなのが公開鍵暗号方式。</td><td>ケは共通鍵暗号方式。</td></tr>
+<tr><td>５</td><td>コ</td><td>最初の応答が返るまでの時間がレスポンスタイム。</td><td>アはターンアラウンドタイム。</td></tr>
+</tbody></table></div>
+                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>Ｂ群は対になる説明文がペアで用意されています（イ／キ、ウ／カ、エ／ク、オ／ケ、ア／コ）。それぞれの違いを表す語句（「目に触れる部分」「結果のみ」「最初の応答」など）を見つけて選びます。</p></aside><div class="answer">答え　１ イ　２ カ　３ エ　４ オ　５ コ</div>
+              </section>
+
+              <section class="problem question-section reveal" id="q3">
+                <div class="problem-head">
+                  <span class="number">3</span>
+                  <h3>【3】用語選択と計算（インシデント・ブレーンストーミング・フォールトトレラント・画像容量・伝送効率）</h3>
+                </div>
+
+                <!-- BEGIN OFFICIAL QUESTION 3 -->
+                <section aria-labelledby="q3-official-question-title" class="official-question official-question--placeholder">
+                  <div class="official-question__header">
+                    <h4 id="q3-official-question-title">問題文</h4>
+                  </div>
+                  <blockquote class="official-question__body">
+                    <!-- 第3問の問題文欄 -->
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>次の説明文に最も適した答えをア，イ，ウの中から選び，記号で答えなさい。なお，５．については数値を答えなさい。</p>
+<p>１．情報セキュリティにおいて，サーバの一時的な停止やソフトウェアの機能不全，外部からの不正なアクセスなど，サービスの中断や運用を妨げる可能性がある事象やできごと。<br>　ア．インシデント　イ．シンクライアント　ウ．スループット<br/>２．集団で意見を出し合い，アイディアを生み出すことを目的とした発想法。「批判禁止」，「自由奔放」，「質より量」，「便乗歓迎」という四つのルールがある。<br>　ア．SWOT分析　イ．KJ法　ウ．ブレーンストーミング<br/>３．機械やシステムは「故障する」という考え方のもと，問題や事故が発生しても，全体の機能を維持して稼働し続けるように制御する設計手法。<br>　ア．フォールトトレラント　イ．フォールトアボイダンス　ウ．リスクマネジメント<br/>４．解像度3,000×2,000ピクセル，1ピクセルあたり32ビットの色情報を持つ画像を60%に圧縮し，DVD1枚に保存する場合，画像は最大何枚保存できるか。なお，DVDの記憶容量は，4.7GBとする。ただし，1GB＝10<sup>9</sup>Bとする。<br>　ア．325　イ．326　ウ．327<br/>５．通信速度が1,024Mbpsの通信回線を用いて，512MBのファイルをダウンロードするためにかかった時間は5秒であった。この通信回線の伝送効率は何%か求めなさい。なお，その他の外部要因は考えないものとする。ただし，1MB＝10<sup>6</sup>Bとする。</p>
+                    </div>
+                  </blockquote>
+                </section>
+                <!-- END OFFICIAL QUESTION 3 -->
+                <section aria-label="問題3の一般的な解法" class="general-method">
+                  <h4>一般的な解法</h4>
+                  <p class="method-title">容量・通信の計算手順</p>
+                  <ol><li>画像容量（B）＝横×縦×（色ビット数÷8）。圧縮後＝×圧縮率。枚数＝媒体容量÷1枚の容量（切り捨て）。</li><li>伝送効率＝実際の伝送速度÷回線速度。データ量はバイト→ビット（×8）に変換してから秒で割る。</li><li>フォールトトレラント＝故障しても稼働継続、フォールトアボイダンス＝故障を起こさない設計。</li></ol>
+                </section>
+<div aria-label="設問別の判断" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>設問</th><th>正答</th><th>正答の根拠</th><th>他の選択肢・注意</th></tr></thead><tbody>
+<tr><td>１</td><td>ア</td><td>サービスの中断や運用を妨げる<strong>事象</strong>はインシデント。</td><td>シンクライアントは端末形態、スループットは処理能力。</td></tr>
+<tr><td>２</td><td>ウ</td><td>批判禁止・自由奔放・質より量・便乗歓迎の4ルールはブレーンストーミング。</td><td>SWOT分析は企業の４つのマトリクスで分析する手法。<br>KJ法は様々な情報をカードに書き出してまとめ上げていく手法。</td></tr>
+<tr><td>３</td><td>ア</td><td>故障しても全体機能を維持して稼働し続ける設計はフォールトトレラント。</td><td>フォールトアボイダンスは故障を避ける設計。<br>リスクマネジメントはリスクを回避・低減させるためのプロセス。</td></tr>
+<tr><td>４</td><td>イ</td><td>下記参照</td><td></td></tr>
+<tr><td>５</td><td>80</td><td>下記参照</td><td>バイトをビットに換算し忘れると10％になる。</td></tr>
+</tbody></table></div><div class="formula">
+  <p class="formula-title">４．画像の保存枚数</p>
+  <p>1枚の容量 ＝ 3,000 × 2,000 × 32 ÷ 8 ＝ 24,000,000 B ＝ 24 MB</p>
+  <p>圧縮後 ＝ 24 MB × 0.6 ＝ 14.4 MB</p>
+  <p>枚数 ＝ 4,700 MB ÷ 14.4 MB ＝ 326.38… → <strong>326枚</strong>（端数切り捨て）</p>
+  <p class="formula-title">５．伝送効率</p>
+  <p>データ量 ＝ 512 × 10<sup>6</sup> B × 8 ＝ 4,096 Mbit</p>
+  <p>実際の速度 ＝ 4,096 Mbit ÷ 5 秒 ＝ 819.2 Mbps</p>
+  <p>伝送効率 ＝ 819.2 ÷ 1,024 ＝ 0.8 → <strong>80％</strong></p>
+</div>
+                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>４は枚数なので小数を切り捨てます（切り上げると327で不正解）。５はMB（バイト）をMbit（ビット）へ8倍する変換が最大のポイントです。</p></aside><div class="answer">答え　１ ア　２ ウ　３ ア　４ イ　５ 80％</div>
+              </section>
+
+              <section class="problem question-section reveal" id="q4">
+                <div class="problem-head">
+                  <span class="number">4</span>
+                  <h3>【4】データベース設計・アローダイアグラム・特性要因図・PPM分析・PaaS</h3>
+                </div>
+
+                <!-- BEGIN OFFICIAL QUESTION 4 -->
+                <section aria-labelledby="q4-official-question-title" class="official-question official-question--placeholder">
+                  <div class="official-question__header">
+                    <h4 id="q4-official-question-title">問題文</h4>
+                  </div>
+                  <blockquote class="official-question__body">
+                    <!-- 第4問の問題文欄 -->
+                    <div aria-hidden="true" class="official-question__space">
+                      <!-- <p>次の各問いに答えなさい。</p>
+<p>問１．次の図は，データベースの設計手順を示している。名称と説明の組み合わせとして空欄⒜にあてはまる適切なものを選び，記号で答えなさい。（※設計 → ⒜ → ※設計）<br/>ア．名称：概念設計　説明：要件定義を行い，エンティティを抽出して，E-R図を作成する。　イ．名称：概念設計　説明：冗長なデータを取り除き，整合性を保つために正規化を行う。　ウ．名称：論理設計　説明：冗長なデータを取り除き，整合性を保つために正規化を行う。　エ．名称：論理設計　説明：作業や入力データを想定して必要なハードウェアなどの環境を整える。</p>
+<p>問２．次の図は，あるプロジェクトにおけるアローダイアグラムである。このプロジェクトが完了するまでの最短の所要日数が14日の場合，作業Gの日数として空欄⒜にあてはまる適切なものを選び，記号で答えなさい。<br/>（経路：作業A 4日 → 作業D 6日 → 作業F 2日 → 作業H 1日／作業A 4日 → 作業C 3日 → 作業E 3日 → 作業G ⒜日 → 作業H 1日／作業B 6日 → 作業E 3日 → 作業G ⒜日 → 作業H 1日）<br/>ア．3　イ．4　ウ．5</p>
+<p>問３．次の特性要因図の空欄⒜，⒝にあてはまる組み合わせとして適切なものを選び，記号で答えなさい。（枝の先に⒜が複数，背骨の先端に⒝）<br/>ア．⒜結果　⒝特性　イ．⒜要因　⒝特性　ウ．⒜特性　⒝要因</p>
+<p>問４．PPM分析において，市場成長率と市場占有率から見たとき，空欄⒜にあてはまる適切なものを選び，記号で答えなさい。（⒜は市場成長率が低く，市場占有率が高い区分）<br/>ア．負け犬　イ．問題児　ウ．花形　エ．金のなる木</p>
+<p>問５．PaaSを説明している次の文章のうち適切なものを選び，記号で答えなさい。<br/>ア．完成されたソフトウェアをユーザに提供するサービス。ソフトウェアをユーザのサーバで運用するのではなく，インターネットにアクセスして利用する。ユーザは，自前でサーバを設置することがないなどのメリットから，導入費用を抑えることができる。<br/>イ．プログラム開発のためのソフトウェアやネットワークをユーザに提供するサービス。ユーザは，環境の整備に時間をかけることなく業務に適したソフトウェアを開発して利用できる。ただし，用意された環境でのみ開発することから，開発の自由度は低い。<br/>ウ．仮想サーバなどのインフラをユーザに提供するサービス。ユーザは，インフラの管理やソフトウェアの開発に高度な知識，技術が要求されるが，その分，開発の自由度が高い。</p> -->
+                    <p>（問題分省略。PDFを参照してください。）</p>
+</div>
+                  </blockquote>
+                </section>
+                <!-- END OFFICIAL QUESTION 4 -->
+                <section aria-label="問題4の一般的な解法" class="general-method">
+                  <h4>一般的な解法</h4>
+                  <p class="method-title">経営・設計手法の判断</p>
+                  <ol><li>データベース設計：概念設計（E-R図）→ 論理設計（正規化）→ 物理設計（ハードウェア環境）。</li><li>アローダイアグラム：最短所要日数＝最も長い経路（クリティカルパス）の日数。各経路の合計を求め、最長が14日になる値を探す。</li><li>PPM：花形（高成長・高占有）、金のなる木（低成長・高占有）、問題児（高成長・低占有）、負け犬（低成長・低占有）。SaaS＝ソフト、PaaS＝開発環境、IaaS＝インフラ。</li></ol>
+                </section>
+<div aria-label="設問別の判断" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>設問</th><th>正答</th><th>正答の根拠</th><th>他の選択肢・注意</th></tr></thead><tbody>
+<tr><td>問１</td><td>ウ</td><td>データベースの設計で２番目に行うのは論理設計で、正規化を行う。</td><td>アは概念設計の説明、エは物理設計の説明。</td></tr>
+<tr><td>問２</td><td>ア</td><td>下記参照</td><td>4や5だと最短所要日数が15日・16日になる。</td></tr>
+<tr><td>問３</td><td>イ</td><td>特性要因図は枝が要因、背骨の先が特性（結果）。</td><td></td></tr>
+<tr><td>問４</td><td>エ</td><td>低成長・高占有は金のなる木。安定した収益源になっている。</td><td>花形は高成長・高占有、問題児は高成長・低占有、負け犬は低成長、低占有。</td></tr>
+<tr><td>問５</td><td>イ</td><td>PaaS（Platform as a Service）は開発のためのソフトウェアやネットワークを提供。</td><td>アはSaaS（Software as a Service）、ウはIaaS（Inflastructure as a Service）。</td></tr>
+</tbody></table></div>
+<div class="formula">
+  <p class="formula-title">問２．経路ごとの日数</p>
+  <p>クリティカルパス（一番工程の遂行に時間がかかる経路）はどこかを探す。</p>
+  <p>A → D → F → H ＝ 4 ＋ 6 ＋ 2 ＋ 1 ＝ 13日</p>
+  <p>A → C → E → G → H ＝ 4 ＋ 3 ＋ 3 ＋ G ＋ 1 ＝ 11 ＋ G</p>
+  <p>B → E → G → H ＝ 6 ＋ 3 ＋ G ＋ 1 ＝ 10 ＋ G</p>
+  <p>最短の所要日数（一番工程に時間がかかるパスの日数）が14日 → 11 ＋ G ＝ 14 → <strong>G ＝ 3日</strong></p>
+</div>
+                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>問２は「最短の所要日数＝クリティカルパスの長さ」です。Gを含まない経路（13日）より長くなるようにGを決めます。</p></aside><div class="answer">答え　問１ ウ　問２ ア　問３ イ　問４ エ　問５ イ</div>
+              </section>
+
+              <section class="problem question-section reveal" id="q5">
+                <div class="problem-head">
+                  <span class="number">5</span>
+                  <h3>【5】自動販売機の売上データベース（E-R図・UPDATE・HAVING・OR/AND/DESC・NOT EXISTS）</h3>
+                </div>
+
+                <!-- BEGIN OFFICIAL QUESTION 5 -->
+                <section aria-labelledby="q5-official-question-title" class="official-question official-question--placeholder">
+                  <div class="official-question__header">
+                    <h4 id="q5-official-question-title">問題文</h4>
+                  </div>
+                  <blockquote class="official-question__body">
+                    <!-- 第5問の問題文欄 -->
+                    <div aria-hidden="true" class="official-question__space">
+                      <!-- <p>ある自動販売機会社では，飲み物の売上データを，次のようなリレーショナル型データベースを利用し管理している。次の各問いに答えなさい。</p>
+<p>処理の流れ　①売上表は，飲み物が一本売れるごとに1レコードが作成され，売上番号は連番が付与される。　②天候表は一日１レコード作成される。</p>
+<p>商品一覧表（商品コード，商品名，販売単価，分類コード）　分類表（分類コード，分類名）　売上表（売上番号，日付，商品コード）　天候表（日付，天気，平均気温，最高気温，最低気温）</p>
+<p>問１．次の図は，四つの表のリレーションシップを表したE-R図である。空欄⒜にあてはまる適切なものを選び，記号で答えなさい。（※ 1—多 ⒜ 1—多 ※ 多—1 ※）　ア．売上表　イ．天候表　ウ．商品一覧表</p>
+<p>問２．2025年11月12日の天気を晴から曇へ更新する。次のSQL文の空欄⒜～⒞にあてはまる組み合わせとして適切なものを選び，記号で答えなさい。</p>
+<div class="code-block"><pre><code>UPDATE  (a)  SET  (b)  WHERE  (c)</code></pre></div>
+<p>ア．⒜天気 = '曇'　⒝天候表　⒞日付 = '2025/11/12'　イ．⒜天候表　⒝天気 = '曇'　⒞日付 = '2025/11/12'　ウ．⒜天候表　⒝日付 = '2025/11/12'　⒞天気 = '曇'</p>
+<p>問３．2025年11月1日から2025年11月30日において，飲み物ごとの販売金額が，3,000円以上の商品コード，商品名，販売金額を抽出する。次のSQL文の空欄をうめなさい。</p>
+<div class="code-block"><pre><code>SELECT A.商品コード, 商品名, COUNT(*) * 販売単価 AS 販売金額
+  FROM 商品一覧表 A, 売上表 B
+ WHERE A.商品コード = B.商品コード
+   AND 日付 BETWEEN &#x27;2025/11/01&#x27; AND &#x27;2025/11/30&#x27;
+ GROUP BY A.商品コード, 商品名, 販売単価
+ [    ] COUNT(*) * 販売単価 &gt;= 3000</code></pre></div>
+<p>問４．2025年12月15日から2025年12月21日において，天気が晴または曇，かつ平均気温が10.0度以下のデータを対象に分類コードごとに販売本数を求め，販売本数の降順に分類コード，分類名，販売本数を抽出する。次のSQL文の空欄⒜～⒞にあてはまる適切なものを選び，記号で答えなさい。</p>
+<div class="code-block"><pre><code>SELECT B.分類コード, 分類名, COUNT(*) AS 販売本数
+  FROM 商品一覧表 A, 分類表 B, 売上表 C, 天候表 D
+ WHERE A.商品コード = C.商品コード
+   AND A.分類コード = B.分類コード
+   AND C.日付 = D.日付
+   AND C.日付 BETWEEN &#x27;2025/12/15&#x27; AND &#x27;2025/12/21&#x27;
+   AND (天気 = &#x27;晴&#x27; (a) 天気 = &#x27;曇&#x27;) (b) 平均気温 &lt;= 10.0
+ GROUP BY B.分類コード, 分類名
+ ORDER BY COUNT(*) (c)</code></pre></div>
+<p>ア．AND　イ．OR　ウ．ASC　エ．DESC</p>
+<p>問５．2025年12月22日から2025年12月28日において，一本も販売されていない飲み物の商品コード，商品名，販売単価を抽出する。次のSQL文の空欄にあてはまる適切なものを選び，記号で答えなさい。</p>
+<div class="code-block"><pre><code>SELECT 商品コード, 商品名, 販売単価
+  FROM 商品一覧表 A
+ WHERE [    ] (SELECT *
+                 FROM 売上表 B
+                WHERE A.商品コード = B.商品コード
+                  AND 日付 BETWEEN &#x27;2025/12/22&#x27; AND &#x27;2025/12/28&#x27;)</code></pre></div>
+<p>ア．NOT IN　イ．EXISTS　ウ．NOT EXISTS</p> -->
+<p>問題文省略。PDFを参照してください。</p>
+                    </div>
+                  </blockquote>
+                </section>
+                <!-- END OFFICIAL QUESTION 5 -->
+                <section aria-label="問題5の一般的な解法" class="general-method">
+                  <h4>一般的な解法</h4>
+                  <p class="method-title">SQLの基本構文</p>
+                  <ol><li>E-R図：「多」側は外部キーを持つ表。売上表は商品コードと日付を持つので商品一覧表・天候表の両方に対して「多」。分類表 1—多 商品一覧表 1—多 売上表 多—1 天候表。</li><li>UPDATE 表名 SET 更新列＝内容 WHERE 条件</li><li>集計結果の絞り込みは HAVING（WHEREは集計前）。</li><li>「または」＝OR、「かつ」＝AND、降順＝DESC。</li><li>「存在しない」＝NOT EXISTS（相関副問合せ SELECT * と組み合わせる）。</li></ol>
+                </section>
+<div aria-label="設問別の判断" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>設問</th><th>正答</th><th>正答の根拠</th><th>他の選択肢・注意</th></tr></thead><tbody>
+<tr><td>問１</td><td>ウ</td><td>分類表 1—多 商品一覧表 1—多 売上表 多—1 天候表 の並びで⒜は商品一覧表。</td><td>売上表は両側が「多」、天候表は右端。</td></tr>
+<tr><td>問２</td><td>イ</td><td>基本構文に照らし合わせれば、(a)には表名が、(b)には更新内容が、(c)には更新すべき場所の内容が入る。</td><td>アは表名と列の位置が逆、ウはSETとWHEREの内容が逆。</td></tr>
+<tr><td>問３</td><td>HAVING</td><td>GROUP BY 後の集計値（COUNT(*)×販売単価）で絞り込むのはHAVING。</td><td>WHEREは集計関数を条件にできない。</td></tr>
+<tr><td>問４</td><td>⒜イ ⒝ア ⒞エ</td><td>晴「または(OR)」曇「かつ(AND)」平均気温、降順(DESC)。</td><td>ASCは昇順を指定する語句。</td></tr>
+<tr><td>問５</td><td>ウ</td><td>副問合せの結果が存在しない商品を抽出するのはNOT EXISTS。</td><td>NOT INは列を指定する形（SELECT * では使えない）、EXISTSは販売された商品になる。</td></tr>
+</tbody></table></div>
+                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>問５は副問合せが SELECT * で、外側の A.商品コード と結び付いた相関副問合せです。この形では NOT IN ではなく NOT EXISTS を使います。</p></aside><div class="answer">答え　問１ ウ　問２ イ　問３ HAVING　問４ ⒜ イ ⒝ ア ⒞ エ　問５ ウ</div>
+              </section>
+
+              <section class="problem question-section reveal" id="q6">
+                <div class="problem-head">
+                  <span class="number">6</span>
+                  <h3>【6】表計算関数（RANDBETWEEN・FLOOR・DMAX・OFFSET・ソルバー）</h3>
+                </div>
+
+                <!-- BEGIN OFFICIAL QUESTION 6 -->
+                <section aria-labelledby="q6-official-question-title" class="official-question official-question--placeholder">
+                  <div class="official-question__header">
+                    <h4 id="q6-official-question-title">問題文</h4>
+                  </div>
+                  <blockquote class="official-question__body">
+                    <!-- 第6問の問題文欄 -->
+                     <!--
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>次の各問いに答えなさい。</p>
+<p>問１．次の表は，あるプログラム処理のテストのために，2026年の日付を無作為に抽出した表である。B4に設定する次の式の空欄をうめなさい。ただし，この式をB13までコピーする。なお，2026年は平年であり，「抽出日付」の重複は問わない。</p>
+<div class="code-block"><pre><code>=DATE(2026,1,1)+RANDBETWEEN([  ],364)</code></pre></div>
+<p>問２．次の表は，ある果樹園のミカン収穫一覧表である。8kg入りの箱に，収穫したミカンを詰めて出荷している。なお，箱に入りきらなかったミカンは翌日に繰り越している。D4に設定する式として適切なものを選び，記号で答えなさい。（収穫日 2025/11/1：収穫87kg，繰り越し0kg，箱数10／11/2：88kg，7kg，11／11/3：85kg，7kg，11 …）<br/>ア．=CEILING(B4+C4,8)/8　イ．=ROUND((B4+C4)/8,0)　ウ．=FLOOR(B4+C4,8)/8</p>
+<p>問３．次の表は，あるボウリング大会団体戦のスコア一覧表である。G5に設定する式として適切なものを選び，記号で答えなさい。ただし，この式をJ5までコピーする。（A3:D15にNo.・チーム・名前・スコア。G3:J3「チーム」，G4:J4「Ａチーム」〜「Ｄチーム」，G5「最高スコア」行：174，108，190，158）<br/>ア．=DMAX($A$3:$D$15,"スコア",G3:G4)　イ．=DMAX($A$4:$D$15,4,G3:G4)　ウ．=DMAX($A$3:$D$15,4,$G3:$G4)</p>
+<p>問４．次の表は，ある店舗の来店者数一覧表である。「開始日」から「終了日」の来店者数を集計して「来店者数計」に表示する。E5に設定する次の式の空欄にあてはまる適切なものを選び，記号で答えなさい。（A列 日付，B列 来店者数（4行目から）。E3 開始日 2026/1/1，E4 終了日 2026/1/3，E5 来店者数計 933）</p>
+<div class="code-block"><pre><code>=SUM(OFFSET(B3,MATCH(E3,A:A,0)-3,0,[    ],1))</code></pre></div>
+<p>ア．E4-E3-1　イ．E4-E3　ウ．E4-E3+1</p>
+<p>問５．次の表は，ある洋菓子店の生産シミュレーションである。次の条件から「利益」の合計が最大となる商品の「生産数」を求めたい。表計算ソフトウェアのデータ分析機能に設定する空欄⒜，⒝にあてはまる適切なものを選び，記号で答えなさい。<br/>（B4:E5 1個あたりの材料(g)と利益：クッキー 15,6,7,30／マフィン 40,15,15,70。B9:D9 在庫量：20,000／10,000／8,000。生産シミュレーション B13:F15：13行クッキー，14行マフィン，15行合計。F列は生産数）<br/>条件　・B13には次の式を入力し，E14までコピーする。=B4*$F13　・B15には次の式を入力し，F15までコピーする。=B13+B14　・「小麦粉」，「砂糖」，「バター」の「合計」は，それぞれの「在庫量(g)」を超えない。<br/>パラメータ設定　目的セルの設定：⒜　目標値：最大値　変数セルの変更：⒝　制約条件：$B$15&lt;=$B$9，$C$15&lt;=$C$9，$D$15&lt;=$D$9，$F$13:$F$14=整数<br/>ア．⒜$E$15 ⒝$E$13:$E$14　イ．⒜$E$15 ⒝$F$13:$F$14　ウ．⒜$F$15 ⒝$F$13:$F$14</p>
+                    </div> -->
+                    <p>問題文省略。PDFを参照してください。</p>
+                  </blockquote>
+                </section>
+                <!-- END OFFICIAL QUESTION 6 -->
+                <section aria-label="問題6の一般的な解法" class="general-method">
+                  <h4>一般的な解法</h4>
+                  <p class="method-title">関数の説明</p>
+                  <ol><li>RANDBETWEEN(最小,最大)：最小に入れた値と最大に入れた値の間からランダムに１つ整数値を返す関数。</li><li>端数処理<br>FLOOR(数値,基準値)：数値を基準値の倍数で切り捨て　CEILING(数値,基準値)：数値を基準値の倍数で切り上げ　ROUND(数値,小数第〇位)：数値を小数第〇位（一の位以上はマイナス値）で四捨五入</li><li>DMAX(データベース,フィールド,条件)：データベースは見出し行を含む。フィールドは列番号か見出し名。</li><li>OFFSET(基準,行,列,高さ,幅)：基準のセルから行の値、列の値分進んだ場所を基準に高さの値、幅の値分の範囲を指定。</li><li>ソルバー：目的セル＝最大化したい値（利益合計 E15）、変数セル＝生産数（F13:F14）。</li></ol>
+                </section>
+<div aria-label="設問別の判断" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>設問</th><th>正答</th><th>正答の根拠</th><th>他の選択肢・注意</th></tr></thead><tbody>
+<tr><td>問１</td><td>0</td><td>1/1 に 0〜364 を加えることで 1/1〜12/31 を生成できる。</td><td></td></tr>
+<tr><td>問２</td><td>ウ</td><td>８kg単位で何箱必要かを考える必要があり、端数は繰り越すため、８kg単位で切り捨てた数を８で割れば箱数が求まる。切り捨てはFLOOR関数。</td><td>CEILINGは切り上げ、ROUNDは四捨五入の関数。</td></tr>
+<tr><td>問３</td><td>ア</td><td>見出し行を含む範囲、フィールド名 "スコア"、条件 G3:G4 は列相対参照でコピー可能。</td><td>イは見出し行を含まない範囲、ウは$G3:$G4で列が固定されコピーしても全てＡチームになる。</td></tr>
+<tr><td>問４</td><td>ウ</td><td>開始日から終了日までの日数は 終了日－開始日＋１。　→　E4 - E3 + 1</td><td></td></tr>
+<tr><td>問５</td><td>イ</td><td>目的セル＝利益の合計 $E$15、変数セル＝生産数 $F$13:$F$14。</td><td>ウの$F$15は生産数合計で目的ではない、アの$E$13:$E$14は利益で変数ではない。</td></tr>
+</tbody></table></div>
+<div class="formula">
+  <p class="formula-title">問２．11/1 の箱数の検算</p>
+  <p>87 ＋ 0 ＝ 87 kg → FLOOR(87, 8) ＝ 80 → 80 ÷ 8 ＝ <strong>10箱</strong>（表と一致）、残り 7 kg が翌日へ繰り越し</p>
+  <p>CEILING なら 88 ÷ 8 ＝ 11箱となり表と合わない。</p>
+  <p class="formula-title">問４．OFFSET の高さ</p>
+  <p>2026/1/1 〜 2026/1/3 ＝ 3日分 → E4 － E3 ＋ 1 ＝ 3　→ 337 ＋ 284 ＋ 312 ＝ 933（表と一致）</p>
+</div>
+
+                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>問３は「J5までコピー」がヒントです。条件範囲を $G3:$G4 のように列固定にすると、H〜J列でも常にＡチームの条件になってしまいます。</p></aside><div class="answer">答え　問１ 0　問２ ウ　問３ ア　問４ ウ　問５ イ</div>
+              </section>
+
+              <section class="problem question-section reveal" id="q7">
+                <div class="problem-head">
+                  <span class="number">7</span>
+                  <h3>【7】レンタカー料金見積計算表（種別判定・MID/ROW・MONTH・SUBSTITUTE・見積料金の計算）</h3>
+                </div>
+
+                <!-- BEGIN OFFICIAL QUESTION 7 -->
+                <section aria-labelledby="q7-official-question-title" class="official-question official-question--placeholder">
+                  <div class="official-question__header">
+                    <h4 id="q7-official-question-title">問題文</h4>
+                  </div>
+                  <blockquote class="official-question__body">
+                    <!-- 第7問の問題文欄 -->
+                     <!-- 
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>次の表は，あるレンタカー会社における料金見積計算表である。作成条件および作成手順にしたがって，各問いに答えなさい。</p>
+<p>シート名「料金見積計算表」（受付日 F4，利用開始日 C7／種別 F7，利用開始時刻 C8／F8，返却日 C10／利用日数 F10，返却時刻 C11／利用時間 F11，出発営業所 C13／県名 F13，返却営業所 C14／F14，クラスコード C16／F16，オプションコード C19／重複チェック F19，オプション名 F21:F24／料金 G21:G24，クーポン利用 C26／F26，利用日数料金 C29，利用時間料金 C30，オプション料金計 C31，乗り捨て料金 C32，クーポン利用割引 C33，見積料金 C34）</p>
+<p>シート名「クラス別料金表」（A4:F6 Cクラス，A10:F12 Hクラス，A16:F18 Wクラス，A22:F24 Eクラス。各表：行＝基本料金／早割A／早割B，列＝6未満／～12未満／～18未満／～24未満／１日）</p>
+<div aria-label="Eクラス料金表（問5で使用）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>Eクラス料金表</th><th>6未満</th><th>～12未満</th><th>～18未満</th><th>～24未満</th><th>１日</th></tr></thead><tbody>
+<tr><td>基本料金</td><td>7,000</td><td>7,700</td><td>8,800</td><td>9,700</td><td>10,670</td></tr>
+<tr><td>早割A</td><td>6,400</td><td>6,900</td><td>7,920</td><td>8,400</td><td>9,600</td></tr>
+<tr><td>早割B</td><td>5,000</td><td>6,000</td><td>6,800</td><td>7,720</td><td>8,560</td></tr>
+</tbody></table></div>
+<p>シート名「オプション表」（S チャイルドシート 1,200／D ４ＷＤ 1,650／T タイヤチェーン 900／K スキーキャリア 1,100）　シート名「営業所表」（青森・弘前・八戸＝青森，盛岡・花巻・一関＝岩手，仙台・松島＝宮城，秋田・大曲＝秋田，山形・米沢＝山形，福島・郡山＝福島）　シート名「クーポン適用月表」（B3:M3 月 1〜12，B4:M4 割引：1月×，2月◎，3月◎，4月◎，5月×，6月◎，7月◎，8月×，9月◎，10月◎，11月◎，12月×）</p>
+<p>作成条件（抜粋）　３．「種別」は受付日から利用開始日までの日数が 0〜30日＝基本料金，31日〜60日＝早割A，61日〜120日＝早割B。　４．「利用日数」と「利用時間」は例のように計算する（例：1/20 10時→1/21 9時 は 0日 22時間，1/20 10時→1/21 12時 は 1日 2時間）。　５．クラスコード C／H／W／E で各料金表を参照。　６．オプションコードは4種類，4つまで指定，重複不可。</p>
+<p>作成手順（抜粋）　⑵ F7は「利用開始日」が「受付日」以降の場合，作成条件３にしたがって種別を表示。前の場合または121日以上の場合 NG。　⑻ F21～F24はF19が重複なしの場合，C19から行番号を利用して抽出したオプションコードをもとにオプション表を参照し「オプション名」を表示。　⑽ F26はC26が1の場合，C7をもとにクーポン適用月表を参照し「割引」が◎の場合 1000，それ以外 0。　⑾ C29は該当クラス料金表の「１日」にF10を掛ける。　⑿ C30は該当クラス料金表を参照した値。　⒀ C31はG21～G24の合計。　⒁ C32はF13とF14が異なる場合 2500，同じでC13とC14が異なる場合 1500，それ以外 0。　⒂ C33はF26。　⒃ C34はC29～C32の計からC33を引く。</p>
+<p>問１．F7に設定する式として適切なものはどれか。記号で答えなさい。</p>
+<div class="code-block"><pre><code>ア．=IF(C7=&quot;&quot;,&quot;&quot;,IF(C7&gt;=F4,IF(C7-F4&gt;120,&quot;NG&quot;,IF(C7-F4&gt;59,&quot;早割B&quot;,IF(C7-F4&gt;29,&quot;早割A&quot;,&quot;基本料金&quot;))),&quot;NG&quot;))
+イ．=IF(C7=&quot;&quot;,&quot;&quot;,IF(C7&gt;=F4,IF(C7-F4&gt;=120,&quot;NG&quot;,IF(C7-F4&gt;=60,&quot;早割B&quot;,IF(C7-F4&gt;=30,&quot;早割A&quot;,&quot;基本料金&quot;))),&quot;NG&quot;))
+ウ．=IF(C7=&quot;&quot;,&quot;&quot;,IF(F4&lt;=C7,IF(C7-F4&gt;120,&quot;NG&quot;,IF(C7-F4&gt;60,&quot;早割B&quot;,IF(C7-F4&gt;30,&quot;早割A&quot;,&quot;基本料金&quot;))),&quot;NG&quot;))</code></pre></div>
+<p>問２．F21に設定する次の式の空欄⒜，⒝にあてはまる適切な組み合わせを選び，記号で答えなさい。ただし，この式をF24までコピーする。</p>
+<div class="code-block"><pre><code>=IF(OR($C$19=&quot;&quot;,$F$19=&quot;重複&quot;),&quot;&quot;,IF(LEN($C$19)&lt;=4,
+  IFERROR(VLOOKUP(MID($C$19,(a)-20,(b)),オプション表!$A$4:$C$7,2,FALSE),&quot;&quot;),&quot;&quot;))</code></pre></div>
+<p>ア．⒜ROW() ⒝1　イ．⒜19 ⒝2　ウ．⒜COLUMN() ⒝1</p>
+<p>問３．F26に設定する次の式の空欄をうめなさい。</p>
+<div class="code-block"><pre><code>=IF(C26=&quot;&quot;,&quot;&quot;,IF(C26=1,IF(HLOOKUP([    ](C7),クーポン適用月表!B3:M4,2)=&quot;◎&quot;,1000,0),0))</code></pre></div>
+<p>問４．C30に設定する次の式の空欄をうめなさい。ただし，空欄には同じものが入る。</p>
+<div class="code-block"><pre><code>=IF(C29=&quot;&quot;,&quot;&quot;,IF(F11=&quot;NG&quot;,0,INDEX((クラス別料金表!B4:E6,クラス別料金表!B10:E12,クラス別料金表!B16:E18,
+  クラス別料金表!B22:E24),MATCH(F7,クラス別料金表!A4:A6,0),INT(F11/6)+1,
+  VALUE([    ]([    ]([    ]([    ](C16,&quot;C&quot;,1),&quot;H&quot;,2),&quot;W&quot;,3),&quot;E&quot;,4)))))</code></pre></div>
+<p>問５．シート名「料金見積計算表」が次のように表示されているとき，C34に表示される適切なデータを答えなさい。<br/>（受付日 2026/1/30，利用開始日 2026/2/10，利用開始時刻 15，返却日 2026/2/12，返却時刻 11，出発営業所 青森，返却営業所 八戸，クラスコード E，オプションコード DK（重複なし），クーポン利用 1）</p>
+                    </div> -->
+                    <p>問題文省略。PDFを参照してください。</p>
+                  </blockquote>
+                </section>
+                <!-- END OFFICIAL QUESTION 7 -->
+                <section aria-label="問題7の一般的な解法" class="general-method">
+                  <h4>一般的な解法</h4>
+                  <p class="method-title">見積計算表の読み解き</p>
+                  <ol><li>境界値の確認：30日＝基本料金、31〜60日＝早割A、61〜120日＝早割B、121日以上＝NG。「＞30」「＞60」「＞120」で区切る式が条件と一致する。</li><li>行番号を利用した文字抽出：F21 では ROW()＝21 なので ROW()－20＝1 文字目、F22 では 2 文字目…と1文字ずつ MID で取り出す。</li><li>HLOOKUP で月を検索するには MONTH(C7)。INDEX の複数範囲は第4引数（領域番号）で選び、SUBSTITUTE で C→1，H→2，W→3，E→4 に置き換えて VALUE で数値化する。</li></ol>
+                </section>
+<div aria-label="設問別の判断" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>設問</th><th>正答</th><th>正答の根拠</th><th>他の選択肢・注意</th></tr></thead><tbody>
+<tr><td>問１</td><td>ウ</td><td>＞120→NG、＞60→早割B、＞30→早割A、それ以外→基本料金 で境界（30・60・120日）が条件と一致。</td><td>アは60日が早割Bになる、イは120日がNG・30日が早割Aになり境界がずれる。</td></tr>
+<tr><td>問２</td><td>ア</td><td>F21〜F24 で ROW()－20 ＝ 1〜4 文字目を MID で1文字ずつ抽出。</td><td>19や COLUMN() ではコピーしても位置が変わらない。</td></tr>
+<tr><td>問３</td><td>MONTH</td><td>利用開始日の月を取り出してクーポン適用月表を横方向に検索。</td><td></td></tr>
+<tr><td>問４</td><td>SUBSTITUTE</td><td>C/H/W/E を 1〜4 に置換して VALUE で領域番号にする。</td><td>4か所すべて同じ関数。</td></tr>
+<tr><td>問５</td><td>23,620</td><td>下記参照</td><td>利用時間20時間は「～24未満」の列、乗り捨ては同一県内なので1,500。</td></tr>
+</tbody></table></div>
+<div class="point">
+  <p class="point-title">問５．条件の整理</p>
+  <ul>
+    <li>受付日 1/30 → 利用開始日 2/10：11日 → 種別「基本料金」</li>
+    <li>2/10 15時 → 2/12 11時 ＝ 44時間 → 利用日数 1日、利用時間 20時間</li>
+    <li>クラス E、利用時間 20 → INT(20/6)+1 ＝ 4 列目「～24未満」</li>
+    <li>オプション DK ＝ ４ＷＤ 1,650 ＋ スキーキャリア 1,100</li>
+    <li>青森（青森県）→ 八戸（青森県）：県名が同じで営業所が異なる → 乗り捨て 1,500</li>
+    <li>クーポン利用 1、利用開始月 2月 ＝ ◎ → 割引 1,000</li>
+  </ul>
+</div>
+<div class="formula">
+  <p class="formula-title">問５．見積料金の計算</p>
+  <p>C29 利用日数料金 ＝ Eクラス「１日」基本料金 10,670 × 1日 ＝ 10,670</p>
+  <p>C30 利用時間料金 ＝ Eクラス 基本料金「～24未満」 ＝ 9,700</p>
+  <p>C31 オプション料金計 ＝ 1,650 ＋ 1,100 ＝ 2,750</p>
+  <p>C32 乗り捨て料金 ＝ 1,500</p>
+  <p>C33 クーポン利用割引 ＝ 1,000</p>
+  <p>C34 ＝ 10,670 ＋ 9,700 ＋ 2,750 ＋ 1,500 － 1,000 ＝ <strong>23,620</strong></p>
+</div>
+                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>問５は利用日数・利用時間の数え方（作成条件４の例）と、乗り捨て料金の判定（県名が同じなら1,500）が失点しやすい箇所です。利用時間20時間を「１日」の列と取り違えないようにしましょう。</p></aside><div class="answer">答え　問１ ウ　問２ ア　問３ MONTH　問４ SUBSTITUTE　問５ 23,620</div>
+              </section>
+            </main>
+            <aside aria-label="解説動画とページ内目次" class="exam-learning-aside">
+              <section aria-labelledby="exam-video-title" class="exam-video-panel" id="examVideoPanel">
+                <h2 class="exam-video-panel__heading" id="exam-video-title">
+                  <span>解説動画</span>
+                  <button aria-controls="examVideoContent" aria-expanded="true" class="exam-video-toggle" id="examVideoToggle" type="button">
+                    <span aria-hidden="true" class="exam-video-toggle__icon">⌃</span>
+                    <span class="exam-video-toggle__label">動画を隠す</span>
+                  </button>
+                </h2>
+                <div class="exam-video-body" id="examVideoContent">
+                  <!-- 動画完成後、このプレースホルダーを .exam-video-frame の iframe に差し替えます。 -->
+                  <div aria-label="解説動画は準備中です" class="exam-video-placeholder" role="img">
+                    <span aria-hidden="true" class="exam-video-placeholder__icon">▶</span>
+                    <span class="exam-video-placeholder__text">
+                      <strong>解説動画は準備中です</strong>
+                      <span>公開後、この場所で動画を視聴しながら解説を読めます。</span>
+                    </span>
+                  </div>
+                </div>
+              </section>
+              <nav aria-labelledby="exam-toc-title" class="exam-desktop-toc">
+                <h2 id="exam-toc-title">このページの目次</h2>
+                <ul class="exam-toc-overview">
+                  <li><a href="#usage-title">解答するときの注意</a></li>
+                  <li><a href="#legend-title">解説の凡例</a></li>
+                  <li><a href="#question-list">設問一覧</a></li>
+                  <li><a href="#answers">正答一覧</a></li>
+                </ul>
+                <p class="exam-toc-label">問題別解説</p>
+                <ol class="exam-toc-questions">
+                  <li><a href="#q1">1</a></li>
+                  <li><a href="#q2">2</a></li>
+                  <li><a href="#q3">3</a></li>
+                  <li><a href="#q4">4</a></li>
+                  <li><a href="#q5">5</a></li>
+                  <li><a href="#q6">6</a></li>
+                  <li><a href="#q7">7</a></li>
+                </ol>
+              </nav>
+            </aside>
+          </section>
+        </div>
+      </div>
+    </div>
+            <button aria-label="ページ上部へ戻る" class="page-top-button" id="pageTopButton" title="ページ上部へ戻る" type="button">
+              <svg aria-hidden="true" height="24" viewbox="0 0 24 24" width="24">
+                <path d="M6 15l6-6 6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"></path>
+              </svg>
+              <span>上へ</span>
+            </button>
+            <footer class="exam-footer site-footer">
+              <div class="footer-content">
+                <p class="footer-text">本解説は、公式問題・公式解式を参照して独自に作成した学習用コンテンツです。全国商業高等学校協会による公式解説・認定教材ではありません。</p>
+                <p class="footer-text">© 2026 全商関係hp. All Rights Reserved.</p>
+              </div>
+            </footer>
+            <script src="../../js/main.js"></script>
+            <script>
+            (() => {
+              const topButton = document.getElementById('pageTopButton');
+
+              const updateTopButton = () => {
+                if (topButton) {
+                  topButton.classList.toggle('is-visible', window.scrollY > 480);
+                }
+              };
+
+              if (topButton) {
+                topButton.addEventListener('click', () => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+                window.addEventListener('scroll', updateTopButton, { passive: true });
+                updateTopButton();
+              }
+
+              const videoPanel = document.getElementById('examVideoPanel');
+              const videoToggle = document.getElementById('examVideoToggle');
+              const videoContent = document.getElementById('examVideoContent');
+              const videoToggleLabel = videoToggle?.querySelector('.exam-video-toggle__label');
+              const videoStorageKey = 'zenshopast-exam-video-expanded';
+
+              if (videoPanel && videoToggle && videoContent) {
+                const getSavedVideoState = () => {
+                  try {
+                    const saved = window.localStorage.getItem(videoStorageKey);
+                    if (saved === 'true') return true;
+                    if (saved === 'false') return false;
+                  } catch (error) {
+                    // localStorage が利用できない環境では画面幅だけで初期状態を決める。
+                  }
+                  return !window.matchMedia('(max-width: 768px)').matches;
+                };
+
+                const applyVideoState = (expanded, save = false) => {
+                  videoPanel.classList.toggle('is-collapsed', !expanded);
+                  videoToggle.setAttribute('aria-expanded', String(expanded));
+                  videoContent.setAttribute('aria-hidden', String(!expanded));
+                  if (videoToggleLabel) {
+                    videoToggleLabel.textContent = expanded ? '動画を隠す' : '動画を表示';
+                  }
+
+                  if (save) {
+                    try {
+                      window.localStorage.setItem(videoStorageKey, String(expanded));
+                    } catch (error) {
+                      // 保存できない場合でも切り替え自体はそのまま利用できる。
+                    }
+                  }
+                };
+
+                applyVideoState(getSavedVideoState());
+                videoToggle.addEventListener('click', () => {
+                  const expanded = videoToggle.getAttribute('aria-expanded') === 'true';
+                  applyVideoState(!expanded, true);
+                });
+              }
+
+              const tocLinks = Array.from(document.querySelectorAll('.exam-desktop-toc a[href^="#"]'));
+              const tocTargets = tocLinks
+                .map((link) => ({
+                  link,
+                  target: document.querySelector(link.getAttribute('href'))
+                }))
+                .filter((item) => item.target);
+              let tocUpdatePending = false;
+
+              const updateCurrentTocItem = () => {
+                if (!tocTargets.length) {
+                  return;
+                }
+
+                let currentItem = tocTargets[0];
+                const headerOffset = 180;
+
+                tocTargets.forEach((item) => {
+                  if (item.target.getBoundingClientRect().top <= headerOffset) {
+                    currentItem = item;
+                  }
+                });
+
+                tocTargets.forEach((item) => {
+                  const isCurrent = item === currentItem;
+                  item.link.classList.toggle('is-current', isCurrent);
+                  if (isCurrent) {
+                    item.link.setAttribute('aria-current', 'location');
+                  } else {
+                    item.link.removeAttribute('aria-current');
+                  }
+                });
+                tocUpdatePending = false;
+              };
+
+              const requestTocUpdate = () => {
+                if (!tocUpdatePending) {
+                  tocUpdatePending = true;
+                  window.requestAnimationFrame(updateCurrentTocItem);
+                }
+              };
+
+              window.addEventListener('scroll', requestTocUpdate, { passive: true });
+              window.addEventListener('resize', requestTocUpdate);
+              updateCurrentTocItem();
+
+              if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries) => {
+                  entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                      entry.target.classList.add('active');
+                      observer.unobserve(entry.target);
+                    }
+                  });
+                }, { threshold: 0.08 });
+
+                document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+              } else {
+                document.querySelectorAll('.reveal').forEach((element) => element.classList.add('active'));
+              }
+            })();
+            </script>
+          </body>
+          </html>
