@@ -229,7 +229,11 @@
                   <div aria-hidden="true" class="official-question__space">
                     <p>次の説明文に最も適した答えを解答群から選び，記号で答えなさい。</p>
                     <p>
-                      １．電子メールの受信に用いられるプロトコル。受信したメールはクライアント側の端末にダウンロードされる。<br />２．絶対値の差が極端に大きい二つの値を加減算した際，絶対値の小さい値が計算結果に反映されないことによって生じる誤差。<br />３．コンピュータの起動や終了，ハードウェアの障害など，コンピュータ内で行った動作や起きた現象を時系列で記録したもの。<br />４．コンピュータシステムを評価する指標の一つで，システムが継続して稼働し，安定して処理を実行できることを表したもの。<br />５．オブジェクト指向型言語の特性の一つで，データとメソッドを一つのモジュールにまとめ，外部からオブジェクトへの直接的なアクセスを制限すること。
+                      １．電子メールの受信に用いられるプロトコル。受信したメールはクライアント側の端末にダウンロードされる。<br>
+                      ２．絶対値の差が極端に大きい二つの値を加減算した際，絶対値の小さい値が計算結果に反映されないことによって生じる誤差。<br>
+                      ３．コンピュータの起動や終了，ハードウェアの障害など，コンピュータ内で行った動作や起きた現象を時系列で記録したもの。<br>
+                      ４．コンピュータシステムを評価する指標の一つで，システムが継続して稼働し，安定して処理を実行できることを表したもの。<br>
+                      ５．オブジェクト指向型言語の特性の一つで，データとメソッドを一つのモジュールにまとめ，外部からオブジェクトへの直接的なアクセスを制限すること。
                     </p>
                     <p>
                       <b>解答群</b><br>　ア．HTTP<br>　イ．システムログ<br>　ウ．桁落ち<br>　エ．完全性<br>　オ．SMTP<br>　カ．POP<br>　キ．カプセル化<br>　ク．アクセスログ<br>　ケ．インスタンス<br>　コ．情報落ち<br>　サ．丸め誤差<br>　シ．可用性
@@ -245,88 +249,67 @@
                   <li>各説明文がどの分野の話なのかを確認。</li>
                   <li>その分野に関する用語を解答群から確認し、複数ある場合には違いに着目する。</li>
                   <li>その違いに着目して説明文を再度読み、正解を導く。</li>
-                  <li>メールのプロトコル：SMTP＝送信、POP＝受信してダウンロード、IMAP＝サーバ上で管理。</li>
-                  <li>誤差：情報落ち（大小差の大きい値の加減算）、桁落ち（近い値の減算で有効桁が減る）、丸め誤差（四捨五入など）。</li>
-                  <li>ログ：システムログ（動作・障害の記録）、アクセスログ（アクセス履歴）。</li>
                 </ol>
               </section>
               <div aria-label="設問別の判断">
                 <section class="subsection">
                   <div class="question-header">　１　</div>
                   <p class="explanation-text">
-                    通信や電子メールで上げられる用語は HTTP、SMTP、POP の３つ。<br>
+                    解答群のうち、通信や電子メールで上げられる用語は HTTP、SMTP、POP の３つ。<br>
                     <b>HTTP</b>（Hyper Text Transfer Protocol）は、主にwebページの配受信で使用される通信規約。<br>
                     <b>SMTP</b>（Simple Mail Transfer Protocol）は、主にメールの<b>送信</b>で使用される通信規約。<br>
                     <b>POP</b>（Post Office Protocol）は、主にメールの<b>受信</b>に使われる通信規約。<br>
                     問題文では「電子メールの受信」に用いられるプロトコルと示しているので、正答はカ．POP
                   </p>
-                  <div class="answer-red-bold-underline">A.　カ</div>
+                  <div class="answer-red-bold-underline">A.　カ．POP</div>
                 </section>
                 <section class="subsection">
-                  <div class="question-header">２</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">コ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">絶対値の差が極端に大きい２つの値の加減算による誤差は情報落ち。<br>12345 + 0.0000005
-                    を計算した際に、0.0000005の情報がデータ容量の関係から抜け落ち、12345として出力されるような誤差のこと。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">桁落ちは絶対値の差がほぼない値の加減算により有効数字の桁数が減ることにより発生する誤差。1.23456 - 1.23455 = 0.00001
-                    のような計算。実際には計算対象の値は丸められていたとしても、計算結果にはその結果より下の位の数字は ０ として埋められてしまうため、丸められる前の計算結果について正確に出すことができない。</p>
+                  <div class="question-header">　２　</div>
+                  <p class="explanation-text">
+                    解答群のうち、誤差に関する用語は 桁落ち、情報落ち、丸め誤差 の３つ。<br>
+                    <b>情報落ち</b>は、絶対値の差が極端に大きい２つの値の加減算による誤差のこと。12345 +
+                    0.0000005を計算した際に、0.0000005の情報がデータ容量の関係から抜け落ち、12345として出力されるような誤差のこと。<br>
+                    <b>桁落ち</b>は絶対値の差がほぼない値の加減算により有効数字の桁数が減ることにより発生する誤差。1.23456 - 1.23455 = 0.00001
+                    のような計算。実際には計算対象の値は丸められていたとしても、計算結果にはその結果より下の位の数字は ０ として埋められてしまうため、丸められる前の計算結果について正確に出すことができない。<br>
+                    <b>丸め誤差</b>は四捨五入により生じる誤差のこと。<br>
+                    問題文では「絶対値の差が極端に大きい」とあるので、正答はコ．情報落ち
+                  </p>
+                  <div class="answer-red-bold-underline">A.　コ．情報落ち</div>
                 </section>
                 <section class="subsection">
-                  <div class="question-header">３</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">イ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">起動・終了・障害などを時系列で記録したものはシステムログ。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">アクセスログはアクセス履歴。</p>
+                  <div class="question-header">　３　</div>
+                  <p class="explanation-text">
+                    解答群のうち、「記録したもの」→ログに絡むものは システムログ、アクセスログ の２つ。
+                    <b>システムログ</b>は、自社管轄のコンピュータ自体の動き（起動・終了・障害など）を時系列で記録したもの。<br>
+                    <b>アクセスログ</b>は、自社管轄のネットワークに、誰がいつどこでどのようにアクセスがあったかを記録したもの。<br>
+                    問題文では「コンピュータ内で起こった動作など」とあるので、正解はイ．システムログ。
+                  </p>
+                  <div class="answer-red-bold-underline">A.　イ．システムログ</div>
                 </section>
                 <section class="subsection">
-                  <div class="question-header">４</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">シ</span>
+                  <div class="question-header">　４　</div>
+                  <p class="explanation-text">
+                    解答群のうち、システム評価指標（所謂RASIS）に含まれるのは 完全性、可用性 の２つ。<br>
+                    <b>完全性</b>は、データが欠けや漏れなくそろっているかどうかを示す指標。<br>
+                    <b>可用性</b>は、システムを障害なくいつでも使用できるかどうかを示す指標。稼働率を用いて判断される。<br>
+                    問題文では「継続して稼働し、安定して処理」→いつでも使用できることを言っているので、正解はシ．可用性。
+                  </p>
+                  <div class="answer-red-bold-underline">A.　シ．可用性
                   </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">継続して稼働できることを表す指標は可用性。稼働率が指標となる。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">完全性はデータが欠けなくそろっているかどうかを示す指標。</p>
                 </section>
                 <section class="subsection">
-                  <div class="question-header">５</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">キ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">データとメソッドを一つのモジュールにまとめるのはカプセル化</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">インスタンスは主にオブジェクト指向言語のプログラミングにおいて、クラスから生成された実体。</p>
+                  <div class="question-header">　５　</div>
+                  <p class="explanation-text">
+                    解答群のうち、オブジェクト指向言語に関する用語は カプセル化、インスタンス の２つ。<br>
+                    <b>カプセル化</b>はデータとメソッドを一つのモジュールにまとめること。<br>
+                    <b>インスタンス</b>は「クラス」から生成された「実体」を指す。<br>
+                    問題文に合致するのはキ．カプセル化
+                  </p>
+                  <div class="answer-red-bold-underline">A.　キ．カプセル化</div>
                 </section>
               </div>
               <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
-                <p>２は3種類の誤差の区別が定番です。「絶対値の差が極端に大きい」＝情報落ち、「近い値の減算」＝桁落ち、「四捨五入」＝丸め誤差、と覚えましょう。</p>
+                <p>２は３種類の誤差の区別が定番です。「絶対値の差が極端に大きい」＝情報落ち、「近い値の減算」＝桁落ち、「四捨五入」＝丸め誤差、と覚えましょう。</p>
               </aside>
               <div class="answer">答え　１ カ　２ コ　３ イ　４ シ　５ キ</div>
             </section>
@@ -334,7 +317,7 @@
             <section class="problem question-section reveal" id="q2">
               <div class="problem-head">
                 <span class="number">2</span>
-                <h3>【2】用語と説明文の対応</h3>
+                <h3>【２】用語と説明文の対応</h3>
               </div>
 
               <!-- BEGIN OFFICIAL QUESTION 2 -->
@@ -349,7 +332,7 @@
                     <p>次のＡ群の語句に最も関係の深い説明文をＢ群から選び，記号で答えなさい。</p>
                     <p>＜Ａ群＞<br>　１．ブロードキャストアドレス<br>　２．性能テスト<br>　３．フールプルーフ<br>　４．要件定義<br>　５．リスクマネジメント</p>
                     <p>
-                      ＜Ｂ群＞<br />ア．誤操作は起こるものという前提に立ち，人がミスなどをしても重大な事故につながらないようにシステムを設計するという考え方。<br />イ．システム障害や不正アクセスなど，重大な問題につながる出来事や危機のこと。サービスの中断や停止につながるため，迅速な対応が求められる。<br />ウ．同じネットワーク内のすべての機器にデータを一斉送信する際に使用されるアドレス。IPv4においては，ホスト部がすべて１で表現される。<br />エ．システムテストにおいて，操作画面やデータの入出力形式などがユーザの要望に沿って実現されているかを評価するテスト。<br />オ．システムが障害などを起こさないように，高品質な部品を採用したり，定期的なメンテナンスを行ったりすることで，システムの信頼性を高めようとする考え方。<br />カ．システム開発工程において，ユーザの要求をヒアリングしたり，ニーズを掘り起こしたりして，システムが満たすべき機能や性能などを明確にする工程。<br />キ．ネットワークを識別する際に使用されるアドレス。IPv4においては，ホスト部がすべて0で表現される。<br />ク．システムテストにおいて，処理速度や応答時間などが目標値と比較して必要十分なものであるかを評価するテスト。<br />ケ．企業などの活動において，起こりうる危機やその影響を認識し対応する一連のプロセス。損失を最小限にとどめ，企業価値を高めることを目的として行われる。<br />コ．システム開発工程において，システムを利用する際の操作方法や画面レイアウトなどを設計する工程。
+                      ＜Ｂ群＞<br>ア．誤操作は起こるものという前提に立ち，人がミスなどをしても重大な事故につながらないようにシステムを設計するという考え方。<br>イ．システム障害や不正アクセスなど，重大な問題につながる出来事や危機のこと。サービスの中断や停止につながるため，迅速な対応が求められる。<br>ウ．同じネットワーク内のすべての機器にデータを一斉送信する際に使用されるアドレス。IPv4においては，ホスト部がすべて１で表現される。<br>エ．システムテストにおいて，操作画面やデータの入出力形式などがユーザの要望に沿って実現されているかを評価するテスト。<br>オ．システムが障害などを起こさないように，高品質な部品を採用したり，定期的なメンテナンスを行ったりすることで，システムの信頼性を高めようとする考え方。<br>カ．システム開発工程において，ユーザの要求をヒアリングしたり，ニーズを掘り起こしたりして，システムが満たすべき機能や性能などを明確にする工程。<br>キ．ネットワークを識別する際に使用されるアドレス。IPv4においては，ホスト部がすべて0で表現される。<br>ク．システムテストにおいて，処理速度や応答時間などが目標値と比較して必要十分なものであるかを評価するテスト。<br>ケ．企業などの活動において，起こりうる危機やその影響を認識し対応する一連のプロセス。損失を最小限にとどめ，企業価値を高めることを目的として行われる。<br>コ．システム開発工程において，システムを利用する際の操作方法や画面レイアウトなどを設計する工程。
                     </p>
                   </div>
                 </blockquote>
@@ -359,88 +342,35 @@
                 <h4>一般的な解法</h4>
                 <p class="method-title">対になる用語の区別</p>
                 <ol>
-                  <li>ブロードキャストアドレス（ホストアドレス部すべて1）とネットワークアドレス（ホストアドレス部すべて0）。</li>
-                  <li>性能テスト（処理速度・応答時間）と機能テスト（画面・入出力）。</li>
-                  <li>設計思想：フールプルーフ（誤操作しても安全）とフォールトアボイダンス（故障を起こさない）。</li>
-                  <li>要件定義（機能・性能の明確化）と外部設計（操作方法・画面）。</li>
-                  <li>リスクマネジメント（危機への対応プロセス）とインシデント（危機そのもの）。</li>
+                  <li>＜Ｂ群＞にある説明文すべてについて、何の用語の説明なのかを考える。</li>
+                  <li>合致するものがあるか＜Ａ群＞から探し、解答する。</li>
                 </ol>
               </section>
               <div aria-label="設問別の判断">
                 <section class="subsection">
-                  <div class="question-header">１</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">ウ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">ホストアドレス部のビットがすべて１で、全機器に一斉送信するのに使用されるアドレスはブロードキャストアドレス。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">ネットワークアドレスの説明は キ 。</p>
-                </section>
-                <section class="subsection">
-                  <div class="question-header">２</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">ク</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">性能テストでは、処理速度など、プログラムの中身が求められた条件で「動くか」をテストする。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">機能テストでは、プログラムの中身が求められる条件通りに「そろっているか」を確認する。</p>
-                </section>
-                <section class="subsection">
-                  <div class="question-header">３</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">ア</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">フールプルーフ（つまり、馬鹿を守るという意味）誤操作しても事故につながらないような設計思想。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">フォールトアボイダンス（つまり、障害を避けるという意味）の説明はオ。</p>
-                </section>
-                <section class="subsection">
-                  <div class="question-header">４</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">カ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">要件定義ではユーザの要求から機能・性能を明確にする。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">外部設計の説明は コ 。</p>
-                </section>
-                <section class="subsection">
-                  <div class="question-header">５</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">ケ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">リスクマネジメント（リスクの管理）は危機を認識し対応する一連のプロセス。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">インシデントの説明は イ 。</p>
+                  <div class="question-header">　Ｂ群の説明の確認　</div>
+                  <p class="explanation-text">
+                    ア．<br>
+                    　つまるところ、ミスをするような人（fool；フール）でも守る（ploof；プルーフ）という設計思想で、「<b>フールプルーフ</b>」の説明。両手でボタンを押さないと作動しない裁断機などが例。<br><br>
+                    イ．<br>
+                    　社会生活上において発生する、重大な問題につながるような出来事のことを「<b>インシデント</b>」という。<br><br>
+                    ウ．<br>
+                    　ホストアドレス部のビットがすべて１で、全機器に一斉送信するのに使用されるアドレスは「<b>ブロードキャストアドレス</b>」という。<br><br>
+                    エ．<br>
+                    　システムテストのうち、プログラムの中身が求められる条件通りに「そろっているか」を確認するものは「<b>機能テスト</b>」という。<br><br>
+                    オ．<br>
+                    　障害（fault；フォールト）を発生させないように回避（avoidance；アボイダンス）できるように策を尽くす設計思想を「<b>フォールトアボイダンス</b>」という。<br><br>
+                    カ．<br>
+                    　システムが満たすべき機能・性能（＝要件）を明確（＝定義）する工程を「<b>要件定義</b>」という。<br><br>
+                    キ．<br>
+                    　ネットワークを識別するために、IPv4においてはホストアドレス部をすべて０にした「<b>ネットワークアドレス</b>」が用いられる。<br><br>
+                    ク．<br>
+                    　システムテストのうち、処理速度など、プログラムの中身が求められた条件で「働くか」をテストするのは「<b>性能テスト</b>」という。<br><br>
+                    ケ．<br>
+                    　起こりうる危機（リスク）を認識して対応・管理（マネジメント）する一連のプロセスを、「<b>リスク・マネジメント</b>」という。<br><br>
+                    コ．<br>
+                    　操作・外面レイアウトなど、内部にあって見えないプログラムではなく、我々ユーザが目にできる「外部」の部分の設計を行うのを「<b>外部設計</b>」という。
+                    </p>
                 </section>
               </div>
               <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>注意するポイント</strong>
@@ -465,109 +395,104 @@
                   <!-- 第3問の問題文欄 -->
                   <div aria-hidden="true" class="official-question__space">
                     <p>次の説明文に最も適した答えをア，イ，ウの中から選び，記号で答えなさい。なお，５．については数値を答えなさい。</p>
-                    <p>１．2進数の1.101 と2進数の1.111
-                      を加算した結果を10進数で表したもの。<br>　ア．3.1　イ．3.5　ウ．11.1<br />２．暗号化方式の一つであり，暗号化と復号に同じ鍵を使う方式。通信する相手と同じ数だけ鍵が必要になる。<br>　ア．SSL　イ．公開鍵暗号方式　ウ．共通鍵暗号方式<br />３．プログラムをメモリ内のどの位置に配置しても実行できる性質。<br>　ア．リカーシブ　イ．リエントラント　ウ．リロケータブル<br />４．Webサイトの閲覧履歴やログイン情報など，一時的にクライアント側の端末にテキスト形式で保存されるファイル。<br>　ア．Cookie　イ．MIME　ウ．VoIP<br />５．16Gbpsの通信回線を使用して，6GBのデータを転送するのに必要な時間は何秒か。ただし，1GB＝10<sup>9</sup>Bとする。なお，伝送効率は75%とし，その他の外部要因は考えないものとする。
-                    </p>
                   </div>
                 </blockquote>
               </section>
               <!-- END OFFICIAL QUESTION 3 -->
               <section aria-label="問題3の一般的な解法" class="general-method">
                 <h4>一般的な解法</h4>
-                <p class="method-title">2進小数と転送時間の計算</p>
+                <p class="method-title"></p>
                 <ol>
-                  <li>2進小数を10進数に変換。各小数の重み：小数第1位＝0.5、第2位＝0.25、第3位＝0.125。1.101＝1.625、1.111＝1.875。</li>
+                  <li>２進小数の基数変換：<br>一の位から重みが2^0(=1)、2^1(=2)、2^2(=4)となるように、小数も小数第１位から重みが2^-1(=1/2)、2^-2(=1/4)となっていく。<br>小数第1位＝0.5、第2位＝0.25、第3位＝0.125</li>
                   <li>転送時間＝データ量（bit）÷（回線速度 × 伝送効率）。バイトをビットに直す（×8）。</li>
-                  <li>プログラムの性質：リロケータブル（再配置可能）、リエントラント（再入可能）、リカーシブ（再帰）。</li>
                 </ol>
               </section>
               <div aria-label="設問別の判断">
                 <section class="subsection">
-                  <div class="question-header">１</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">イ</span>
+                  <div class="question-header">　１　</div>
+                  <blockquote class="official-question__body">
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>１．2進数の 1.101 と2進数の 1.111 を加算した結果を10進数で表したもの。<br>
+                        　ア．3.1　イ．3.5　ウ．11.1
+                      </p>
+                    </div>
+                  </blockquote>
+                  <p class="explanation-text">２進数であらわされた小数を、10進数に直していく。</p>
+                  <div class="formula">
+                    <p class="formula-title">１．２進小数の加算</p>
+                    <p>1.101<sub>(2)</sub> ＝ 1 ＋ 0.5 ＋ 0.125 ＝ 1.625　　1.111<sub>(2)</sub> ＝ 1 ＋ 0.5 ＋ 0.25 ＋ 0.125 ＝ 1.875
+                    </p>
+                    <p>1.625 ＋ 1.875 ＝ <strong>3.5</strong>（２進法では 1.101 ＋ 1.111 ＝ 11.100　→　2 ＋ 1 ＋ 0.5）</p>
                   </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">下記参照</p>
+                  <div class="answer-red-bold-underline">A.　イ．3.5</div>
                 </section>
                 <section class="subsection">
-                  <div class="question-header">２</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">ウ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">暗号化と復号に同じ鍵を使うのは共通鍵暗号方式。ｎ人が参加するネットワークの中で使われる鍵は合計 n(n-1)/2 個。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">公開鍵方式は異なる鍵を使う。鍵は合計 2n 個で済む。 SSL（Secure Socket
-                    Layer）はセキュアな通信を実現するための方式。（現在はTLSに代わられている）</p>
+                  <div class="question-header">　２　</div>
+                  <blockquote class="official-question__body">
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>２．暗号化方式の一つであり，暗号化と復号に同じ鍵を使う方式。通信する相手と同じ数だけ鍵が必要になる。<br>
+                        　ア．SSL　イ．公開鍵暗号方式　ウ．共通鍵暗号方式
+                      </p>
+                    </div>
+                  </blockquote>
+                  <p class="explanation-text">暗号化と復号に同じ鍵を使うのは共通鍵暗号方式。ｎ人が参加するネットワークの中で使われる鍵は、ｎ人が自分を除くn-1人との鍵をそれぞれ別個で持つ必要があるため、（重複するものを除いて）合計 n(n-1)/2 個必要となる。<br>公開鍵方式は暗号化と復号に異なる鍵を使うが、特定の１人に対する鍵はネットワーク内で共通なため、合計 2n 個で済む。 <br>SSL（Secure Socket Layer）はセキュアな通信を実現するための方式。（現在はTLSに代わられている）</p>
+                  <div class="answer-red-bold-underline">A.　ウ．共通鍵暗号方式</div>
                 </section>
                 <section class="subsection">
-                  <div class="question-header">３</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">ウ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">プログラムのどの位置に配置しても正しく実行できる性質はリロケータブル（再配置可能）。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">
-                    リエントラント（再入可能）は様々なプログラムから同時に呼び出されてもそれぞれ正しく実行できる性質。リカーシブ（再帰可能）はプログラムを実行中にそのプログラム自身を再度呼び出しても正しく実行できる性質。
+                  <div class="question-header">　３　</div>
+                  <blockquote class="official-question__body">
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>３．プログラムをメモリ内のどの位置に配置しても実行できる性質。<br>
+                        　ア．リカーシブ　イ．リエントラント　ウ．リロケータブル
+                      </p>
+                    </div>
+                  </blockquote>
+                  <p class="explanation-text">プログラム呼び出しの４つの特性
+                    <br>１．<b>リカーシブ（再帰可能）</b><br>プログラムを実行中にそのプログラム自身を再度呼び出しても正しく実行できる性質。<br>
+                    <br>２．<b>リロケータブル（再配置可能）</b><br>プログラムのどの位置に配置しても正しく実行できる性質。<br>
+                    <br>３．<b>リエントラント（再入可能）</b><br>様々なプログラムから同時に呼び出されてもそれぞれ正しく実行できる性質。<br>
+                    <br>４．<b>リユーザブル（再使用可能）</b><br>一度使ったプログラムを再度呼び出しても、最初に実行した際の値が残らないなど新しく正しく実行できる性質。
                   </p>
+                  <div class="answer-red-bold-underline">A．ウ．リロケータブル</div>
                 </section>
                 <section class="subsection">
-                  <div class="question-header">４</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">ア</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">端末に保存される閲覧履歴・ログイン情報のファイルはCookie。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">MIME（Multipurpose Internet Mail
-                    Extensions）は電子メールで様々なファイルを扱えるようにするための規格、VoIPはインターネット回線で音声通話ができるための規格。</p>
+                  <div class="question-header">　４　</div>
+                  <blockquote class="official-question__body">
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>４．Webサイトの閲覧履歴やログイン情報など，一時的にクライアント側の端末にテキスト形式で保存されるファイル。<br>
+                        　ア．Cookie　イ．MIME　ウ．VoIP
+                      </p>
+                    </div>
+                  </blockquote>
+                  <p class="explanation-text"><b>Cookie</b>とは、<u>ユーザの端末に保存される</u>閲覧履歴・ログイン情報のファイルのこと。<br><b>MIME</b>（Multipurpose Internet Mail
+                    Extensions）は電子メールで様々なファイルを扱えるようにするための規格。<br><b>VoIP</b>はインターネット回線で音声通話ができるための規格。</p>
                 </section>
+                <div class="answer-red-bold-underline">A．ア．Cookie</div>
                 <section class="subsection">
-                  <div class="question-header">５</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">４秒</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">下記参照</p>
+                  <div class="question-header">　５　</div>
+                  <blockquote class="official-question__body">
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>５．16Gbpsの通信回線を使用して，6GBのデータを転送するのに必要な時間は何秒か。ただし，1GB＝10<sup>9</sup>Bとする。なお，伝送効率は75%とし，その他の外部要因は考えないものとする。
+                      </p>
+                    </div>
+                  </blockquote>
+                  <p class="explanation-text">ビットに直したデータ容量と、伝送効率を加味した実際の回線速度を計算して、転送時間を求める。</p>
+                  <div class="formula">
+                    <p class="formula-title">５．転送時間</p>
+                    <p>バイト→ビット ＝ 6GB × 8 ＝ 48 Gbit</p>
+                    <p>実際の回線速度 ＝ 16 Gbps × 75％ ＝ 12 Gbps</p>
+                    <p>転送時間 ＝ 48Gb ÷ 12 ＝ <strong>4（秒）</strong></p>
+                    </div>
+                    <div class="answer-red-bold-underline">A．４秒</div>
                 </section>
               </div>
-              <div class="formula">
-                <p class="formula-title">１．２進小数の加算</p>
-                <p>1.101<sub>(2)</sub> ＝ 1 ＋ 0.5 ＋ 0.125 ＝ 1.625　　1.111<sub>(2)</sub> ＝ 1 ＋ 0.5 ＋ 0.25 ＋ 0.125 ＝ 1.875
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>点数を取りこぼさないために</strong>
+                <p>情報処理の用語は英語を日本語に訳すことができれば意味を詳しく知らなくても何となく正答することができるものが多いです。カタカナの用語は英語として理解しましょう。<br>
+                  １の基数変換について、特に２進数と10進数の変換方法と、２進数と４進数、８進数、16進数それぞれ同士の変換についてやり方を覚えておきましょう。<br>
+                  ５は「GB（バイト）→ Gbit（×8）」と「伝送効率75％を回線速度に掛ける」の2つの変換を忘れないことがポイントです。
                 </p>
-                <p>1.625 ＋ 1.875 ＝ <strong>3.5</strong>（２進法では 1.101 ＋ 1.111 ＝ 11.100　→　2 ＋ 1 ＋ 0.5）</p>
-                <p class="formula-title">５．転送時間</p>
-                <p>バイト→ビット ＝ 6GB × 8 ＝ 48 Gbit</p>
-                <p>実際の回線速度 ＝ 16 Gbps × 75％ ＝ 12 Gbps</p>
-                <p>転送時間 ＝ 48Gb ÷ 12 ＝ <strong>4（秒）</strong></p>
-              </div>
-              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
-                <p>５は「GB（バイト）→ Gbit（×8）」と「伝送効率75％を回線速度に掛ける」の2つの変換を忘れないことがポイントです。</p>
               </aside>
-              <div class="answer">答え　１ イ　２ ウ　３ ウ　４ ア　５ 4秒</div>
+              <div class="answer">答え　１ イ　２ ウ　３ ウ　４ ア　５ ４秒</div>
             </section>
 
             <section class="problem question-section reveal" id="q4-1">
@@ -600,50 +525,28 @@
               </section>
               <div aria-label="設問別の判断">
                 <section class="subsection">
-                  <div class="question-header">⑴</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">オ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
+                  <div class="question-header">　⑴　</div>
                   <p class="explanation-text">直後に引数として「ｇ」を使っているが、値が定まっていないためここで決定するとわかる。ウ（n－1まで）だと最後の要素が並べ替えられないため、オが答え。
                   </p>
                 </section>
+                <div class="answer-red-bold-underline">A．オ．g = 2 To n</div>
                 <section class="subsection">
-                  <div class="question-header">⑵</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">イ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">降順なので前の要素が退避値より小さい間、後ろへずらす。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">カ（>）だと昇順になる。</p>
+                  <div class="question-header">　⑵　</div>
+                  <p class="explanation-text">降順なので隣同士の値を比較して、添え字が前の要素が<u>退避値より小さい間</u>、値を後ろの要素に１つずつずらす。<br>
+                    Fish(j + 1) = Fish(j) の部分で、値をずらしているため、その判定のプログラムだとわかる。<br>
+                    比較対象の値はループの頭でFish(0)に入れられているため、この値に比べて、今比較する値（Fish(j)）が<u>大きければ</u>処理を実行するようにする。
+                  </p>
+                  <div class="answer-red-bold-underline">A．イ．Fish(j) < Fish(0)</div>
                 </section>
                 <section class="subsection">
-                  <div class="question-header">⑶</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">エ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">ずらし終えた位置 j+1 に退避しておいた Fish(0) を入れる。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">アの Fish(g) はすでに上書きされている可能性がある。</p>
+                  <div class="question-header">　⑶　</div>
+                  <p class="explanation-text">ずらし終えた位置 Fish(j+1) に Fish(0) に退避しておいた値を入れる。<br>
+                    アの Fish(g) はすでに上書きされている可能性があることに注意。</p>
+                    <div class="answer-red-bold-underline">A．エ．Fish(j + 1) = Fish(0)</div>
                 </section>
               </div>
               <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
-                <p>⑵は「降順」という条件を比較の向きに翻訳します。⑸は ElseIf の直後に Tyu＋1 を下限にした呼び出しがあることから、中央値が目的値より「小さい」場合の条件と判断します。</p>
+                <p>⑵は「降順」という条件を比較の向きに翻訳します。</p>
               </aside>
               <div class="answer">答え　⑴ オ　⑵ イ　⑶ エ</div>
             </section>
@@ -669,47 +572,29 @@
               <!-- END OFFICIAL QUESTION 4 -->
               <section aria-label="問題4の一般的な解法" class="general-method">
                 <h4>一般的な解法</h4>
-                <p class="method-title">挿入法と再帰二分探索の構造</p>
+                <p class="method-title">二分探索のプログラム</p>
                 <ol>
-                  <li>挿入法：2番目から n 番目までの要素を順に取り出し（Fish(0) に退避）、前の要素と比較しながら後ろへずらし、空いた位置に退避した値を入れる。</li>
-                  <li>降順なので、前の要素 Fish(j) が退避した値より小さい間は後ろへずらす（Fish(j) < Fish(0)）。ずらした後に Fish(j+1) ＝ Fish(0) で挿入。</li>
-                  <li>再帰二分探索：見つからなければ －1 を返す。呼び出し側では戻り値 Kekka が －1 かどうかで判定。中央値が目的値より小さければ上半分（Tyu+1〜Jogen）を探す。</li>
+                  <li>二分探索とは、既にソートされている探索先のリストに対し、探索対象の値をそのリストの中央値と比較して大きいか小さいかを判定する。中央値より大きい側（小さい側）にあると判定されれば、リストのうち判定された側の中での中央値を出し、それに対してまた判定する。中央値と同値になるまでそれを繰り返してリスト内から値を見つけ出す方法。</li>
                 </ol>
+                <img src="../../img/40bea196-4cc4-4377-b365-d7347b97ca96.png">
               </section>
               <div aria-label="設問別の判断">
                 <section class="subsection">
-                  <div class="question-header">⑷</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">エ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">戻り値 Kekka が －1 なら該当なし。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">イは関数名 Tansaku を呼び出し側で比較しており誤り。</p>
+                  <div class="question-header">　⑷　</div>
+                  <p class="explanation-text">
+                    まず、このプログラムでは値が入力されると二分探索を行う関数 Tansaku が実行され、それの戻り値をもとにメッセージが出るようになっている。（このプログラムではあくまで、リストの中にデータが<u>有るか無いか</u>のみを判定するだけである。）<br>
+                    Tansaku の中身を見ると、頭にif文があるが、この条件 Kagen > Jogen というのは探索範囲の下限値のほうが上限値を上回った→データがリスト内に見つからなかったことを表す。このとき戻り値は －1 となる。<br>（例えば、上記の画像の例では、４回目の判定で上限値と下限値の添字がともに11となることから、探索範囲が１つの要素のみに絞られて決定されるが、その要素に21が格納されていなかった場合は探索を続けようとして、下限値がより大きくなる（上限値がより小さくなる）ため、下限値が上限値を上回ってしまう。）<br>
+                    呼び出し元のプログラムでは、その戻り値が Kekka に代入されていることに注意する。（プロシージャ内のTansakuではない）</p>
+                    <div class="answer-red-bold-underline">A．エ．Kekka =-1</div>
                 </section>
                 <section class="subsection">
-                  <div class="question-header">⑸</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">ア</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">中央値が目的値より小さければ上半分（Tyu+1〜Jogen）を再帰的に探索。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">ウ（>）だと探索範囲の更新が逆になる。</p>
+                  <div class="question-header">　⑸　</div>
+                  <p class="explanation-text">目的値が中央値より大きければ上半分（Tyu+1〜Jogen）を再帰的に探索。</p>
+                  <div class="answer-red-bold-underline">A．ア．Cod(Tyu) < Dat</div>
                 </section>
               </div>
               <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
-                <p>⑵は「降順」という条件を比較の向きに翻訳します。⑸は ElseIf の直後に Tyu＋1 を下限にした呼び出しがあることから、中央値が目的値より「小さい」場合の条件と判断します。</p>
+                <p>⑸は ElseIf の直後に Tyu＋1 を下限にした呼び出しがあることから、目的値が中央値より「大きい」場合の条件と判断します。</p>
               </aside>
               <div class="answer">答え　⑷ エ　⑸ ア</div>
             </section>
@@ -736,94 +621,48 @@
               <!-- END OFFICIAL QUESTION 5 -->
               <section aria-label="問題5の一般的な解法" class="general-method">
                 <h4>一般的な解法</h4>
-                <p class="method-title">コントロールブレイクの読み方</p>
                 <ol>
-                  <li>イベント日の保存：ループ2 の条件が Ihi ＝ Ihoz なので、その直前でイベント日 Ihi を Ihoz に保存する（Hi は日だけ）。</li>
-                  <li>区分の探索：Kubun には各区分の終了時刻（1029＝10:29 など）が入っているので、受付時刻がそれより大きい間 Soe を進める。見つかった区分 Soe の Skei に加算。</li>
-                  <li>企業名の表示：ループ3 を抜けた時点で Kban は次の企業に変わっている可能性があるので、保存しておいた Khoz を使う。日計 Gkei(0, f) を合計 Gkei(1, f) に加える。
-                  </li>
+                  <li>コントロールブレイク（グループトータル）：<br>
+                    １か月間、日ごとに集計をしたい場合に、データを読み込んで、日程が変わるごとに小計を出せるようなプログラム。データが対象値によってソートされている必要がある。</li>
                 </ol>
               </section>
               <div aria-label="設問別の判断">
                 <section class="subsection">
-                  <div class="question-header">⑴</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">ケ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
+                  <div class="question-header">　⑴　</div>
                   <p class="explanation-text">ループ2 の比較に使うため Ihi を Ihoz に保存。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">キの Hi（日のみ）では月が違う同じ日を区別できない。</p>
+                  <div class="answer-red-bold-underline">A．ケ．Ihi → Ihoz</div>
                 </section>
                 <section class="subsection">
-                  <div class="question-header">⑵</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">ア</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">受付時刻が区分の終了時刻より大きい間、次の区分へ進む。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">エ（<）だと最初の区分で止まってしまう。< /p>
+                  <div class="question-header">　⑵　</div>
+                  <p class="explanation-text">
+                    処理条件の３の２つ目に「受付時刻をもとに配列 Kubun を探索し、配列 Skei に区分ごとの参加者数を集計する」とある。(3)の処理の下で、Skei(0)を＋１（参加者数を数えている）していることから、(3)では区分ごとに参加者数を集計し、ここでは、その集計に必要なSkeiの添字を探索することがわかる。ループ４の中で、添字が１つずつ増えていることから「線形探索」のプログラムだと分かる。受付時刻が区分の終了時刻より大きい間、次の区分へ進むために必要な条件文を当てはめる。
+                  </p>
+                  <div class="answer-red-bold-underline">A．ア．Uji ＞ Kubun(Soe)</div>
                 </section>
                 <section class="subsection">
-                  <div class="question-header">⑶</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">オ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">見つかった区分 Soe の参加者数に1を加える。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">カは時刻の値（1029など）を添字にしており誤り。</p>
+                  <div class="question-header">　⑶　</div>
+                  <p class="explanation-text">
+                    見つかった区分 Soe の参加者数に1を加える。
+                  </p>
+                  <div class="answer-red-bold-underline">A．オ．Skei(Soe) ＋ 1 → Skei(Soe)</div>
                 </section>
                 <section class="subsection">
-                  <div class="question-header">⑷</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">ク</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">企業番号は次のデータで変わっているので保存した Khoz で企業名を表示。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">イの Kban は次の企業の番号になっている可能性がある。</p>
+                  <div class="question-header">　⑷　</div>
+                  <p class="explanation-text">
+                    実行結果と照らし合わせるとここでは「企業名」を表示する。企業名は配列 Kmei に保存されているため、選択肢イかクのどちらかで表示できるが、(4)の部分はループ３の後ろ→企業番号は次のデータで変わっているので保存した Khoz で企業名を表示。
+                  </p>
+                  <div class="answer-red-bold-underline">A．ク．Kmei(Khoz)</div>
                 </section>
                 <section class="subsection">
-                  <div class="question-header">⑸</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">ウ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">日計 Gkei(0, f) を合計 Gkei(1, f) に加算。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">コの Skei(f) はループ5 で 0 に戻されている。</p>
+                  <div class="question-header">　⑸　</div>
+                  <p class="explanation-text">
+                    処理条件３の４つ目に「配列 Gkei の１行目には区分ごとの合計を求める」とあるが、このプログラムの中にそれが実行されている箇所はないため、ここで行うと推測する。日計 Gkei(0, f) を合計 Gkei(1, f) に加算する文を選択する。<br>コの Skei(f) はループ5 で 0 に戻されていることに注意。
+                  </p>
+                  <div class="answer-red-bold-underline">A．ウ．Gkei(1, f) ＋ Gkei(0, f) → Gkei(1, f)</div>
                 </section>
               </div>
               <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
-                <p>⑷⑸は「その時点で変数に何が入っているか」を追跡します。ループ3 を抜けた後は次のレコードが読み込まれているため Kban は使えず、ループ5 の後は Skei がクリアされているため Skei
-                  も使えません。</p>
+                <p>⑷⑸は「その時点で変数に何が入っているか」を追跡します。ループ3 を抜けた後は次のレコードが読み込まれているため Kban は使えず、ループ5 の後は Skei がクリアされているため Skeiも使えません。</p>
               </aside>
               <div class="answer">答え　⑴ ケ　⑵ ア　⑶ オ　⑷ ク　⑸ ウ</div>
             </section>
@@ -859,7 +698,7 @@
               </section>
               <div aria-label="設問別の判断">
                 <section class="subsection">
-                  <div class="question-header">⑴</div>
+                  <div class="question-header">　⑴　</div>
                   <div class="answer-badge-wrapper">
                     <span class="answer-badge-label">正答</span>
                     <span class="answer-badge-text">エ</span>
