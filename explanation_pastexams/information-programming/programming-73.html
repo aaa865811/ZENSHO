@@ -576,7 +576,7 @@
                 <ol>
                   <li>二分探索とは、既にソートされている探索先のリストに対し、探索対象の値をそのリストの中央値と比較して大きいか小さいかを判定する。中央値より大きい側（小さい側）にあると判定されれば、リストのうち判定された側の中での中央値を出し、それに対してまた判定する。中央値と同値になるまでそれを繰り返してリスト内から値を見つけ出す方法。</li>
                 </ol>
-                <img src="../../img/40bea196-4cc4-4377-b365-d7347b97ca96.png">
+                <img src="../../img/nibuntansaku.png">
               </section>
               <div aria-label="設問別の判断">
                 <section class="subsection">
@@ -691,86 +691,30 @@
                 <h4>一般的な解法</h4>
                 <p class="method-title">最小値の抽出と交換法</p>
                 <ol>
-                  <li>部員数のカウント：各生徒のデータは曜日1〜6の6件あるので、曜日番号が1のときだけ Su を数える。</li>
-                  <li>最速記録（週）＝1週間の最小値。まず月曜（1行目）を仮の最小値とし、火〜土（h＝2〜6）でより小さい値があれば更新する。</li>
-                  <li>交換法：j を Su から 2 まで減らし、k は 1 から j－1 まで（k+1 ≦ j）。備考は 0 行目 Rec(0, p) の値で判定する。</li>
+                  <li>隣接交換法では、添字が前（後）の要素から隣同士を比較してそこで大小関係がどうなっているかをもとに、昇順（降順）に合致していなければ交換を行う。交換は３点交換。</li>
                 </ol>
               </section>
               <div aria-label="設問別の判断">
                 <section class="subsection">
                   <div class="question-header">　⑴　</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">エ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">曜日番号1のデータで部員数 Su を1増やす。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">オは入力データの曜日を書き換えてしまう。</p>
-                </section>
+                  <p class="explanation-text">ループ３で「 g ≦ su 」の記述があるが、suは現状初期化されただけなので、このsuに何らかのデータを記録しているとわかる。<br>この後のソートのプログラムなどで上限値として使われていることから、部員数のカウンタだと推測できる。<br>部員が変わるごとに集計すればよく、便宜上月曜のデータが読み込まれたタイミングのみカウンタをプラスして、部員数を正確に把握していると考えられる。</p>
+                  <div class="answer-red-bold-underline">A．エ．Su ＋ 1 → Su</div>
                 <section class="subsection">
-                  <div class="question-header">⑵</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">キ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">月曜の記録を仮の最速記録（週）にする。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">アは土曜を初期値にしているが、その後 h＝2〜6 の比較で土曜は含まれるので初期値は月曜でなければ月曜が比較されない。</p>
-                </section>
+                  <div class="question-header">　⑵　</div>
+                  <p class="explanation-text">データ入力が終了したため、資料４の作業に入っていると推測される。<br>ループ４の中の「Rec(h，g) → Rec(0，g)」の処理から、資料４の１項め、０行目に最速記録を集計している最中だとわかる。<br>次のループ４で用いられている添字の開始が２からであり、月曜日が参照されていないことがわかる。<br>そのため、月曜の記録を仮の最速記録（週）にして、大小比較を進めていると推測される。</p>
+                  <div class="answer-red-bold-underline">A．キ．Rec(1, g) → Rec(0, g)</div>
                 <section class="subsection">
-                  <div class="question-header">⑶</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">カ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">より速い（小さい）記録があれば更新する。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">ク（>）だと最も遅い記録になる。</p>
-                </section>
+                  <div class="question-header">　⑶　</div>
+                  <p class="explanation-text">同じ人の中での曜日ごとの記録を比較し、より速い（小さい）記録があれば０行目の値を更新する。<br>比較先（各曜日）の値のほうが<b>小さかったら</b>更新するので、大なり小なりの向きに注意。</p>
+                  <div class="answer-red-bold-underline">A．カ．Rec(h, g) ＜ Rec(0, g)</div>
                 <section class="subsection">
-                  <div class="question-header">⑷</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">イ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">k+1 が j を超えないよう k は j－1 まで。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">ケ（k ≦ j）だと Rec(0, j+1) を参照して範囲外になる。</p>
-                </section>
+                  <div class="question-header">　⑷　</div>
+                  <p class="explanation-text">下で添字 k が使われているが、初期化されていないためここで設定されると推測する。<br>こういったバブルソートのプログラムでは、外側のループで参照する範囲を狭めていくとともに、内側のループで比較する場所をずらしていく。そのため、内側のループの上限（下限）値は基本的に外側のループの変数をもとに決まる。<br>k+1 が j を超えないよう k は j－1 まで。</p>
+                  <div class="answer-red-bold-underline">A．イ．k は 1 から 1 ずつ増やして k ≦ j－ 1 の間</div>
                 <section class="subsection">
-                  <div class="question-header">⑸</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">コ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">最速記録（週）は Rec の0行目 p 列。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">ウは行と列が逆。</p>
+                  <div class="question-header">　⑸　</div>
+                  <p class="explanation-text">資料４の３項めから、最速記録の値ごとに表示を変えることがわかる。<br>３以上に枝分かれする条件分岐の場合、菱形の中に変数１つを入れることで、フローチャートが成立する。<br>最速記録（週）は Rec の0行目 p 列。行と列を逆にしないよう注意。</p>
+                  <div class="answer-red-bold-underline">A．コ．Rec(0, p)</div>
                 </section>
               </div>
               <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
@@ -803,89 +747,44 @@
                 <h4>一般的な解法</h4>
                 <p class="method-title">順位付けと選択法の読み方</p>
                 <ol>
-                  <li>売上金額＝販売数×商品単価－値引額。単価は Tanka(カテゴリ番号, 商品番号) から取り出す（店舗コード Tco ではない）。</li>
-                  <li>順位の初期化：Juni(行 f, 列 g)＝1。ループ4 の f が行（0〜2）、ループ5 の g が列（店舗）。総当たり比較は h を 1〜9、k を h+1〜10
-                    とし、小さい方の順位に1を加える。</li>
-                  <li>選択法：p 番目以降で最大の位置 Max を探す。比較は Work を通した売上金額 Syukei(Ca, Work(r)) ＞ Syukei(Ca, Work(Max))。表示は並べ替え後の
-                    Work(g) を使い、同じ金額なら Jun を更新しない（同順位）。</li>
+                  <li>順位付け：<br>
+                    まず、順位が保存される配列にすべて１を入れて初期化する。<br>
+                    その後、比較対象の要素同士を比較して、順位が下のものに対応する配列の要素を＋１していく。</li>
+                  <img src="../../img/junniduke.png"><br>
+                  <li>選択交換法（セレクションソート）：配列のうち順番が未決定の部分の中から最大（最小）の要素を探し、未決定の範囲の一番後（前）の要素と交換していくのを繰り返すことで、並び替える手法。</li>
+                  <img src="../../img/selection-sort.png">
                 </ol>
               </section>
               <div aria-label="設問別の判断">
                 <section class="subsection">
-                  <div class="question-header">⑴</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">タ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">単価は Tanka(Cate, Sban)（カテゴリ・商品番号）。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">ソは店舗コードを商品番号にしており誤り。</p>
+                  <div class="question-header">　⑴　</div>
+                  <p class="explanation-text">次の処理で変数 Kin が使用されているが、ここまで出てきていないため、この部分で Kin の値を求めるものと推測する。<br>
+                    資料４の２項めを見ると、売上金額 ＝ 販売数 × 商品単価 － 値引額 とあるので、これをそれぞれ変数に変換している処理を選択する。<br>
+                    単価は Tanka(Cate, Sban)（カテゴリ・商品番号）。</p>
+                  <div class="answer-red-bold-underline">A．タ．Hsu × Tanka(Cate,Sban) － Ngaku → Kin</div>
+                <section class="subsection">
+                  <div class="question-header">　⑵　</div>
+                  <p class="explanation-text">この次から順位付けが行われること、ループ４の ｆ と ｇ の範囲が配列 juni の範囲と合致することから、順位付けに使う配列の初期化を行っていると推測できる。<br>
+                    ループ４ の ｆ が行、ループ５ の ｇ が列なので Juni(f, g) に １。</p>
+                  <div class="answer-red-bold-underline">A．シ．1 → Juni(f, g)</div>
                 </section>
                 <section class="subsection">
-                  <div class="question-header">⑵</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">シ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">ループ4 の f が行、ループ5 の g が列なので Juni(f, g) に 1。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">コは行と列が逆。</p>
+                  <div class="question-header">　⑶　</div>
+                  <p class="explanation-text">次以降のプログラムから、変数ｈとｋを用意する必要があると推測。<br>
+                    h は 1〜9、k は h+1〜10 で全ての組を1回ずつ比較。<br>
+                    仮に①にセを選ぶと、②がキ、サ、いずれでも、ｋが配列の範囲外に出る。また、イでは順位付けが二重に行われてしまう。<br>
+                    ①にスを選んだうえで、②にイが来ると、順位付けが二重に行われてしまう。サにすると、ｋ＝10の時が存在しなく、正しく順位付けができない。</p>
+                  <div class="answer-red-bold-underline">A．① ス．h は 1 から 1 ずつ増やして h ≦ 9 の間　<br>　② キ．k は h ＋ 1 から 1 ずつ増やして k ≦ 10 の間</div>
                 </section>
                 <section class="subsection">
-                  <div class="question-header">⑶</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">❶ス ❷キ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">h は 1〜9、k は h+1〜10 で全ての組を1回ずつ比較。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">サ（k ≦ 9）だと10店目が比較されない、イ（k は1から）だと同じ組を2回比較する。</p>
-                </section>
-                <section class="subsection">
-                  <div class="question-header">⑷</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">❶ケ ❷ア</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">Work を通した売上金額を比較：Syukei(Ca, Work(r)) ＞ Syukei(Ca, Work(Max)) なら Max を更新。
-                  </p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">ウ・エ・クは Work を通さず店舗コードを直接使っており、交換後に正しく参照できない。</p>
-                </section>
+                  <div class="question-header">　⑷　</div>
+                  <p class="explanation-text">資料５の５項めに配列 work を利用し、並び替えるとある。この場合、要素を直接入れ替えるのではなく、workのようなバッファの配列に添字を格納して、その添字のみを入れ替えることで、元の要素を入れ替えずに並び替えを実現できる。juni のように何行かにわたる配列で用いられることが多い。<br>
+                    Work を通した売上金額を比較：Syukei(Ca, Work(r)) ＞ Syukei(Ca, Work(Max)) （降順なのでより大きい値が見つかった）なら Max を更新。</p>
+                  <div class="answer-red-bold-underline">A．① ケ．Syukei(Ca,Work(r))<br>　② ア．Syukei(Ca, Work(Max))</div>
                 <section class="subsection">
                   <div class="question-header">⑸</div>
-                  <div class="answer-badge-wrapper">
-                    <span class="answer-badge-label">正答</span>
-                    <span class="answer-badge-text">カ</span>
-                  </div>
-                  <div class="content-title-row">
-                    <span>正答の根拠</span>
-                  </div>
-                  <p class="explanation-text">並べ替え後の順序 Work(g) で店舗名と売上金額計を表示。</p>
-                  <div class="content-title-row">
-                    <span>他の選択肢・注意</span>
-                  </div>
-                  <p class="explanation-text">オは順位 Jun を添字にしており、同順位の店舗が同じ内容で表示される。</p>
+                  <p class="explanation-text">並べ替え後のため、添字は Work(g) を使って店舗名と売上金額計を表示。</p>
+                  <div class="answer-red-bold-underline">A．カ．Jun, "位", Tmei(Work(g)), Syukei(Ca,Work(g))</div>
                 </section>
               </div>
               <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
