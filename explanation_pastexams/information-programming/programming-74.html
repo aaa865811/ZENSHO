@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta
+    content="令和7年度 第74回（2026年1月18日実施）全商 情報処理検定試験 1級 プログラミング。問題PDF末尾の審査基準を参照し、用語（結合テスト・ルータ・DHCP・リスト・IPv6・RAID・NAT）、計算（2進化10進数・稼働率）、VBAプログラム（順位付け・選択ソート）、流れ図（乗客数集計と交換法、学生食堂の販売集計と上位抽出、移動図書館の二分探索と挿入法）の全35問について、正答の根拠と誤答の理由を説明する学習用解説。"
+    name="description" />
+  <title>第74回 情報処理検定試験 1級 プログラミング 解説</title>
+  <link href="../../css/site.css" rel="stylesheet" />
+  <link href="../../css/header.css" rel="stylesheet" />
+</head>
+
+<body class="page-wrapper exam-learning-page" id="top">
+  <header class="header">
+    <a class="logo" href="../../index.html">
+      <img alt="ロゴ" class="header__logo--img" src="../../img/ZenSho-PAST.png" />
+    </a>
+    <nav class="header__nav" id="header__nav">
+      <ul>
+        <li>
+          <a href="../index.html">
+            <span class="nav__en">全商検定</span>
+            <span class="nav__jp">過去問解説</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">GUIDELINES</span>
+            <span class="nav__jp">各検定の指針</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">INFORMATION</span>
+            <span class="nav__jp">進路情報</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">COLUMN</span>
+            <span class="nav__jp">コラム・その他</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">全商主催</span>
+            <span class="nav__jp">各競技大会について</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <header class="header__res">
+    <a class="logo" href="../../index.html">
+      <img alt="ロゴ" class="header__logo--img" height="auto" src="../../img/index_logo 1.png" width="auto" />
+    </a>
+    <nav class="header__nav">
+      <ul class="heder__nav--list">
+        <li>
+          <a href="../index.html">
+            <span class="nav__en">全商検定</span>
+            <span class="nav__jp">過去問解説</span>
+          </a>
+        </li>
+        <li>
+          <a href="works.html">
+            <span class="nav__en">GUIDELINES</span>
+            <span class="nav__jp">各検定の指針</span>
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <span class="nav__en">INFORMATION</span>
+            <span class="nav__jp">進路情報</span>
+          </a>
+        </li>
+        <li>
+          <a href="company.html">
+            <span class="nav__en">COLUMN</span>
+            <span class="nav__jp">コラム・その他</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <span class="nav__en">全商主催</span>
+            <span class="nav__jp">各競技大会について</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </header>
+  <div id="root">
+    <div class="app-container">
+      <div class="content-wrapper">
+        <header aria-labelledby="page-title" class="exam-hero main-header">
+          <div class="hero header-content">
+            <p class="eyebrow">全商検定 過去問解説</p>
+            <h1 class="header-title" id="page-title">第74回 情報処理検定試験<br />1級 プログラミング 解説</h1>
+            <p class="lead">令和7年度
+              第74回（2026年1月18日実施）。【1】〜【3】用語・計算（各2点）、【4】〜【6】プログラム・流れ図（各3点）、【7】流れ図（各5点）の合計100点について、正答の根拠と他の選択肢が不適切な理由を説明します。
+            </p>
+          </div>
+        </header>
+        <section class="page exam-learning-layout">
+          <main class="exam-main main-content">
+            <section aria-labelledby="usage-title" class="instruction-section reveal">
+              <h2 id="usage-title">解答するときの注意</h2>
+              <p>記号で答える問題のほか、【3】5は数値を答えます。【7】⑶⑷の複数解答問題は、問ごとにすべて正答して得点になります（⑶は順不同）。審査基準ではコンマの有無は問われません。</p>
+              <p>流れ図は本ページでは擬似コード（字下げでループの範囲を表現）に書き直して収録しています。実際の図はPDFで確認してください。</p>
+            </section>
+            <section aria-labelledby="legend-title" class="legend-section reveal">
+              <h2 id="legend-title">解説の凡例</h2>
+              <p class="legend-intro">すべての問題で、次の表示を共通して使用します。</p>
+              <div class="legend-grid">
+                <div class="legend-card">
+                  <strong>問題文</strong>
+                  <p>各設問の問題文、プログラム、流れ図（擬似コード）、解答群を示します。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>一般的な解法</strong>
+                  <p>同じ分野の問題に共通して使える判断基準です。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>判断・トレース</strong>
+                  <p>設問ごとに、正答の根拠、処理の追跡、他の選択肢が不適切な理由を示します。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>注意点</strong>
+                  <p>添字の範囲や比較の向きなど失点しやすい箇所です。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>正答</strong>
+                  <p>問題PDF末尾の審査基準に基づく最終的な解答です。</p>
+                </div>
+              </div>
+            </section>
+            <div class="source-box">
+              <p><strong>出典：</strong>公益財団法人 全国商業高等学校協会主催 令和7年度 第74回 情報処理検定試験 プログラミング 第1級（審査基準は問題PDF末尾に収録）</p>
+              <a href="https://zensho.or.jp/puf/download/exam/pastexam/2025/info_74_1_pro.pdf" target="_blank"
+                rel="noopener noreferrer" class="text-link">問題・審査基準PDF　　　</a>
+              <p class="source-note">本記事は全商協会による公式解説ではありません。</p>
+            </div>
+            <h2 id="question-list">設問一覧</h2>
+            <nav aria-label="設問へのリンク" class="question-nav">
+              <a href="#q1">1</a>
+              <a href="#q2">2</a>
+              <a href="#q3">3</a>
+              <a href="#q4-1">4-1</a>
+              <a href="#q4-2">4-2</a>
+              <a href="#q5">5</a>
+              <a href="#q6">6</a>
+              <a href="#q7">7</a>
+            </nav>
+            <h2 id="answers">正答一覧</h2>
+            <div aria-label="表（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+              <table class="summary-table">
+                <thead>
+                  <tr>
+                    <th>番号</th>
+                    <th>主な論点</th>
+                    <th>正答</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>【1】</td>
+                    <td>用語選択</td>
+                    <td>１ エ　２ シ　３ イ　４ サ　５ キ</td>
+                  </tr>
+                  <tr>
+                    <td>【2】</td>
+                    <td>用語と説明文</td>
+                    <td>１ カ　２ イ　３ オ　４ ケ　５ エ</td>
+                  </tr>
+                  <tr>
+                    <td>【3】</td>
+                    <td>用語・計算</td>
+                    <td>１ イ　２ ウ　３ ア　４ ウ　５ 9,000時間</td>
+                  </tr>
+                  <tr>
+                    <td>【4】</td>
+                    <td>VBAプログラム</td>
+                    <td>⑴ ウ　⑵ ア　⑶ エ　⑷ ア　⑸ カ</td>
+                  </tr>
+                  <tr>
+                    <td>【5】</td>
+                    <td>流れ図（乗客数一覧表）</td>
+                    <td>⑴ コ　⑵ オ　⑶ キ　⑷ イ　⑸ ク</td>
+                  </tr>
+                  <tr>
+                    <td>【6】</td>
+                    <td>流れ図（販売状況一覧表）</td>
+                    <td>⑴ ケ　⑵ エ　⑶ カ　⑷ キ　⑸ ア</td>
+                  </tr>
+                  <tr>
+                    <td>【7】</td>
+                    <td>流れ図（貸出分析一覧）</td>
+                    <td>⑴ オ　⑵ ソ　⑶ セ・ク（順不同）　⑷ ❶ス ❷イ　⑸ コ</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h2 id="explanations">設問別解説</h2>
+
+            <section class="problem question-section reveal" id="q1">
+              <div class="problem-head">
+                <span class="number">1</span>
+                <h3>【1】用語選択（結合テスト・ルータ・DHCP・リスト・IPv6）</h3>
+              </div>
+
+              <!-- BEGIN OFFICIAL QUESTION 1 -->
+              <section aria-labelledby="q1-official-question-title"
+                class="official-question official-question--placeholder">
+                <div class="official-question__header">
+                  <h4 id="q1-official-question-title">問題文</h4>
+                </div>
+                <blockquote class="official-question__body">
+                  <!-- 第1問の問題文欄 -->
+                  <div aria-hidden="true" class="official-question__space">
+                    <p>次の説明文に最も適した答えを解答群から選び，記号で答えなさい。</p>
+                    <p>
+                      １．モジュール単位で開発された複数のプログラムを組み合わせ，モジュール間でデータの受け渡しが正しく行われているか確認するテスト。<br>
+                      ２．OSI参照モデルの第三層で，IPパケットの経路選択やフィルタリングを行う機能を有するネットワーク中継機器。<br>
+                      ３．ネットワークに接続したコンピュータに対して，通信を行う際に必要となるIPアドレスやサブネットマスクなどの設定情報を自動的に割り当てるプロトコル。<br>
+                      ４．データを格納するデータ部と，次のデータのアドレスを格納するポインタ部を有し，ポインタをたどることでデータを取り出すことができるデータ構造。<br>
+                      ５．32ビットのアドレス長によるIPアドレスの不足などに対応するため，利用可能なIPアドレスの数を増やすことを目的に導入された，128ビットのアドレス長を持つ通信規約。
+                    </p>
+                    <p>解答群　ア．システムテスト　イ．DHCP　ウ．リグレッションテスト　エ．結合テスト　オ．ゲートウェイ　カ．TCP/IP　キ．IPv6　ク．ハブ　ケ．木構造　コ．IPv4　サ．リスト　シ．ルータ
+                    </p>
+                  </div>
+                </blockquote>
+              </section>
+              <!-- END OFFICIAL QUESTION 1 -->
+              <section aria-label="問題1の一般的な解法" class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">用語問題の判断基準</p>
+                <ol>
+                  <li>各説明文がどの分野の話なのかを確認。</li>
+                  <li>その分野に関する用語を解答群から確認し、複数ある場合には違いに着目する。</li>
+                  <li>その違いに着目して説明文を再度読み、正解を導く。</li>
+                </ol>
+                <br>
+                <ol>
+                  <li>テストの段階：単体テスト → 結合テスト（モジュール間の連携）→ システムテスト（全体）。リグレッションテストは修正後の再テスト。</li>
+                  <li>ネットワーク機器：ハブ（第1層）、スイッチ（第2層）、ルータ（第3層・IPで経路選択）、ゲートウェイ（異なるプロトコルの変換）。</li>
+                  <li>データ構造：リスト（ポインタでつなぐ）、木構造（階層）。IPv4＝32ビット、IPv6＝128ビット。</li>
+                </ol>
+              </section>
+              <div aria-label="設問別の判断">
+                <section class="subsection">
+                  <div class="question-header">　１　</div>
+                  <p class="explanation-text">
+                    解答群のうち、テストに係る用語は、システムテスト、リグレッションテスト、結合テスト、の３つ。<br>
+                    <b>システムテスト</b>は、システム全体を対象とした全体におけるテスト。<br>
+                    <b>リグレッションテスト</b>は、プログラムの一部を修正した後に、その修正が既存の機能に不具合を引き起こしていないかを確認するテスト。<br>
+                    <b>結合テスト</b>は、単体テストが終わったのち、そのモジュールを複数組み合わせてデータの受け渡しが正しく行われているかを確認するテスト。<br>
+                    問題文では、「複数のプログラムを組み合わせ...テスト」とあるので、正答はエ．結合テスト。
+                  </p>
+                  <div class="answer-red-bold-underline">A．エ．結合テスト</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　２　</div>
+                  <p class="explanation-text">
+                    解答群のうち、ネットワークに係る機器は、ゲートウェイ、ハブ、ルータ、の３つ。<br>
+                    <b>ゲートウェイ</b>は、異なるプロトコル間の変換を行う機器。OSI参照モデルの第４層に位置する。<br>
+                    <b>ハブ</b>は、接続された機器からの信号をすべて受信・転送する。「リピータハブ」と呼ぶことが多い。OSI参照モデルの第１層に位置する。<br>
+                    <b>ルータ</b>は、経路選択機能があるネットワーク中継機器。OSI参照モデルの第３層に位置する。<br>
+                    問題文では、「OSI参照モデルの第3層でIPパケットの経路選択を行うネットワーク中継機器」とあるので、正答はシ．ルータ。
+                  </p>
+                  <div class="answer-red-bold-underline">A．シ．ルータ</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　３　</div>
+                  <p class="explanation-text">
+                    解答群のうち、プロトコルは、DHCP、TCP/IP、の２つ。
+                    <b>DHCP</b>（Dynamic Host Configuration Protocol）は、自動（Dynamic）的にIPアドレスなどのホスト（host）情報を割り当て（Configuration）するプロトコル。<br>
+                    <b>TCP/IP</b>（Transmission Control Protocol/Internet Protocol）は、インターネットなどで利用される通信規約群の総称。<br>
+                    問題文では、「IPアドレス...などの設定情報を自動的に割り当てるプロトコル」とあるので、正答はイ．DHCP。
+                  </p>
+                  <div class="answer-red-bold-underline">A．イ．DHCP</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　４　</div>
+                  <p class="explanation-text">
+                    解答群のうち、データ構造の用語は、木構造、ルータ、の２つ。<br>
+                    <b>木構造</b>は、「ノード」によって接続される親子関係を持つ、階層的なデータ構造。<br>
+                    <b>リスト</b>は、次の要素の格納場所を示す「ポインタ」を辿って目的のデータにアクセスできるデータ構造。<br>
+                    問題文では、「...ポインタをたどってデータを取り出すデータ構造」とあるので、正答はサ．リスト。
+                  </p>
+                  <div class="answer-red-bold-underline">A．サ．リスト</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　５　</div>
+                  <p class="explanation-text">
+                    32ビットのアドレス長によるIPアドレス　→　IPv4を指す。これに対応するために導入された128ビットのアドレス長を持つ通信規約は<b>IPv6</b>。
+                  </p>
+                  <div class="answer-red-bold-underline">A．キ．IPv6</div>
+                </section>
+              </div>
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>２は「OSI参照モデルの第三層」「IPパケット」がルータの決め手です。ハブ（物理層）と混同しないようにしましょう。</p>
+              </aside>
+              <div class="answer">答え　１ エ　２ シ　３ イ　４ サ　５ キ</div>
+            </section>
+
+            <section class="problem question-section reveal" id="q2">
+              <div class="problem-head">
+                <span class="number">2</span>
+                <h3>【2】用語と説明文の対応（完全性・RAID・NAT・シフト演算・クロスサイトスクリプティング）</h3>
+              </div>
+
+              <!-- BEGIN OFFICIAL QUESTION 2 -->
+              <section aria-labelledby="q2-official-question-title"
+                class="official-question official-question--placeholder">
+                <div class="official-question__header">
+                  <h4 id="q2-official-question-title">問題文</h4>
+                </div>
+                <blockquote class="official-question__body">
+                  <!-- 第2問の問題文欄 -->
+                  <div aria-hidden="true" class="official-question__space">
+                    <p>次のＡ群の語句に最も関係の深い説明文をＢ群から選び，記号で答えなさい。</p>
+                    <p>＜Ａ群＞　１．完全性　２．RAID　３．NAT　４．シフト演算　５．クロスサイトスクリプティング</p>
+                    <p>
+                      ＜Ｂ群＞<br>
+                      ア．人間の心理的な弱みや行動のミスを利用し，パスワードや機密情報などを不正に取得する手口の総称。<br>
+                      イ．複数のハードディスク装置を一つのハードディスク装置のように管理し，データへのアクセス速度の高速化や，信頼性の向上を図る技術。<br>
+                      ウ．真または偽を2進数の「１」または「0」として入力し，真または偽となる演算結果を2進数の「１」または「0」で出力する演算。<br>
+                      エ．不正なスクリプトをユーザのブラウザ上で実行させることで，個人情報などを取得する攻撃。ユーザの入力値をそのまま結果に反映させるような，動的なWebサイトの脆弱性を悪用する。<br>
+                      オ．LAN内のコンピュータがインターネットを介して通信を行う際，プライベートIPアドレスとグローバルIPアドレスを相互に変換する技術。<br />カ．コンピュータシステムに関する評価指標の一つで，データの欠損や不整合がない正確な状態を保持すること。<br />キ．通信の安全性を確保するためにデータを暗号化し，インターネット上に構築する仮想の専用回線。<br />ク．LANに直接接続し，サーバのバックアップデータを保存したり，複数のコンピュータからアクセスできる利点を生かしたファイル共有を行ったりするために利用する記憶装置。<br />ケ．ビット列を左または右に任意のビット数移動する演算。<br />コ．コンピュータシステムに関する評価指標の一つで，不正なアクセスなどを排除し，機密を保持すること。
+                    </p>
+                  </div>
+                </blockquote>
+              </section>
+              <!-- END OFFICIAL QUESTION 2 -->
+              <section aria-label="問題2の一般的な解法" class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">対になる用語の区別</p>
+                <ol>
+                  <li>＜Ｂ群＞にある説明文すべてについて、何の用語の説明なのかを考える。</li>
+                  <li>合致するものがあるか＜Ａ群＞から探し、解答する。</li>
+                </ol>
+                <br>
+                <ol>
+                  <li>RASISの完全性（Integrity）＝欠損や不整合がない、安全性（Security）＝不正アクセスの排除。</li>
+                  <li>RAID（複数ディスクを1台のように管理）とNAS（LAN接続の記憶装置）。NAT（アドレス変換）とVPN（仮想専用線）。</li>
+                  <li>シフト演算（ビット列の移動）と論理演算（真偽の演算）。クロスサイトスクリプティング（スクリプト実行）とソーシャルエンジニアリング（人の弱み）。</li>
+                </ol>
+              </section>
+              <div aria-label="設問別の判断">
+                <div class="question-header">　Ｂ群の説明の確認　</div>
+                <p class="explanation-text">
+                  ア．<br>
+                  　人間の弱みやミスなど、デジタル技術に依らないで不正を働く手口を「<b>ソーシャルエンジニアリング</b>」という。<br>ゴミ箱からパスワードのメモを盗むなどが例として挙げられる。<br><br>
+                  イ．<br>
+                  　複数のHDDを１つのHDDのように管理する技術を「<b>RAID</b>」という。<br><br>
+                  ウ．<br>
+                  　真偽を１，０を用いて演算することを「<b>論理演算</b>」という。<br><br>
+                  エ．<br>
+                  　不正なスクリプトをユーザのブラウザ上で実行させるような攻撃を「<b>クロスサイトスクリプティング（XSS）</b>」という。<br>見えかけは正規のサイトに飛ぶような不正なリンクを埋め込み、クリックしたら裏側ではユーザのデータが送信されてしまうといった攻撃。<br><br>
+                  オ．<br>
+                  　プライベートIPとグローバルIPとを相互に変換する技術を「<b>NAT</b>」という。<br>特に、同じネットワーク内の複数のプライベートIPを共通のグローバルIPに変換して通信できる技術をNAPT（IPマスカレード）という。<br><br>
+                  カ．<br>
+                  　コンピュータシステムに関する評価指標（所謂RASIS）のうち、データ欠損がないことの指標は「<b>完全性（Integrity）</b>」という。<br><br>
+                  キ．<br>
+                  　インターネット上に構築する仮想（Virtual）の専用（Private）回線（Network）は「<b>VPN</b>」という。<br><br>
+                  ク．<br>
+                  　ネットワークに直接接続して利用する記憶装置を「<b>NAS（Network Attached Storage）</b>」という。<br><br>
+                  ケ．<br>
+                  　ビット列を左右に移動（シフト）する演算を「<b>シフト演算</b>」という。<br>その方法によって「論理シフト」と「算術シフト」に区分される。<br><br>
+                  コ．<br>
+                  　RASISのうち機密保持に関する指標は「<b>安全性（Security）</b>」という。
+                  </p>
+              </div>
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>Ｂ群は対になる説明文がペアで用意されています（カ／コ、イ／ク、オ／キ、ウ／ケ、ア／エ）。違いを表す語句を見つけて選びます。</p>
+              </aside>
+              <div class="answer">答え　１ カ　２ イ　３ オ　４ ケ　５ エ</div>
+            </section>
+
+            <section class="problem question-section reveal" id="q3">
+              <div class="problem-head">
+                <span class="number">3</span>
+                <h3>【3】用語選択と計算（2進化10進数・SMTP・MIPS・リエントラント・稼働率）</h3>
+              </div>
+              <!-- BEGIN OFFICIAL QUESTION 3 -->
+              <section aria-labelledby="q3-official-question-title"
+                class="official-question official-question--placeholder">
+                <div class="official-question__header">
+                  <h4 id="q3-official-question-title">問題文</h4>
+                </div>
+                <blockquote class="official-question__body">
+                  <div aria-hidden="true" class="official-question__space">
+                    <p>次の説明文に最も適した答えをア，イ，ウの中から選び，記号で答えなさい。なお，５．については数値を答えなさい。</p>
+                  </div>
+                </blockquote>
+              </section>
+              <!-- END OFFICIAL QUESTION 3 -->
+              <section aria-label="問題3の一般的な解法" class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">数値変換と稼働率の計算</p>
+                <ol>
+                  <li>2進化10進数（BCD）＝10進数の各桁を4ビットの2進数で表す。23 → 2＝0010、3＝0011。</li>
+                  <li>稼働率＝稼働時間÷総運用時間＝（総運用時間－修理時間合計）÷総運用時間。MTTR＝修理時間合計÷故障回数。</li>
+                </ol>
+              </section>
+              <div aria-label="設問別の判断">
+                <section class="subsection">
+                  <div class="question-header">　１　</div>
+                  <blockquote class="official-question__body">
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>１．10進数の23を2進化10進数で表したもの。<br>
+                        　ア．00010111　イ．00100011　ウ．11101001</p>
+                    </div>
+                  </blockquote>
+                  <p class="explanation-text">2進化10進数（BCD）は、10進数の各桁を4ビットの2進数で表す。<br>
+                    2 ＝ 0010、3 ＝ 0011 なので、並べると<b>00100011</b> となる。<br>
+                    アは23を通常の2進数で表した 10111 に対応する表現なので違いに気を付ける。
+                  </p>
+                  <div class="answer-red-bold-underline">A．イ．00100011</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　２　</div>
+                  <blockquote class="official-question__body">
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>２．電子メールを送信したり，転送したりする際に用いるプロトコル。<br>　ア．FTP　イ．POP　ウ．SMTP</p>
+                    </div>
+                  </blockquote>
+                  <p class="explanation-text">
+                    <b>FTP</b>（File Transfer Protocol）はネットワーク上でファイルを通信する際に使われる通信規約。<br>
+                    <b>POP</b>（Post Office Protocol）は、主にメールの<b>受信</b>に使われる通信規約。<br>
+                    <b>SMTP</b>（Simple Mail Transfer Protocol）は、主にメールの<b>送信</b>で使用される通信規約。
+                  <div class="answer-red-bold-underline">A．ウ．SMTP</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　３　</div>
+                  <blockquote class="official-question__body">
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>
+                        ３．コンピュータシステムの性能指標の一つで，1秒間に実行できる命令の回数を百万単位で表し，コンピュータの処理速度を表現するために用いられる指標。<br>
+                        　ア．MIPS　イ．クロック周波数　ウ．スループット
+                      </p>
+                    </div>
+                  </blockquote>
+                  <p class="explanation-text">
+                    <b>MIPS</b>（Million Instructions Per Second）は、１秒間に実行できる命令数を百万単位で表す性能指標を表す。<br>
+                    <b>クロック周波数</b>は、コンピュータが処理を実行する間隔の単位。１秒間の実行数をHz（ヘルツ）であらわされる。<br>
+                    <b>スループット</b>は、単位時間当たりに処理できる仕事量を表す。</p>
+                  <div class="answer-red-bold-underline">A．ア．MIPS</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　４　</div>
+                  <blockquote class="official-question__body">
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>４．複数のプロセスから同時に呼び出されたとき，互いに干渉することなく正しく動作するプログラムの性質。<br>
+                        　ア．リカーシブ　イ．リロケータブル　ウ．リエントラント</p>
+                    </div>
+                  </blockquote>
+                  <p class="explanation-text">
+                    プログラム呼び出しの４つの特性
+                    <br>１．<b>リカーシブ（再帰可能）</b><br>プログラムを実行中にそのプログラム自身を再度呼び出しても正しく実行できる性質。<br>
+                    <br>２．<b>リロケータブル（再配置可能）</b><br>プログラムのどの位置に配置しても正しく実行できる性質。<br>
+                    <br>３．<b>リエントラント（再入可能）</b><br>様々なプログラムから同時に呼び出されてもそれぞれ正しく実行できる性質。<br>
+                    <br>４．<b>リユーザブル（再使用可能）</b><br>一度使ったプログラムを再度呼び出しても、最初に実行した際の値が残らないなど新しく正しく実行できる性質。
+                  </p>
+                  <div class="answer-red-bold-underline">A．ウ．リエントラント</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　５　</div>
+                  <blockquote class="official-question__body">
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>
+                        ５．あるシステムの運用を開始してから5,000時間が経過し，故障回数が2回，修理時間の合計が30時間，稼働率が0.994であった。今後の運用において，故障が1回発生すると見込み，MTTRは変わらないものとすると，このシステムの稼働率が0.995に向上するのは，総運用時間が何時間に達したときか。
+                      </p>
+                    </div>
+                  </blockquote>
+                  <p class="explanation-text">
+                    「MTTRは変わらない」ため、まず1回当たりの修理時間を求める。故障がもう1回発生した後の修理時間合計を使い、稼働率0.995となる総運用時間を求める。</p>
+                  <div class="formula">
+                    <p class="formula-title">５．稼働率の計算</p>
+                    <p>現在：MTTR ＝ 30時間 ÷ 2回 ＝ 15時間／回</p>
+                    <p>故障がもう1回発生 → 修理時間合計 ＝ 30 ＋ 15 ＝ 45時間</p>
+                    <p>総運用時間を T として、 (T － 45) ÷ T ＝ 0.995 となる T を求めるので、</p>
+                    <p>0.005T ＝ 45 → <strong>T ＝ 9,000時間</strong></p>
+                  </div>
+                  <div class="answer-red-bold-underline">A．9,000時間</div>
+                </section>
+              </div>
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>５は「MTTRは変わらない」から1回あたり15時間の修理時間を求め、故障1回追加後の修理時間合計45時間で式を立てます。</p>
+              </aside>
+              <div class="answer">答え　１ イ　２ ウ　３ ア　４ ウ　５ 9,000時間</div>
+            </section>
+
+            <section class="problem question-section reveal" id="q4-1">
+              <div class="problem-head">
+                <span class="number">4-1</span>
+                <h3>【4】問1．VBAプログラム（順位付け）</h3>
+              </div>
+
+              <!-- BEGIN OFFICIAL QUESTION 4-1 -->
+              <section aria-labelledby="q4-1-official-question-title"
+                class="official-question official-question--placeholder">
+                <div class="official-question__header">
+                  <h4 id="q4-1-official-question-title">問題文</h4>
+                </div>
+                <blockquote class="official-question__body">
+                  <div aria-hidden="true" class="official-question__space">
+                    <p>問題文省略。PDFを参照してください。</p>
+                  </div>
+                </blockquote>
+              </section>
+              <!-- END OFFICIAL QUESTION 4-1 -->
+              <section aria-label="問題4問1の一般的な解法" class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">順位付けの構造</p>
+                <ol>
+                  <li>順位付け：<br>
+                    まず、順位が保存される配列にすべて１を入れて初期化する。<br>
+                    その後、比較対象の要素同士を比較して、順位が下のものに対応する配列の要素を＋１していく。<br>
+                    比較した２の要素両方について順位を加算していく方法と、片方にのみ順位を加算し、もう片方は再度順位付けを実行するという方法がある。
+                  </li>
+
+                  <img src="../../img/junniduke.png"><br>
+                </ol>
+              </section>
+              <div aria-label="設問別の判断">
+                <section class="subsection">
+                  <div class="question-header">　⑴　</div>
+                  <p class="explanation-text">Score(i) ＜ Score(k) のとき、i の方が値が小さいため i の順位を下げる。ElseIf にある Score(i) ＞
+                    Score(k) と対になる条件になる。<br>イの「≦」では同じ値でも順位が下がってしまい、「数値が同じ場合は同順位」という処理条件に合わない。</p>
+                  <div class="answer-red-bold-underline">A．ウ．Score(i) &lt; Score(k)</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　⑵　</div>
+                  <p class="explanation-text">Score(i) ＞ Score(k) のときは k の方が小さいので、k の順位を1つ下げるため Jun(k) に1を加える。<br>エでは i
+                    の順位を下げることになり、比較結果と逆になる。</p>
+                  <div class="answer-red-bold-underline">A．ア．Jun(k) = Jun(k) + 1</div>
+                </section>
+              </div>
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>⑴は「数値が同じ場合は同順位」という条件から、等号を含まない比較を選ぶことがポイントです。</p>
+              </aside>
+              <div class="answer">答え　⑴ ウ　⑵ ア</div>
+            </section>
+
+            <section class="problem question-section reveal" id="q4-2">
+              <div class="problem-head">
+                <span class="number">4-2</span>
+                <h3>【4】問2．VBAプログラム（文字列の選択ソート）</h3>
+              </div>
+
+              <!-- BEGIN OFFICIAL QUESTION 4-2 -->
+              <section aria-labelledby="q4-2-official-question-title"
+                class="official-question official-question--placeholder">
+                <div class="official-question__header">
+                  <h4 id="q4-2-official-question-title">問題文</h4>
+                </div>
+                <blockquote class="official-question__body">
+                  <div aria-hidden="true" class="official-question__space">
+                    <p>問題文省略。PDFを参照してください。</p>
+                  </div>
+                </blockquote>
+              </section>
+              <!-- END OFFICIAL QUESTION 4-2 -->
+              <section aria-label="問題4問2の一般的な解法" class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">選択ソートの構造</p>
+                <ol>
+                  <li>選択交換法（セレクションソート）：配列のうち順番が未決定の部分の中から最大（最小）の要素を探し、未決定の範囲の一番後（前）の要素と交換していくのを繰り返すことで、並び替える手法。</li>
+                  <img src="../../img/selection-sort.png">
+                </ol>
+              </section>
+              <div aria-label="設問別の判断">
+                <section class="subsection">
+                  <div class="question-header">　⑶　</div>
+                  <p class="explanation-text">未整列部分のすべてを比較する必要があるため、s は m+1 から n まで動かす。<br>イの「To n - 1」では最後の要素 Dat(n)
+                    が比較対象から外れてしまう。</p>
+                  <div class="answer-red-bold-underline">A．エ．s = m + 1 To n</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　⑷　</div>
+                  <p class="explanation-text">
+                    Dat(s) ＜ Dat(r) で、現在の最小値より小さい文字列が見つかったら、その添字 s を新しい最小位置 r に記憶する。<br>
+                    ウは未整列範囲の一番先頭の添字が必ず入ることとなってしまうため、不適<br>
+                    オは添字を記憶する変数 r に文字列 Dat(s) を代入するため不適切。
+                  </p>
+                  <div class="answer-red-bold-underline">A．ア．r = s</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　⑸　</div>
+                  <p class="explanation-text">最小値の位置 r が現在の位置 m と異なる場合だけ交換を行うため、条件は r &lt;&gt; m。<br>ウの「r =
+                    m」は代入文であり条件式ではない。</p>
+                  <div class="answer-red-bold-underline">A．カ．r &lt;&gt; m</div>
+                </section>
+              </div>
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>⑶は「To n」と「To n - 1」の違いに注目し、最後の要素まで比較対象に含める必要があるかを確認します。</p>
+              </aside>
+              <div class="answer">答え　⑶ エ　⑷ ア　⑸ カ</div>
+            </section>
+
+            <section class="problem question-section reveal" id="q5">
+              <div class="problem-head">
+                <span class="number">5</span>
+                <h3>【5】流れ図（鉄道路線の年間乗客数一覧表：線形探索・集計・交換法による降順並べ替え）</h3>
+              </div>
+              <!-- BEGIN OFFICIAL QUESTION 5 -->
+              <section aria-labelledby="q5-official-question-title"
+                class="official-question official-question--placeholder">
+                <div class="official-question__header">
+                  <h4 id="q5-official-question-title">問題文</h4>
+                </div>
+                <blockquote class="official-question__body">
+                  <div aria-hidden="true" class="official-question__space">
+                    <p>問題文省略。PDFを参照してください。</p>
+                  </div>
+                </blockquote>
+              </section>
+              <!-- END OFFICIAL QUESTION 5 -->
+              <section aria-label="問題5の一般的な解法" class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">交換法（バブルソート）の読み方</p>
+                <ol>
+                  <li>隣接交換法では、添字が前（後）の要素から隣同士を比較してそこで大小関係がどうなっているかをもとに、昇順（降順）に合致していなければ交換を行う。交換は３点交換。</li>
+                  <img src="../../img/bubble-sort.png">
+                </ol>
+              </section>
+              <div aria-label="設問別の判断">
+                <section class="subsection">
+                  <div class="question-header">　⑴　</div>
+                  <p class="explanation-text">
+                    内側のループで使われている j の範囲を決定する。<br>
+                    k+1 を参照しながら比較するため、外側ループの j は h－1 から始める必要がある。h から始めると k+1 が33となり配列の範囲を超える。
+                  </p>
+                  <div class="answer-red-bold-underline">A．コ．j は h － 1 から 1 ずつ減らして j ≧ 1 の間</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　⑵　</div>
+                  <p class="explanation-text">
+                    乗客数合計の<b>降順</b>に並べ替えるため、前の値 Jsyu(0, k) より後ろの値 Jsyu(0, k+1) が大きいときに交換する。<br>
+                    ウの「＞」では昇順になる。</p>
+                  <div class="answer-red-bold-underline">A．オ．Jsyu(0, k) ＜ Jsyu(0, k + 1)</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　⑶　</div>
+                  <p class="explanation-text">
+                    配列 Jsyu は0行目から2行目までの3行構成なので、駅ごとのデータを交換するときは m を0から2まで動かす。<br>
+                    エの32は列方向の駅数であり、行方向の範囲ではない。
+                  </p>
+                  <div class="answer-red-bold-underline">A．キ．m は 0 から 1 ずつ増やして m ≦ 2 の間</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　⑷　</div>
+                  <p class="explanation-text">
+                    ここでは、次の処理で使用する変数 Hiritu を求める。<br>
+                    ループ７では制御変数 n を使って駅を順番に表示しているため、比率も n 番目の駅について求める。<br>
+                    i は探索処理で使用した変数であり、ここで表示対象の駅を表していない。
+                  </p>
+                  <div class="answer-red-bold-underline">A．イ．Jsyu(1, n) × 100 ÷ Jsyu(2, n) → Hiritu</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　⑸　</div>
+                  <p class="explanation-text">
+                    駅全体の合計は0列目に集計されているため、Jsyu(0,0)、Jsyu(1,0)、Jsyu(2,0)を表示する。<br>
+                    h列目は32番目の駅のデータであり全体合計ではない。
+                  </p>
+                  <div class="answer-red-bold-underline">A．ク．"合計", Jsyu(0, 0), Jsyu(1, 0), Jsyu(2, 0) を表示</div>
+                </section>
+              </div>
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>⑷は使われている変数名に注目します。ループ7 の制御変数は n なので、Hiritu も n で添字を指定します。⑴は「k ≦ j」で k+1 まで参照することから、j の初期値を h－1 にする必要があります。</p>
+              </aside>
+              <div class="answer">答え　⑴ コ　⑵ オ　⑶ キ　⑷ イ　⑸ ク</div>
+            </section>
+
+            <section class="problem question-section reveal" id="q6">
+              <div class="problem-head">
+                <span class="number">6</span>
+                <h3>【6】流れ図（学生食堂の販売状況一覧表：学期別集計・上位5組の抽出）</h3>
+              </div>
+              <!-- BEGIN OFFICIAL QUESTION 6 -->
+              <section aria-labelledby="q6-official-question-title"
+                class="official-question official-question--placeholder">
+                <div class="official-question__header">
+                  <h4 id="q6-official-question-title">問題文</h4>
+                </div>
+                <blockquote class="official-question__body">
+                  <div aria-hidden="true" class="official-question__space">
+                    <p>問題文省略。PDFを参照してください。</p>
+                  </div>
+                </blockquote>
+              </section>
+              <!-- END OFFICIAL QUESTION 6 -->
+              <section aria-label="問題6の一般的な解法" class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">学期判定と上位抽出の読み方</p>
+                <ol>
+                  <li>コントロールブレイク（グループトータル）：<br>
+                    １か月間、日ごとに集計をしたい場合に、データを読み込んで、日程が変わるごとに小計を出せるようなプログラム。データが対象値によってソートされている必要がある。</li>
+                    <img src="../../img/controlbreak.png">
+                  <li>学期の区切り：販売日が学期の最終販売日以下（Hbi ≦ Saibi(g)）の間は同じ学期として集計する。≠ だと最終販売日当日以外の日付が全て「別学期」扱いになる。</li>
+                </ol>
+              </section>
+              <div aria-label="設問別の判断">
+                <section class="subsection">
+                  <div class="question-header">　⑴　</div>
+                  <p class="explanation-text">
+                    販売日は昇順に記録されており、現在の販売日 Hbi がその学期の最終販売日 Saibi(g) 以下である間、その学期のデータとして集計する。<br>
+                    裏を返せば、その学期の最終販売日より進んでしまったタイミングで初めてループを出るような条件式を設定する必要がある。
+                    「≠」では学期の最終日以外を正しく判定できず、毎回ループから出ることになってしまう。
+                  </p>
+                  <div class="answer-red-bold-underline">A．ケ．Hbi ≦ Saibi(g)</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　⑵　</div>
+                  <p class="explanation-text">
+                    資料３の２項めにあるように、学年別の販売数 Gkei(g, Gaku) を加算した後、４列目にその学期の合計販売数を加算する必要がある。
+                  </p>
+                  <div class="answer-red-bold-underline">A．エ．Gkei(g, 4) ＋ 1 → Gkei(g, 4)</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　⑶　</div>
+                  <p class="explanation-text">
+                    組の添字は1年1組を1、3年6組を18とする必要があるため、学年ごとの6組を考えて<b>(Gaku－1)×6＋Kumi</b>とする。<br>
+                    Gaku×6＋Kumi では1年1組が7になってしまう。
+                  </p>
+                  <div class="answer-red-bold-underline">A．カ．(Gaku － 1) × 6 ＋ Kumi</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　⑷　</div>
+                  <p class="explanation-text">
+                    前回の最大値 i より小さい値の中から、今回の最大値を探している。したがって候補 Kkei(k, n) が現在の Maxより大きいときに更新する。<br>
+                    「＜」では最小値を探すことになる。
+                  </p>
+                  <div class="answer-red-bold-underline">A．キ．Kkei(k, n) ＞ Max</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　⑸　</div>
+                  <p class="explanation-text">
+                    １つの上位値を見つけ終わったら、その値より小さい値の中から次の最大値を探すため、見つけた最大値 Max を次回の上限 i にする。
+                  </p>
+                  <div class="answer-red-bold-underline">A．ア．Max → i</div>
+                </section>
+              </div>
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>⑶は具体的な学籍番号（1年1組と3年6組）を式に当てはめて添字が1〜18になるかを確かめます。⑷⑸は「上位5組を1つずつ順に見つける」ために、前回の最大値を上限として更新していく仕組みを読み取ります。
+                </p>
+              </aside>
+              <div class="answer">答え　⑴ ケ　⑵ エ　⑶ カ　⑷ キ　⑸ ア</div>
+            </section>
+
+            <section class="problem question-section reveal" id="q7">
+              <div class="problem-head">
+                <span class="number">7</span>
+                <h3>【7】流れ図（移動図書館の貸出分析：二分探索・挿入法による多条件並べ替え・分析方法別表示）</h3>
+              </div>
+              <!-- BEGIN OFFICIAL QUESTION 7 -->
+              <section aria-labelledby="q7-official-question-title"
+                class="official-question official-question--placeholder">
+                <div class="official-question__header">
+                  <h4 id="q7-official-question-title">問題文</h4>
+                </div>
+                <blockquote class="official-question__body">
+                  <div aria-hidden="true" class="official-question__space">
+                    <p>問題文省略。PDFを参照してください。</p>
+                  </div>
+                </blockquote>
+              </section>
+              <!-- END OFFICIAL QUESTION 7 -->
+              <section aria-label="問題7の一般的な解法" class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">二分探索と挿入法の読み方</p>
+                <ol>
+                  <li>二分探索とは、既にソートされている探索先のリストに対し、探索対象の値をそのリストの中央値と比較して大きいか小さいかを判定する。中央値より大きい側（小さい側）にあると判定されれば、リストのうち判定された側の中での中央値を出し、それに対してまた判定する。中央値と同値になるまでそれを繰り返してリスト内から値を見つけ出す方法。</li>
+                  <img src="../../img/nibuntansaku.png">
+                  <br>
+                  <li>挿入法：前（後）から順番に、すでに整列された部分と整列されていない先頭の要素とを比較し、その要素が入るべき場所に挿入されるよう、整列されている部分を１つずつ後（前）にずらしていく。</li>
+                  <img src="../../img/insertion-sort.png">
+                </ol>
+              </section>
+              <div aria-label="設問別の判断">
+                <section class="subsection">
+                  <div class="question-header">　⑴　</div>
+                  <p class="explanation-text">
+                    配列 Kkai は行方向が巡回場所番号、列方向がジャンル番号に対応する。したがって、巡回場所 Jban・ジャンル Soe の貸出回数に1を加える。<br>
+                    Tyu は図書コードを二分探索した際の図書の添字であり、ジャンル番号ではない。
+                  </p>
+                  <div class="answer-red-bold-underline">A．オ．Kkai(Jban, Soe) ＋ 1 → Kkai(Jban, Soe)</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　⑵　</div>
+                  <p class="explanation-text">
+                    挿入法では g 番目の要素を退避し、それより前の要素を後ろから比較して挿入位置を探す。したがって h は g－1 から1まで減らしていく。
+                  </p>
+                  <div class="answer-red-bold-underline">A．ソ．h は g － 1 から 1 ずつ減らして h ≧ 1</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　⑶　</div>
+                  <p class="explanation-text">
+                    貸出回数が同じ場合は出版日の降順で並べるため、まず <b>Nkai(Wk(0)) ＝ Nkai(Wk(h))</b> を確認し、そのうえで退避した要素の出版日が比較相手より新しい <b>Sbi(Wk(0)) ＞ Sbi(Wk(h))</b> 場合にずらす。
+                  </p>
+                  <div class="answer-red-bold-underline">A．セ．Nkai(Wk(0)) ＝ Nkai(Wk(h))<br>　ク．Sbi(Wk(0)) ＞ Sbi(Wk(h))（順不同）</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　⑷　</div>
+                  <p class="explanation-text">
+                    ジャンル別分析では、各巡回場所について名称と割合を表示する。ループ８の制御変数は m なので、巡回場所名は Jmei(m)、割合は直前に求めた Wari を連結する。
+                  </p>
+                  <div class="answer-red-bold-underline">A．❶ ス．Jmei(m)<br>　❷ イ．Wari</div>
+                </section>
+                <section class="subsection">
+                  <div class="question-header">　⑸　</div>
+                  <p class="explanation-text">二分探索で、中央の図書コード Tcod(Tyu) が目的の Tcd より小さい場合は、目的値が上側にあるため下限 Ka を Tyu+1 に更新する。したがってYES側へ進む条件は Tcod(Tyu) ＜ Tcd。
+                  </p>
+                  <div class="answer-red-bold-underline">A．コ．Tcod(Tyu) ＜ Tcd</div>
+                </section>
+              </div>
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>⑶は「貸出回数が同じ場合，出版日の降順」という条件を、挿入法の「ずらす条件」に翻訳します。降順なので、退避した要素 Wk(0) の出版日が比較相手より大きい（新しい）ときにずらします。⑸は「YES
+                  のとき Tyu＋1 → Ka（下限を上げる）」から、中央値が目的値より小さい条件と判断します。</p>
+              </aside>
+              <div class="answer">答え　⑴ オ　⑵ ソ　⑶ セ・ク（順不同）　⑷ ❶ ス ❷ イ　⑸ コ</div>
+            </section>
+          </main>
+          <aside aria-label="解説動画とページ内目次" class="exam-learning-aside">
+            <section aria-labelledby="exam-video-title" class="exam-video-panel">
+              <h2 id="exam-video-title">解説動画</h2>
+              <!-- 動画完成後、このプレースホルダーを .exam-video-frame の iframe に差し替えます。 -->
+              <div aria-label="解説動画は準備中です" class="exam-video-placeholder" role="img">
+                <span aria-hidden="true" class="exam-video-placeholder__icon">▶</span>
+                <span class="exam-video-placeholder__text">
+                  <strong>解説動画は準備中です</strong>
+                  <span>公開後、この場所で動画を視聴しながら解説を読めます。</span>
+                </span>
+              </div>
+            </section>
+            <nav aria-labelledby="exam-toc-title" class="exam-desktop-toc">
+              <h2 id="exam-toc-title">このページの目次</h2>
+              <ul class="exam-toc-overview">
+                <li><a href="#usage-title">解答するときの注意</a></li>
+                <li><a href="#legend-title">解説の凡例</a></li>
+                <li><a href="#question-list">設問一覧</a></li>
+                <li><a href="#answers">正答一覧</a></li>
+              </ul>
+              <p class="exam-toc-label">問題別解説</p>
+              <ol class="exam-toc-questions">
+                <li><a href="#q1">1</a></li>
+                <li><a href="#q2">2</a></li>
+                <li><a href="#q3">3</a></li>
+                <li><a href="#q4-1">4-1</a></li>
+                <li><a href="#q4-2">4-2</a></li>
+                <li><a href="#q5">5</a></li>
+                <li><a href="#q6">6</a></li>
+                <li><a href="#q7">7</a></li>
+              </ol>
+            </nav>
+          </aside>
+        </section>
+      </div>
+    </div>
+  </div>
+  <button aria-label="ページ上部へ戻る" class="page-top-button" id="pageTopButton" title="ページ上部へ戻る" type="button">
+    <svg aria-hidden="true" height="24" viewbox="0 0 24 24" width="24">
+      <path d="M6 15l6-6 6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2.4"></path>
+    </svg>
+    <span>上へ</span>
+  </button>
+  <footer class="exam-footer site-footer">
+    <div class="footer-content">
+      <p class="footer-text">本解説は、公式問題・公式解式を参照して独自に作成した学習用コンテンツです。全国商業高等学校協会による公式解説・認定教材ではありません。</p>
+      <p class="footer-text">© 2026 全商関係hp. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="../../js/main.js"></script>
+  <script>
+    (() => {
+      const topButton = document.getElementById('pageTopButton');
+
+      const updateTopButton = () => {
+        if (topButton) {
+          topButton.classList.toggle('is-visible', window.scrollY > 480);
+        }
+      };
+
+      if (topButton) {
+        topButton.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        window.addEventListener('scroll', updateTopButton, { passive: true });
+        updateTopButton();
+      }
+
+      const tocLinks = Array.from(document.querySelectorAll('.exam-desktop-toc a[href^="#"]'));
+      const tocTargets = tocLinks
+        .map((link) => ({
+          link,
+          target: document.querySelector(link.getAttribute('href'))
+        }))
+        .filter((item) => item.target);
+      let tocUpdatePending = false;
+
+      const updateCurrentTocItem = () => {
+        if (!tocTargets.length) {
+          return;
+        }
+
+        let currentItem = tocTargets[0];
+        const headerOffset = 180;
+
+        tocTargets.forEach((item) => {
+          if (item.target.getBoundingClientRect().top <= headerOffset) {
+            currentItem = item;
+          }
+        });
+
+        tocTargets.forEach((item) => {
+          const isCurrent = item === currentItem;
+          item.link.classList.toggle('is-current', isCurrent);
+          if (isCurrent) {
+            item.link.setAttribute('aria-current', 'location');
+          } else {
+            item.link.removeAttribute('aria-current');
+          }
+        });
+        tocUpdatePending = false;
+      };
+
+      const requestTocUpdate = () => {
+        if (!tocUpdatePending) {
+          tocUpdatePending = true;
+          window.requestAnimationFrame(updateCurrentTocItem);
+        }
+      };
+
+      window.addEventListener('scroll', requestTocUpdate, { passive: true });
+      window.addEventListener('resize', requestTocUpdate);
+      updateCurrentTocItem();
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.08 });
+
+        document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+      } else {
+        document.querySelectorAll('.reveal').forEach((element) => element.classList.add('active'));
+      }
+    })();
+  </script>
+</body>
+
+</html>
