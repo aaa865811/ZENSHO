@@ -447,7 +447,8 @@
                       </p>
                     </div>
                   </blockquote>
-                  <p class="explanation-text">プログラム呼び出しの４つの特性
+                  <p class="explanation-text">
+                    プログラム呼び出しの４つの特性
                     <br>１．<b>リカーシブ（再帰可能）</b><br>プログラムを実行中にそのプログラム自身を再度呼び出しても正しく実行できる性質。<br>
                     <br>２．<b>リロケータブル（再配置可能）</b><br>プログラムのどの位置に配置しても正しく実行できる性質。<br>
                     <br>３．<b>リエントラント（再入可能）</b><br>様々なプログラムから同時に呼び出されてもそれぞれ正しく実行できる性質。<br>
@@ -521,6 +522,7 @@
                 <ol>
                   <li>ソートの中に３点交換が含まれているか確認。ない→挿入法、ある→最大値・最小値を補完する変数がある→選択法、ない→隣接交換法</li>
                   <li>挿入法：前（後）から順番に、すでに整列された部分と整列されていない先頭の要素とを比較し、その要素が入るべき場所に挿入されるよう、整列されている部分を１つずつ後（前）にずらしていく。</li>
+                  <img src="../../img/insertion-sort.png">
                 </ol>
               </section>
               <div aria-label="設問別の判断">
@@ -693,6 +695,7 @@
                 <ol>
                   <li>隣接交換法では、添字が前（後）の要素から隣同士を比較してそこで大小関係がどうなっているかをもとに、昇順（降順）に合致していなければ交換を行う。交換は３点交換。</li>
                 </ol>
+                <img src="../../img/bubble-sort.png">
               </section>
               <div aria-label="設問別の判断">
                 <section class="subsection">
@@ -805,7 +808,7 @@
                 </button>
               </h2>
               <div class="exam-video-body" id="examVideoContent">
-                <!-- 動画完成後、このプレースホルダーを .exam-video-frame の iframe に差し替えます。 -->
+                <!-- 動画完成後 削除 -->
                 <div aria-label="解説動画は準備中です" class="exam-video-placeholder" role="img">
                   <span aria-hidden="true" class="exam-video-placeholder__icon">▶</span>
                   <span class="exam-video-placeholder__text">
@@ -813,6 +816,13 @@
                     <span>公開後、この場所で動画を視聴しながら解説を読めます。</span>
                   </span>
                 </div>
+                <!--　ここまで　-->
+                <!-- 動画完成後　コメントアウト外す
+                <iframe class="exam-video-frame" src="https://www.youtube.com/embed/動画ID" title="第73回 情報処理検定 1級プログラミング 解説動画"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+                  ここまで-->
               </div>
             </section>
             <nav aria-labelledby="exam-toc-title" class="exam-desktop-toc">

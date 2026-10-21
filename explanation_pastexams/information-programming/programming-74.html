@@ -831,15 +831,31 @@
             </section>
           </main>
           <aside aria-label="解説動画とページ内目次" class="exam-learning-aside">
-            <section aria-labelledby="exam-video-title" class="exam-video-panel">
-              <h2 id="exam-video-title">解説動画</h2>
-              <!-- 動画完成後、このプレースホルダーを .exam-video-frame の iframe に差し替えます。 -->
-              <div aria-label="解説動画は準備中です" class="exam-video-placeholder" role="img">
-                <span aria-hidden="true" class="exam-video-placeholder__icon">▶</span>
-                <span class="exam-video-placeholder__text">
-                  <strong>解説動画は準備中です</strong>
-                  <span>公開後、この場所で動画を視聴しながら解説を読めます。</span>
-                </span>
+            <section aria-labelledby="exam-video-title" class="exam-video-panel" id="examVideoPanel">
+              <h2 class="exam-video-panel__heading" id="exam-video-title">
+                <span>解説動画</span>
+                <button aria-controls="examVideoContent" aria-expanded="true" class="exam-video-toggle"
+                  id="examVideoToggle" type="button">
+                  <span aria-hidden="true" class="exam-video-toggle__icon">⌃</span>
+                  <span class="exam-video-toggle__label">動画を隠す</span>
+                </button>
+              </h2>
+              <div class="exam-video-body" id="examVideoContent">
+                <!-- 動画完成後 削除 -->
+                <div aria-label="解説動画は準備中です" class="exam-video-placeholder" role="img">
+                  <span aria-hidden="true" class="exam-video-placeholder__icon">▶</span>
+                  <span class="exam-video-placeholder__text">
+                    <strong>解説動画は準備中です</strong>
+                    <span>公開後、この場所で動画を視聴しながら解説を読めます。</span>
+                  </span>
+                </div>
+                <!--　ここまで　-->
+                <!-- 動画完成後　コメントアウト外す
+                <iframe class="exam-video-frame" src="https://www.youtube.com/embed/動画ID" title="第73回 情報処理検定 1級プログラミング 解説動画"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+                  ここまで-->
               </div>
             </section>
             <nav aria-labelledby="exam-toc-title" class="exam-desktop-toc">
