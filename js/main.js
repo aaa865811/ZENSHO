@@ -8,6 +8,9 @@ function burger() {
   const nav = document.querySelector(".heder__nav--list");
   const navList = document.querySelectorAll(".heder__nav--list li");
 
+  if (!burger || !nav || burger.dataset.burgerReady === "true") return;
+  burger.dataset.burgerReady = "true";
+
   burger.addEventListener("click", () => {
     nav.classList.toggle("nav-active");
 
@@ -18,6 +21,12 @@ function burger() {
     });
     burger.classList.toggle("toggle");
   });
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", burger);
+} else {
+  burger();
 }
 
 

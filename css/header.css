@@ -117,13 +117,13 @@
   }
 
   .header__res {
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
-    background-color: rgb(255 255 255);
+    background-color: #eefff1;
     top: 0;
     z-index: 1000;
     font-family: "BIZ UDGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
