@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta
+    content="第102回（令和8年度）全商 簿記実務検定試験 第1級 原価計算。公式問題・解答を参照し、勘定記録と製造原価報告書、標準原価差異、等級別・単純総合原価計算、CVP分析、組別総合原価計算、個別原価計算と部門別計算、仕訳を途中計算とともに説明する学習用解説。"
+    name="description" />
+  <title>第102回 簿記実務検定試験 1級 原価計算 解説</title>
+  <link href="../../css/site.css" rel="stylesheet" />
+  <link href="../../css/header.css" rel="stylesheet" />
+  <style>
+    .bookkeeping-learning-page .exam-video-panel__heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    .bookkeeping-learning-page .exam-video-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.3rem;
+      flex-shrink: 0;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      border-radius: 6px;
+      padding: 4px 8px;
+      background: transparent;
+      color: #fff;
+      font: inherit;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+
+    .bookkeeping-learning-page .exam-video-toggle:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 2px;
+    }
+
+    .bookkeeping-learning-page .exam-video-panel.is-collapsed .exam-video-body {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="page-wrapper exam-learning-page bookkeeping-learning-page" id="top">
+  <header class="header">
+    <a class="logo" href="../../index.html">
+      <img alt="ロゴ" class="header__logo--img" src="../../img/ZenSho-PAST.png" />
+    </a>
+    <nav class="header__nav" id="header__nav">
+      <ul>
+        <li>
+          <a href="../index.html">
+            <span class="nav__en">全商検定</span>
+            <span class="nav__jp">過去問解説</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">GUIDELINES</span>
+            <span class="nav__jp">各検定の指針</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">INFORMATION</span>
+            <span class="nav__jp">進路情報</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">COLUMN</span>
+            <span class="nav__jp">コラム・その他</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">全商主催</span>
+            <span class="nav__jp">各競技大会について</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <header class="header__res">
+    <a class="logo" href="../../index.html">
+      <img alt="ロゴ" class="header__logo--img" height="auto" src="../../img/ZenSho-PAST.png" width="auto" />
+    </a>
+    <nav class="header__nav">
+      <ul class="heder__nav--list">
+        <li>
+          <a href="../index.html">
+            <span class="nav__en">全商検定</span>
+            <span class="nav__jp">過去問解説</span>
+          </a>
+        </li>
+        <li>
+          <a href="works.html">
+            <span class="nav__en">GUIDELINES</span>
+            <span class="nav__jp">各検定の指針</span>
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <span class="nav__en">INFORMATION</span>
+            <span class="nav__jp">進路情報</span>
+          </a>
+        </li>
+        <li>
+          <a href="company.html">
+            <span class="nav__en">COLUMN</span>
+            <span class="nav__jp">コラム・その他</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <span class="nav__en">全商主催</span>
+            <span class="nav__jp">各競技大会について</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </header>
+  <div id="root">
+    <div class="app-container">
+      <div class="content-wrapper">
+        <header aria-labelledby="page-title" class="exam-hero main-header">
+          <div class="hero header-content">
+            <p class="eyebrow">全商検定 過去問解説</p>
+            <h1 class="header-title" id="page-title">第102回 簿記実務検定試験<br>１級 原価計算 解説</h1>
+            <p class="lead">令和8年6月28日施行。各設問について、原価の流れ（勘定連絡）を先に整理し、数量・単価・進捗度を確認してから金額を求める手順で、類題にも応用できるように説明します。</p>
+          </div>
+        </header>
+        <section class="page exam-learning-layout">
+          <main class="exam-main main-content">
+            <section aria-labelledby="usage-title" class="instruction-section reveal">
+              <h2 id="usage-title">解答するときの注意</h2>
+              <p>
+                金額は3桁ごとにカンマで区切ります。製造原価報告書・損益計算書・原価計算表・勘定に記入する金額は、数値のみを記入します（「円」や「¥」は付けません）。差異の有利・不利、勘定の貸借は解答欄の指示に従ってください。
+              </p>
+              <p>
+                総合原価計算では「素材は始点投入・加工費は進捗度に応じて」が基本です。月初・月末仕掛品の加工換算量、先入先出法と平均法の違い、正常減損の負担先を資料で確認してから計算します。予定配賦・予定消費の問題は、予定額と実際額の差を差異勘定に振り替える流れを押さえましょう。
+              </p>
+            </section>
+            <section aria-labelledby="legend-title" class="legend-section reveal">
+              <h2 id="legend-title">解説の凡例</h2>
+              <p class="legend-intro">すべての問題で、次の表示を共通して使用します。</p>
+              <div class="legend-grid">
+                <div class="legend-card">
+                  <strong>問題文</strong>
+                  <p>各設問の問題文・資料を示します。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>一般的な解法</strong>
+                  <p>同じ論点の問題に共通して使える手順・算式です。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>計算・仕訳</strong>
+                  <p>この問題の数値を当てはめ、途中計算・勘定記入・仕訳を省略せず示します。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>注意点</strong>
+                  <p>換算量、配賦基準、差異の有利・不利、勘定科目の選択などの失点しやすい箇所です。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>正答</strong>
+                  <p>公式の解答に基づく最終的な解答です。</p>
+                </div>
+              </div>
+            </section>
+            <div class="source-box">
+              <p><strong>出典：</strong>公益財団法人 全国商業高等学校協会主催 令和8年度 第102回 簿記実務検定試験 第1級 原価計算（令和8年6月28日実施）</p>
+              <a class="text-link" href="https://zensho.or.jp/puf/download/exam/pastexam/2026/bk_102_1_cos.pdf"
+                rel="noopener noreferrer" target="_blank">問題・解答用紙PDF　　　</a>
+              <a class="text-link" href="https://zensho.or.jp/puf/download/exam/pastexam/2026/bk_102_an.pdf"
+                rel="noopener noreferrer" target="_blank">解答PDF（会計・原価計算
+                共通）　　　</a>
+              <p class="source-note">本記事は全商協会による公式解説ではありません。</p>
+            </div>
+
+            <section aria-labelledby="legend-title" class="legend-section reveal">
+              <h2 id="legend-title">PDF版のダウンロードは<a class="text-link" href="./bookkeeping-cost-102.pdf" rel="noopener noreferrer" target="_blank">こちら</a></h2>
+              <p class="legend-intro">学校の授業で使用するなど、紙媒体での解説が必要な方は、こちらをお使いください。</p>
+            </section>
+
+            <h2 id="question-list">設問一覧</h2>
+            <nav aria-label="設問へのリンク" class="question-nav bookkeeping-question-nav"><a href="#q1-1">1-1</a><a
+                href="#q1-2">1-2</a><a href="#q1-3">1-3</a><a href="#q1-4">1-4</a><a href="#q1-5">1-5</a><a
+                href="#q1-6">1-6</a><a href="#q2">2</a><a href="#q3">3</a><a href="#q4">4</a></nav>
+            <section aria-labelledby="abbr-title" class="abbreviation-section" id="abbreviations">
+              <h2 class="section-subtitle" id="abbr-title">解説内で使用する略語について</h2>
+              <table class="abbreviation-table">
+                <tbody>
+                  <tr>
+                    <td class="abbr-code">P/L</td>
+                    <td>損益計算書</td>
+                  </tr>
+                  <tr>
+                    <td class="abbr-code">B/S</td>
+                    <td>貸借対照表</td>
+                  </tr>
+                  <tr>
+                    <td class="abbr-code">CVP</td>
+                    <td>Cost-Volume-Profit（損益分岐点分析・利益計画）</td>
+                  </tr>
+                  <tr>
+                    <td class="abbr-code">FIFO</td>
+                    <td>First-In, First-Out（先入先出法）</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <h2 id="explanations">設問別解説</h2>
+            <section class="question-section reveal" id="q1-1">
+              <div class="question-main-title">
+                <h2>第１問</h2>
+              </div>
+              <div class="question-subheader-blue">⑴　勘定連絡・製造原価報告書</div>
+              <details class="official-question official-question--placeholder">
+                <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                <blockquote class="official-question__body">
+                  <div class="official-question__space">
+                    <p>⑴
+                      福島製作所における当期（令和○年1月1日から令和○年12月31日まで）の勘定記録・製造原価報告書・損益計算書（一部）・貸借対照表（一部）により，（ア）から（ウ）に入る金額を求めなさい。ただし，会計期間は原価計算期間と一致しているものとする。
+                    </p>
+                    <div aria-label="仕掛品勘定" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th>仕掛品</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>前期繰越</td>
+                            <td>360,000</td>
+                            <td>製品</td>
+                            <td>（　）</td>
+                          </tr>
+                          <tr>
+                            <td>素材</td>
+                            <td>2,044,000</td>
+                            <td>次期繰越</td>
+                            <td>432,000</td>
+                          </tr>
+                          <tr>
+                            <td>賃金</td>
+                            <td>2,725,000</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>外注加工賃</td>
+                            <td>324,000</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>製造間接費</td>
+                            <td>（　）</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>（　）</td>
+                            <td></td>
+                            <td>（　）</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div aria-label="製造間接費勘定" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th>製造間接費</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>工場消耗品</td>
+                            <td>160,000</td>
+                            <td>仕掛品</td>
+                            <td>（　）</td>
+                          </tr>
+                          <tr>
+                            <td>賃金</td>
+                            <td>417,000</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>給料</td>
+                            <td>480,000</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>健康保険料</td>
+                            <td>60,000</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>減価償却費</td>
+                            <td>（ア）</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>電力料</td>
+                            <td>516,000</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>雑費</td>
+                            <td>107,000</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>（　）</td>
+                            <td></td>
+                            <td>（　）</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div aria-label="製品勘定" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th>製品</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>前期繰越</td>
+                            <td>（　）</td>
+                            <td>売上原価</td>
+                            <td>（　）</td>
+                          </tr>
+                          <tr>
+                            <td>仕掛品</td>
+                            <td>（　）</td>
+                            <td>次期繰越</td>
+                            <td>（　）</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>7,570,000</td>
+                            <td></td>
+                            <td>7,570,000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div aria-label="製造原価報告書" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th>製造原価報告書（令和○年1月1日〜12月31日）</th>
+                            <th>金額</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Ⅰ 材料費</td>
+                            <td>（　）</td>
+                          </tr>
+                          <tr>
+                            <td>Ⅱ 労務費</td>
+                            <td>（　）</td>
+                          </tr>
+                          <tr>
+                            <td>Ⅲ 経費</td>
+                            <td>1,097,000</td>
+                          </tr>
+                          <tr>
+                            <td>当期製造費用</td>
+                            <td>（　）</td>
+                          </tr>
+                          <tr>
+                            <td>期首仕掛品棚卸高</td>
+                            <td>360,000</td>
+                          </tr>
+                          <tr>
+                            <td>合計</td>
+                            <td>（　）</td>
+                          </tr>
+                          <tr>
+                            <td>期末仕掛品棚卸高</td>
+                            <td>（　）</td>
+                          </tr>
+                          <tr>
+                            <td>当期製品製造原価</td>
+                            <td>（イ）</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>損益計算書（一部）：Ⅰ 売上高 8,800,000　Ⅱ 売上原価（　）　売上総利益（ウ）<br>貸借対照表（一部・令和○年12月31日）：製品 750,000　仕掛品（　）</p>
+                  </div>
+                </blockquote>
+              </details>
+              <section class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">原価の流れと勘定残高の逆算</p>
+                <ol>
+                  <li>製造原価報告書＝材料費・労務費・経費の当期製造費用＋期首仕掛品－期末仕掛品。</li>
+                  <li>製品勘定は期首製品＋完成品原価＝売上原価＋期末製品という貸借の関係で確認する。</li>
+                  <li>求められている金額のうち、先に分かる金額から埋めて逆算する。</li>
+                </ol>
+              </section>
+              <div class="content-title-orange">①　減価償却費（ア）を逆算する</div>
+              <p class="explanation-text">
+                製造原価報告書にある経費の金額と、仕掛品及び製造間接費の内訳から減価償却費を求めます。<br>
+                直接経費にあたるのは、「外注加工賃」<br>
+                間接経費にあたるのは、「減価償却費」「電力料」「雑費」です。<br>
+                これらの合計金額が製造原価報告書の「経費」の金額になります。
+              </p>
+              <div class="explanation-box-green">
+                経費1,097,000 ＝ 外注加工賃324,000 ＋ 減価償却費 ＋ 電力料516,000 ＋ 雑費107,000<br>
+                減価償却費：1,097,000 − 324,000 − 516,000 − 107,000 ＝ <span class="red-u">150,000</span>
+              </div>
+              <div class="answer-red-bold-underline">Ａ．（ア）150,000</div>
+
+              <div class="content-title-orange">②　当期製品製造原価（イ）を求める</div>
+              <p class="explanation-text">
+                製造原価報告書を埋めていきます。<br>
+                材料費に当たるのは、「素材」「工場消耗品」です。<br>
+                労務費に当たるのは、「(直接／間接)賃金」「給料」「健康保険料」です。<br>
+                期末仕掛品棚卸高は、仕掛品勘定の「次期繰越」となっている金額です。
+              </p>
+              <div class="explanation-box-green">
+                材料費：2,044,000 ＋ 160,000 ＝ <u>2,204,000</u><br>
+                労務費：2,725,000 ＋ 417,000 ＋ 480,000 ＋ 60,000 ＝ <u>3,682,000</u><br>
+                当期製造費用：2,204,000 ＋ 3,682,000 ＋ 1,097,000 ＝ <u>6,983,000</u><br>
+                当期製品製造原価：6,983,000 ＋ 360,000 − 432,000 ＝ <span class="red-u">6,911,000</span>
+              </div>
+              <div class="answer-red-bold-underline">Ａ．（イ）6,911,000</div>
+
+              <div class="content-title-orange">③　売上総利益（ウ）を求める</div>
+              <p class="explanation-text">
+                製品勘定の貸方に着目し、合計7,570,000からB/S期末製品750,000を差し引けば売上原価が分かります。</p>
+              <div class="explanation-box-green">
+                売上原価：7,570,000 − 750,000 ＝ <u>6,820,000</u><br>
+                売上総利益：8,800,000 − 6,820,000 ＝ <span class="red-u">1,980,000</span>
+              </div>
+              <div class="answer-red-bold-underline">Ａ．（ウ）1,980,000</div>
+
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>製造原価報告書の当期製品製造原価と、P/Lの売上原価は同じではありません。製品の期首・期末在庫を考慮して区別します。</p>
+              </aside>
+              <div class="answer">答え　⑴ ア 150,000　イ 6,911,000　ウ 1,980,000</div>
+            </section>
+
+            <section class="question-section reveal" id="q1-2">
+              <div class="question-subheader-blue">⑵　標準原価計算・差異分析</div>
+              <details class="official-question official-question--placeholder">
+                <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                <blockquote class="official-question__body">
+                  <div class="official-question__space">
+                    <p>⑵ 標準原価計算を採用している千葉製作所の当月における下記の資料から，次の金額を求めなさい。ａ．完成品の標準原価　ｂ．作業時間差異　ｃ．予算差異　ただし，ⅰ
+                      直接材料は製造着手のときにすべて投入されるものとする。ⅱ 解答欄の（　）のなかに不利差異の場合は（不利），有利差異の場合は（有利）と記入すること。</p>
+                    <div aria-label="標準原価カード" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th>標準原価カード（ＡＴ製品）</th>
+                            <th>標準単価</th>
+                            <th>標準消費数量</th>
+                            <th>金額</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>直接材料費</td>
+                            <td>¥500</td>
+                            <td>5kg</td>
+                            <td>¥2,500</td>
+                          </tr>
+                          <tr>
+                            <td>直接労務費</td>
+                            <td>¥1,200</td>
+                            <td>2時間</td>
+                            <td>¥2,400</td>
+                          </tr>
+                          <tr>
+                            <td>製造間接費</td>
+                            <td>¥1,600</td>
+                            <td>2時間</td>
+                            <td>¥3,200</td>
+                          </tr>
+                          <tr>
+                            <td>製品1個あたりの標準原価</td>
+                            <td></td>
+                            <td></td>
+                            <td>¥8,100</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>② 生産データ：月初仕掛品 400個（加工進捗度30％）　当月投入 1,900個　合計 2,300個　月末仕掛品 300個（加工進捗度50％）　完成品 2,000個<br>③ 実際直接材料費
+                      ¥4,992,000（実際単価 ¥520）　④ 実際直接労務費 ¥4,960,000（実際直接作業時間 4,000時間）　⑤ 実際製造間接費 ¥6,720,000　⑥
+                      製造間接費予算額（固定予算）¥6,640,000　基準操業度（直接作業時間）4,150時間</br></p>
+                  </div>
+                </blockquote>
+              </details>
+              <section class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">標準作業時間と固定予算の比較</p>
+                <ol>
+                  <li>完成品標準原価＝完成品数量×単位当たり標準原価。</li>
+                  <li>標準作業時間は完成品数量だけでなく、月初・月末仕掛品の加工進捗度を反映した当月投入換算量から求める。</li>
+                  <li>差異分析は以下の画像参照</li>
+                </ol>
+                <img src="../../img/sai-romuhi.png">
+                <img src="../../img/sai-kansetuhi.png">
+              </section>
+              <div class="answer-badge-wrapper"><span class="answer-badge-label">ａ</span><span
+                  class="answer-badge-text">　完成品の標準原価</span></div>
+              <p class="explanation-text">製品1個の標準原価は標準原価カードから8,100です。</p>
+              <div class="explanation-box-green">ａ　2,000個 × 8,100 ＝ <span class="red-u">16,200,000</span></div>
+              <div class="answer-red-bold-underline">Ａ．ａ：16,200,000</div>
+
+              <div class="answer-badge-wrapper"><span class="answer-badge-label">ｂ</span><span
+                  class="answer-badge-text">　作業時間差異</span></div>
+              <div class="general-method">
+                作業時間差異 ＝ 標準賃率 ×（標準作業時間 － 実際作業時間）<br>
+                標準作業時間 ＝ 当月加工分完成品換算量 × 製品１個当たりの標準作業時間
+              </div>
+              <p class="explanation-text">当月に加工した分は、完成品数量から月初仕掛品の完成品換算量を差し引き、月末仕掛品の完成品換算量を足して求まります。</p>
+              <div class="explanation-box-green">
+                当月投入加工換算量：2,000 － （400 × 30％） ＋ （300 × 50％）＝ <u>2,030個</u><br>
+                標準直接作業時間：2,030 × 2時間 ＝ <u>4,060時間</u><br>
+                作業時間差異：（4,060 − 4,000）× 1,200 ＝ <span class="red-u">72,000（有利）</span>
+              </div>
+              <div class="answer-red-bold-underline">Ａ．ｂ：72,000（有利）</div>
+              <div class="answer-badge-wrapper"><span class="answer-badge-label">ｃ</span><span
+                  class="answer-badge-text">ｃ　製造間接費の予算差異</span></div>
+              <p class="explanation-text">固定予算では予算額と実際発生額を直接比較します。</p>
+              <div class="explanation-box-green">ｃ　6,640,000 − 6,720,000 ＝ <span class="red-u">△80,000</span>（不利）</div>
+              <div class="answer-red-bold-underline">Ａ．ｃ：80,000（不利）</div>
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>作業時間差異は完成品2,000個のみで標準作業時間を計算しないこと。月初・月末仕掛品の加工度を反映します。</p>
+              </aside>
+              <div class="answer">答え　⑵ ａ 16,200,000　ｂ 72,000（有利）　ｃ 80,000（不利）</div>
+            </section>
+            <section class="question-section reveal" id="q1-3">
+              <div class="question-subheader-blue">⑶　等級別総合原価計算</div>
+              <details class="official-question official-question--placeholder">
+                <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                <blockquote class="official-question__body">
+                  <div class="official-question__space">
+                    <p>⑶
+                      等級別総合原価計算を採用している山形工業株式会社は，1級製品・2級製品・3級製品を製造している。次の資料によって，2級製品の製品単価を求めなさい。ただし，等価係数は，各製品の1個あたりの重量を基準としている。<br>①
+                      当月完成品総合原価 ¥7,068,000　② 製品1個あたりの重量 1級製品 520g　2級製品 260g　3級製品 130g　③ 完成品数量 1級製品 1,200個　2級製品
+                      1,800個　3級製品 3,000個</br></p>
+                  </div>
+                </blockquote>
+              </details>
+              <section class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">重量による等価係数・積数配賦</p>
+                <ol>
+                  <li>重量の比から等価係数を求め、各等級の完成品数量に掛けて積数を計算する。</li>
+                  <li>総合原価×対象等級の積数÷全積数＝対象等級の原価。これを完成数量で割れば製品単価。</li>
+                </ol>
+              </section>
+              <div class="content-title-orange">2級製品の製品単価</div>
+              <p class="explanation-text">重量比520：260：130＝4：2：1を等価係数とします。</p>
+              <div class="explanation-box-green">積数：1級 1,200 × 4 ＝ 4,800、2級 1,800 × 2 ＝ 3,600、3級 3,000 × 1 ＝
+                3,000<br>積数合計：4,800 ＋ 3,600 ＋ 3,000 ＝ <u>11,400</u><br>2級完成品原価：7,068,000 × 3,600 ÷ 11,400 ＝
+                <u>2,232,000</u><br>◆製品単価：2,232,000 ÷ 1,800個 ＝ <span class="red-u">1,240</span>
+              </div>
+              <div class="answer-red-bold-underline">Ａ．⑶ 製品単価：1,240</div>
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>完成品数量の比だけで原価を配分せず、製品の重量比に基づく等価係数を掛けます。</p>
+              </aside>
+              <div class="answer">答え　⑶ 1,240</div>
+            </section>
+            <section class="question-section reveal" id="q1-4">
+              <div class="question-subheader-blue">⑷　単純総合原価計算（平均法・終点減損）</div>
+              <details class="official-question official-question--placeholder">
+                <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                <blockquote class="official-question__body">
+                  <div class="official-question__space">
+                    <p>⑷ 単純総合原価計算を採用している埼玉製作所の次の資料から，月末仕掛品原価を求めなさい。ただし，ⅰ 素材は製造着手のときにすべて投入され，加工費は製造の進行に応じて消費されるものとする。ⅱ
+                      月末仕掛品原価の計算は平均法による。ⅲ 正常減損は製造工程の終点で発生しており，正常減損費は完成品のみに負担させる。<br>① 生産データ：月初仕掛品 250kg（加工進捗度40％）　当月投入
+                      4,950kg　合計 5,200kg　月末仕掛品 300kg（加工進捗度60％）　正常減損 100kg　完成品 4,800kg<br>② 月初仕掛品原価：素材費 ¥195,000　加工費
+                      ¥145,000　③ 当月製造費用：素材費 ¥3,985,800　加工費 ¥7,475,000</br></br></p>
+                  </div>
+                </blockquote>
+              </details>
+              <section class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">正常減損を完成品のみに負担させる計算</p>
+                <ol>
+                  <li>平均法では月初仕掛品原価と当月製造費用を合わせて単価を計算する。</li>
+                  <li>正常減損が終点で発生し完成品のみ負担の場合、正常減損数量を完成品換算量の分母に含め、月末仕掛品には減損費を負担させない。</li>
+                </ol>
+              </section>
+              <div class="content-title-orange">月末仕掛品原価</div>
+              <p class="explanation-text">素材は始点投入で月末300kg全部、加工費は進捗度60％で180kg相当です。</p>
+              <div class="explanation-box-green">素材費単価：（195,000 ＋ 3,985,800）÷（4,800 ＋ 100 ＋ 300）＝
+                <u>804</u><br>月末素材費：804 × 300 ＝ <u>241,200</u><br>加工費単価：（145,000 ＋ 7,475,000）÷（4,800 ＋ 100 ＋ 300 × 60％）＝
+                <u>1,500</u><br>月末加工費：1,500 × 180 ＝ <u>270,000</u><br>◆月末仕掛品原価：241,200 ＋ 270,000 ＝ <span
+                  class="red-u">511,200</span>
+              </div>
+              <div class="answer-red-bold-underline">Ａ．⑷ 月末仕掛品原価：511,200</div>
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>正常減損100kgを完成品だけに負担するため、月末仕掛品の単価計算では減損数量も分母に含めます。</p>
+              </aside>
+              <div class="answer">答え　⑷ 511,200</div>
+            </section>
+            <section class="question-section reveal" id="q1-5">
+              <div class="question-subheader-blue">⑸　原価計算の用語</div>
+              <details class="official-question official-question--placeholder">
+                <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                <blockquote class="official-question__body">
+                  <div class="official-question__space">
+                    <p>⑸
+                      次の文の［　］にあてはまるもっとも適当な語を，下記の語群のなかから選び，その番号を記入しなさい。<br>製品の製造に要する原価を製造原価といい，これに［ア］を加えたものを総原価という。なお，製品の製造・製品の販売・企業全般の管理に関係しない費用は，原価に含めない。このような費用のことを［イ］といい，支払利息や災害損失などがある。<br>1．非原価項目　2．原価項目　3．製造間接費　4．販売費及び一般管理費</br></br>
+                    </p>
+                  </div>
+                </blockquote>
+              </details>
+              <section class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">総原価と非原価項目</p>
+                <ol>
+                  <li>製造原価に販売費及び一般管理費を加えたものが総原価。</li>
+                  <li>企業活動で発生しても、製造・販売・一般管理と関係のない支払利息や災害損失などは非原価項目とする。</li>
+                </ol>
+              </section>
+              <div class="answer-badge-wrapper"><span class="answer-badge-label">ア</span><span
+                  class="answer-badge-text">ア　総原価に含める費用</span></div>
+              <p class="explanation-text">総原価は製造原価に販売費及び一般管理費を加えた金額です。</p>
+              <div class="explanation-box-green">総原価 ＝ 製造原価 ＋ <u>販売費及び一般管理費（選択肢4）</u></div>
+              <div class="answer-red-bold-underline">Ａ．ア：4（販売費及び一般管理費）</div>
+              <div class="answer-badge-wrapper"><span class="answer-badge-label">イ</span><span
+                  class="answer-badge-text">イ　原価に含めない項目</span></div>
+              <p class="explanation-text">支払利息や災害損失は製造・販売・一般管理の原価に含めません。</p>
+              <div class="explanation-box-green">原価に含めない費用 ＝ <u>非原価項目（選択肢1）</u></div>
+              <div class="answer-red-bold-underline">Ａ．イ：1（非原価項目）</div>
+              <div class="answer">答え　⑸ ア 4　イ 1</div>
+            </section>
+            <section class="question-section reveal" id="q1-6">
+              <div class="question-subheader-blue">⑹　直接原価計算とCVP分析</div>
+              <details class="official-question official-question--placeholder">
+                <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                <blockquote class="official-question__body">
+                  <div class="official-question__space">
+                    <p>⑹ 群馬製作所の当月における次の資料をもとにおこなわれた，下記のある高校の授業における会話文を読み，［　］のなかに入る金額または数量を記入しなさい。ただし，月初・月末の仕掛品はなかった。</p>
+                    <div aria-label="損益計算書" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th>全部原価計算による損益計算書（群馬製作所）</th>
+                            <th>金額</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Ⅰ 売上高</td>
+                            <td>1,500,000</td>
+                          </tr>
+                          <tr>
+                            <td>Ⅱ 売上原価</td>
+                            <td>1,050,000</td>
+                          </tr>
+                          <tr>
+                            <td>売上総利益</td>
+                            <td>450,000</td>
+                          </tr>
+                          <tr>
+                            <td>Ⅲ 販売費及び一般管理費</td>
+                            <td>360,000</td>
+                          </tr>
+                          <tr>
+                            <td>営業利益</td>
+                            <td>90,000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>② 製品の販売データ：月初製品棚卸数量 0個　当月完成品数量 300個　月末製品棚卸数量 0個　当月販売数量 300個　③ 固定製造間接費 ¥210,000　④ 固定販売費及び一般管理費
+                      ¥240,000　⑤ 貢献利益率 36％</p>
+                    <p>
+                      先生：前回の授業で説明した全部原価計算と直接原価計算の関係性については，理解できましたか。それでは，資料の数値を用いて，一緒に確認してみましょう。当月の販売単価はいくらでしょうか。<br>生徒Ａ：はい，売上高と当月販売数量を用いると（　）円だと分かります。<br>先生：そのとおりです。次に，資料をもとに，製造・販売数量が300個だった場合の直接原価計算による損益計算書を作成してみましょう。損益計算書に記入する変動売上原価と変動販売費はいくらですか。<br>生徒Ｂ：はい，変動売上原価は840,000円，変動販売費は［ア］円です。<br>先生：正解です。素晴らしいですね。それでは，このときの営業利益はいくらですか。<br>生徒Ａ：営業利益は，（　）円です。<br>先生：そのとおりです。それでは，作成した直接原価計算による損益計算書を用いて，CVP分析をしてみましょう。損益分岐点における売上高を求めてください。<br>生徒Ｂ：はい，損益分岐点における売上高は［イ］円です。<br>先生：正解です。損益分岐点というのは，営業利益が零（0）になる点のことでした。つまり，群馬製作所では，売上高が［イ］円より多くなれば，営業利益がプラスになるということです。<br>生徒Ａ：それでは，その金額よりも少ない売上高になると損をしてしまうということですか。<br>先生：そのとおりです。利益をあげるには，損益分岐点における売上高より多くの売上高が必要であることがわかりましたね。それでは，販売単価を変えずに次月の目標営業利益を当月の営業利益の2倍とする場合は，いくら販売すればよいか，計算できますか。<br>生徒Ｂ：はい，目標営業利益180,000円を達成するための売上高は，（　）円です。<br>先生：そのとおりです。それでは，最後に，この目標営業利益180,000円を達成し，かつ当月の販売単価を維持する場合，当月販売数量300個と比べ，何個多く販売する必要がありますか。<br>生徒Ｂ：はい，［ウ］個多く販売する必要があることがわかります。<br>先生：正解です。みなさん，よく理解していますね。</br></br></br></br></br></br></br></br></br>
+                    </p>
+                  </div>
+                </blockquote>
+              </details>
+              <section class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">全部原価計算との違いと損益分岐点</p>
+                <ol>
+                  <li>直接原価計算では変動費・固定費を分け、売上高－変動費＝貢献利益を計算する。</li>
+                  <li>損益分岐点売上高＝固定費÷貢献利益率。目標売上高＝（固定費＋目標営業利益）÷貢献利益率。</li>
+                  <li>販売数量を求める場合は、目標売上高÷販売単価。現在の販売数量との差を答えるときは差し引く。</li>
+                </ol>
+                <img src="../../img/chokusetsu-genkei.png">
+              </section>
+              <div class="answer-badge-wrapper"><span class="answer-badge-label">ア</span><span
+                  class="answer-badge-text">　変動販売費</span></div>
+              <p class="explanation-text">
+                販売費及び一般管理費の総額から固定部分を控除します。<br>一般管理費は基本的に固定費ですから、販売費及び一般管理費から固定費を控除すると変動販売費のみ残ります。</p>
+              <div class="explanation-box-green">
+                ◆ア　360,000 − 240,000 ＝ <span class="red-u">120,000</span>
+              </div>
+              <div class="answer-red-bold-underline">Ａ．ア：120,000</div>
+
+              <div class="answer-badge-wrapper"><span class="answer-badge-label">イ</span><span
+                  class="answer-badge-text">　損益分岐点売上高</span></div>
+              <p class="explanation-text">
+                損益分岐点売上高というのは営業利益が0になる売上高です。<br>
+                変動することのない固定費を軸として、この金額と貢献利益がぴったりになるような売上高を求めればよいということです。
+                固定費 ＝ 貢献利益とすると、求める貢献利益は 450,000になります。<br>
+                貢献利益率は売上高に対する貢献利益の割合ですから、逆を言えば貢献利益を貢献利益率で割れば売上高が求まります。
+              </p>
+              <div class="explanation-box-green">
+                損益分岐点の貢献利益（＝固定費）：固定製造間接費210,000 ＋ 固定販売費及び一般管理費240,000 ＝ 450,000<br>
+                ◆イ　450,000 ÷ 36％ ＝ <span class="red-u">1,250,000</span>
+              </div>
+              <div class="answer-red-bold-underline">Ａ．イ：1,250,000</div>
+
+              <div class="answer-badge-wrapper"><span class="answer-badge-label">ウ</span><span
+                  class="answer-badge-text">　目標利益達成に必要な追加販売数量</span></div>
+              <p class="explanation-text">
+                先ほどの考えを応用すると、損益分岐点の営業利益にプラスして180,000円必要だということになります。
+                P/Lを思い浮かべると、貢献利益というのは、固定費＋営業利益で求まるということがわかるかと思います。<br>
+                つまり、貢献利益 ＝ 固定費 ＋ 営業利益 という式が完成します。これをもとに、売上高を出し、単価で割ることにより必要数量がわかります。
+              </p>
+              <div class="explanation-box-green">
+                必要売上高：（450,000 ＋ 180,000）÷ 36％ ＝ <u>1,750,000</u><br>
+                必要販売数量：1,750,000 ÷ 5,000 ＝ 350個<br>
+                ◆ウ　追加販売数量：350 − 300 ＝ <span class="red-u">50個</span>
+              </div>
+              <div class="answer-red-bold-underline">Ａ．ウ：50個</div>
+
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>ウの解答は「販売数量」ではなく「当月より何個多いか」です。必要総数量350個と増加数量50個を区別しましょう。</p>
+              </aside>
+              <div class="answer">答え　⑹ ア 120,000　イ 1,250,000　ウ 50個</div>
+            </section>
+
+            <section class="question-section reveal" id="q2">
+              <div class="question-main-title">
+                <h2>第２問</h2>
+              </div>
+              <div class="question-subheader-blue">組別総合原価計算・Ｂ組仕掛品勘定</div>
+              <details class="official-question official-question--placeholder">
+                <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                <blockquote class="official-question__body">
+                  <div class="official-question__space">
+                    <p>秋田製作所は，組別総合原価計算を採用し，Ａ組製品とＢ組製品を製造している。下記の資料によって，⑴ 組別総合原価計算表を作成しなさい。⑵ Ｂ組仕掛品勘定を完成しなさい。ただし，ⅰ
+                      組間接費は機械運転時間を基準として配賦率を求め，各組に配賦する。ⅱ 素材は製造着手のときにすべて投入され，加工費は製造の進行に応じて消費されるものとする。ⅲ
+                      月末仕掛品原価の計算は先入先出法による。</p>
+                    <p>ａ．月初仕掛品原価　Ａ組 ¥510,000（素材費 ¥270,000　加工費 ¥240,000）　Ｂ組 ¥356,400（素材費 ¥210,000　加工費 ¥146,400）</p>
+                    <div aria-label="当月製造費用" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th>当月製造費用</th>
+                            <th>Ａ組直接費</th>
+                            <th>Ｂ組直接費</th>
+                            <th>組間接費</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>材料費</td>
+                            <td>¥1,152,000</td>
+                            <td>¥962,000</td>
+                            <td>¥360,000</td>
+                          </tr>
+                          <tr>
+                            <td>労務費</td>
+                            <td>¥1,680,000</td>
+                            <td>¥1,260,000</td>
+                            <td>¥450,000</td>
+                          </tr>
+                          <tr>
+                            <td>経費</td>
+                            <td>¥403,200</td>
+                            <td>¥177,600</td>
+                            <td>¥240,000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div aria-label="生産データ" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th>生産データ</th>
+                            <th>Ａ組</th>
+                            <th>Ｂ組</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>月初仕掛品</td>
+                            <td>400個（加工進捗度50％）</td>
+                            <td>300個（加工進捗度40％）</td>
+                          </tr>
+                          <tr>
+                            <td>当月投入</td>
+                            <td>1,600個</td>
+                            <td>1,300個</td>
+                          </tr>
+                          <tr>
+                            <td>合計</td>
+                            <td>2,000個</td>
+                            <td>1,600個</td>
+                          </tr>
+                          <tr>
+                            <td>月末仕掛品</td>
+                            <td>200個（加工進捗度60％）</td>
+                            <td>100個（加工進捗度50％）</td>
+                          </tr>
+                          <tr>
+                            <td>完成品</td>
+                            <td>1,800個</td>
+                            <td>1,500個</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>ｄ．機械運転時間　Ａ組 480時間　Ｂ組 360時間</p>
+                    <p>解答用紙：組別総合原価計算表（組直接費 素材費・加工費／組間接費 加工費／当月製造費用／月初仕掛品原価 素材費 270,000・210,000 加工費
+                      240,000・146,400／計／月末仕掛品原価 素材費（Ａ）144,000・（Ｂ）　加工費（Ａ）　・（Ｂ）66,000／完成品原価／完成品数量
+                      1,800個・1,500個／製品単価）<br>Ｂ組仕掛品勘定：前月繰越 356,400／素材（ ）／労務費（ ）／経費（ ）／（　）（ ）｜（　）（ ）／次月繰越（ ）</br></p>
+                  </div>
+                </blockquote>
+              </details>
+              <section class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">組間接費配賦→先入先出法→勘定締切</p>
+                <ol>
+                  <li>組間接費÷総機械運転時間で配賦率を計算し、各組へ配賦する。</li>
+                  <li>先入先出法により当月投入原価から月末仕掛品原価を求め、完成品原価・製品単価を計算する。</li>
+                  <li>Ｂ組仕掛品勘定は借方総額と貸方総額の一致を確認して締め切る。</li>
+                </ol>
+              </section>
+              <div class="answer-badge-wrapper"><span class="answer-badge-text">⑴組別総合原価計算表の完成　</span></div>
+              <p class="explnataion-text">
+                まずは、埋められるところから埋めていきましょう。<br>
+                組直接費の素材費は資料ｂ材料費から、加工費は労務費と経費の合計額を記入しましょう。<br>
+                こちらでまずは、月末仕掛品原価の上の「計」のところまで記入できたかと思います。
+              </p>
+
+              <div class="content-title-orange">Ａ組の月末仕掛品と完成品原価</div>
+              <p class="explanation-text">
+                先入先出法では、当月の製造費用と当月投入数量・換算量から月末仕掛品を評価します。<br>
+                完成品原価 ＝ 当月製造費用 ＋ 月初仕掛品原価 － 月末仕掛品原価
+              </p>
+              <div class="explanation-box-green">
+                加工費の当月投入換算量：1,800 ＋ 200 × 60％ − 400 × 50％ ＝ <u>1,720個</u><br>
+                月末素材費：1,152,000 ÷ 1,600 × 200 ＝ <u>144,000</u><br>
+                ◆月末加工費：（2,083,200 ＋ 600,000）÷ 1,720 ×（200 × 60％）＝ <u>187,200</u><br>
+                ◆Ａ組完成品原価：4,345,200 − 144,000 − 187,200 ＝ <span class="red-u">4,014,000</span><br>
+                ◆Ａ組製品単価：4,014,000 ÷ 1,800個 ＝ <span class="red-u">2,230</span>
+              </div>
+
+              <div class="content-title-orange">Ｂ組の月末仕掛品と完成品原価</div>
+              <div class="explanation-box-green">
+                加工費の当月投入換算量：1,500 ＋ 100 × 50％ − 300 × 40％ ＝ <u>1,430個</u><br>
+                ◆Ｂ組月末素材費：962,000 ÷ 1,300 × 100 ＝ <span class="red-u">74,000</span><br>
+                月末加工費：（1,437,600 ＋ 450,000）÷ 1,430 ×（100 × 50％）＝ <u>66,000</u><br>
+                ◆Ｂ組完成品原価：356,400 ＋ 2,849,600 − 74,000 − 66,000 ＝ <span class="red-u">3,066,000</span><br>
+                ◆Ｂ組製品単価：3,066,000 ÷ 1,500個 ＝ <span class="red-u">2,044</span>
+              </div>
+
+              <div class="answer-badge-wrapper"><span class="answer-badge-text">⑵B組仕掛品勘定の完成　</span></div>
+              <p class="explanation-text">
+                借方<br>
+                空欄になっている勘定には「組間接費」が入ります。仕掛品原価で唯一出てきていない項目ですよね。<br>
+                素材、労務費、経費は資料ｂから、組間接費は組別総合原価計算表からそのまま記入しましょう。<br>
+                貸方<br>
+                空欄になっている勘定には「B組製品」が入ります。仕掛品のうち完成したものは製品勘定へ流れていくという勘定連絡の構図を改めて思い浮かべましょう。<br>
+                B組製品には完成品原価が、次月繰越には月末仕掛品原価合計が入ります。
+              </p>
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>先入先出法の加工費は「完成品＋月末加工換算量－月初加工換算量」が分母です。月初原価を当月単価の分子に加えないよう注意します。</p>
+              </aside>
+              <div class="answer">答え　解説参照</div>
+            </section>
+            <section class="question-section reveal" id="q3">
+              <div class="question-main-title">
+                <h2>第３問</h2>
+              </div>
+              <div class="question-subheader-blue">⑴〜⑸　個別原価計算・部門別計算</div>
+              <details class="official-question official-question--placeholder">
+                <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                <blockquote class="official-question__body">
+                  <div class="official-question__space">
+                    <p>個別原価計算を採用している宮城製作所の下記の取引によって，次の各問いに答えなさい。<br>⑴ 6月24日と30日①の取引の仕訳を示しなさい。<br>⑵
+                      素材勘定・第1製造部門費勘定に必要な記入をおこない，締め切りなさい。なお，勘定記入は日付・相手科目・金額を示すこと。<br>⑶ Ａ製品（製造指図書＃1）の原価計算表を作成しなさい。<br>⑷
+                      部門費振替表を相互配賦法によって作成しなさい。<br>⑸ 6月末の賃金未払高を求めなさい。</br></br></br></br></br></p>
+                    <p>ただし，ⅰ 前月繰越高は，次のとおりである。素材 400個 ＠¥1,950 ¥780,000　工場消耗品 290個 ＠¥90
+                      ¥26,100　仕掛品（製造指図書＃1）¥2,475,000（原価計算表に記入済み）　賃金（未払高）¥138,000<br>ⅱ
+                      素材の消費高の計算は移動平均法，工場消耗品の消費数量の計算は棚卸計算法によっている。<br>ⅲ 賃金の消費高の計算は作業時間法による予定賃率を用いて計算している。1年間の予定賃金総額
+                      ¥46,368,000　1年間の予定総作業時間 33,600時間<br>ⅳ 製造間接費は部門別計算をおこない，直接作業時間を配賦基準として予定配賦している。</br></br></br></p>
+                    <div aria-label="部門別予算" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>第1製造部門</th>
+                            <th>第2製造部門</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>年間製造間接費予定額（予算額）</td>
+                            <td>¥7,182,000</td>
+                            <td>¥10,764,000</td>
+                          </tr>
+                          <tr>
+                            <td>年間予定直接作業時間（基準操業度）</td>
+                            <td>11,400時間</td>
+                            <td>13,800時間</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>取引<br>6月9日　素材および工場消耗品を次のとおり買い入れ，代金は掛けとした。素材 1,200個 ＠¥2,050 ¥2,460,000　工場消耗品 1,800個 ＠¥90
+                      ¥162,000<br>12日　Ｂ製品（製造指図書＃2）の注文を受け，素材1,000個を消費して製造を開始した。<br>24日　Ａ製品（製造指図書＃1）100個が完成した。なお，Ａ製品の賃金予定消費高と製造部門費予定配賦高を，次の直接作業時間によって計算し，原価計算表に記入した。ただし，賃金予定消費高と製造部門費予定配賦高を計上する仕訳は，月末におこなっている。製造指図書＃1　第1製造部門300時間　第2製造部門600時間<br>26日　賃金を次のとおり当座預金口座から支払った。賃金総額
+                      ¥3,820,000　うち，控除額 所得税 ¥378,000　健康保険料 ¥163,000<br>30日　①
+                      工場消耗品の月末棚卸数量は280個であった。よって，消費高を計上した。（間接材料）<br>②
+                      当月の作業時間を集計した結果は，次のとおりであった。よって，当月の賃金予定消費高を計上した。</br></br></br></br></br></br></p>
+                    <div aria-label="作業時間の集計" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th>当月の作業時間</th>
+                            <th>合計</th>
+                            <th>第1製造部門</th>
+                            <th>第2製造部門</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>直接作業時間 製造指図書＃1</td>
+                            <td>900時間</td>
+                            <td>300時間</td>
+                            <td>600時間</td>
+                          </tr>
+                          <tr>
+                            <td>直接作業時間 製造指図書＃2</td>
+                            <td>1,200時間</td>
+                            <td>700時間</td>
+                            <td>500時間</td>
+                          </tr>
+                          <tr>
+                            <td>間接作業時間</td>
+                            <td>700時間</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>③ 上記②の直接作業時間によって，製造部門費を予定配賦した。<br>④ 健康保険料の事業主負担分¥163,000を計上した。<br>⑤ 当月の製造経費消費高を計上した。電力料
+                      ¥97,200　保険料 ¥15,000　減価償却費 ¥89,000　雑費 ¥6,900<br>⑥ 製造間接費を次のように各部門に配分した。第1製造部門 ¥522,800　第2製造部門
+                      ¥815,200　動力部門 ¥126,000　修繕部門 ¥36,000<br>⑦ 補助部門費を次の配賦基準によって各製造部門に配賦した。</br></br></br></br></p>
+                    <div aria-label="補助部門費の配賦基準" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th>配賦基準</th>
+                            <th>第1製造部門</th>
+                            <th>第2製造部門</th>
+                            <th>動力部門</th>
+                            <th>修繕部門</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>動力部門費 kW数×運転時間数</td>
+                            <td>12kW×250時間</td>
+                            <td>10kW×200時間</td>
+                            <td>――</td>
+                            <td>8kW×125時間</td>
+                          </tr>
+                          <tr>
+                            <td>修繕部門費 修繕回数</td>
+                            <td>18回</td>
+                            <td>12回</td>
+                            <td>6回</td>
+                            <td>――</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>⑧ 当月の作業時間票を集計したところ次のとおりであった。よって，賃金実際消費高を計上するとともに，賃金の予定消費高と実際消費高との差額を，賃率差異勘定に振り替えた。</p>
+                    <div aria-label="賃金の実際消費高" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th>作業時間票</th>
+                            <th>1時間あたりの実際賃率</th>
+                            <th>作業時間</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td>¥1,610</td>
+                            <td>500時間</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>¥1,400</td>
+                            <td>1,250時間</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>¥1,300</td>
+                            <td>1,050時間</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>⑨ 第1製造部門費の予定配賦額と実際発生額との差額を，製造部門費配賦差異勘定に振り替えた。<br>⑩
+                      第2製造部門費の予定配賦額と実際発生額との差額を，製造部門費配賦差異勘定に振り替えた。</br></p>
+                    <p>解答用紙：原価計算表（製造指図書＃1）直接材料費 1,470,000／直接労務費 690,000（前月）／製造間接費 第1 500時間 630 315,000（前月）…／部門費振替表（部門費合計
+                      1,500,000：第1 522,800・第2 815,200・動力 126,000・修繕 36,000）</p>
+                  </div>
+                </blockquote>
+              </details>
+              <section class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title"></p>
+                <ol>
+                  <li>予定賃率 ＝ 予定賃金総額 ÷ 予定総作業時間</li>
+                  <li>製造間接費予定配賦：配賦率 ＝ 予算額 ÷ 基準操業度</li>
+                  <li>移動平均法：新規単価 ＝ （現在の素材合計価額 ＋ 新規買入分の合計価額） ÷ 素材の合計数量</li>
+                  <li>棚卸計算法：前月繰越 ＋ 当月入庫分 － 月末棚卸数量 ＝ 当月消費高</li>
+                  <li>勘定記入：<br>
+                    その勘定名が使われた仕訳で、借方貸方のうち使われた側に摘要を相手勘定名として集計する。（２つ以上の場合は「諸口」）<br>
+                    B/S科目は月末に残高を「次月繰越」として赤字で記入する。</li>
+                  <li>部門費の相互配賦は第1次（補助部門相互も含む）→第2次（製造部門へのみ）の順で行う。</li>
+                  <li>賃金未払高＝前月未払高＋当月実際消費高−当月総額支払高。</li>
+                </ol>
+              </section>
+              <div class="content-title-orange">共通の予定賃率と部門別予定配賦率</div>
+              <p class="explanation-text">部門別計算なので、賃率は一つ、製造間接費の予定配賦率は第1・第2部門で別々です。</p>
+              <div class="explanation-box-green">予定賃率：46,368,000 ÷ 33,600時間 ＝ <u>1,380／時間</u><br>第1製造部門費予定配賦率：7,182,000
+                ÷ 11,400時間 ＝ <u>630／時間</u><br>第2製造部門費予定配賦率：10,764,000 ÷ 13,800時間 ＝ <u>780／時間</u></div>
+
+              <div class="content-title-orange">⑴　6月24日の仕訳</div>
+              <p class="explanation-text">
+                　24日の取引に書かれているように、賃金予定消費高と製造部門費予定配賦高の計上仕訳は月末におこなっているため、ここでは仕掛品を製品に振り替える仕訳のみ考えます。<br>
+                　金額が不明なため、製造指図書#1の原価計算表を用いて計算します。<br>
+                　すでに記入されている金額は、(5)ⅰより、前月繰越高なので、当月分の金額を記入していくとともに、集計欄にそれぞれの費用の合計を求め、原価及び単価を計算します。<br>
+                　まず、直接材料費の合計を集計欄に記入します。<br>
+                　次に、直接労務費（賃金）の消費高は、予定賃率を用いて計算されるので、予定賃率を求めるとともに、直接作業時間を掛けて金額を求めます。そののち、前月繰越と合わせて合計を求め、集計欄に記入します。<br>
+                　最後に、製造間接費を求めます。製造間接費も(5)ⅳより予定配賦されていることがわかるため、配賦率を計算して、それぞれの製造部門費を記入します。また、合計を計算して、集計欄に記入します。<br>
+                　最後に総原価を求め、単価を求めます。<br>
+                　仕訳は製造原価の金額で記入します。
+              </p>
+              <div class="explanation-box-green">
+                予定賃率：46,368,000 ÷ 33,600 ＝ @¥1,380<br>
+                Ａ製品の直接労務費当月消費高：（300 ＋ 900） × 1,380 ＝ <u>1,242,000</u><br>
+                直接労務費合計：690,000 ＋ 1,242,000 ＝ <u>1,932,000</u><br>
+                第１製造部門<br>
+                　配賦率：7,182,000 ÷ 11,400 ＝ @¥630<br>
+                　金額：300(時間) × 630 ＝ 189,000<br>
+                第２製造部門<br>
+                　配賦率：10764，000 ÷ 13,800 ＝ @¥780<br>
+                　金額：600(時間) × 780 ＝ 468,000<br>
+                製造間接費合計：315,000 ＋ 189,000 ＋ 468,000 ＝ <u>972,000</u><br>
+                製造原価：1,470,000 ＋ 1,932,000 ＋ 972,000 ＝ <u>4,374,000</u><br>
+                単価：4,374,000 ÷ 100 ＝ <u>43,740</u>
+              </div>
+              <div class="content-sub-header">6月24日　製品完成</div>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">製品</td>
+                      <td class="journal-value">4,374,000</td>
+                      <td class="journal-label">仕掛品</td>
+                      <td class="journal-value">4,374,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="content-title-orange">⑴　6月30日①の仕訳</div>
+              <p class="explanation-text">
+                工場消耗品は間接材料ですので、棚卸計算法により今月の消費高を求めます。
+              </p>
+              <div class="explanation-box-green">
+                消費数量：290 ＋ 1,800 − 280 ＝ 1,810個<br>
+                消費高：1,810 × 90 ＝ <u>162,900</u>
+              </div>
+              <div class="content-sub-header">6月30日①　工場消耗品の消費</div>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">製造間接費</td>
+                      <td class="journal-value">162,900</td>
+                      <td class="journal-label">工場消耗品</td>
+                      <td class="journal-value">162,900</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="content-title-orange">⑵　① 素材勘定（移動平均法）</div>
+              <p class="explanation-text">
+                素材に係る取引を勘定に記録していきます。6/9の材料買入、6/12の消費、月末の処理が未記入です。<br>
+                6月9日の受入後の単価を計算してから、6月12日の払出・次月繰越を評価します。<br>
+                月末に残った棚卸高は「次月繰越」として赤字で記入します。
+              </p>
+              <div class="explanation-box-green">
+                受入後の単価：（780,000 ＋ 2,460,000）÷（400 ＋ 1,200）個 ＝ <u>2,025</u><br>
+                6月12日払出：1,000 × 2,025 ＝ <u>2,025,000</u><br>
+                ◆6月30日 次月繰越：600 × 2,025 ＝ <span class="red-u">1,215,000</span><br>
+                貸借合計：<u>3,240,000</u>
+              </div>
+
+              <div class="content-sub-header">必要な仕訳</div>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label"> 6/ 9</td>
+                      <td class="journal-label">素材</td>
+                      <td class="journal-value">2,460,000</td>
+                      <td class="journal-label">買掛金</td>
+                      <td class="journal-value">2,460,000</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label"> 6/12</td>
+                      <td class="journal-label">仕掛品</td>
+                      <td class="journal-value">2,025,000</td>
+                      <td class="journal-label">素材</td>
+                      <td class="journal-value">2,025,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="content-sub-header">素材勘定の記入</div>
+              <div class="ledger-scroll">
+                <table class="ledger">
+                  <caption>素材</caption>
+
+                  <tbody>
+                    <tr>
+                      <td>6/1</td>
+                      <td>前月繰越</td>
+                      <td>780,000</td>
+
+                      <td>6/12</td>
+                      <td>仕掛品</td>
+                      <td>2,025,000</td>
+                    </tr>
+
+                    <tr>
+                      <td>6/9</td>
+                      <td>買掛金</td>
+                      <td>2,460,000</td>
+
+                      <td style="color: red;">6/30</td>
+                      <td style="color: red;">次月繰越</td>
+                      <td style="color: red;">1,215,000</td>
+                    </tr>
+
+                    <tr class="ledger-total">
+                      <td></td>
+                      <td></td>
+                      <td>3,240,000</td>
+
+                      <td></td>
+                      <td></td>
+                      <td>3,240,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="content-title-orange">⑵　② 第1製造部門費勘定</div>
+              <p class="explanation-text">
+                素材同様、処理を記入していきます。処理が必要なのは、6/30③、⑥、⑦、⑨の取引です。<br>
+                ③：製造部門費を（仕掛品に）予定配賦したとあるため、②の直接作業時間をもとに計算します。配賦率は6/24の仕訳で確認したように@¥630です。<br>
+                ⑥：製造間接費を製造部門費に振り替えます。<br>
+                ⑦：配賦基準をもとに、部門費を振り替えます。(4)の部門費振替表を用います。
+                　相互配賦法では、第１次集計として、補助部門費を製造部門と他の補助部門に振り分けます。その後、第２次集計として、第１次集計で集計された補助部門費を製造部門のみに配賦します。それにより、各製造部門の部門費が決定します。<br>
+                　まず、修繕部門費を第１部門、第２部門、動力部門の３つに配賦基準をもって按分します。次に、動力部門も同様に行います。<br>
+                　次いで、第２次集計として、修繕部門費を第１部門、第２部門の２つに、配賦基準をもって按分します。動力部門も同様に行います。<br>
+                　第１部門、第２部門それぞれ、個別の部門費と補助部門費の配賦額を合計して、最終的な各製造部門費の合計を求めます。<br>
+                ⑨：勘定の貸借差額を振り替えます。
+              </p>
+              <div class="explanation-box-green">
+                第1製造部門の直接作業時間：300 ＋ 700 ＝ <u>1,000時間</u><br>
+                ◆予定配賦額：1,000 × 630 ＝ <span class="red-u">630,000</span><br>
+                <br>
+                動力部門の配賦基準：第1 12×250＝3,000／第2 10×200＝2,000／修繕 8×125＝1,000（合計6,000）<br>
+                修繕部門の配賦基準：第1 18回／第2 12回／動力 6回（合計36回）<br>
+                第1次配賦・動力126,000：第1 63,000／第2 42,000／修繕21,000<br>
+                第1次配賦・修繕36,000：第1 18,000／第2 12,000／動力6,000<br>
+                ◆第1次配賦額合計：第1 <span class="red-u">81,000</span>／第2 <span class="red-u">54,000</span>／動力 <span class="red-u">6,000</span>／修繕 <span class="red-u">21,000</span><br>
+                第2次配賦・動力残6,000：第1 3,600／第2 2,400<br>
+                第2次配賦・修繕残21,000：第1 12,600／第2 8,400<br>
+                ◆第2次配賦額：第1 <span class="red-u">16,200</span>／第2 <span class="red-u">10,800</span><br>
+                （第１製造部門に振り替えられた補助部門費合計：81,000 ＋ 16,200 ＝ 97,200）<br>
+                ◆製造部門費合計：第1 522,800＋81,000＋16,200＝<span class="red-u">620,000</span>／第2 815,200＋54,000＋10,800＝<span class="red-u">880,000</span><br>
+                <br>  
+                実際発生額：522,800 ＋ 97,200 ＝ <u>620,000</u><br>
+                ◆製造部門費配賦差異：630,000 − 620,000 ＝ <span class="red-u">10,000</span>（有利）
+              </div>
+
+              <div class="content-sub-header">必要な仕訳</div>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label"> 6/30</td>
+                      <td class="journal-label">仕掛品</td>
+                      <td class="journal-value">630,000</td>
+                      <td class="journal-label">第１製造部門費</td>
+                      <td class="journal-value">630,000</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label"> 6/30</td>
+                      <td class="journal-label">第１製造部門費</td>
+                      <td class="journal-value">522,800</td>
+                      <td class="journal-label">製造間接費</td>
+                      <td class="journal-value">522,800</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label"> 6/30</td>
+                      <td class="journal-label">第１製造部門費</td>
+                      <td class="journal-value">97,200</td>
+                      <td class="journal-label">動力部門費</td>
+                      <td class="journal-value">126,000</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label"></td>
+                      <td class="journal-label">第２製造部門費</td>
+                      <td class="journal-value">64,800</td>
+                      <td class="journal-label">修繕部門費</td>
+                      <td class="journal-value">36,000</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label"> 6/30</td>
+                      <td class="journal-label">第１製造部門費</td>
+                      <td class="journal-value">10,000</td>
+                      <td class="journal-label">製造部門費配賦差異</td>
+                      <td class="journal-value">10,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="content-sub-header">第１製造部門費勘定の記入</div>
+              <div class="ledger-scroll">
+                <table class="ledger">
+                  <caption>第１製造部門費</caption>
+              
+                  <tbody>
+                    <tr>
+                      <td>6/30</td>
+                      <td>製造間接費</td>
+                      <td>522,800</td>
+              
+                      <td>6/30</td>
+                      <td>仕掛品</td>
+                      <td>630,000</td>
+                    </tr>
+                    <tr>
+                      <td>　〃</td>
+                      <td>諸口</td>
+                      <td>97,200</td>
+
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+              
+                    <tr>
+                      <td>　〃</td>
+                      <td>製造間接費配賦差異</td>
+                      <td>10,000</td>
+                            
+                      <td style="color: red;"></td>
+                      <td style="color: red;"></td>
+                      <td style="color: red;"></td>
+                    </tr>
+              
+                    <tr class="ledger-total">
+                      <td></td>
+                      <td></td>
+                      <td>630,000</td>
+              
+                      <td></td>
+                      <td></td>
+                      <td>630,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <div class="content-title-orange">⑸　賃金未払高</div>
+              <p class="explanation-text">
+                賃金実際消費高を実際賃率×作業時間で集計し、前月未払残高と当月支払額を調整します。
+              </p>
+              <div class="explanation-box-green">
+                賃金実際消費高：1,610 × 500 ＋ 1,400 × 1,250 ＋ 1,300 × 1,050 ＝ <u>3,920,000</u><br>
+                ◆月末賃金未払高：138,000 ＋ 3,920,000 − 3,820,000 ＝ <span class="red-u">238,000</span>
+              </div>
+              <div class="answer-red-bold-underline">Ａ．⑸ 賃金未払高：238,000</div>
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>
+                  勘定の「次月繰越」に係る行は<span class="red-u">赤字</span>で記入します。（これは、通常の取引ではないことを示しています）<br>
+                  第1製造部門費勘定を締め切るには、⑷で求めた補助部門配賦額97,200が必要です。賃金未払高では所得税等を引いた手取支払額でなく、控除前の賃金総額3,820,000を使います。</p>
+              </aside>
+              <div class="answer">答え　それぞれ本文参照</div>
+            </section>
+            <section class="question-section reveal" id="q4">
+              <div class="question-main-title">
+                <h2>第４問</h2>
+              </div>
+              <div class="question-subheader-blue">ａ〜ｅ　原価計算の仕訳問題</div>
+              <details class="official-question official-question--placeholder">
+                <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                <blockquote class="official-question__body">
+                  <div class="official-question__space">
+                    <p>下記の取引の仕訳を示しなさい。ただし，勘定科目は，次のなかからもっとも適当なものを使用すること。</p>
+                    <p>
+                      <small>製品／第1工程半製品／建物減価償却累計額／備品減価償却累計額／素材／買入部品／売上原価／棚卸減耗損／従業員賞与手当／減価償却費／仕掛品／第1工程仕掛品／第2工程仕掛品／第1製造部門費／第2製造部門費／賃率差異／本社／工場</small>
+                    </p>
+                    <p>ａ．単純総合原価計算を採用している青森製作所は，月末に従業員への賞与の月割額を計上した。なお，半年分の賞与の予定支払額は¥7,860,000である。</p>
+                    <p>
+                      ｂ．個別原価計算を採用している茨城製作所の6月末における素材の実地棚卸数量は520kgであった。よって，次の素材に関する6月の資料にもとづいて，素材勘定の残高を修正した。なお，消費単価の計算は，先入先出法によっている。<br>6月1日
+                      前月繰越 550kg 1kgにつき ¥1,860 ¥1,023,000　7日 受入 1,940kg 1kgにつき ¥1,850 ¥3,589,000　12日 払出 2,150kg　23日 受入
+                      1,670kg 1kgにつき ¥1,900 ¥3,173,000　28日 払出 1,470kg</br></p>
+                    <p>
+                      ｃ．会計期末にあたり，賃率差異勘定の残高を売上原価勘定に振り替えた。なお，賃率差異勘定の前月繰越高は¥8,000（借方）であり，当月の賃金の実際消費高は予定消費高より¥15,000少なく，この差額は賃率差異勘定に振り替えられている。
+                    </p>
+                    <p>
+                      ｄ．工程別総合原価計算を採用している岩手工業株式会社は，月末に工程別総合原価計算表を作成し，各工程の完成品原価を次のとおり計上した。ただし，各工程の完成品はすべていったん倉庫に保管しており，当月中に倉庫から第2工程（最終工程）に投入した第1工程の完成品原価は¥5,430,000である。なお，当社では第1工程の完成品原価をすべて第1工程半製品勘定に振り替えている。第1工程
+                      ¥6,200,000　第2工程 ¥7,950,000</p>
+                    <p>
+                      ｅ．工場会計が独立している栃木鉄鋼所の工場は，決算にさいし，本社から工場の建物について減価償却費¥2,580,000を計上したとの通知を受けた。ただし，建物減価償却累計額勘定は本社のみに設けてある。（工場の仕訳）
+                    </p>
+                  </div>
+                </blockquote>
+              </details>
+              <section class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">取引内容に合わせて振替先を判断する</p>
+                <ol>
+                  <li>賞与は半年分を6か月で月割し、素材の棚卸減耗は月末ロットの単価で評価する。</li>
+                  <li>差異勘定は前月繰越と当月差異の貸借を相殺した純額を振り替える。</li>
+                  <li>半製品勘定を使う工程別計算・工場会計の独立では振替先の勘定科目に注意する。</li>
+                </ol>
+              </section>
+              <div class="content-title-orange">ａ　従業員賞与手当の月割計上</div>
+              <p class="explanation-text">半年分の予定賞与を6か月で割り、工場の製造原価として仕掛品に振り替えます。</p>
+              <div class="explanation-box-green">◆賞与月割額：7,860,000 ÷ 6か月＝<span class="red-u">1,310,000</span></div>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">仕掛品</td>
+                      <td class="journal-value">1,310,000</td>
+                      <td class="journal-label">従業員賞与手当</td>
+                      <td class="journal-value">1,310,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="content-title-orange">ｂ　素材の棚卸減耗（先入先出法）</div>
+              <p class="explanation-text">6月末時点で残っているロットを先入先出法で特定し、帳簿残高と実地棚卸との差を減耗損として計上します。</p>
+              <div class="explanation-box-green">
+                12日の払出：550kg（@1,860）＋1,600kg（@1,850）<br>23日受入後：340kg（@1,850）＋1,670kg（@1,900）<br>28日の払出：340kg（@1,850）＋1,130kg（@1,900）<br>帳簿上の月末数量：<u>540kg（@1,900）</u><br>◆棚卸減耗：
+                （540−520）kg × 1,900＝<span class="red-u">38,000</span></div>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">棚卸減耗損</td>
+                      <td class="journal-value">38,000</td>
+                      <td class="journal-label">素材</td>
+                      <td class="journal-value">38,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="content-title-orange">ｃ　賃率差異の売上原価への振替</div>
+              <p class="explanation-text">前月借方（不利）8,000と当月貸方（有利）15,000を相殺し、残高だけを振り替えます。</p>
+              <div class="explanation-box-green">◆残高：貸方15,000−借方8,000＝<span class="red-u">貸方7,000（有利）</span></div>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">賃率差異</td>
+                      <td class="journal-value">7,000</td>
+                      <td class="journal-label">売上原価</td>
+                      <td class="journal-value">7,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="content-title-orange">ｄ　工程別総合原価計算（半製品勘定）</div>
+              <p class="explanation-text">第1工程の完成品は全額を第1工程半製品へ入れます。その後、倉庫から第2工程に投入した金額のみを第2工程仕掛品へ振り替え、第2工程の完成品は製品とします。
+              </p>
+              <div class="explanation-box-green">
+                第1工程完成品：<u>6,200,000</u><br>第2工程へ投入した半製品：<u>5,430,000</u><br>第2工程完成品：<u>7,950,000</u></div>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">第1工程半製品</td>
+                      <td class="journal-value">6,200,000</td>
+                      <td class="journal-label">第1工程仕掛品</td>
+                      <td class="journal-value">6,200,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">第2工程仕掛品</td>
+                      <td class="journal-value">5,430,000</td>
+                      <td class="journal-label">第1工程半製品</td>
+                      <td class="journal-value">5,430,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">製品</td>
+                      <td class="journal-value">7,950,000</td>
+                      <td class="journal-label">第2工程仕掛品</td>
+                      <td class="journal-value">7,950,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="content-title-orange">ｅ　工場会計が独立している場合（工場の仕訳）</div>
+              <p class="explanation-text">建物減価償却累計額勘定は本社にしかないため、工場側は「本社」勘定を貸方に計上します。</p>
+              <div class="explanation-box-green">工場の減価償却費：<u>2,580,000</u></div>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">減価償却費</td>
+                      <td class="journal-value">2,580,000</td>
+                      <td class="journal-label">本社</td>
+                      <td class="journal-value">2,580,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>ｂは最後に残るロットの単価1,900で減耗を評価します。ｄは第1工程完成額と倉庫から第2工程に投入した額が異なります。ｅは工場側に減価償却累計額勘定がないため貸方は本社です。</p>
+              </aside>
+              <div class="answer">答え　それぞれ本文参照</div>
+            </section>
+
+          </main>
+          <aside aria-label="解説動画とページ内目次" class="exam-learning-aside">
+            <section aria-labelledby="exam-video-title" class="exam-video-panel" id="examVideoPanel">
+              <h2 class="exam-video-panel__heading" id="exam-video-title"><span>解説動画</span><button
+                  aria-controls="examVideoContent" aria-expanded="true" class="exam-video-toggle" id="examVideoToggle"
+                  type="button"><span aria-hidden="true" class="exam-video-toggle__icon">⌃</span><span
+                    class="exam-video-toggle__label">動画を隠す</span></button></h2>
+              <div class="exam-video-body" id="examVideoContent">
+                <div aria-label="解説動画は準備中です" class="exam-video-placeholder" role="img"><span aria-hidden="true"
+                    class="exam-video-placeholder__icon">▶</span><span
+                    class="exam-video-placeholder__text"><strong>解説動画は準備中です</strong><span>公開後、この場所で動画を視聴しながら解説を読めます。</span></span>
+                </div>
+                <!-- 動画公開時は、このプレースホルダーを <iframe class="exam-video-frame" src="https://www.youtube.com/embed/動画ID" title="原価計算 解説動画" allowfullscreen></iframe> に置き換えてください。 -->
+              </div>
+            </section>
+            <nav aria-labelledby="exam-toc-title" class="exam-desktop-toc">
+              <h2 id="exam-toc-title">このページの目次</h2>
+              <ul class="exam-toc-overview">
+                <li><a href="#usage-title">解答するときの注意</a></li>
+                <li><a href="#legend-title">解説の凡例</a></li>
+                <li><a href="#question-list">設問一覧</a></li>
+
+                <li><a href="#abbreviations">解説内の略語</a></li>
+              </ul>
+              <p class="exam-toc-label">問題別解説</p>
+              <ol class="exam-toc-questions">
+                <li><a href="#q1-1">1-1</a></li>
+                <li><a href="#q1-2">1-2</a></li>
+                <li><a href="#q1-3">1-3</a></li>
+                <li><a href="#q1-4">1-4</a></li>
+                <li><a href="#q1-5">1-5</a></li>
+                <li><a href="#q1-6">1-6</a></li>
+                <li><a href="#q2">2</a></li>
+                <li><a href="#q3">3</a></li>
+                <li><a href="#q4">4</a></li>
+              </ol>
+            </nav>
+          </aside>
+        </section>
+      </div>
+    </div>
+  </div>
+  <button aria-label="ページ上部へ戻る" class="page-top-button" id="pageTopButton" title="ページ上部へ戻る" type="button">
+    <svg aria-hidden="true" height="24" viewbox="0 0 24 24" width="24">
+      <path d="M6 15l6-6 6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2.4"></path>
+    </svg>
+    <span>上へ</span>
+  </button>
+  <footer class="exam-footer site-footer">
+    <div class="footer-content">
+      <p class="footer-text">本解説は、公式問題・公式解答を参照して独自に作成した学習用コンテンツです。全国商業高等学校協会による公式解説・認定教材ではありません。</p>
+      <p class="footer-text">© 2026 全商関係hp. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="../../js/main.js"></script>
+  <script>
+    (() => {
+      const topButton = document.getElementById('pageTopButton');
+
+      const updateTopButton = () => {
+        if (topButton) {
+          topButton.classList.toggle('is-visible', window.scrollY > 480);
+        }
+      };
+
+      if (topButton) {
+        topButton.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        window.addEventListener('scroll', updateTopButton, { passive: true });
+        updateTopButton();
+      }
+
+      const tocLinks = Array.from(document.querySelectorAll('.exam-desktop-toc a[href^="#"]'));
+      const tocTargets = tocLinks
+        .map((link) => ({
+          link,
+          target: document.querySelector(link.getAttribute('href'))
+        }))
+        .filter((item) => item.target);
+      let tocUpdatePending = false;
+
+      const updateCurrentTocItem = () => {
+        if (!tocTargets.length) {
+          return;
+        }
+
+        let currentItem = tocTargets[0];
+        const headerOffset = 180;
+
+        tocTargets.forEach((item) => {
+          if (item.target.getBoundingClientRect().top <= headerOffset) {
+            currentItem = item;
+          }
+        });
+
+        tocTargets.forEach((item) => {
+          const isCurrent = item === currentItem;
+          item.link.classList.toggle('is-current', isCurrent);
+          if (isCurrent) {
+            item.link.setAttribute('aria-current', 'location');
+          } else {
+            item.link.removeAttribute('aria-current');
+          }
+        });
+        tocUpdatePending = false;
+      };
+
+      const requestTocUpdate = () => {
+        if (!tocUpdatePending) {
+          tocUpdatePending = true;
+          window.requestAnimationFrame(updateCurrentTocItem);
+        }
+      };
+
+      window.addEventListener('scroll', requestTocUpdate, { passive: true });
+      window.addEventListener('resize', requestTocUpdate);
+      updateCurrentTocItem();
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.08 });
+
+        document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+      } else {
+        document.querySelectorAll('.reveal').forEach((element) => element.classList.add('active'));
+      }
+    })();
+  </script>
+</body>
+
+</html>

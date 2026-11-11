@@ -76,6 +76,10 @@
 
 /*Layout*/
 
+table {
+  margin-bottom: 20px;
+}
+
 /*Main Content Area*/
 
 .abbreviation-section {
@@ -108,11 +112,6 @@
 }
 
 /*Question Section*/
-
-.question-section {
-  margin-top: 2rem;
-  gap: 0rem;
-}
 
 .q1-section {
   gap: 1.25rem;
@@ -231,7 +230,7 @@
   padding: 0.75rem 1rem;
   font-weight: bold;
   font-size: 1.25rem;
-  margin: 1rem 0rem 0rem 0rem;
+  margin: 1rem 0rem 1rem 0rem;
 }
 
 .text-link {
@@ -262,13 +261,13 @@
 }
 
 .journal-label {
-  width: 25%;
+  /*width: 25%;*/
   text-align: left;
   color: var(--color-gray-800);
 }
 
 .journal-value {
-  width: 25%;
+  /*width: 25%;*/
   text-align: right;
   color: var(--color-gray-900);
 }
@@ -724,7 +723,6 @@ body {
 /*Question Styles*/
 
 .question-section {
-  margin-top: 3rem;
   display: flex;
   flex-direction: column;
 }
@@ -929,7 +927,6 @@ body {
 .main-content {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
 }
 
 .section-container {
@@ -1660,7 +1657,7 @@ html {
 
 .exam-main .problem {
   scroll-margin-top: 118px;
-  margin: 28px 0;
+  margin: 14px 0;
   padding: 24px;
   border: 1px solid var(--exam-line);
   border-radius: 12px;
@@ -2293,7 +2290,7 @@ html {
   line-height: 1.45;
 }
 
-.bookkeeping-learning-page .question-section {
+.bookkeeping-learning-page .question-section{
   margin-top: 32px;
   padding: 24px;
   border: 1px solid var(--exam-line);
@@ -2479,4 +2476,70 @@ html {
   .exam-learning-page .exam-video-toggle__icon {
     transition: none;
   }
+}
+
+/* スマホでは表の部分だけ横スクロール */
+.ledger-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* 既存の表用CSSによる罫線・背景・影を解除 */
+table.ledger,
+table.ledger tbody,
+table.ledger tr,
+table.ledger td {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* 表の上辺 */
+table.ledger {
+  --frame-color: #c52b91;
+  --total-color: #d03632;
+
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  border-top: 2px solid var(--frame-color);
+}
+
+/* 勘定科目名 */
+table.ledger caption {
+  caption-side: top;
+  padding: 0 0 8px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* 各欄 */
+table.ledger td {
+  padding: 0px 12px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* 日付欄：１列目・４列目 */
+table.ledger td:nth-child(3n + 1) {
+  white-space: nowrap;
+}
+
+/* 金額欄：３列目・６列目 */
+table.ledger td:nth-child(3n) {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* 借方と貸方を分ける中央線 */
+table.ledger td:nth-child(4) {
+  border-left: 2px solid var(--frame-color);
+}
+
+/* 合計金額の上に合計線、下に二重の締切線 */
+table.ledger .ledger-total td:nth-child(3n) {
+  border-top: 1px solid var(--total-color);
+  border-bottom: 4px double var(--total-color);
 }

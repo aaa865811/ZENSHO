@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="第17回（令和7年度）全商 管理会計検定試験。公式問題・審査基準を参照し、CVP分析、品質原価、標準原価、予算編成、直接原価計算、設備投資の意思決定を途中計算とともに説明する学習用解説。" name="description"/>
+  <title>第17回 管理会計検定試験 解説</title>
+  <link href="../../css/site.css" rel="stylesheet"/>
+  <link href="../../css/header.css" rel="stylesheet"/>
+</head>
+<body class="page-wrapper exam-learning-page bookkeeping-learning-page" id="top">
+  <header class="header">
+    <a class="logo" href="../../index.html">
+      <img alt="ロゴ" class="header__logo--img" src="../../img/ZenSho-PAST.png"/>
+    </a>
+    <nav class="header__nav" id="header__nav">
+      <ul>
+        <li>
+          <a href="../index.html">
+            <span class="nav__en">全商検定</span>
+            <span class="nav__jp">過去問解説</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">GUIDELINES</span>
+            <span class="nav__jp">各検定の指針</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">INFORMATION</span>
+            <span class="nav__jp">進路情報</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">COLUMN</span>
+            <span class="nav__jp">コラム・その他</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">全商主催</span>
+            <span class="nav__jp">各競技大会について</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <header class="header__res">
+    <a class="logo" href="../../index.html">
+      <img alt="ロゴ" class="header__logo--img" height="auto" src="../../img/index_logo 1.png" width="auto"/>
+    </a>
+    <nav class="header__nav">
+      <ul class="heder__nav--list">
+        <li>
+          <a href="../index.html">
+            <span class="nav__en">全商検定</span>
+            <span class="nav__jp">過去問解説</span>
+          </a>
+        </li>
+        <li>
+          <a href="works.html">
+            <span class="nav__en">GUIDELINES</span>
+            <span class="nav__jp">各検定の指針</span>
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <span class="nav__en">INFORMATION</span>
+            <span class="nav__jp">進路情報</span>
+          </a>
+        </li>
+        <li>
+          <a href="company.html">
+            <span class="nav__en">COLUMN</span>
+            <span class="nav__jp">コラム・その他</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <span class="nav__en">全商主催</span>
+            <span class="nav__jp">各競技大会について</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </header>
+  <div id="root">
+    <div class="app-container">
+      <div class="content-wrapper">
+        <header aria-labelledby="page-title" class="exam-hero main-header">
+          <div class="hero header-content">
+            <p class="eyebrow">全商検定 過去問解説</p>
+            <h1 class="header-title" id="page-title">第17回 管理会計検定試験<br>解説</h1>
+            <p class="lead">令和7年12月14日施行。使用する数量・単価・率・期間を先に整理し、代替案の比較は同じ表構造で差額まで示して、類題にも応用できる手順で説明します。</p>
+          </div>
+        </header>
+        <section class="page exam-learning-layout">
+          <main class="exam-main main-content">
+            <section aria-labelledby="usage-title" class="instruction-section reveal">
+              <h2 id="usage-title">解答するときの注意</h2>
+              <p>％は小数第2位を四捨五入して第1位まで、設備投資の年数・係数は解答用紙の指示（小数第2位・第4位など）に従います。単位（個・円・千円・万円・％・年）を必ず付けます。</p>
+              <p>代替案の比較では「何が変わり、何が変わらないか」を先に整理し、各案を同じ表の形で計算してから差額を出します。税引後で計算する指示があるときは、税率30％を掛け忘れないよう注意してください。</p>
+            </section>
+            <section aria-labelledby="legend-title" class="legend-section reveal">
+              <h2 id="legend-title">解説の凡例</h2>
+              <p class="legend-intro">すべての問題で、次の表示を共通して使用します。</p>
+              <div class="legend-grid">
+                <div class="legend-card">
+                  <strong>問題文</strong>
+                  <p>各設問の問題文・資料を示します。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>一般的な解法</strong>
+                  <p>同じ論点の問題に共通して使える算式・判断手順です。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>計算</strong>
+                  <p>この問題の数値を当てはめ、途中式と中間結果を省略せず示します。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>注意点</strong>
+                  <p>税引後・平均法/先入先出法・原価の分類・端数処理などの失点しやすい箇所です。</p>
+                </div>
+                <div class="legend-card">
+                  <strong>正答</strong>
+                  <p>公式の審査基準に基づく最終的な解答です。</p>
+                </div>
+              </div>
+            </section>
+            <div class="source-box">
+              <p><strong>出典：</strong>公益財団法人 全国商業高等学校協会主催 令和7年度 第17回 管理会計検定試験（2025年12月14日実施）</p>
+              <a href="ac_17_kanrikaikei_exa.pdf" target="_blank" rel="noopener noreferrer" class="text-link">問題PDF　　　</a>
+              <a href="ac_17_kanrikaikei_ans.pdf" target="_blank" rel="noopener noreferrer" class="text-link">解答PDF　　　</a>
+              <p class="source-note">本記事は全商協会による公式解説ではありません。</p>
+            </div>
+            <h2 id="question-list">設問一覧</h2>
+            <nav aria-label="設問へのリンク" class="question-nav bookkeeping-question-nav">
+              <a href="#q1">1</a>
+              <a href="#q2">2</a>
+              <a href="#q3">3</a>
+              <a href="#q4">4</a>
+              <a href="#q5">5</a>
+            </nav>
+            <h2 id="answers">正答一覧</h2>
+            <div aria-label="表（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+              <table class="summary-table">
+                <thead>
+                  <tr><th>番号</th><th>主な論点</th><th>正答</th></tr></thead>
+                  <tbody>
+                    <tr><td>1</td><td>管理会計の用語</td><td>1 ウ　2 キ　3 ク　4 ケ　5 サ　6 ア</td></tr>
+                    <tr><td>2 問1</td><td>CVP分析・投下資本利益率・残余利益</td><td>⑴ 100,000個・37.5％　⑵ 16,800,000円・24,360,000円　⑶ 21％　⑷ 17,960,000円</td></tr>
+                    <tr><td>2 問2</td><td>品質原価報告書</td><td>⑴ 148千円　⑵ 468千円　⑶ 202千円　⑷ 248千円</td></tr>
+                    <tr><td>2 問3</td><td>仕損を含む標準原価</td><td>⑴ 4,590円　⑵ 22,950,000円</td></tr>
+                    <tr><td>3</td><td>現金収支予算・見積損益計算書</td><td>⑴ 18,580,000円 ⑵ 1,527,000円 ⑶ 4,845,000円 ⑷ 4,193,000円 ⑸ 売上高 54,000,000／売上原価 29,160,000／売上総利益 24,840,000／販管費 20,712,000／当期純利益 3,980,000</td></tr>
+                    <tr><td>4</td><td>直接原価計算・固定費調整</td><td>⑴ 全部 5,632,000円・直接 4,960,000円　⑵ 直接原価計算方式による営業利益 32,545,000／全部原価計算方式による営業利益 33,480,000（各行は設問別解説を参照）</td></tr>
+                    <tr><td>5</td><td>設備投資の経済性計算</td><td>⑴ 0.8163　⑵ (1) 3.43年 (2) ア (3) 短い (4) 高い (5) 3.9％ (6) ア (7) コ (8) 238万円 (9) 不利 (10) ク</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <h2 id="explanations">設問別解説</h2>
+
+              <section class="question-section reveal" id="q1">
+                <div class="question-main-title"><h2>第１問</h2></div>
+                <div class="question-subheader-blue">固変分解・原価企画・配合差異の用語を選ぶ</div>
+
+                <!-- BEGIN OFFICIAL QUESTION 1 -->
+                <details class="official-question official-question--placeholder">
+                  <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                  <blockquote class="official-question__body">
+                    <!-- 第1問の問題文欄 -->
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>次の文章の（1）から（6）の中に入るもっとも適当な語句を〔解答群〕の中から選び，その記号を解答欄に記入しなさい。</p>
+<ol>
+<li>原価の固変分解の方法のうち，（1）法とは，原価の発生額を縦軸，営業量を横軸として，原価の実績データをグラフに記入し，データの傾向をあらわす原価直線を目分量で引き，原価発生額と原価直線の交わる点を固定費とする方法である。一方，（2）法は，目分量ではなく，原価直線を数式を使って求める方法である。</li>
+<li>（3）とは，新製品の設計段階において，企業が（4）を確保しつつ，目標原価を作り込む活動のことである。</li>
+<li>複数の原材料を配合して製品を製造する場合，その配合割合はしばしば変動することがある。このような場合，（5）差異は，配合割合が変動することによって発生する配合差異と，原料の投入量に対する完成品の算出程度をあらわす（6）差異に分けることができる。</li>
+</ol>
+<p>〔解答群〕ア．歩留　イ．価格　ウ．スキャッター・チャート　エ．費目別精査　オ．能率　カ．高低点　キ．最小自乗　ク．原価企画　ケ．目標利益　コ．目標売上高　サ．数量　シ．原価改善</p>
+                    </div>
+                  </blockquote>
+                </details>
+                <!-- END OFFICIAL QUESTION 1 -->
+                <section aria-label="問題1の一般的な解法" class="general-method">
+                  <h4>一般的な解法</h4>
+                  <p class="method-title">管理会計用語の穴埋め問題</p>
+                  <ol><li>固変分解の4つの方法（費目別精査法・高低点法・スキャッター・チャート法・最小自乗法）を「グラフに目分量」「2点だけ使う」「数式で回帰」の特徴で区別する。</li><li>原価企画は「設計段階」「目標利益から目標原価を逆算」、原価改善は「製造段階」がキーワード。</li><li>材料の差異分析は、価格差異と数量差異に分け、数量差異をさらに配合差異と歩留差異に分ける。</li></ol>
+                </section>
+<p class="explanation-text">1．「グラフに記入し」「目分量で引き」は<strong>スキャッター・チャート法</strong>（1：ウ）、「数式を使って」原価直線を求めるのは<strong>最小自乗法</strong>（2：キ）です。高低点法は最高点と最低点の2点だけを使う方法なので、ここでは該当しません。</p>
+<p class="explanation-text">2．新製品の設計段階で目標原価を作り込む活動は<strong>原価企画</strong>（3：ク）で、「目標売価 － <strong>目標利益</strong> ＝ 目標原価」の関係から、確保するのは目標利益（4：ケ）です。</p>
+<p class="explanation-text">3．配合差異と歩留差異に分解できるのは<strong>数量差異</strong>（5：サ）で、投入量に対する完成品の算出程度をあらわすのは<strong>歩留差異</strong>（6：ア）です。</p>
+                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>1と2で「高低点法（カ）」を選んでしまう誤りが多く見られます。高低点法もグラフを使いますが、目分量ではなく2点を結ぶ方法です。4は「目標売上高（コ）」と迷いますが、原価企画で確保するのは利益です。5は「価格差異（イ）」ではなく数量差異が配合・歩留に分かれる点を確認しましょう。</p></aside><div class="answer">答え　1 ウ　2 キ　3 ク　4 ケ　5 サ　6 ア</div>
+              </section>
+
+              <section class="question-section reveal" id="q2">
+                <div class="question-main-title"><h2>第２問</h2></div>
+                <div class="question-subheader-blue">CVP分析と投下資本利益率，品質原価報告書，仕損を含む標準原価</div>
+
+                <!-- BEGIN OFFICIAL QUESTION 2 -->
+                <details class="official-question official-question--placeholder">
+                  <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                  <blockquote class="official-question__body">
+                    <!-- 第2問の問題文欄 -->
+                    <div aria-hidden="true" class="official-question__space">
+                      <p><strong>問1</strong>　Ｙ洋菓子店は，ワッフルを主力製品として経営しており，次年度の利益計画を策定中である。次に示す資料にもとづいて2つの代替案を検討している。よって，下記の⑴から⑷に答えなさい。なお，解答上端数が生じる場合は，％の小数第2位を四捨五入し，小数第1位まで答えなさい。</p>
+<p>〈資料〉<br>1．期首・期末の仕掛品，製品はない。<br>2．次年度のワッフルの製造・販売に要する原価は，変動費100円/個，固定費40,000,000円である。<br>3．投下資本総額は80,000,000円である。<br>4．税引後加重平均資本コストは8％である。<br>5．法人税等の税率は30％とする。</p>
+<p>〈検討中の代替案〉<br>代替案1　ワッフルを販売単価500円で販売する。販売数量は160,000個と予想される。<br>代替案2　ワッフルの販売単価を420円に値下げすると同時に固定販売費を2,000,000円増額する。販売数量は240,000個と予想される。</p>
+<p>⑴ 代替案1の損益分岐点販売数量および安全余裕率を求めなさい。<br>⑵ 代替案1および2の税引後営業利益を求めなさい。<br>⑶ 代替案1の投下資本利益率を求めなさい。ただし，税引後営業利益を用いて計算すること。<br>⑷ 代替案2の残余利益を求めなさい。ただし，税引後営業利益を用いて計算すること。</p>
+<p><strong>問2</strong>　次の資料はＺ社の2023年と2024年の品質関係の原価である。よって，同期間の品質原価報告書の⑴から⑷に当てはまる金額を答えなさい。なお，品質原価報告書の※は各自推定すること。</p>
+<div aria-label="項目別発生費用の推移（単位：千円）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>項目</th><th>2023年</th><th>2024年</th></tr></thead><tbody>
+<tr><td>工程での検査費</td><td>105</td><td>136</td></tr>
+<tr><td>仕損費</td><td>141</td><td>202</td></tr>
+<tr><td>検査作業員人件費</td><td>93</td><td>270</td></tr>
+<tr><td>製品回収費</td><td>69</td><td>135</td></tr>
+<tr><td>誤作動防止機械維持費</td><td>84</td><td>40</td></tr>
+<tr><td>スクラップ費</td><td>236</td><td>309</td></tr>
+<tr><td>工員訓練費</td><td>148</td><td>55</td></tr>
+<tr><td>保証修理費</td><td>248</td><td>371</td></tr>
+<tr><td>工程管理費</td><td>281</td><td>130</td></tr>
+<tr><td>製品検査費</td><td>56</td><td>62</td></tr>
+<tr><td>ＰＬ請求費</td><td>124</td><td>248</td></tr>
+</tbody></table></div>
+<div aria-label="品質原価報告書（単位：千円）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>品質原価報告書</th><th>2023年</th><th>2024年</th></tr></thead><tbody>
+<tr><td>予防コスト</td><td></td><td></td></tr>
+<tr><td>　誤作動防止機械維持費</td><td>84</td><td>40</td></tr>
+<tr><td>　※</td><td>⑴</td><td>※</td></tr>
+<tr><td>　工程管理費</td><td>281</td><td>130</td></tr>
+<tr><td>　　予防コスト合計</td><td>※</td><td>※</td></tr>
+<tr><td>評価コスト</td><td></td><td></td></tr>
+<tr><td>　※</td><td>※</td><td>※</td></tr>
+<tr><td>　検査作業員人件費</td><td>93</td><td>270</td></tr>
+<tr><td>　※</td><td>※</td><td>※</td></tr>
+<tr><td>　　評価コスト合計</td><td>※</td><td>⑵</td></tr>
+<tr><td>内部失敗コスト</td><td></td><td></td></tr>
+<tr><td>　※</td><td>※</td><td>⑶</td></tr>
+<tr><td>　スクラップ費</td><td>236</td><td>309</td></tr>
+<tr><td>　　内部失敗コスト合計</td><td>※</td><td>※</td></tr>
+<tr><td>外部失敗コスト</td><td></td><td></td></tr>
+<tr><td>　※</td><td>⑷</td><td>※</td></tr>
+<tr><td>　製品回収費</td><td>69</td><td>135</td></tr>
+<tr><td>　ＰＬ請求費</td><td>124</td><td>248</td></tr>
+<tr><td>　　外部失敗コスト合計</td><td>※</td><td>※</td></tr>
+</tbody></table></div>
+<p><strong>問3</strong>　次の資料にもとづいて，下記の⑴および⑵に答えなさい。</p>
+<p>〈資料〉1．標準原価カード（製品1個あたり）</p>
+<div aria-label="標準原価カード" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>標準原価カード（製品1個あたり）</th><th>標準単価</th><th>標準消費量</th><th>金額</th></tr></thead><tbody>
+<tr><td>直接材料費</td><td>500円/kg</td><td>3kg</td><td>1,500円</td></tr>
+<tr><td>直接労務費</td><td>1,100円/時間</td><td>2時間</td><td>2,200円</td></tr>
+<tr><td>変動製造間接費</td><td>400円/時間</td><td>2時間</td><td>800円</td></tr>
+<tr><td>製品1個あたりの標準変動製造原価</td><td></td><td></td><td>4,500円</td></tr>
+</tbody></table></div>
+<p>2．生産データ：月初仕掛品 300個（2/3）　当月投入 5,400個　合計 5,700個　月末仕掛品 600個（3/5）　仕損 100個　当月完成品 5,000個<br>※材料はすべて工程の始点で投入し，（　）内は加工進捗度をあらわしている。<br>3．仕損は工程の終点で発生している。なお，正常仕損品の評価額は零（0）である。<br>4．正常仕損率は，完成品に対して2％である。</p>
+<p>⑴ 正常仕損の発生割合を考慮し，正常仕損を原価要素別の標準消費量に含める方法により，標準原価カード（直接材料費 500円/kg × （　）kg ＝（　）円，直接労務費 1,100円/時間 × （　）時間 ＝（　）円，変動製造間接費 400円/時間 × （　）時間 ＝（　）円）を作成した。この場合の製品1個あたりの標準変動製造原価を求めなさい。<br>⑵ ⑴の標準原価カードを利用し，完成品原価を求めなさい。</p>
+                    </div>
+                  </blockquote>
+                </details>
+                <!-- END OFFICIAL QUESTION 2 -->
+                <section aria-label="問題2の一般的な解法" class="general-method">
+                  <h4>一般的な解法</h4>
+                  <p class="method-title">CVP分析・品質原価・標準原価の基本計算</p>
+                  <ol><li>損益分岐点販売数量 ＝ 固定費 ÷ 1個あたり貢献利益、安全余裕率 ＝（予想販売量 － 損益分岐点販売量）÷ 予想販売量。税引後営業利益 ＝ 営業利益 × (1 － 税率)、投下資本利益率 ＝ 税引後営業利益 ÷ 投下資本、残余利益 ＝ 税引後営業利益 － 投下資本 × 資本コスト。</li><li>品質原価は、予防（不良を防ぐ活動）・評価（検査）・内部失敗（出荷前の不良）・外部失敗（出荷後の不良）の4つに費目を分類する。</li><li>正常仕損を標準消費量に含める方法：各原価要素の標準消費量 × (1 ＋ 正常仕損率)。完成品原価 ＝ 完成品数量 × 仕損込みの標準原価。</li></ol>
+                </section>
+<div class="content-title-orange"><strong>問1</strong></div><p class="explanation-text">　代替案1の1個あたり貢献利益は 500 － 100 ＝ 400円、代替案2は 420 － 100 ＝ 320円で、固定費は 40,000,000 ＋ 2,000,000 ＝ 42,000,000円になります。</p>
+<div class="explanation-box-green">⑴ 損益分岐点販売数量：40,000,000 ÷ 400 = 100,000個<br>安全余裕率：(160,000 － 100,000) ÷ 160,000 × 100 = 37.5％</div>
+<div aria-label="表（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th></th><th>代替案1</th><th>代替案2</th></tr></thead><tbody>
+<tr><td>貢献利益</td><td>400 × 160,000 = 64,000,000</td><td>320 × 240,000 = 76,800,000</td></tr>
+<tr><td>固定費</td><td>40,000,000</td><td>42,000,000</td></tr>
+<tr><td>営業利益</td><td>24,000,000</td><td>34,800,000</td></tr>
+<tr><td>税引後営業利益（× 0.7）</td><td><strong>16,800,000</strong></td><td><strong>24,360,000</strong></td></tr>
+</tbody></table></div>
+<div class="explanation-box-green">⑶ 代替案1の投下資本利益率：16,800,000 ÷ 80,000,000 × 100 = 21％<br>⑷ 代替案2の残余利益：24,360,000 － 80,000,000 × 8％ = 24,360,000 － 6,400,000 = 17,960,000円</div>
+<div class="content-title-orange"><strong>問2</strong></div><p class="explanation-text">　11の費目を4区分に分類します。</p>
+<div aria-label="表（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>区分</th><th>費目</th><th>2023年</th><th>2024年</th></tr></thead><tbody>
+<tr><td>予防コスト</td><td>誤作動防止機械維持費・<strong>工員訓練費</strong>・工程管理費</td><td>84 ＋ 148 ＋ 281 ＝ 513</td><td>40 ＋ 55 ＋ 130 ＝ 225</td></tr>
+<tr><td>評価コスト</td><td>工程での検査費・検査作業員人件費・製品検査費</td><td>105 ＋ 93 ＋ 56 ＝ 254</td><td>136 ＋ 270 ＋ 62 ＝ <strong>468</strong></td></tr>
+<tr><td>内部失敗コスト</td><td><strong>仕損費</strong>・スクラップ費</td><td>141 ＋ 236 ＝ 377</td><td>202 ＋ 309 ＝ 511</td></tr>
+<tr><td>外部失敗コスト</td><td><strong>保証修理費</strong>・製品回収費・ＰＬ請求費</td><td>248 ＋ 69 ＋ 124 ＝ 441</td><td>371 ＋ 135 ＋ 248 ＝ 754</td></tr>
+</tbody></table></div>
+<div class="explanation-box-green">⑴ 予防コストの※＝工員訓練費 2023年：148千円<br>⑵ 評価コスト合計 2024年：468千円<br>⑶ 内部失敗コストの※＝仕損費 2024年：202千円<br>⑷ 外部失敗コストの※＝保証修理費 2023年：248千円</div>
+<div class="content-title-orange"><strong>問3</strong></div><p class="explanation-text">　正常仕損率2％を標準消費量に含めるので、各要素の消費量を1.02倍します。</p>
+<div class="explanation-box-green">直接材料費：3kg × 1.02 = 3.06kg × 500円 = 1,530円<br>直接労務費：2時間 × 1.02 = 2.04時間 × 1,100円 = 2,244円<br>変動製造間接費：2.04時間 × 400円 = 816円<br>⑴ 製品1個あたりの標準変動製造原価：1,530 ＋ 2,244 ＋ 816 = 4,590円（＝ 4,500 × 1.02）<br>⑵ 完成品原価：5,000個 × 4,590円 = 22,950,000円</div>
+<p class="note explanation-text">仕損が終点発生なので、月末仕掛品（進捗3/5）は仕損の発生点を通過しておらず、仕損費は完成品だけが負担します。⑵は完成品数量に仕損込みの原価を掛けるだけで求められます。</p>
+                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>問1⑵で税率30％を掛け忘れて営業利益のまま答えたり、⑷の残余利益で資本コストを「税引前営業利益」に掛けたりする誤りが多い問題です。問2は工員訓練費（予防）と検査作業員人件費（評価）、仕損費（内部失敗）と保証修理費（外部失敗）の分類が分かれ目です。問3は5,400個（当月投入）や5,100個（完成＋仕損）を掛けてしまわないよう、「完成品原価」＝完成品5,000個で計算します。</p></aside><div class="answer">答え　問1 ⑴ 損益分岐点販売数量 100,000個・安全余裕率 37.5％　⑵ 代替案1 16,800,000円・代替案2 24,360,000円　⑶ 21％　⑷ 17,960,000円　問2 ⑴ 148千円 ⑵ 468千円 ⑶ 202千円 ⑷ 248千円　問3 ⑴ 4,590円 ⑵ 22,950,000円</div>
+              </section>
+
+              <section class="question-section reveal" id="q3">
+                <div class="question-main-title"><h2>第３問</h2></div>
+                <div class="question-subheader-blue">現金収支予算と見積損益計算書を作成する</div>
+
+                <!-- BEGIN OFFICIAL QUESTION 3 -->
+                <details class="official-question official-question--placeholder">
+                  <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                  <blockquote class="official-question__body">
+                    <!-- 第3問の問題文欄 -->
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>製品Ｘと製品Ｙを製造・販売する全商製作所の次の資料にもとづいて，現金収支予算に計上される⑴売掛金の回収，⑵材料仕入，⑶製造間接費，⑷予算期末有高を求めなさい。また，⑸見積損益計算書を作成しなさい。ただし，労務費の計算期間と原価計算期間は一致しており，資料の条件以外は考慮しない。なお，減価償却費以外の費用は，すべて現金支出費用であり，発生時に支払われるものとする。</p>
+<p>〈資料〉1．販売予算</p>
+<div aria-label="販売予算" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>製品別販売予算</th><th>Ｘ</th><th>Ｙ</th><th>合計</th></tr></thead><tbody>
+<tr><td>販売数量</td><td>（　）個</td><td>12,000個</td><td>（　）個</td></tr>
+<tr><td>販売単価</td><td>2,400円/個</td><td>（　）円/個</td><td>－</td></tr>
+<tr><td>売上高構成比率</td><td>60％</td><td>40％</td><td>100％</td></tr>
+<tr><td>売上原価率</td><td>50％</td><td>60％</td><td>－</td></tr>
+</tbody></table></div>
+<p>2．製造予算　⑴ 製品別原価予算</p>
+<div aria-label="製品別標準原価カード（単位：円）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>製品別標準原価カード</th><th>製品Ｘ 数量・時間</th><th>標準単価</th><th>標準原価</th><th>製品Ｙ 数量・時間</th><th>標準単価</th><th>標準原価</th></tr></thead><tbody>
+<tr><td>直接材料費</td><td>2kg</td><td>210</td><td>420</td><td>2kg</td><td>280</td><td>560</td></tr>
+<tr><td>直接労務費</td><td>3時間</td><td>170</td><td>510</td><td>2時間</td><td>170</td><td>340</td></tr>
+<tr><td>製造間接費</td><td>3時間</td><td>90</td><td>270</td><td>2時間</td><td>90</td><td>180</td></tr>
+<tr><td>標準原価</td><td></td><td></td><td>1,200</td><td></td><td></td><td>1,080</td></tr>
+</tbody></table></div>
+<p>製品Ｘ：当期製品製造数量 13,600個　期首製品棚卸数量（　）個　期末製品棚卸数量 1,400個<br>製品Ｙ：当期製品製造数量 11,800個　期首製品棚卸数量 1,200個　期末製品棚卸数量 1,000個<br>なお，期首の在庫製品も同じ標準原価を用いており，期首・期末の仕掛品はないものとする。</p>
+<p>⑵ 材料費予算</p>
+<div aria-label="材料費予算" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>材料費予算</th><th>製品Ｘ用</th><th>製品Ｙ用</th></tr></thead><tbody>
+<tr><td>購入単価</td><td>210円/kg</td><td>280円/kg</td></tr>
+<tr><td>期首棚卸数量</td><td>2,700kg</td><td>2,300kg</td></tr>
+<tr><td>期末棚卸数量</td><td>2,600kg</td><td>2,400kg</td></tr>
+</tbody></table></div>
+<p>3．販売費及び一般管理費予算</p>
+<div aria-label="販売費及び一般管理費予算（単位：円）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>販売費予算</th><th>金額</th><th>一般管理費予算</th><th>金額</th></tr></thead><tbody>
+<tr><td>販売員給料手当</td><td>10,870,000</td><td>事務職員給料手当</td><td>3,940,000</td></tr>
+<tr><td>広告宣伝費</td><td>2,720,000</td><td>通信費</td><td>280,000</td></tr>
+<tr><td>発送費</td><td>1,673,000</td><td>租税公課</td><td>402,000</td></tr>
+<tr><td>旅費交通費</td><td>450,000</td><td>雑費</td><td>134,000</td></tr>
+<tr><td>減価償却費</td><td>（　）</td><td>減価償却費</td><td>（　）</td></tr>
+<tr><td>合計</td><td>（　）</td><td>合計</td><td>（　）</td></tr>
+</tbody></table></div>
+<p>4．財務予算　⑴ 現金収支予算</p>
+<div aria-label="現金収支予算（単位：円）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>現金収支予算</th><th>金額</th></tr></thead><tbody>
+<tr><td>期首有高</td><td>3,050,000</td></tr>
+<tr><td>現金収入：現金売上</td><td>5,740,000</td></tr>
+<tr><td>　受取手形の回収</td><td>（　）</td></tr>
+<tr><td>　売掛金の回収</td><td>（⑴）</td></tr>
+<tr><td>　現金収入合計</td><td>（　）</td></tr>
+<tr><td>現金支出：支払手形の決済</td><td>6,950,000</td></tr>
+<tr><td>　買掛金の支払</td><td>（　）</td></tr>
+<tr><td>　材料仕入</td><td>（⑵）</td></tr>
+<tr><td>　直接労務費</td><td>（　）</td></tr>
+<tr><td>　製造間接費</td><td>（⑶）</td></tr>
+<tr><td>　販売費及び一般管理費</td><td>20,469,000</td></tr>
+<tr><td>　工具器具備品の購入</td><td>1,320,000</td></tr>
+<tr><td>　利息の支払い</td><td>148,000</td></tr>
+<tr><td>　現金支出合計</td><td>51,027,000</td></tr>
+<tr><td>予算期末有高</td><td>（⑷）</td></tr>
+</tbody></table></div>
+<p>⑵ 信用予算</p>
+<div aria-label="信用予算（売上債権）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>売上債権</th><th>受取手形</th><th>売掛金</th></tr></thead><tbody>
+<tr><td>期首有高</td><td>7,230,000</td><td>4,840,000</td></tr>
+<tr><td>期中売上による増加</td><td>（　）</td><td>（　）</td></tr>
+<tr><td>現金による回収</td><td>27,850,000</td><td>（　）</td></tr>
+<tr><td>期末有高</td><td>8,280,000</td><td>5,620,000</td></tr>
+</tbody></table></div>
+<div aria-label="信用予算（仕入債務）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>材料・仕入債務</th><th>支払手形</th><th>買掛金</th></tr></thead><tbody>
+<tr><td>期首有高</td><td>2,270,000</td><td>1,340,000</td></tr>
+<tr><td>期中仕入による増加</td><td>（　）</td><td>4,560,000</td></tr>
+<tr><td>現金による支払い</td><td>（　）</td><td>（　）</td></tr>
+<tr><td>期末有高</td><td>1,560,000</td><td>1,080,000</td></tr>
+</tbody></table></div>
+<p>5．その他</p>
+<div aria-label="減価償却費明細（単位：円）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>減価償却費明細</th><th>製造経費</th><th>販売費</th><th>一般管理費</th><th>合計</th></tr></thead><tbody>
+<tr><td>建物</td><td>（　）</td><td>（　）</td><td>（　）</td><td>720,000</td></tr>
+<tr><td>機械設備</td><td>384,000</td><td>－</td><td>－</td><td>384,000</td></tr>
+<tr><td>工具器具備品</td><td>（　）</td><td>（　）</td><td>（　）</td><td>（　）</td></tr>
+<tr><td>合計</td><td>951,000</td><td>（　）</td><td>（　）</td><td>（　）</td></tr>
+</tbody></table></div>
+<p>ただし，建物と工具器具備品の減価償却費のうち，70％を製造経費，10％を販売費，20％を一般管理費と見積もっている。</p>
+<p>解答用紙：見積損益計算書（製品Ｘ／製品Ｙ／合計）：売上高（ ）（ ）（ ）／売上原価（ ）（ ）（ ）／売上総利益（ ）（ ）（ ）／販売費及び一般管理費（ ）／支払利息 148,000／当期純利益（ ）</p>
+                    </div>
+                  </blockquote>
+                </details>
+                <!-- END OFFICIAL QUESTION 3 -->
+                <section aria-label="問題3の一般的な解法" class="general-method">
+                  <h4>一般的な解法</h4>
+                  <p class="method-title">予算編成（現金収支予算・見積損益計算書）</p>
+                  <ol><li>空欄は「売上原価率」「構成比率」「製造数量 ＋ 期首 － 期末 ＝ 販売数量」などの関係式から逆算し、先に販売数量・単価を確定させる。</li><li>現金収支は債権・債務の増減から求める：回収額 ＝ 期首 ＋ 当期増加 － 期末。材料仕入の現金支出 ＝ 購入額 － 手形・掛けによる増加。</li><li>製造間接費の現金支出 ＝ 製造間接費予算 － 製造経費に含まれる減価償却費。減価償却費の配分比率で工具器具備品の額を逆算する。</li></ol>
+                </section>
+<div class="content-title-orange"><strong>1．販売予算の空欄</strong></div><p class="explanation-text">　製品Ｙの売上原価は 1,080円 × 12,000個 ＝ 12,960,000円で、これが売上高の60％なので、Ｙの売上高と単価が決まります。</p>
+<div class="explanation-box-green">Ｙ売上高：12,960,000 ÷ 0.6 = 21,600,000 → 単価 21,600,000 ÷ 12,000 = 1,800円/個<br>Ｘ売上高：21,600,000 × 60％ ÷ 40％ = 32,400,000 → 販売数量 32,400,000 ÷ 2,400 = 13,500個<br>Ｘ期首製品：13,500 ＋ 1,400 － 13,600 = 1,300個<br>合計売上高：54,000,000（販売数量合計 25,500個）</div>
+<div class="content-title-orange"><strong>⑴ 売掛金の回収</strong></div><p class="explanation-text">　総売上54,000,000のうち現金売上と受取手形による増加を除いた分が売掛金の増加です。</p>
+<div class="explanation-box-green">受取手形の増加：27,850,000 ＋ 8,280,000 － 7,230,000 = 28,900,000<br>売掛金の増加：54,000,000 － 5,740,000 － 28,900,000 = 19,360,000<br>売掛金の回収：4,840,000 ＋ 19,360,000 － 5,620,000 = 18,580,000円</div>
+<div class="content-title-orange"><strong>⑵ 材料仕入（現金）</strong></div><p class="explanation-text">　購入量 ＝ 消費量 － 期首 ＋ 期末 で購入額を出し、手形・掛けによる仕入を引きます。</p>
+<div class="explanation-box-green">Ｘ用：消費 2kg × 13,600 = 27,200kg → 購入 27,200 － 2,700 ＋ 2,600 = 27,100kg × 210 = 5,691,000<br>Ｙ用：消費 2kg × 11,800 = 23,600kg → 購入 23,600 － 2,300 ＋ 2,400 = 23,700kg × 280 = 6,636,000<br>購入額合計：12,327,000<br>支払手形の増加：6,950,000 ＋ 1,560,000 － 2,270,000 = 6,240,000　買掛金の増加：4,560,000<br>現金仕入：12,327,000 － 6,240,000 － 4,560,000 = 1,527,000円</div>
+<div class="content-title-orange"><strong>⑶ 製造間接費（現金）</strong></div><p class="explanation-text">　製造間接費予算から製造経費に含まれる減価償却費951,000円を引きます。</p>
+<div class="explanation-box-green">製造間接費予算：270 × 13,600 ＋ 180 × 11,800 = 3,672,000 ＋ 2,124,000 = 5,796,000<br>現金支出：5,796,000 － 951,000 = 4,845,000円</div>
+<div class="content-title-orange"><strong>⑷ 予算期末有高</strong></div>
+<div class="explanation-box-green">現金収入合計：5,740,000 ＋ 27,850,000 ＋ 18,580,000 = 52,170,000<br>期末有高：3,050,000 ＋ 52,170,000 － 51,027,000 = 4,193,000円<br>（確認）支出内訳：6,950,000 ＋ 買掛金支払 (1,340,000 ＋ 4,560,000 － 1,080,000 = 4,820,000) ＋ 1,527,000 ＋ 直接労務費 (510 × 13,600 ＋ 340 × 11,800 = 10,948,000) ＋ 4,845,000 ＋ 20,469,000 ＋ 1,320,000 ＋ 148,000 = 51,027,000 ✓</div>
+<div class="content-title-orange"><strong>⑸ 見積損益計算書</strong></div><p class="explanation-text">　減価償却費明細から工具器具備品の減価償却費を逆算します。製造経費合計951,000 ＝ 建物 720,000 × 70％ ＋ 機械設備 384,000 ＋ 工具 × 70％ なので、工具器具備品は (951,000 － 504,000 － 384,000) ÷ 0.7 ＝ 90,000円です。</p>
+<div class="explanation-box-green">販売費の減価償却費：(720,000 ＋ 90,000) × 10％ = 81,000<br>一般管理費の減価償却費：(720,000 ＋ 90,000) × 20％ = 162,000<br>販売費及び一般管理費：20,469,000 ＋ 81,000 ＋ 162,000 = 20,712,000</div>
+<div aria-label="表（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>見積損益計算書</th><th>製品Ｘ</th><th>製品Ｙ</th><th>合計</th></tr></thead><tbody>
+<tr><td>売上高</td><td>32,400,000</td><td>21,600,000</td><td>54,000,000</td></tr>
+<tr><td>売上原価</td><td>1,200 × 13,500 = 16,200,000</td><td>1,080 × 12,000 = 12,960,000</td><td>29,160,000</td></tr>
+<tr><td>売上総利益</td><td>16,200,000</td><td>8,640,000</td><td>24,840,000</td></tr>
+<tr><td>販売費及び一般管理費</td><td></td><td></td><td>20,712,000</td></tr>
+<tr><td>支払利息</td><td></td><td></td><td>148,000</td></tr>
+<tr><td>当期純利益</td><td></td><td></td><td>3,980,000</td></tr>
+</tbody></table></div>
+                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>⑴で売掛金の増加を「売上高 － 現金売上」としてしまい、受取手形分を引き忘れる誤りが多い問題です。⑵の購入量は「消費量 － 期首 ＋ 期末」で、期首・期末を逆にすると答えがずれます。⑶は減価償却費（非現金支出）を引くのを忘れると5,796,000円になってしまいます。⑸の販管費は現金支出20,469,000円に減価償却費243,000円を加えた発生額で計上します。</p></aside><div class="answer">答え　⑴ 18,580,000円　⑵ 1,527,000円　⑶ 4,845,000円　⑷ 4,193,000円　⑸ 売上高 Ｘ 32,400,000／Ｙ 21,600,000／合計 54,000,000、売上原価 Ｘ 16,200,000／Ｙ 12,960,000／合計 29,160,000、売上総利益 Ｘ 16,200,000／Ｙ 8,640,000／合計 24,840,000、販売費及び一般管理費 20,712,000、当期純利益 3,980,000</div>
+              </section>
+
+              <section class="question-section reveal" id="q4">
+                <div class="question-main-title"><h2>第４問</h2></div>
+                <div class="question-subheader-blue">全部原価計算と直接原価計算の月末仕掛品原価，直接原価計算の損益計算書と固定費調整</div>
+
+                <!-- BEGIN OFFICIAL QUESTION 4 -->
+                <details class="official-question official-question--placeholder">
+                  <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                  <blockquote class="official-question__body">
+                    <!-- 第4問の問題文欄 -->
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>全商工業では，製品Ａを製造・販売している。次の資料にもとづいて，下記の⑴および⑵に答えなさい。ただし，月末仕掛品原価の計算は平均法，月末製品原価の計算は先入先出法による。</p>
+<p>〈資料〉1．製造・販売データ</p>
+<div aria-label="製造・販売データ" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>製造データ</th><th>数量</th><th>販売データ</th><th>数量</th></tr></thead><tbody>
+<tr><td>月初仕掛品</td><td>2,400個（1/3）</td><td>月初製品</td><td>3,500個</td></tr>
+<tr><td>当月投入</td><td>14,400個</td><td>当月完成品</td><td>12,000個</td></tr>
+<tr><td>合計</td><td>16,800個</td><td>合計</td><td>15,500個</td></tr>
+<tr><td>月末仕掛品</td><td>4,800個（2/3）</td><td>月末製品</td><td>5,500個</td></tr>
+<tr><td>当月完成品</td><td>12,000個</td><td>当月販売品</td><td>10,000個</td></tr>
+</tbody></table></div>
+<p>※材料はすべて工程の始点で投入し，（　）内は加工進捗度をあらわしている。</p>
+<p>2．製造原価データ</p>
+<div aria-label="製造原価データ" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>製造原価データ</th><th>月初仕掛品原価</th><th>当月製造費用</th></tr></thead><tbody>
+<tr><td>直接材料費</td><td>1,408,000円</td><td>8,000,000円</td></tr>
+<tr><td>直接労務費</td><td>320,800円</td><td>5,904,000円</td></tr>
+<tr><td>変動製造間接費</td><td>252,000円</td><td>4,315,200円</td></tr>
+<tr><td>固定製造間接費</td><td>192,000円</td><td>3,000,000円</td></tr>
+</tbody></table></div>
+<p>3．販売価格および営業費データ：⑴ 製品販売価格 5,000円/個　⑵ 販売費：変動販売費 90円/個，固定販売費 400,000円　⑶ 一般管理費 350,000円（全額固定費）</p>
+<p>4．月初製品原価データ：直接材料費 2,100,000円　直接労務費 1,400,000円　変動製造間接費 1,050,000円　固定製造間接費 700,000円</p>
+<p>⑴ 月末仕掛品原価を，全部原価計算方式と直接原価計算方式のそれぞれによって計算しなさい。<br>⑵ 直接原価計算方式による月次損益計算書を作成し，固定費調整をおこないなさい。</p>
+<p>解答用紙：Ⅰ 売上高( )／Ⅱ 変動売上原価：1．月初製品棚卸高( )　2．当月製品製造原価( )　合計( )　3．月末製品棚卸高( )　( )／変動製造マージン( )／Ⅲ 変動販売費( )／貢献利益( )／Ⅳ 固定費：1．製造間接費( )　2．販売費( )　3．一般管理費( )　( )／直接原価計算方式による営業利益( )／Ⅴ 固定費調整：1．月末製品および仕掛品原価に含まれる固定費( )　2．月初製品および仕掛品原価に含まれる固定費( )／全部原価計算方式による営業利益( )</p>
+                    </div>
+                  </blockquote>
+                </details>
+                <!-- END OFFICIAL QUESTION 4 -->
+                <section aria-label="問題4の一般的な解法" class="general-method">
+                  <h4>一般的な解法</h4>
+                  <p class="method-title">直接原価計算と固定費調整</p>
+                  <ol><li>平均法の月末仕掛品原価 ＝（月初仕掛品原価 ＋ 当月製造費用）÷（完成品数量 ＋ 月末仕掛品換算量）× 月末仕掛品換算量。材料は始点投入なので数量そのまま、加工費は進捗度を掛けた換算量で計算する。</li><li>直接原価計算では変動製造原価（材料・労務・変動間接費）だけを製品原価とし、固定製造間接費は期間原価として全額費用にする。月末製品（先入先出法）は当月完成品の単価で評価する。</li><li>固定費調整：全部原価の営業利益 ＝ 直接原価の営業利益 ＋ 月末製品・仕掛品に含まれる固定費 － 月初製品・仕掛品に含まれる固定費。</li></ol>
+                </section>
+<div class="content-title-orange"><strong>⑴ 月末仕掛品原価（平均法）</strong></div><p class="explanation-text">　材料の計算数量は 12,000 ＋ 4,800 ＝ 16,800個、加工費の換算量は 12,000 ＋ 4,800 × 2/3 ＝ 15,200個です。</p>
+<div aria-label="表（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>原価要素</th><th>月初＋当月</th><th>÷ 数量</th><th>単価</th><th>月末仕掛品（×4,800 または ×3,200）</th></tr></thead><tbody>
+<tr><td>直接材料費</td><td>1,408,000 ＋ 8,000,000 = 9,408,000</td><td>16,800</td><td>560円</td><td>2,688,000</td></tr>
+<tr><td>直接労務費</td><td>320,800 ＋ 5,904,000 = 6,224,800</td><td>15,200</td><td>409.5円</td><td>1,310,400</td></tr>
+<tr><td>変動製造間接費</td><td>252,000 ＋ 4,315,200 = 4,567,200</td><td>15,200</td><td>300.5円（※）</td><td>961,600</td></tr>
+<tr><td>固定製造間接費</td><td>192,000 ＋ 3,000,000 = 3,192,000</td><td>15,200</td><td>210円</td><td>672,000</td></tr>
+</tbody></table></div>
+<div class="explanation-box-green">直接原価計算方式：2,688,000 ＋ 1,310,400 ＋ 961,600 = 4,960,000円<br>全部原価計算方式：4,960,000 ＋ 672,000 = 5,632,000円</div>
+<p class="note explanation-text">※変動製造間接費の合計4,567,200円を15,200個で割ると 300.47…円となり割り切れません。審査基準の正答（4,960,000円・当月製品製造原価15,240,000円）は単価300.5円で計算した金額と一致するため、本解説も300.5円で計算しています。資料の数値に400円の不整合がある可能性があるので、監修時に確認してください。</p>
+<div class="content-title-orange"><strong>⑵ 直接原価計算方式の損益計算書</strong></div><p class="explanation-text">　当月完成品の変動製造原価は各単価 × 12,000個、月末製品は先入先出法なので当月完成品の単価で評価します。</p>
+<div class="explanation-box-green">当月製品製造原価（変動）：560 × 12,000 ＋ 409.5 × 12,000 ＋ 300.5 × 12,000 = 6,720,000 ＋ 4,914,000 ＋ 3,606,000 = 15,240,000<br>月初製品棚卸高（変動）：2,100,000 ＋ 1,400,000 ＋ 1,050,000 = 4,550,000<br>月末製品棚卸高：15,240,000 ÷ 12,000 = 1,270円 × 5,500 = 6,985,000<br>変動売上原価：4,550,000 ＋ 15,240,000 － 6,985,000 = 12,805,000</div>
+<div aria-label="表（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>直接原価計算方式による月次損益計算書</th><th></th><th>金額</th></tr></thead><tbody>
+<tr><td>Ⅰ 売上高</td><td>5,000 × 10,000</td><td>50,000,000</td></tr>
+<tr><td>Ⅱ 変動売上原価　1．月初製品棚卸高</td><td>4,550,000</td><td></td></tr>
+<tr><td>　2．当月製品製造原価</td><td>15,240,000</td><td></td></tr>
+<tr><td>　合計</td><td>19,790,000</td><td></td></tr>
+<tr><td>　3．月末製品棚卸高</td><td>6,985,000</td><td>12,805,000</td></tr>
+<tr><td>変動製造マージン</td><td></td><td>37,195,000</td></tr>
+<tr><td>Ⅲ 変動販売費</td><td>90 × 10,000</td><td>900,000</td></tr>
+<tr><td>貢献利益</td><td></td><td>36,295,000</td></tr>
+<tr><td>Ⅳ 固定費　1．製造間接費</td><td>3,000,000</td><td></td></tr>
+<tr><td>　2．販売費</td><td>400,000</td><td></td></tr>
+<tr><td>　3．一般管理費</td><td>350,000</td><td>3,750,000</td></tr>
+<tr><td>直接原価計算方式による営業利益</td><td></td><td>32,545,000</td></tr>
+<tr><td>Ⅴ 固定費調整　1．月末製品および仕掛品原価に含まれる固定費</td><td>210 × 5,500 ＋ 672,000</td><td>1,827,000</td></tr>
+<tr><td>　2．月初製品および仕掛品原価に含まれる固定費</td><td>700,000 ＋ 192,000</td><td>892,000</td></tr>
+<tr><td>全部原価計算方式による営業利益</td><td>32,545,000 ＋ 1,827,000 － 892,000</td><td>33,480,000</td></tr>
+</tbody></table></div>
+<p class="note explanation-text">固定費調整の「月末」は当月完成品の固定費単価210円 × 月末製品5,500個と、月末仕掛品の固定費672,000円の合計、「月初」は月初製品700,000円と月初仕掛品192,000円の合計です。</p>
+                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>加工費の換算量を月初仕掛品分まで含めた16,000個で割ってしまう誤り（平均法では月初仕掛品の換算量は使いません）や、月末製品を平均単価で評価してしまう誤りが多い問題です。月末製品は<strong>先入先出法</strong>なので当月完成品の単価1,270円を使います。固定費調整は「月末を加算・月初を減算」の向きを確認しましょう。</p></aside><div class="answer">答え　⑴ 全部原価計算方式 5,632,000円　直接原価計算方式 4,960,000円　⑵ 売上高 50,000,000／月初製品棚卸高 4,550,000／当月製品製造原価 15,240,000／合計 19,790,000／月末製品棚卸高 6,985,000／変動売上原価 12,805,000／変動製造マージン 37,195,000／変動販売費 900,000／貢献利益 36,295,000／固定費 製造間接費 3,000,000・販売費 400,000・一般管理費 350,000・計 3,750,000／直接原価計算方式による営業利益 32,545,000／月末製品および仕掛品原価に含まれる固定費 1,827,000／月初製品および仕掛品原価に含まれる固定費 892,000／全部原価計算方式による営業利益 33,480,000</div>
+              </section>
+
+              <section class="question-section reveal" id="q5">
+                <div class="question-main-title"><h2>第５問</h2></div>
+                <div class="question-subheader-blue">設備投資案を回収期間法・会計的投資利益率法・正味現在価値法で評価する</div>
+
+                <!-- BEGIN OFFICIAL QUESTION 5 -->
+                <details class="official-question official-question--placeholder">
+                  <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                  <blockquote class="official-question__body">
+                    <!-- 第5問の問題文欄 -->
+                    <div aria-hidden="true" class="official-question__space">
+                      <p>全商プロダクツ(株)は，新規の設備投資について検討している。次の資料にもとづいて，⑴および⑵に答えなさい。</p>
+<p>〈資料〉1．各投資案の詳細は次のとおりである。両案とも耐用年数4年の設備であり，耐用年数経過後は無償で除却できる。</p>
+<div aria-label="投資案Ａ" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>投資案Ａ（単位：万円）</th><th>現金収入収益</th><th>現金支出費用</th></tr></thead><tbody>
+<tr><td>投資額</td><td>84,000</td><td></td></tr>
+<tr><td>第1年度</td><td>118,000</td><td>90,000</td></tr>
+<tr><td>第2年度</td><td>117,000</td><td>92,000</td></tr>
+<tr><td>第3年度</td><td>116,000</td><td>91,000</td></tr>
+<tr><td>第4年度</td><td>118,000</td><td>92,000</td></tr>
+<tr><td>償却方法</td><td>残存価額を零（0）とする定額法</td><td></td></tr>
+<tr><td>資本コスト</td><td>6％</td><td></td></tr>
+</tbody></table></div>
+<div aria-label="投資案Ｂ" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>投資案Ｂ（単位：万円）</th><th>現金収入収益</th><th>現金支出費用</th></tr></thead><tbody>
+<tr><td>投資額</td><td>40,000</td><td></td></tr>
+<tr><td>第1年度</td><td>38,000</td><td>23,000</td></tr>
+<tr><td>第2年度</td><td>33,000</td><td>21,000</td></tr>
+<tr><td>第3年度</td><td>21,000</td><td>10,000</td></tr>
+<tr><td>第4年度</td><td>20,000</td><td>9,000</td></tr>
+<tr><td>償却方法</td><td>残存価額を零（0）とする定額法</td><td></td></tr>
+<tr><td>資本コスト</td><td>5％</td><td></td></tr>
+</tbody></table></div>
+<p>2．現価係数表</p>
+<div aria-label="現価係数表" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>年</th><th>5％</th><th>6％</th><th>7％</th></tr></thead><tbody>
+<tr><td>1</td><td>0.9524</td><td>0.9434</td><td>0.9346</td></tr>
+<tr><td>2</td><td>0.9070</td><td>0.8900</td><td>0.8734</td></tr>
+<tr><td>3</td><td>0.8638</td><td>0.8396</td><td>（※）</td></tr>
+<tr><td>4</td><td>0.8227</td><td>0.7921</td><td>0.7629</td></tr>
+</tbody></table></div>
+<p>3．法人税等の税率は30％とし，今後4年間黒字決算が見込まれる。<br>4．工場の面積が限られているため，どちらか一方の投資案のみを採用する。</p>
+<p>⑴ 現価係数表の（※）にあてはまる数値を解答用紙の指示に従って答えなさい。（数値の小数第5位を四捨五入して，小数第4位まで解答）<br>⑵ 次の文章にあてはまる（1）から（10）を解答用紙の指示に従って答えなさい。</p>
+<p>各年度末におけるタックス・シールドを加味した税引後キャッシュ・フローの平均を用いた単純回収期間法で投資案の評価をおこなった場合，投資案Ａの回収期間は（1）年となり，投資案Ｂの回収期間は3.46年となる。よって，投資案（2）の方が回収期間が（3．長い・短い）ため有利である。しかし，この手法は投資回収後のキャッシュ・フローを考慮しないため，投資の収益性は測定できないことが欠点である。</p>
+<p>会計的投資利益率法で投資案の評価をおこなった場合，投資利益率が（4．高い・低い）投資案が有利である。年平均利益額を分子に，投資額の総額を分母として投資利益率を計算した場合，投資案Ａは4.2％となり，投資案Ｂは（5）％となるため，投資案（6）の方が有利である。</p>
+<p>正味現在価値法は，上記2つの方法と違い（7）を考慮して投資案の評価をおこなう。この方法によって資料の現価係数表を用いて計算した場合，投資案Ｂより投資案Ａを採用した方が（8）万円だけ（9．有利・不利）となることがわかる。</p>
+<p>また，正味現在価値法のほか，（7）を考慮した方法には（10）法がある。（10）とは，投資によって発生する毎年のキャッシュ・フローの現在価値の合計と投資額とが等しくなる割引率である。</p>
+<p>以上のようにして，得られた数値と結果をもとに，社会情勢，今後の経営指針，サステナビリティ等を踏まえ慎重に協議を重ね，資金制約の範囲内で企業にとって最善の投資案を選択するのである。</p>
+<p>【語群】（複数回使用可）ア．Ａ　イ．Ｂ　ウ．利益　エ．現金収支　オ．投下資本利益率　カ．原価比較　キ．補完　ク．内部利益率　ケ．最小自乗　コ．貨幣の時間価値</p>
+<p>解答用紙の指示：（1）年の小数第3位を四捨五入して小数第2位まで　（5）％の小数第2位を四捨五入して小数第1位まで　（8）最終の解答の段階で万円未満を四捨五入</p>
+                    </div>
+                  </blockquote>
+                </details>
+                <!-- END OFFICIAL QUESTION 5 -->
+                <section aria-label="問題5の一般的な解法" class="general-method">
+                  <h4>一般的な解法</h4>
+                  <p class="method-title">設備投資の経済性計算</p>
+                  <ol><li>各年の税引後キャッシュ・フロー ＝（現金収入 － 現金支出）× (1 － 税率) ＋ 減価償却費 × 税率（タックス・シールド）。減価償却費 ＝ 投資額 ÷ 耐用年数。</li><li>回収期間 ＝ 投資額 ÷ 年平均税引後ＣＦ。会計的投資利益率 ＝ 年平均税引後利益 ÷ 投資額。税引後利益 ＝（収入 － 支出 － 減価償却費）× (1 － 税率)。</li><li>正味現在価値 ＝ Σ（各年の税引後ＣＦ × 現価係数）－ 投資額。現価係数 ＝ 1 ÷ (1 ＋ r)ⁿ。各案の資本コストが異なるときは案ごとの係数を使う。</li></ol>
+                </section>
+<div class="explanation-box-green">⑴ 7％・3年の現価係数：1 ÷ 1.07³ = 1 ÷ 1.225043 = 0.81629… → 0.8163</div>
+<div class="content-title-orange"><strong>税引後キャッシュ・フロー</strong></div><p class="explanation-text">　減価償却費はＡ 84,000 ÷ 4 ＝ 21,000万円、Ｂ 40,000 ÷ 4 ＝ 10,000万円で、タックス・シールドはそれぞれ 21,000 × 30％ ＝ 6,300万円、10,000 × 30％ ＝ 3,000万円です。</p>
+<div aria-label="表（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>投資案Ａ</th><th>収入－支出</th><th>× 0.7</th><th>＋ タックス・シールド 6,300</th><th>税引後ＣＦ</th></tr></thead><tbody>
+<tr><td>第1年度</td><td>28,000</td><td>19,600</td><td>＋6,300</td><td>25,900</td></tr>
+<tr><td>第2年度</td><td>25,000</td><td>17,500</td><td>＋6,300</td><td>23,800</td></tr>
+<tr><td>第3年度</td><td>25,000</td><td>17,500</td><td>＋6,300</td><td>23,800</td></tr>
+<tr><td>第4年度</td><td>26,000</td><td>18,200</td><td>＋6,300</td><td>24,500</td></tr>
+<tr><td>合計／平均</td><td></td><td></td><td></td><td>98,000／24,500</td></tr>
+</tbody></table></div>
+<div aria-label="表（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>投資案Ｂ</th><th>収入－支出</th><th>× 0.7</th><th>＋ タックス・シールド 3,000</th><th>税引後ＣＦ</th></tr></thead><tbody>
+<tr><td>第1年度</td><td>15,000</td><td>10,500</td><td>＋3,000</td><td>13,500</td></tr>
+<tr><td>第2年度</td><td>12,000</td><td>8,400</td><td>＋3,000</td><td>11,400</td></tr>
+<tr><td>第3年度</td><td>11,000</td><td>7,700</td><td>＋3,000</td><td>10,700</td></tr>
+<tr><td>第4年度</td><td>11,000</td><td>7,700</td><td>＋3,000</td><td>10,700</td></tr>
+<tr><td>合計／平均</td><td></td><td></td><td></td><td>46,300／11,575</td></tr>
+</tbody></table></div>
+<div class="explanation-box-green">（1）Ａの回収期間：84,000 ÷ 24,500 = 3.428… → 3.43年<br>（確認）Ｂ：40,000 ÷ 11,575 = 3.455… → 3.46年<br>（2）（3）回収期間が短いＡが有利 → ア・短い</div>
+<div class="explanation-box-green">会計的投資利益率（年平均税引後利益 ÷ 投資額）<br>Ａ：年平均利益 (28,000 ＋ 25,000 ＋ 25,000 ＋ 26,000 － 21,000 × 4) ÷ 4 × 0.7 = 20,000 ÷ 4 × 0.7 = 3,500 → 3,500 ÷ 84,000 = 4.17％ → 4.2％<br>（5）Ｂ：(15,000 ＋ 12,000 ＋ 11,000 ＋ 11,000 － 10,000 × 4) ÷ 4 × 0.7 = 9,000 ÷ 4 × 0.7 = 1,575 → 1,575 ÷ 40,000 = 3.94％ → 3.9％<br>（4）（6）利益率が高いＡが有利 → 高い・ア</div>
+<div class="explanation-box-green">正味現在価値（Ａは6％、Ｂは5％の係数）<br>Ａ：25,900 × 0.9434 ＋ 23,800 × 0.8900 ＋ 23,800 × 0.8396 ＋ 24,500 × 0.7921 － 84,000<br>= 24,434.06 ＋ 21,182.00 ＋ 19,982.48 ＋ 19,406.45 － 84,000 = 1,004.99<br>Ｂ：13,500 × 0.9524 ＋ 11,400 × 0.9070 ＋ 10,700 × 0.8638 ＋ 10,700 × 0.8227 － 40,000<br>= 12,857.40 ＋ 10,339.80 ＋ 9,242.66 ＋ 8,802.89 － 40,000 = 1,242.75<br>（8）Ａ － Ｂ = 1,004.99 － 1,242.75 = △237.76 → 238万円<br>（9）ＡはＢより正味現在価値が小さい → 不利</div>
+<div class="explanation-box-green">（7）正味現在価値法・内部利益率法が考慮するのは「貨幣の時間価値」 → コ<br>（10）現在価値合計 ＝ 投資額 となる割引率 → 内部利益率 → ク</div>
+<p class="note explanation-text">回収期間法と会計的投資利益率法ではＡが有利、正味現在価値法ではＢが有利と結論が分かれます。文章の最後にあるとおり、複数の手法の結果と資金制約を踏まえて総合判断します。</p>
+                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>税引後ＣＦにタックス・シールド（減価償却費 × 税率）を加え忘れる誤りと、会計的投資利益率の分子に「利益」ではなく「キャッシュ・フロー」を使ってしまう誤りが多い問題です。正味現在価値ではＡは6％、Ｂは5％と<strong>案ごとに資本コストが違う</strong>ので、係数の列を取り違えないようにしましょう。（8）は「ＡをＢより採用した方が」なのでＡ － Ｂの符号で有利・不利を判断します。</p></aside><div class="answer">答え　⑴ 0.8163　⑵（1）3.43年（2）ア（3）短い（4）高い（5）3.9％（6）ア（7）コ（8）238万円（9）不利（10）ク</div>
+              </section>
+            </main>
+            <aside aria-label="解説動画とページ内目次" class="exam-learning-aside">
+              <section aria-labelledby="exam-video-title" class="exam-video-panel" id="examVideoPanel">
+                <h2 class="exam-video-panel__heading" id="exam-video-title"><span>解説動画</span><button aria-controls="examVideoContent" aria-expanded="true" class="exam-video-toggle" id="examVideoToggle" type="button"><span aria-hidden="true" class="exam-video-toggle__icon">⌃</span><span class="exam-video-toggle__label">動画を隠す</span></button></h2>
+                <div class="exam-video-body" id="examVideoContent">
+                <!-- 動画完成後、このプレースホルダーを .exam-video-frame の iframe に差し替えます。 -->
+                <div aria-label="解説動画は準備中です" class="exam-video-placeholder" role="img">
+                  <span aria-hidden="true" class="exam-video-placeholder__icon">▶</span>
+                  <span class="exam-video-placeholder__text">
+                    <strong>解説動画は準備中です</strong>
+                    <span>公開後、この場所で動画を視聴しながら解説を読めます。</span>
+                  </span>
+                </div>
+                              </div>
+              </section>
+              <nav aria-labelledby="exam-toc-title" class="exam-desktop-toc">
+                <h2 id="exam-toc-title">このページの目次</h2>
+                <ul class="exam-toc-overview">
+                  <li><a href="#usage-title">解答するときの注意</a></li>
+                  <li><a href="#legend-title">解説の凡例</a></li>
+                  <li><a href="#question-list">設問一覧</a></li>
+                  <li><a href="#answers">正答一覧</a></li>
+                </ul>
+                <p class="exam-toc-label">問題別解説</p>
+                <ol class="exam-toc-questions">
+                  <li><a href="#q1">1</a></li>
+                  <li><a href="#q2">2</a></li>
+                  <li><a href="#q3">3</a></li>
+                  <li><a href="#q4">4</a></li>
+                  <li><a href="#q5">5</a></li>
+                </ol>
+              </nav>
+            </aside>
+          </section>
+        </div>
+      </div>
+    </div>
+            <button aria-label="ページ上部へ戻る" class="page-top-button" id="pageTopButton" title="ページ上部へ戻る" type="button">
+              <svg aria-hidden="true" height="24" viewbox="0 0 24 24" width="24">
+                <path d="M6 15l6-6 6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"></path>
+              </svg>
+              <span>上へ</span>
+            </button>
+            <footer class="exam-footer site-footer">
+              <div class="footer-content">
+                <p class="footer-text">本解説は、公式問題・公式解式を参照して独自に作成した学習用コンテンツです。全国商業高等学校協会による公式解説・認定教材ではありません。</p>
+                <p class="footer-text">© 2026 全商関係hp. All Rights Reserved.</p>
+              </div>
+            </footer>
+            <script src="../../js/main.js"></script>
+            <script>
+            (() => {
+              const topButton = document.getElementById('pageTopButton');
+
+              const updateTopButton = () => {
+                if (topButton) {
+                  topButton.classList.toggle('is-visible', window.scrollY > 480);
+                }
+              };
+
+              if (topButton) {
+                topButton.addEventListener('click', () => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+                window.addEventListener('scroll', updateTopButton, { passive: true });
+                updateTopButton();
+              }
+
+              const tocLinks = Array.from(document.querySelectorAll('.exam-desktop-toc a[href^="#"]'));
+              const tocTargets = tocLinks
+                .map((link) => ({
+                  link,
+                  target: document.querySelector(link.getAttribute('href'))
+                }))
+                .filter((item) => item.target);
+              let tocUpdatePending = false;
+
+              const updateCurrentTocItem = () => {
+                if (!tocTargets.length) {
+                  return;
+                }
+
+                let currentItem = tocTargets[0];
+                const headerOffset = 180;
+
+                tocTargets.forEach((item) => {
+                  if (item.target.getBoundingClientRect().top <= headerOffset) {
+                    currentItem = item;
+                  }
+                });
+
+                tocTargets.forEach((item) => {
+                  const isCurrent = item === currentItem;
+                  item.link.classList.toggle('is-current', isCurrent);
+                  if (isCurrent) {
+                    item.link.setAttribute('aria-current', 'location');
+                  } else {
+                    item.link.removeAttribute('aria-current');
+                  }
+                });
+                tocUpdatePending = false;
+              };
+
+              const requestTocUpdate = () => {
+                if (!tocUpdatePending) {
+                  tocUpdatePending = true;
+                  window.requestAnimationFrame(updateCurrentTocItem);
+                }
+              };
+
+              window.addEventListener('scroll', requestTocUpdate, { passive: true });
+              window.addEventListener('resize', requestTocUpdate);
+              updateCurrentTocItem();
+
+              if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries) => {
+                  entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                      entry.target.classList.add('active');
+                      observer.unobserve(entry.target);
+                    }
+                  });
+                }, { threshold: 0.08 });
+
+                document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+              } else {
+                document.querySelectorAll('.reveal').forEach((element) => element.classList.add('active'));
+              }
+            })();
+            </script>
+          </body>
+          </html>
