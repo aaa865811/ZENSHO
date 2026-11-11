@@ -145,24 +145,24 @@ table {
   font-size: 1.5rem;
 }
 
-.answer-badge-wrapper {
+.q3rdh-rp {
   display: flex;
   align-items: center;
-  background-color: #f0fdf4;
-  border-left: 6px solid #22c55e;
+  background-color: #ffeaea;
+  border-left: 6px solid #ff8b8b;
   padding: 0rem 1rem;
   margin: 1rem 0rem 0.25rem 0rem;
   width: fit-content;
   border-radius: 0.25rem;
 }
 
-.answer-badge-label {
+.q3rdh-lb {
   font-weight: 900;
-  color: #16a34a;
+  color: #f83a3a;
   font-size: 1.25rem;
 }
 
-.answer-badge-text {
+.q3rdh-tx {
   font-weight: 700;
   font-size: 1.125rem;
   padding-left: 1rem;
@@ -233,9 +233,17 @@ table {
   margin: 1rem 0rem 1rem 0rem;
 }
 
-.text-link {
-  color: #2563eb;
-  text-decoration: underline;
+.exam-main a.text-link {  
+  padding-bottom: 2px;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 0 2px;
+  text-decoration: none;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  transition: background-size .3s ease;
+  color: #00a713;
 }
 
 .content-title-orange {
@@ -507,7 +515,6 @@ table {
 /*Main Content Area*/
 
 .main-content {
-  max-width: 1024px;
   width: 100%;
 }
 
@@ -1229,9 +1236,6 @@ a {
 
 /*Main Content Area*/
 
-.main-content {
-  max-width: var(--content-max-width);
-}
 
 .section-container {
   margin-top: var(--spacing-2xl);
@@ -1964,7 +1968,6 @@ html {
 .exam-main p a,
 .exam-main li a,
 .exam-main .problem-meta a,
-.exam-main a.text-link,
 .exam-footer .footer-text a {
   padding-bottom: 2px;
   color: var(--exam-accent);
@@ -2207,7 +2210,7 @@ html {
 
   .exam-learning-page .exam-learning-aside {
     position: sticky;
-    top: 78px;
+    top: 60px;
     z-index: 90;
     order: 1;
     width: min(100% - 20px, 1040px);
@@ -2335,6 +2338,11 @@ html {
   .bookkeeping-learning-page .bookkeeping-question-nav {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     max-width: none;
+  }
+
+    .bookkeeping-learning-page .question-section {
+    border: none;
+    box-shadow: none;
   }
 }
 
