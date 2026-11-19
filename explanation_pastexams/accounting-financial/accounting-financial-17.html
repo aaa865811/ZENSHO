@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 
 <html lang="ja">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <meta content="第17回（令和7年度）全商 財務会計検定試験。公式問題・審査基準を参照し、仕訳の根拠、税効果・期間配分の途中計算、連結修正仕訳まで説明する学習用解説。" name="description"/>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="第17回（令和7年度）全商 財務会計検定試験。公式問題・審査基準を参照し、仕訳の根拠、税効果・期間配分の途中計算、連結修正仕訳まで説明する学習用解説。" name="description" />
   <title>第17回 財務会計検定試験 解説</title>
-  <link href="../../css/site.css" rel="stylesheet"/>
-  <link href="../../css/header.css" rel="stylesheet"/>
+  <link href="../../css/site.css" rel="stylesheet" />
+  <link href="../../css/header.css" rel="stylesheet" />
 </head>
+
 <body class="page-wrapper exam-learning-page bookkeeping-learning-page" id="top">
   <header class="header">
     <a class="logo" href="../../index.html">
-      <img alt="ロゴ" class="header__logo--img" src="../../img/ZenSho-PAST.png"/>
+      <img alt="ロゴ" class="header__logo--img" src="../../img/ZenSho-PAST.png" />
     </a>
     <nav class="header__nav" id="header__nav">
       <ul>
@@ -51,7 +53,7 @@
   </header>
   <header class="header__res">
     <a class="logo" href="../../index.html">
-      <img alt="ロゴ" class="header__logo--img" height="auto" src="../../img/index_logo 1.png" width="auto"/>
+      <img alt="ロゴ" class="header__logo--img" height="auto" src="../../img/index_logo 1.png" width="auto" />
     </a>
     <nav class="header__nav">
       <ul class="heder__nav--list">
@@ -108,7 +110,8 @@
             <section aria-labelledby="usage-title" class="instruction-section reveal">
               <h2 id="usage-title">解答するときの注意</h2>
               <p>仕訳問題は指定された勘定科目の中から選びます。金額は円未満四捨五入、キャッシュ・フロー計算書と連結の設問は千円単位で、マイナスは「△」を付けます。</p>
-              <p>税効果会計を適用する設問では、税効果前の金額 × 実効税率（30％）で繰延税金資産・負債と法人税等調整額を必ず計算します。期間配分（ストック・オプション、直先差額、償却原価法）は「何か月分か」を先に数えてから金額を出します。</p>
+              <p>税効果会計を適用する設問では、税効果前の金額 ×
+                実効税率（30％）で繰延税金資産・負債と法人税等調整額を必ず計算します。期間配分（ストック・オプション、直先差額、償却原価法）は「何か月分か」を先に数えてから金額を出します。</p>
             </section>
             <section aria-labelledby="legend-title" class="legend-section reveal">
               <h2 id="legend-title">解説の凡例</h2>
@@ -138,15 +141,27 @@
             </section>
             <div class="source-box">
               <p><strong>出典：</strong>公益財団法人 全国商業高等学校協会主催 令和7年度 第17回 財務会計検定試験（2025年12月14日実施）</p>
-              <a href="ac_17_zaimukaikei_exa.pdf" target="_blank" rel="noopener noreferrer" class="text-link">問題PDF　　　</a>
-              <a href="ac_17_zaimukaikei_ans.pdf" target="_blank" rel="noopener noreferrer" class="text-link">解答PDF　　　</a>
+              <a href="https://zensho.or.jp/puf/download/exam/pastexam/2025/ac_17_zaimukaikei_exa.pdf" target="_blank"
+                rel="noopener noreferrer" class="text-link">試験問題PDF　　　</a>
+              <a href="https://zensho.or.jp/puf/download/exam/pastexam/2025/ac_17_zaimukaikei_yousi.pdf" target="_blank"
+                rel="noopener noreferrer" class="text-link">解答用紙PDF　　　</a>
+              <a href="https://zensho.or.jp/puf/download/exam/pastexam/2025/ac_17_zaimukaikei_ans.pdf" target="_blank"
+                rel="noopener noreferrer" class="text-link">模範解答PDF　　　</a>
               <p class="source-note">本記事は全商協会による公式解説ではありません。</p>
             </div>
+
+            <section aria-labelledby="legend-title" class="legend-section reveal">
+              <h2 id="legend-title">PDF版のダウンロードは<a class="text-link" href="./accounting-financial-17.pdf"
+                  rel="noopener noreferrer" target="_blank">こちら</a></h2>
+              <p class="legend-intro">学校の授業で使用するなど、紙媒体での解説が必要な方は、こちらをお使いください。</p>
+            </section>
+
             <h2 id="question-list">設問一覧</h2>
             <nav aria-label="設問へのリンク" class="question-nav bookkeeping-question-nav">
               <a href="#q1">1</a>
               <a href="#q2">2</a>
-              <a href="#q3">3</a>
+              <a href="#q3-1">3-1</a>
+              <a href="#q3-2">3-2</a>
               <a href="#q4">4</a>
               <a href="#q5">5</a>
             </nav>
@@ -154,378 +169,1749 @@
             <div aria-label="表（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
               <table class="summary-table">
                 <thead>
-                  <tr><th>番号</th><th>主な論点</th><th>正答</th></tr></thead>
+                  <tr>
+                    <th>番号</th>
+                    <th>主な論点</th>
+                    <th>正答</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>会計基準の正誤</td>
+                    <td>1 ○　2 ×　3 ×　4 ○　5 ×</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>決算整理仕訳</td>
+                    <td>1 株式報酬費用 540,000　2 減価償却費 4,800,000・圧縮積立金 1,680,000・繰延税金負債 720,000　3 ソフトウェア償却 2,250,000　4 利息費用
+                      19,409・減価償却費 2,129,390　5 現金 90,000・長期貸付金 71,560／受取利息 161,560</td>
+                  </tr>
+                  <tr>
+                    <td>3 問1</td>
+                    <td>外貨建取引・為替予約</td>
+                    <td>（ア）330,000円　（イ）160,000円　（ウ）前払費用 2,500円　（エ）為替差益 28,500円</td>
+                  </tr>
+                  <tr>
+                    <td>3 問2</td>
+                    <td>貸倒引当金の見積り</td>
+                    <td>（ア）100,000円　（イ）74,436円　（ウ）2,600,000円　（エ）3％　（オ）270,000円　（カ）2,808,836円</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>キャッシュ・フロー計算書（間接法）</td>
+                    <td>営業ＣＦ 17,840／投資ＣＦ △4,120／財務ＣＦ 4,540／増減額 18,260／期首 10,600／期末 28,860（各行は設問別解説を参照）</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>連結損益及び包括利益計算書</td>
+                    <td>売上高 3,427,000／営業利益 261,900／経常利益 327,200／当期純利益 293,400／親会社株主 286,120／非支配株主 7,280／包括利益
+                      298,500（各行は設問別解説を参照）</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h2 id="explanations">設問別解説</h2>
+
+            <section class="question-section reveal" id="q1">
+              <div class="question-main-title">
+                <h2>第１問</h2>
+              </div>
+              <div class="question-subheader-blue">文章の正誤判断</div>
+
+              <!-- BEGIN OFFICIAL QUESTION 1 -->
+              <details class="official-question official-question--placeholder">
+                <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                <blockquote class="official-question__body">
+                  <!-- 第1問の問題文欄 -->
+                  <div aria-hidden="true" class="official-question__space">
+                    <p>
+                      わが国の会計諸基準に照らして，次の文章のうち正しいものには○を，誤っているものには×を解答欄に記入しなさい。なお，会計諸基準については，令和7年4月1日現在有効なもので，新しいものを優先すること。
+                    </p>
+              </details>
+              <!-- END OFFICIAL QUESTION 1 -->
+              <section aria-label="問題1の一般的な解法" class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">会計基準の正誤判定問題</p>
+                <ol>
+                  <li>文章を「定義」「計算方法」「表示区分」「制度の目的」のどれを問うているかに分け、基準の原文の言い回しを思い出す。</li>
+                </ol>
+              </section>
+              <blockquote class="official-question__body">
+                <p>１．商業を営む企業が当期分の減価償却費を計上したとき，営業活動のためのものは販売費及び一般管理費として計上されるが，営業外のためのものは営業外費用として計上される。</p>
+              </blockquote>
+              <p class="explanation-text">　減価償却費は、営業用資産なら販売費及び一般管理費、投資不動産など営業外の資産なら営業外費用に計上します。</p>
+              <div class="answer-red-bold-underline">Ａ．１．〇</div>
+              
+              <blockquote class="official-question__body">
+                <p>２．退職給付債務は，退職給付見込額のうち退職時までに発生していると認められる額を割り引いて計算する。</p>
+              </blockquote>
+              <p class="explanation-text">　退職給付債務は「退職給付見込額のうち<strong>期末までに</strong>発生していると認められる額」を割り引いて計算します。「退職時までに」発生している額は退職給付見込額そのものになってしまうので誤りです。</p>
+              <div class="answer-red-bold-underline">Ａ．２．×</div>
+
+              <blockquote class="official-question__body">
+                <p>３．有形固定資産を購入した場合の取得原価は，購入代価に付随費用を加えた金額とするが，値引きまたは割戻しがある場合，それらを購入代価より控除しない。</p>
+              </blockquote>
+              <p class="explanation-text">　購入代価から値引き・割戻しを<strong>控除した</strong>額に付随費用を加えたものが取得原価です。「控除しない」は誤りです。</p>
+              <div class="answer-red-bold-underline">Ａ．３．×</div>
+
+              <blockquote class="official-question__body">
+                <p>４．その他の包括利益とは，包括利益のうち当期純利益に含まれない部分をいう。</p>
+              </blockquote>
+              <p class="explanation-text">　包括利益 ＝ 当期純利益 ＋ その他の包括利益 なので、その他の包括利益は「包括利益のうち当期純利益に含まれない部分」です。</p>
+              <div class="answer-red-bold-underline">Ａ．４．〇</div>
+              
+              <blockquote class="official-question__body">
+                <p>５．金融商品取引法に基づく財務諸表監査は，主に債権者保護の観点から行われる。</p>
+              </blockquote>
+              <p class="explanation-text">　金融商品取引法は<strong>投資者保護</strong>を目的としています。債権者保護は会社法の観点です。</p>
+              <div class="answer-red-bold-underline">Ａ．５．×</div>
+
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>
+                  2は「期末まで」と「退職時まで」の一語の違いで正誤が変わる典型問題です。3は「値引き・割戻しは控除する」「付随費用は加算する」の向きを確認しましょう。5は会社法と金融商品取引法の目的を入れ替えた出題が繰り返されています。
+                </p>
+              </aside>
+              <div class="answer">答え　1 ○　2 ×　3 ×　4 ○　5 ×</div>
+            </section>
+
+            <section class="question-section reveal" id="q2">
+              <div class="question-main-title">
+                <h2>第２問</h2>
+              </div>
+              <div class="question-subheader-blue">仕訳問題</div>
+
+              <!-- BEGIN OFFICIAL QUESTION 2 -->
+              <details class="official-question official-question--placeholder">
+                <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                <blockquote class="official-question__body">
+                  <!-- 第2問の問題文欄 -->
+                  <div aria-hidden="true" class="official-question__space">
+                    <p>次の各取引の仕訳を示しなさい。なお，計算上端数が生じる場合には，円未満を四捨五入すること。ただし，使用する勘定科目等は次の中から最も適切なものを選ぶこと。</p>
+                    <p>
+                      <small>現金／建物減価償却累計額／繰延税金資産／別途積立金／新株予約権／ソフトウェア償却／利息費用／短期貸付金／機械装置減価償却累計額／資産除去債務／圧縮積立金／受取利息／減価償却費／固定資産除却損／建物／ソフトウェア／繰延税金負債／繰越利益剰余金／国庫補助金受贈益／株式報酬費用／固定資産圧縮損／機械装置／長期貸付金／その他資本剰余金／自己株式／新株予約権戻入益／支払利息／法人税等調整額</small>
+                    </p>
+                </blockquote>
+              </details>
+              <!-- END OFFICIAL QUESTION 2 -->
+              <section aria-label="問題2の一般的な解法" class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">個別論点の決算整理仕訳</p>
+                <ol>
+                  <li>各勘定科目のホームポジションを把握して、何が増加／減少したのかというのをもとに仕訳を切る。</li>
+                  <li>ストック・オプション：株式報酬費用 ＝ 公正な評価単価 × 権利確定見込数 × 経過月数 ÷ 対象勤務期間 － 既計上額。相手科目は新株予約権。</li>
+                  <li>積立金方式の圧縮記帳：減価償却は取得原価で行い、圧縮積立金を耐用年数で取り崩す。税効果適用時は積立金（税効果後）の取崩と繰延税金負債の取崩を同時に行う。</li>
+                  <li>資産除去債務：利息費用 ＝ 期首債務 × 割引率、減価償却は（取得原価 ＋ 除去費用の現在価値）÷ 耐用年数。償却原価法（利息法）：受取利息 ＝ 帳簿価額 ×
+                    実効利子率、現金受取額との差を貸付金に加算。</li>
+                </ol>
+              </section>
+              <div class="content-title-orange"><strong>１．ストック・オプション</strong></div>
+              <blockquote class="official-question__body">
+                <p>１．北海道商事株式会社（決算年1回3月31日）は，×7年10月1日に従業員に対して合計42個のストック・オプションを付与した。権利確定日は×9年9月30日であり，付与日における公正な評価単価は新株予約権1個あたり60,000円である。本日（×8年3月31日），決算日において必要な仕訳を示しなさい。なお，決算日における権利確定見込数は36個である。</p>
+              </blockquote>
+              <div class="general-method">
+                <p>
+                  株式報酬費用　計上金額<br>
+                  　公正な評価単価 × 決算日の権利確定見込数 × 付与日から計算日までの経過月数 ÷ 対象勤務期間 － 計上済株式報酬費用
+                </p>
+              </div>
+              <p class="explanation-text">
+                ストック・オプションとは、会社の従業員等が、予め決められた価格で自社株式を購入できる権利を付与する形の報酬形態です。業績向上等によって株価が上昇すれば、購入価格との差額を利益として受け取ることができます。<br>
+                計算に必要な事項を整理します。<br>
+                　公正な評価単価：60,000円<br>
+                　決算日における権利確定見込数：36個<br>
+                　付与日から計算日までの経過月数：６か月<br>
+                　対象勤務期間は×7年10月1日〜×9年9月30日の 24か月<br>
+                　このストック・オプションに係る計上済みの株式報酬費用はありません。
+              </p>
+              <div class="explanation-box-green">60,000 × 36個 × 6か月 ÷ 24か月 = 540,000</div>
+              <div aria-label="仕訳" class="table-scroll" role="region" tabindex="0">
+                <table class="calc-table journal-table">
+                  <thead>
+                    <tr>
+                      <th>借方科目</th>
+                      <th>金額</th>
+                      <th>貸方科目</th>
+                      <th>金額</th>
+                    </tr>
+                  </thead>
                   <tbody>
-                    <tr><td>1</td><td>会計基準の正誤</td><td>1 ○　2 ×　3 ×　4 ○　5 ×</td></tr>
-                    <tr><td>2</td><td>決算整理仕訳</td><td>1 株式報酬費用 540,000　2 減価償却費 4,800,000・圧縮積立金 1,680,000・繰延税金負債 720,000　3 ソフトウェア償却 2,250,000　4 利息費用 19,409・減価償却費 2,129,390　5 現金 90,000・長期貸付金 71,560／受取利息 161,560</td></tr>
-                    <tr><td>3 問1</td><td>外貨建取引・為替予約</td><td>（ア）330,000円　（イ）160,000円　（ウ）前払費用 2,500円　（エ）為替差益 28,500円</td></tr>
-                    <tr><td>3 問2</td><td>貸倒引当金の見積り</td><td>（ア）100,000円　（イ）74,436円　（ウ）2,600,000円　（エ）3％　（オ）270,000円　（カ）2,808,836円</td></tr>
-                    <tr><td>4</td><td>キャッシュ・フロー計算書（間接法）</td><td>営業ＣＦ 17,840／投資ＣＦ △4,120／財務ＣＦ 4,540／増減額 18,260／期首 10,600／期末 28,860（各行は設問別解説を参照）</td></tr>
-                    <tr><td>5</td><td>連結損益及び包括利益計算書</td><td>売上高 3,427,000／営業利益 261,900／経常利益 327,200／当期純利益 293,400／親会社株主 286,120／非支配株主 7,280／包括利益 298,500（各行は設問別解説を参照）</td></tr>
+                    <tr>
+                      <td class="journal-label">株式報酬費用</td>
+                      <td class="journal-value">540,000</td>
+                      <td class="journal-label">新株予約権</td>
+                      <td class="journal-value">540,000</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
-              <h2 id="explanations">設問別解説</h2>
 
-              <section class="question-section reveal" id="q1">
-                <div class="question-main-title"><h2>第１問</h2></div>
-                <div class="question-subheader-blue">会計諸基準に照らして文章の正誤を判断する</div>
+              <div class="content-title-orange"><strong>２．積立金方式の圧縮記帳（税効果あり）</strong></div>
+              <blockquote class="official-question__body">
+                <p>２．九州商事株式会社（決算年1回）は，×7年4月1日に建物（取得原価：48,000,000円，耐用年数：10年，残存価額：零（0）円，償却方法：定額法，記帳方法：間接法）をかねて受け取っていた国庫補助金24,000,000円と自己資金24,000,000円で取得し，使用を開始していた。なお，国庫補助金相当額を×8年3月31日に積立金方式で圧縮記帳を行っている。本日（×9年3月31日），決算日のため減価償却を行う。また，実効税率30％として税効果会計を適用すること。</p>
+              </blockquote>
+              <div class="general-method">
+                <img src="../../img/asshukuPc.png" class="res-pc">
+                <img src="../../img/asshukuPh.png" class="res-ph">
+              </div>
+              <p class="explanation-text">
+                国庫補助金を使用して購入した固定資産でも、取得原価は実際の金額（国庫補助金＋自己資金分）で計上されます。しかしながら、これをもとに減価償却を行っていくと、自己資金から支払っていない分まで損失に計上されてしまいます。そのため、「圧縮記帳」を行います。<br>
+                積立金方式の圧縮記帳では、取得原価はそのままで、差額を「圧縮積立金」として繰越利益剰余金を取り崩し、純資産の部に計上します。その後、減価償却とともに対応分を繰越利益剰余金へ振り戻します。<br>
+                ただし、積立金方式は税法上認められていないため、直接減額方式（取得原価を自己資金からの支払分のみにする方法）との差額分の税金を調整する必要があります。<br>
+                直接減額方式では、国庫補助金を受贈した際に、その金額分を取得原価から減額し、「固定資産圧縮損」を計上します。そのため、積立金方式の場合は、直接減額方式に比べて毎年の減価償却費が多くなり、会計上は以降の税金が少なくなりますが、税法上は、その分の金額は損金に算入されないため、実際の税額は過剰な減価償却費×税率分多くなります。<br>
+                この差異を調整する税効果会計が必要になります。<br>
+                　減価償却は取得原価48,000,000円で行います。国庫補助金相当額24,000,000円は前期末に圧縮積立金として積み立てられており、税効果会計を適用しているので、繰延税金負債は 24,000,000 × 0.3 ＝ 7,200,000円、積立金はそれを除いた 24,000,000 － 7,200,000 ＝ 16,800,000円 が計上されています。これらを耐用年数10年で取り崩します。</p>
+              <div class="explanation-box-green">
+                減価償却費：48,000,000 ÷ 10年 = 4,800,000<br>
+                圧縮積立金の取崩：16,800,000 ÷ 10年 = 1,680,000<br>
+                繰延税金負債の取崩：7,200,000 ÷ 10年 = 720,000
+              </div>
+              <div aria-label="仕訳" class="table-scroll" role="region" tabindex="0">
+                <table class="calc-table journal-table">
+                  <thead>
+                    <tr>
+                      <th>借方科目</th>
+                      <th>金額</th>
+                      <th>貸方科目</th>
+                      <th>金額</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">減価償却費</td>
+                      <td class="journal-value">4,800,000</td>
+                      <td class="journal-label">建物減価償却累計額</td>
+                      <td class="journal-value">4,800,000</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label">圧縮積立金</td>
+                      <td class="journal-value">1,680,000</td>
+                      <td class="journal-label">繰越利益剰余金</td>
+                      <td class="journal-value">1,680,000</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label">繰延税金負債</td>
+                      <td class="journal-value">720,000</td>
+                      <td class="journal-label">法人税等調整額</td>
+                      <td class="journal-value">720,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="content-title-orange"><strong>３．市場販売目的ソフトウェア</strong></div>
+              <blockquote class="official-question__body">
+                <p>３．当期首（×7年度期首）に無形固定資産として計上した市場販売目的のソフトウェア4,500,000円について，決算につき見込販売数量に基づいて減価償却を行う。なお，当該ソフトウェアの見込有効期間は3年であり，当期の販売数量と次期以降の各年度見込販売数量は次のとおりである。<br>
+                  ×7年度：1,500個　×8年度：700個　×9年度：800個</p>
+              </blockquote>
 
-                <!-- BEGIN OFFICIAL QUESTION 1 -->
-                <details class="official-question official-question--placeholder">
-                  <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
-                  <blockquote class="official-question__body">
-                    <!-- 第1問の問題文欄 -->
-                    <div aria-hidden="true" class="official-question__space">
-                      <p>わが国の会計諸基準に照らして，次の文章のうち正しいものには○を，誤っているものには×を解答欄に記入しなさい。なお，会計諸基準については，令和7年4月1日現在有効なもので，新しいものを優先すること。</p>
-<ol>
-<li>商業を営む企業が当期分の減価償却費を計上したとき，営業活動のためのものは販売費及び一般管理費として計上されるが，営業外のためのものは営業外費用として計上される。</li>
-<li>退職給付債務は，退職給付見込額のうち退職時までに発生していると認められる額を割り引いて計算する。</li>
-<li>有形固定資産を購入した場合の取得原価は，購入代価に付随費用を加えた金額とするが，値引きまたは割戻しがある場合，それらを購入代価より控除しない。</li>
-<li>その他の包括利益とは，包括利益のうち当期純利益に含まれない部分をいう。</li>
-<li>金融商品取引法に基づく財務諸表監査は，主に債権者保護の観点から行われる。</li>
-</ol>
-                    </div>
-                  </blockquote>
-                </details>
-                <!-- END OFFICIAL QUESTION 1 -->
-                <section aria-label="問題1の一般的な解法" class="general-method">
-                  <h4>一般的な解法</h4>
-                  <p class="method-title">会計基準の正誤判定問題</p>
-                  <ol><li>文章を「定義」「計算方法」「表示区分」「制度の目的」のどれを問うているかに分け、基準の原文の言い回しを思い出す。</li><li>計算方法の文は「いつまでに発生した分か」「何を加減するか」の語句を一つずつ照合する。</li><li>制度の目的は、会社法＝債権者保護（分配可能額の規制）、金融商品取引法＝投資者保護、という対比で覚える。</li></ol>
-                </section>
-<p class="explanation-text">1．減価償却費は、営業用資産なら販売費及び一般管理費、投資不動産など営業外の資産なら営業外費用に計上します。<strong>○</strong></p>
-<p class="explanation-text">2．退職給付債務は「退職給付見込額のうち<strong>期末までに</strong>発生していると認められる額」を割り引いて計算します。「退職時までに」発生している額は退職給付見込額そのものになってしまうので誤りです。<strong>×</strong></p>
-<p class="explanation-text">3．購入代価から値引き・割戻しを<strong>控除した</strong>額に付随費用を加えたものが取得原価です。「控除しない」は誤りです。<strong>×</strong></p>
-<p class="explanation-text">4．包括利益 ＝ 当期純利益 ＋ その他の包括利益 なので、その他の包括利益は「包括利益のうち当期純利益に含まれない部分」です。<strong>○</strong></p>
-<p class="explanation-text">5．金融商品取引法は<strong>投資者保護</strong>を目的としています。債権者保護は会社法の観点です。<strong>×</strong></p>
-                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>2は「期末まで」と「退職時まで」の一語の違いで正誤が変わる典型問題です。3は「値引き・割戻しは控除する」「付随費用は加算する」の向きを確認しましょう。5は会社法と金融商品取引法の目的を入れ替えた出題が繰り返されています。</p></aside><div class="answer">答え　1 ○　2 ×　3 ×　4 ○　5 ×</div>
+              <p class="explanation-text">　見込販売数量に基づく償却額と、残存有効期間に基づく均等配分額のいずれか<strong>大きい方</strong>を償却します。</p>
+              <div class="explanation-box-green">
+                見込販売数量による額：<br>
+                　4,500,000 × 1,500個 ÷ (1,500 ＋ 700 ＋ 800)個 =<br>
+                　4,500,000 × 1,500 ÷ 3,000 = 2,250,000<br>
+                均等配分額：<br>
+                　4,500,000 ÷ 3年 = 1,500,000<br>
+                　→ 大きい方 2,250,000
+              </div>
+              <div aria-label="仕訳" class="table-scroll" role="region" tabindex="0">
+                <table class="calc-table journal-table">
+                  <thead>
+                    <tr>
+                      <th>借方科目</th>
+                      <th>金額</th>
+                      <th>貸方科目</th>
+                      <th>金額</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">ソフトウェア償却</td>
+                      <td class="journal-value">2,250,000</td>
+                      <td class="journal-label">ソフトウェア</td>
+                      <td class="journal-value">2,250,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="content-title-orange"><strong>４．資産除去債務</strong></div>
+              <blockquote class="official-question__body">
+                <p>当社は当期首（×7年度期首）に機械装置（取得原価：10,000,000円，耐用年数：5年，残存価額：零（0）円，償却方法：定額法，記帳方法：間接法）を取得し，使用を開始した。当社は使用後に機械装置を除去する法的義務がある。機械装置を除去する際の支出は750,000円と見積もられている。割引率は年3％で，当期首の機械装置の取得および資産除去債務の計上は適正に処理されている。当期末の決算整理仕訳（利息費用の計上と減価償却）を行う。なお，割引計算をする際には次の現価係数を用いること。（現価係数　5年0.8626）</p></blockquote>
+              <p class="explanation-text">　当期首に計上した資産除去債務は 750,000 × 0.8626 ＝ 646,950円で、同額が機械装置の取得原価に加算されています。</p>
+              <div class="explanation-box-green">利息費用：646,950 × 3％ = 19,408.5 → 19,409（円未満四捨五入）<br>減価償却費：(10,000,000 ＋
+                646,950) ÷ 5年 = 2,129,390</div>
+              <div aria-label="仕訳" class="table-scroll" role="region" tabindex="0">
+                <table class="calc-table journal-table">
+                  <thead>
+                    <tr>
+                      <th>借方科目</th>
+                      <th>金額</th>
+                      <th>貸方科目</th>
+                      <th>金額</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">利息費用</td>
+                      <td class="journal-value">19,409</td>
+                      <td class="journal-label">資産除去債務</td>
+                      <td class="journal-value">19,409</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label">減価償却費</td>
+                      <td class="journal-value">2,129,390</td>
+                      <td class="journal-label">機械装置減価償却累計額</td>
+                      <td class="journal-value">2,129,390</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="content-title-orange"><strong>５．償却原価法（利息法）</strong></div>
+              <blockquote class="official-question__body"><p>×7年4月1日に，東海商事株式会社へ債権金額5,000,000円を4,616,000円で貸し付けた。（貸付期間：5年，券面利子率：年1.8％，実効利子率：年3.5％，利払日：3月末日）本日×8年3月31日（決算日）に，利払日を迎え，利息を現金で受け取った。なお，債権金額と取得価額の差額は，金利の調整と認められるため，償却原価法（利息法）で処理する。</p></blockquote>
+              <p class="explanation-text">　受取利息は帳簿価額（取得価額）に実効利子率を掛けた額で、現金で受け取るのは債権金額に券面利子率を掛けた額です。差額を貸付金の帳簿価額に加えます。期末日から１年を超えて返済日が到来するので、「長期貸付金」で処理します。</p>
+              <div class="explanation-box-green">受取利息（実効利子）：4,616,000 × 3.5％ = 161,560<br>現金受取額（券面利子）：5,000,000 × 1.8％ =
+                90,000<br>償却額：161,560 － 90,000 = 71,560 → 長期貸付金に加算</div>
+              <div aria-label="仕訳" class="table-scroll" role="region" tabindex="0">
+                <table class="calc-table journal-table">
+                  <thead>
+                    <tr>
+                      <th>借方科目</th>
+                      <th>金額</th>
+                      <th>貸方科目</th>
+                      <th>金額</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">現金</td>
+                      <td class="journal-value">90,000</td>
+                      <td class="journal-label">受取利息</td>
+                      <td class="journal-value">161,560</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label">長期貸付金</td>
+                      <td class="journal-value">71,560</td>
+                      <td class="journal-label"></td>
+                      <td class="journal-value"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>
+                  1は付与数42個ではなく<strong>権利確定見込数36個</strong>で計算し、経過月数は付与日からの6か月です。2は税効果を適用しているので、圧縮積立金の取崩額を2,400,000円としないよう、税効果後（×0.7）で計算します。4の利息費用は「期首の資産除去債務」に割引率を掛けます。除去費用750,000円に直接掛けないよう注意しましょう。5は実効利子率を債権金額5,000,000円に掛けてしまう誤りが多い問題です。
+                </p>
+              </aside>
+            </section>
+
+            <section class="question-section reveal" id="q3-1">
+              <div class="question-main-title">
+                <h2>第３問</h2>
+              </div>
+              <div class="question-subheader-blue">外貨建取引（為替予約の振当処理）と貸倒引当金の見積り</div>
+
+              <section aria-label="問題3の一般的な解法" class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">外貨換算と貸倒見積高の算定</p>
+                <ol>
+                  <li>
+                    外貨建金銭債権債務は決算日の直物相場で換算し、差額は為替差損益。為替予約（振当処理）を付した債務は先物相場で固定し、直々差額（取引日→予約日の直物差）は予約日の損益、直先差額（予約日の直物→先物）は決済日までの期間で月割配分する。
+                  </li>
+                  <li>キャッシュ・フロー見積法：条件緩和後の将来キャッシュ・フロー（利息 × 年金現価係数 ＋ 元本 ×
+                    現価係数）を<strong>当初の約定利子率</strong>で割り引き、帳簿価額との差額を貸倒見積高とする。</li>
+                  <li>貸倒実績率法：各年の（翌期の貸倒損失 ÷ 期末一般債権残高）の平均。差額補充法の繰入額 ＝ 各区分の貸倒見積高合計 － 決算整理前の貸倒引当金残高。</li>
+                </ol>
               </section>
 
-              <section class="question-section reveal" id="q2">
-                <div class="question-main-title"><h2>第２問</h2></div>
-                <div class="question-subheader-blue">ストック・オプション，圧縮記帳，ソフトウェア，資産除去債務，償却原価法の仕訳</div>
-
-                <!-- BEGIN OFFICIAL QUESTION 2 -->
-                <details class="official-question official-question--placeholder">
-                  <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
-                  <blockquote class="official-question__body">
-                    <!-- 第2問の問題文欄 -->
-                    <div aria-hidden="true" class="official-question__space">
-                      <p>次の各取引の仕訳を示しなさい。なお，計算上端数が生じる場合には，円未満を四捨五入すること。ただし，使用する勘定科目等は次の中から最も適切なものを選ぶこと。</p>
-<p><small>現金／建物減価償却累計額／繰延税金資産／別途積立金／新株予約権／ソフトウェア償却／利息費用／短期貸付金／機械装置減価償却累計額／資産除去債務／圧縮積立金／受取利息／減価償却費／固定資産除却損／建物／ソフトウェア／繰延税金負債／繰越利益剰余金／国庫補助金受贈益／株式報酬費用／固定資産圧縮損／機械装置／長期貸付金／その他資本剰余金／自己株式／新株予約権戻入益／支払利息／法人税等調整額</small></p>
-<ol>
-<li>北海道商事株式会社（決算年1回3月31日）は，×7年10月1日に従業員に対して合計42個のストック・オプションを付与した。権利確定日は×9年9月30日であり，付与日における公正な評価単価は新株予約権1個あたり60,000円である。本日（×8年3月31日），決算日において必要な仕訳を示しなさい。なお，決算日における権利確定見込数は36個である。</li>
-<li>九州商事株式会社（決算年1回）は，×7年4月1日に建物（取得原価：48,000,000円，耐用年数：10年，残存価額：零（0）円，償却方法：定額法，記帳方法：間接法）をかねて受け取っていた国庫補助金24,000,000円と自己資金24,000,000円で取得し，使用を開始していた。なお，国庫補助金相当額を×8年3月31日に積立金方式で圧縮記帳を行っている。本日（×9年3月31日），決算日のため減価償却を行う。また，実効税率30％として税効果会計を適用すること。</li>
-<li>当期首（×7年度期首）に無形固定資産として計上した市場販売目的のソフトウェア4,500,000円について，決算につき見込販売数量に基づいて減価償却を行う。なお，当該ソフトウェアの見込有効期間は3年であり，当期の販売数量と次期以降の各年度見込販売数量は次のとおりである。<br>×7年度：1,500個　×8年度：700個　×9年度：800個</li>
-<li>当社は当期首（×7年度期首）に機械装置（取得原価：10,000,000円，耐用年数：5年，残存価額：零（0）円，償却方法：定額法，記帳方法：間接法）を取得し，使用を開始した。当社は使用後に機械装置を除去する法的義務がある。機械装置を除去する際の支出は750,000円と見積もられている。割引率は年3％で，当期首の機械装置の取得および資産除去債務の計上は適正に処理されている。当期末の決算整理仕訳（利息費用の計上と減価償却）を行う。なお，割引計算をする際には次の現価係数を用いること。（現価係数　5年0.8626）</li>
-<li>×7年4月1日に，東海商事株式会社へ債権金額5,000,000円を4,616,000円で貸し付けた。（貸付期間：5年，券面利子率：年1.8％，実効利子率：年3.5％，利払日：3月末日）本日×8年3月31日（決算日）に，利払日を迎え，利息を現金で受け取った。なお，債権金額と取得価額の差額は，金利の調整と認められるため，償却原価法（利息法）で処理する。</li>
-</ol>
+              <div class="content-title-orange"><strong>問1</strong></div>
+              <details class="official-question official-question--placeholder">
+                <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                <blockquote class="official-question__body">
+                  <!-- 第3問の問題文欄 -->
+                  <div aria-hidden="true" class="official-question__space">
+                    <p>
+                      <strong>問1</strong>　次の外貨建取引に関する〈資料〉に基づいて，当期末（×2年3月31日　決算年1回）の貸借対照表及び損益計算書に計上する解答用紙の（ア）～（エ）の金額を答えなさい。なお，当社は当期より営業を開始しており〈資料〉の他に外貨建取引及び掛け取引は無いものとする。
+                    </p>
+                    <p>〈資料〉<br>⑴
+                      輸入取引に関する資料<br>×2年2月1日　A社から商品1,000ドルを輸入し，代金は掛けとした。決済日は×2年4月30日である。<br>×2年3月1日　上記の買掛金（1,000ドル）に対して，為替予約を締結した。先物為替相場は1ドルあたり160円である。なお，為替予約については振当処理を行うこと。<br>×2年3月31日　決算日を迎えたため直先差額を期間配分した。
+                    </p>
+                    <p>⑵ 輸出取引に関する資料<br>×1年12月1日　B社へ商品3,000ドルを輸出し，代金は掛けとした。<br>×2年2月1日　上記の売掛金のうち1,000ドルを現金で回収した。</p>
+                    <p>⑶ 決算日における外貨建金銭債権・債務　売掛金 2,000ドル　買掛金 1,000ドル</p>
+                    <p>⑷ 直物為替相場に関する資料（1ドルあたり）</p>
+                    <div aria-label="直物為替相場" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th>日付</th>
+                            <th>直物為替相場（1ドル）</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>×1年12月1日</td>
+                            <td>148円</td>
+                          </tr>
+                          <tr>
+                            <td>×2年2月1日</td>
+                            <td>150円</td>
+                          </tr>
+                          <tr>
+                            <td>×2年3月1日</td>
+                            <td>155円</td>
+                          </tr>
+                          <tr>
+                            <td>×2年3月31日</td>
+                            <td>165円</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                  </blockquote>
-                </details>
-                <!-- END OFFICIAL QUESTION 2 -->
-                <section aria-label="問題2の一般的な解法" class="general-method">
-                  <h4>一般的な解法</h4>
-                  <p class="method-title">個別論点の決算整理仕訳</p>
-                  <ol><li>ストック・オプション：株式報酬費用 ＝ 公正な評価単価 × 権利確定見込数 × 経過月数 ÷ 対象勤務期間 － 既計上額。相手科目は新株予約権。</li><li>積立金方式の圧縮記帳：減価償却は取得原価で行い、圧縮積立金を耐用年数で取り崩す。税効果適用時は積立金（税効果後）の取崩と繰延税金負債の取崩を同時に行う。</li><li>資産除去債務：利息費用 ＝ 期首債務 × 割引率、減価償却は（取得原価 ＋ 除去費用の現在価値）÷ 耐用年数。償却原価法（利息法）：受取利息 ＝ 帳簿価額 × 実効利子率、現金受取額との差を貸付金に加算。</li></ol>
-                </section>
-<div class="content-title-orange"><strong>1．ストック・オプション</strong></div><p class="explanation-text">　対象勤務期間は×7年10月1日〜×9年9月30日の24か月、当期末までの経過は6か月です。権利確定見込数（36個）で計算します。</p>
-<div class="explanation-box-green">60,000 × 36個 × 6か月 ÷ 24か月 = 540,000</div>
-<div aria-label="仕訳" class="table-scroll" role="region" tabindex="0"><table class="calc-table journal-table"><thead><tr><th>借方科目</th><th>金額</th><th>貸方科目</th><th>金額</th></tr></thead><tbody>
-<tr><td class="journal-label">株式報酬費用</td><td class="journal-value">540,000</td><td class="journal-label">新株予約権</td><td class="journal-value">540,000</td></tr>
-</tbody></table></div>
-<div class="content-title-orange"><strong>2．積立金方式の圧縮記帳（税効果あり）</strong></div><p class="explanation-text">　減価償却は取得原価48,000,000円で行います。国庫補助金相当額24,000,000円は前期末に圧縮積立金として積み立てられており、税効果を適用しているので、積立金は税効果後の 24,000,000 × (1 － 0.3) ＝ 16,800,000円、繰延税金負債は 24,000,000 × 0.3 ＝ 7,200,000円 が計上されています。これらを耐用年数10年で取り崩します。</p>
-<div class="explanation-box-green">減価償却費：48,000,000 ÷ 10年 = 4,800,000<br>圧縮積立金の取崩：16,800,000 ÷ 10年 = 1,680,000（＝ 24,000,000 ÷ 10 × 0.7）<br>繰延税金負債の取崩：7,200,000 ÷ 10年 = 720,000（＝ 24,000,000 ÷ 10 × 0.3）</div>
-<div aria-label="仕訳" class="table-scroll" role="region" tabindex="0"><table class="calc-table journal-table"><thead><tr><th>借方科目</th><th>金額</th><th>貸方科目</th><th>金額</th></tr></thead><tbody>
-<tr><td class="journal-label">減価償却費</td><td class="journal-value">4,800,000</td><td class="journal-label">建物減価償却累計額</td><td class="journal-value">4,800,000</td></tr>
-<tr><td class="journal-label">圧縮積立金</td><td class="journal-value">1,680,000</td><td class="journal-label">繰越利益剰余金</td><td class="journal-value">1,680,000</td></tr>
-<tr><td class="journal-label">繰延税金負債</td><td class="journal-value">720,000</td><td class="journal-label">法人税等調整額</td><td class="journal-value">720,000</td></tr>
-</tbody></table></div>
-<div class="content-title-orange"><strong>3．市場販売目的ソフトウェア</strong></div><p class="explanation-text">　見込販売数量に基づく償却額と、残存有効期間に基づく均等配分額のいずれか<strong>大きい方</strong>を償却します。</p>
-<div class="explanation-box-green">見込販売数量による額：4,500,000 × 1,500個 ÷ (1,500 ＋ 700 ＋ 800)個 = 4,500,000 × 1,500 ÷ 3,000 = 2,250,000<br>均等配分額：4,500,000 ÷ 3年 = 1,500,000<br>→ 大きい方 2,250,000</div>
-<div aria-label="仕訳" class="table-scroll" role="region" tabindex="0"><table class="calc-table journal-table"><thead><tr><th>借方科目</th><th>金額</th><th>貸方科目</th><th>金額</th></tr></thead><tbody>
-<tr><td class="journal-label">ソフトウェア償却</td><td class="journal-value">2,250,000</td><td class="journal-label">ソフトウェア</td><td class="journal-value">2,250,000</td></tr>
-</tbody></table></div>
-<div class="content-title-orange"><strong>4．資産除去債務</strong></div><p class="explanation-text">　当期首に計上した資産除去債務は 750,000 × 0.8626 ＝ 646,950円で、同額が機械装置の取得原価に加算されています。</p>
-<div class="explanation-box-green">利息費用：646,950 × 3％ = 19,408.5 → 19,409（円未満四捨五入）<br>減価償却費：(10,000,000 ＋ 646,950) ÷ 5年 = 2,129,390</div>
-<div aria-label="仕訳" class="table-scroll" role="region" tabindex="0"><table class="calc-table journal-table"><thead><tr><th>借方科目</th><th>金額</th><th>貸方科目</th><th>金額</th></tr></thead><tbody>
-<tr><td class="journal-label">利息費用</td><td class="journal-value">19,409</td><td class="journal-label">資産除去債務</td><td class="journal-value">19,409</td></tr>
-<tr><td class="journal-label">減価償却費</td><td class="journal-value">2,129,390</td><td class="journal-label">機械装置減価償却累計額</td><td class="journal-value">2,129,390</td></tr>
-</tbody></table></div>
-<div class="content-title-orange"><strong>5．償却原価法（利息法）</strong></div><p class="explanation-text">　受取利息は帳簿価額（取得価額）に実効利子率を掛けた額で、現金で受け取るのは債権金額に券面利子率を掛けた額です。差額を貸付金の帳簿価額に加えます。</p>
-<div class="explanation-box-green">受取利息（実効利子）：4,616,000 × 3.5％ = 161,560<br>現金受取額（券面利子）：5,000,000 × 1.8％ = 90,000<br>償却額：161,560 － 90,000 = 71,560 → 長期貸付金に加算</div>
-<div aria-label="仕訳" class="table-scroll" role="region" tabindex="0"><table class="calc-table journal-table"><thead><tr><th>借方科目</th><th>金額</th><th>貸方科目</th><th>金額</th></tr></thead><tbody>
-<tr><td class="journal-label">現金</td><td class="journal-value">90,000</td><td class="journal-label">受取利息</td><td class="journal-value">161,560</td></tr>
-<tr><td class="journal-label">長期貸付金</td><td class="journal-value">71,560</td><td class="journal-label"></td><td class="journal-value"></td></tr>
-</tbody></table></div>
-<p class="note explanation-text">別解として、貸方の受取利息161,560を「受取利息90,000」と「受取利息71,560」に分けても正解とされています。貸付期間5年なので、勘定科目は<strong>長期</strong>貸付金です。</p>
-                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>1は付与数42個ではなく<strong>権利確定見込数36個</strong>で計算し、経過月数は付与日からの6か月です。2は税効果を適用しているので、圧縮積立金の取崩額を2,400,000円としないよう、税効果後（×0.7）で計算します。4の利息費用は「期首の資産除去債務」に割引率を掛けます。除去費用750,000円に直接掛けないよう注意しましょう。5は実効利子率を債権金額5,000,000円に掛けてしまう誤りが多い問題です。</p></aside><div class="answer">答え　1 (借)株式報酬費用 540,000 (貸)新株予約権 540,000　2 (借)減価償却費 4,800,000／圧縮積立金 1,680,000／繰延税金負債 720,000 (貸)建物減価償却累計額 4,800,000／繰越利益剰余金 1,680,000／法人税等調整額 720,000　3 (借)ソフトウェア償却 2,250,000 (貸)ソフトウェア 2,250,000　4 (借)利息費用 19,409／減価償却費 2,129,390 (貸)資産除去債務 19,409／機械装置減価償却累計額 2,129,390　5 (借)現金 90,000／長期貸付金 71,560 (貸)受取利息 161,560</div>
-              </section>
+                    <p>解答欄：（ア）売掛金　円　（イ）買掛金　円　（ウ）前払費用・前受収益（どちらかを○で囲む）　円　（エ）為替差損・為替差益（どちらかを○で囲む）　円</p>
+                  </div>
+                </blockquote>
+              </details>
+              <div class="q3rdh-rp"><span class="q3rdh-tx">売掛金</span></div>
+              <p class="explanation-text">
+                外貨建の資産／負債は基本的に決算日時点の為替相場を元に換算します。決算日の為替相場は１ドル165円ですので、期末残高をそのまま換算します。
+              </p>
+              <div class="explanation-box-green">
+                2,000ドル × 165円／ドル ＝ <span class="red-u">330,000</span>
+              </div>
+              <div class="answer-red-bold-underline">Ａ．（ア） 330,000(円)</div>
 
-              <section class="question-section reveal" id="q3">
-                <div class="question-main-title"><h2>第３問</h2></div>
-                <div class="question-subheader-blue">外貨建取引（為替予約の振当処理）と貸倒引当金の見積り</div>
+              <div class="q3rdh-rp"><span class="q3rdh-tx">買掛金</span></div>
+              <p class="explanation-text">
+                為替予約を付した債権債務については、その予約した日の先物相場を元に換算します。予約日(3/1)の先物相場は１ドル160円ですので、その金額で為替予約をした金額分換算します。
+              </p>
+              <div class="explanation-box-green">
+                1,000ドル × 160円／ドル ＝ <span class="red-u">160,000</span>
+              </div>
+              <div class="answer-red-bold-underline">Ａ．（イ） 160,000(円)</div>
 
-                <!-- BEGIN OFFICIAL QUESTION 3 -->
-                <details class="official-question official-question--placeholder">
-                  <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
-                  <blockquote class="official-question__body">
-                    <!-- 第3問の問題文欄 -->
-                    <div aria-hidden="true" class="official-question__space">
-                      <p>次の各問いに答えなさい。</p>
-<p><strong>問1</strong>　次の外貨建取引に関する〈資料〉に基づいて，当期末（×2年3月31日　決算年1回）の貸借対照表及び損益計算書に計上する解答用紙の（ア）～（エ）の金額を答えなさい。なお，当社は当期より営業を開始しており〈資料〉の他に外貨建取引及び掛け取引は無いものとする。</p>
-<p>〈資料〉<br>⑴ 輸入取引に関する資料<br>×2年2月1日　A社から商品1,000ドルを輸入し，代金は掛けとした。決済日は×2年4月30日である。<br>×2年3月1日　上記の買掛金（1,000ドル）に対して，為替予約を締結した。先物為替相場は1ドルあたり160円である。なお，為替予約については振当処理を行うこと。<br>×2年3月31日　決算日を迎えたため直先差額を期間配分した。</p>
-<p>⑵ 輸出取引に関する資料<br>×1年12月1日　B社へ商品3,000ドルを輸出し，代金は掛けとした。<br>×2年2月1日　上記の売掛金のうち1,000ドルを現金で回収した。</p>
-<p>⑶ 決算日における外貨建金銭債権・債務　売掛金 2,000ドル　買掛金 1,000ドル</p>
-<p>⑷ 直物為替相場に関する資料（1ドルあたり）</p>
-<div aria-label="直物為替相場" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>日付</th><th>直物為替相場（1ドル）</th></tr></thead><tbody>
-<tr><td>×1年12月1日</td><td>148円</td></tr>
-<tr><td>×2年2月1日</td><td>150円</td></tr>
-<tr><td>×2年3月1日</td><td>155円</td></tr>
-<tr><td>×2年3月31日</td><td>165円</td></tr>
-</tbody></table></div>
-<p>解答欄：（ア）売掛金　円　（イ）買掛金　円　（ウ）前払費用・前受収益（どちらかを○で囲む）　円　（エ）為替差損・為替差益（どちらかを○で囲む）　円</p>
-<p><strong>問2</strong>　次の〈資料〉に基づき，当期末（×5年3月31日 決算年1回）の解答用紙の（ア）～（カ）の金額または数値を答えなさい。</p>
-<p>〈資料〉ⅰ 決算整理前残高試算表（一部）（単位：円）</p>
-<div aria-label="決算整理前残高試算表（一部）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>借方</th><th>金額</th><th>貸方</th><th>金額</th></tr></thead><tbody>
-<tr><td>受取手形</td><td>5,000,000</td><td>貸倒引当金</td><td>135,600</td></tr>
-<tr><td>売掛金</td><td>7,000,000</td><td>受取利息</td><td>（各自推定）</td></tr>
-<tr><td>貸付金</td><td>2,000,000</td><td></td><td></td></tr>
-</tbody></table></div>
-<p>ⅱ 貸倒引当金に関する資料<br>⑴ 当社は金銭債権を「一般債権」，「貸倒懸念債権」，「破産更生債権等」に区分している。<br>⑵ 一般債権については貸倒実績率法，貸倒懸念債権についてはキャッシュ・フロー見積法，破産更生債権等については財務内容評価法に基づき貸倒見積高を算定している。<br>⑶ 貸倒引当金は差額補充法により設定する。なお，決算整理前残高試算表の貸倒引当金のうち，貸付金に対する引当金は70,000円，残額は全て一般債権に対するものである。<br>⑷ 決算整理前残高試算表の貸付金2,000,000円は，前々期首（×2年4月1日）にA社に対して貸し付けたもの（返済期日：×7年3月31日，利率：年5％，利払日：年1回 3月31日）である。A社は経営破綻に陥っていないが，債務の弁済に重大な問題が生じる可能性があるため，貸倒懸念債権とする。当期末において利息を受け取った後，A社から条件緩和の申し出を受け入れ，次期以降の利率を年3％に引き下げた。なお，当社は当期以前にこれ以外に貸付金を保有していない。また，割引計算をする際には下記の〈現価係数〉及び〈年金現価係数〉を用いること。</p>
-<div aria-label="現価係数・年金現価係数" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th></th><th>現価係数 3％</th><th>現価係数 5％</th><th>年金現価係数 3％</th><th>年金現価係数 5％</th></tr></thead><tbody>
-<tr><td>1年</td><td>0.9709</td><td>0.9524</td><td></td><td></td></tr>
-<tr><td>2年</td><td>0.9426</td><td>0.9070</td><td>1.9135</td><td>1.8594</td></tr>
-<tr><td>3年</td><td>0.9151</td><td>0.8638</td><td>2.8286</td><td>2.7232</td></tr>
-</tbody></table></div>
-<p>⑸ 売掛金のうち3,000,000円はB社に対するものであり，当期にB社が経営破綻に陥ったため，破産更生債権等とする。なお，B社より担保として提供されている土地の処分見込額は400,000円であり，債権総額から担保の処分見込額を控除した残額を貸倒見積高とする。<br>⑹ 一般債権については，一般債権の期末残高に対する次期の貸倒損失発生額により，各期の貸倒実績率を求め，過去3年間の平均値により当期末の一般債権に対する貸倒実績率を算定する。なお，一般債権の平均回収期間は1年未満であり，貸倒損失はすべて翌期に発生している。過去3年間の一般債権の期末残高と貸倒損失発生額は下記のとおりであった。</p>
-<div aria-label="一般債権残高と貸倒損失発生額" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th></th><th>×2年3月31日</th><th>×3年3月31日</th><th>×4年3月31日</th><th>×5年3月31日</th></tr></thead><tbody>
-<tr><td>一般債権残高</td><td>8,250,000円</td><td>9,380,000円</td><td>9,040,000円</td><td>（各自推定）</td></tr>
-<tr><td>貸倒損失発生額</td><td>－</td><td>330,000円</td><td>281,400円</td><td>180,800円</td></tr>
-</tbody></table></div>
-<p>解答欄：（ア）当期に計上する受取利息　円　（イ）キャッシュ・フロー見積法による貸倒見積高　円　（ウ）破産更生債権等に対する貸倒見積高　円　（エ）当期末の一般債権に対する貸倒実績率　％　（オ）当期末の一般債権に対する貸倒見積高　円　（カ）当期の貸倒引当金繰入額　円</p>
+              <div class="q3rdh-rp"><span class="q3rdh-tx">直先差額の分配</span></div>
+              <p class="explanation-text">
+                予約日の直物相場と先物相場との差額による為替差損益は予約日から決済日までの期間がかかって確定する損益であるため、振当処理の場合には、損益を配分して期間対応させます。<br>
+                買掛金（負債）の増加のため、為替差損が計上され、次期分は前払費用勘定に振り替えられます。
+              </p>
+              <div class="explanation-box-green">
+                直先差額（155円 → 160円）：1,000 × 5円 = 5,000（為替差損） …… 3/1〜4/30の2か月で配分<br>
+                次期分：5,000 × １ ÷ ２ ＝ <span class="red-u">2,500 …… <strong>前払費用</strong></span>
+              </div>
+              <div class="answer-red-bold-underline">Ａ．（ウ） 前払費用 2,500(円)</div>
+              
+              <div class="q3rdh-rp"><span class="q3rdh-tx">為替差損益合計</span></div>
+              <p class="explanation-text">
+                ここまでで為替差損益が発生する取引場面は、振当処理ですので<br>
+                １．×２年２月１日の売掛金回収時
+                ２．×２年３月１日の為替予約締結時の直々差額<br>
+                ３．同日の直先差額（当期に計上する分）<br>
+                ４．決算日の売掛金の評価替え<br>
+                になります。<br>
+                直々差額とは、為替予約を付した対象の評価替え前の簿価と予約日の直物相場による換算額との差額です。
+              </p>
+              <div class="explanation-box-green">
+                １．：1,000 × (150 － 148) ＝ 2,000 …… 為替差益（資産増加）<br>
+                ２．：1,000 × (155 － 150) ＝ 5,000 …… 為替差損（負債増加）<br>
+                ３．：2,500 …… 為替差損（負債増加）<br>
+                ４．：2,000ドル × (165 － 148) = 34,000 …… 為替差益（資産増加）<br>
+                為替差損益の合計：2,000 － 5,000 － 2,500 ＋ 34,000 = <span class="red-u">28,500（為替差益）</span>
+              </div>
+              <div class="answer-red-bold-underline">Ａ．（エ） 為替差益 28,500(円)</div>
+              
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>
+                  直先差額の配分期間を「予約日〜決算日」ではなく<strong>予約日〜決済日</strong>（2か月）で数え、その1か月分だけを当期の損益にします。買掛金は決算日の直物165円ではなく予約レート160円で計上します。<br>
+                </p>
+              </aside>
+              <div class="answer">答え　問1 （ア）売掛金 330,000円　（イ）買掛金 160,000円　（ウ）前払費用 2,500円　（エ）為替差益 28,500円</div>
+            </section>
+
+            <section class="question-section reveal" id="q3-2">
+              <div class="content-title-orange"><strong>問2</strong></div>
+              <details class="official-question official-question--placeholder">
+                <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                <blockquote class="official-question__body">
+                  <!-- 第3問の問題文欄 -->
+                  <div aria-hidden="true" class="official-question__space">
+                    <p><strong>問2</strong>　次の〈資料〉に基づき，当期末（×5年3月31日 決算年1回）の解答用紙の（ア）～（カ）の金額または数値を答えなさい。</p>
+                    <p>〈資料〉ⅰ 決算整理前残高試算表（一部）（単位：円）</p>
+                    <div aria-label="決算整理前残高試算表（一部）" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th>借方</th>
+                            <th>金額</th>
+                            <th>貸方</th>
+                            <th>金額</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>受取手形</td>
+                            <td>5,000,000</td>
+                            <td>貸倒引当金</td>
+                            <td>135,600</td>
+                          </tr>
+                          <tr>
+                            <td>売掛金</td>
+                            <td>7,000,000</td>
+                            <td>受取利息</td>
+                            <td>（各自推定）</td>
+                          </tr>
+                          <tr>
+                            <td>貸付金</td>
+                            <td>2,000,000</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                  </blockquote>
-                </details>
-                <!-- END OFFICIAL QUESTION 3 -->
-                <section aria-label="問題3の一般的な解法" class="general-method">
-                  <h4>一般的な解法</h4>
-                  <p class="method-title">外貨換算と貸倒見積高の算定</p>
-                  <ol><li>外貨建金銭債権債務は決算日の直物相場で換算し、差額は為替差損益。為替予約（振当処理）を付した債務は先物相場で固定し、直々差額（取引日→予約日の直物差）は予約日の損益、直先差額（予約日の直物→先物）は決済日までの期間で月割配分する。</li><li>キャッシュ・フロー見積法：条件緩和後の将来キャッシュ・フロー（利息 × 年金現価係数 ＋ 元本 × 現価係数）を<strong>当初の約定利子率</strong>で割り引き、帳簿価額との差額を貸倒見積高とする。</li><li>貸倒実績率法：各年の（翌期の貸倒損失 ÷ 期末一般債権残高）の平均。差額補充法の繰入額 ＝ 各区分の貸倒見積高合計 － 決算整理前の貸倒引当金残高。</li></ol>
-                </section>
-<div class="content-title-orange"><strong>問1</strong></div><p class="explanation-text">　まず買掛金（為替予約あり）です。取引日（2/1）の直物は150円、予約日（3/1）の直物は155円、先物は160円です。</p>
-<div class="explanation-box-green">取引日の買掛金：1,000ドル × 150円 = 150,000<br>直々差額（150円 → 155円）：1,000 × 5円 = 5,000 …… 予約日の為替差損<br>直先差額（155円 → 160円）：1,000 × 5円 = 5,000 …… 3/1〜4/30の2か月で配分<br>当期分（3/1〜3/31の1か月）：5,000 × 1 ÷ 2 = 2,500 …… 為替差損<br>次期分：2,500 …… <strong>前払費用</strong>（ウ）<br>買掛金は先物相場で固定：1,000 × 160円 = <strong>160,000</strong>（イ）</div>
-<p class="explanation-text">次に売掛金です。×1年12月1日に3,000ドル × 148円 ＝ 444,000円で計上し、2月1日に1,000ドルを150円で回収、残り2,000ドルを決算日の165円で換算します。</p>
-<div class="explanation-box-green">回収時：1,000 × (150 － 148) = 2,000 …… 為替差益<br>決算時：2,000ドル × (165 － 148) = 34,000 …… 為替差益<br>売掛金：2,000ドル × 165円 = <strong>330,000</strong>（ア）</div>
-<div class="explanation-box-green">為替差損益の合計：＋2,000 ＋ 34,000 － 5,000 － 2,500 = <strong>28,500（為替差益）</strong>（エ）</div>
-<div class="content-title-orange"><strong>問2</strong></div>
-<div class="explanation-box-green">（ア）当期の受取利息（条件緩和前の利率）：2,000,000 × 5％ = 100,000</div>
-<p class="explanation-text">（イ）当期末から返済期日（×7年3月31日）まで残り2年です。緩和後の利息は 2,000,000 × 3％ ＝ 60,000円で、割引率は<strong>当初の約定利子率5％</strong>を使います。</p>
-<div class="explanation-box-green">将来ＣＦの現在価値：60,000 × 1.8594（年金現価 5％ 2年）＋ 2,000,000 × 0.9070（現価 5％ 2年）<br>= 111,564 ＋ 1,814,000 = 1,925,564<br>貸倒見積高：2,000,000 － 1,925,564 = 74,436</div>
-<div class="explanation-box-green">（ウ）破産更生債権等：3,000,000 － 400,000（担保処分見込額）= 2,600,000</div>
-<div class="explanation-box-green">（エ）貸倒実績率<br>×2年度末残高に対する翌期損失：330,000 ÷ 8,250,000 = 4％<br>×3年度末：281,400 ÷ 9,380,000 = 3％<br>×4年度末：180,800 ÷ 9,040,000 = 2％<br>平均：(4 ＋ 3 ＋ 2) ÷ 3 = 3％</div>
-<div class="explanation-box-green">（オ）当期末の一般債権：受取手形 5,000,000 ＋ 売掛金 7,000,000 － 破産更生債権等 3,000,000 = 9,000,000<br>貸倒見積高：9,000,000 × 3％ = 270,000</div>
-<div class="explanation-box-green">（カ）繰入額（差額補充法）：(74,436 ＋ 2,600,000 ＋ 270,000) － 135,600 = 2,944,436 － 135,600 = 2,808,836</div>
-<p class="note explanation-text">貸付金は金銭債権なので一般債権には含めず、貸倒懸念債権として別に見積もります。決算整理前の貸倒引当金135,600円（貸付金分70,000円＋一般債権分65,600円）は区分ごとに分けず、合計で差額補充します。</p>
-                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>問1では直先差額の配分期間を「予約日〜決算日」ではなく<strong>予約日〜決済日</strong>（2か月）で数え、その1か月分だけを当期の損益にします。買掛金は決算日の直物165円ではなく予約レート160円で計上します。問2（イ）は、割引率を緩和後の3％にしてしまう誤りが最も多く、<strong>当初の約定利子率5％</strong>の係数を使います。（オ）の一般債権から破産更生債権3,000,000円を除くのを忘れないようにしましょう。</p></aside><div class="answer">答え　問1 （ア）売掛金 330,000円　（イ）買掛金 160,000円　（ウ）前払費用 2,500円　（エ）為替差益 28,500円　問2 （ア）100,000円　（イ）74,436円　（ウ）2,600,000円　（エ）3％　（オ）270,000円　（カ）2,808,836円</div>
-              </section>
-
-              <section class="question-section reveal" id="q4">
-                <div class="question-main-title"><h2>第４問</h2></div>
-                <div class="question-subheader-blue">間接法によるキャッシュ・フロー計算書を作成する</div>
-
-                <!-- BEGIN OFFICIAL QUESTION 4 -->
-                <details class="official-question official-question--placeholder">
-                  <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
-                  <blockquote class="official-question__body">
-                    <!-- 第4問の問題文欄 -->
-                    <div aria-hidden="true" class="official-question__space">
-                      <p>以下の貸借対照表，損益計算書（決算日3月31日，決算年1回）及び〔その他の資料〕に基づき，解答用紙に示した間接法による×7年度のキャッシュ・フロー計算書を完成しなさい。なお，金額がマイナスの場合には，△を付すこと。</p>
-<div aria-label="貸借対照表（単位：千円）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>資産</th><th>×6年度末</th><th>×7年度末</th><th>負債・純資産</th><th>×6年度末</th><th>×7年度末</th></tr></thead><tbody>
-<tr><td>現金預金</td><td>11,140</td><td>29,700</td><td>買掛金</td><td>44,240</td><td>56,700</td></tr>
-<tr><td>売掛金</td><td>24,000</td><td>27,000</td><td>短期借入金</td><td>45,160</td><td>38,200</td></tr>
-<tr><td>貸倒引当金</td><td>△480</td><td>△540</td><td>未払金</td><td>15,300</td><td>12,100</td></tr>
-<tr><td>有価証券</td><td>11,040</td><td>11,240</td><td>未払法人税等</td><td>2,680</td><td>2,900</td></tr>
-<tr><td>商品</td><td>187,100</td><td>192,200</td><td>資本金</td><td>160,000</td><td>180,000</td></tr>
-<tr><td>建物</td><td>242,000</td><td>242,000</td><td>資本準備金</td><td>18,100</td><td>18,100</td></tr>
-<tr><td>減価償却累計額</td><td>△151,250</td><td>△157,300</td><td>利益準備金</td><td>17,000</td><td>17,850</td></tr>
-<tr><td>関係会社株式</td><td>1,050</td><td>2,230</td><td>繰越利益剰余金</td><td>40,420</td><td>41,710</td></tr>
-<tr><td>長期貸付金</td><td>18,300</td><td>21,030</td><td></td><td></td><td></td></tr>
-<tr><td>合計</td><td>342,900</td><td>367,560</td><td>合計</td><td>342,900</td><td>367,560</td></tr>
-</tbody></table></div>
-<div aria-label="損益計算書（単位：千円）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>損益計算書</th><th>金額</th></tr></thead><tbody>
-<tr><td>売上高</td><td>672,000</td></tr>
-<tr><td>売上原価</td><td>519,000</td></tr>
-<tr><td>売上総利益</td><td>153,000</td></tr>
-<tr><td>給料</td><td>72,000</td></tr>
-<tr><td>支払家賃</td><td>36,000</td></tr>
-<tr><td>広告料</td><td>13,160</td></tr>
-<tr><td>貸倒引当金繰入額</td><td>60</td></tr>
-<tr><td>旅費交通費</td><td>1,500</td></tr>
-<tr><td>減価償却費</td><td>6,050</td></tr>
-<tr><td>水道光熱費</td><td>9,420</td></tr>
-<tr><td>営業利益</td><td>14,810</td></tr>
-<tr><td>受取利息</td><td>290</td></tr>
-<tr><td>受取配当金</td><td>280</td></tr>
-<tr><td>有価証券評価益</td><td>160</td></tr>
-<tr><td>有価証券売却益</td><td>130</td></tr>
-<tr><td>支払利息</td><td>470</td></tr>
-<tr><td>経常利益</td><td>15,200</td></tr>
-<tr><td>税引前当期純利益</td><td>15,200</td></tr>
-<tr><td>法人税，住民税及び事業税</td><td>4,560</td></tr>
-<tr><td>当期純利益</td><td>10,640</td></tr>
-</tbody></table></div>
-<p>〔その他の資料〕</p>
-<ol>
-<li>売上及び仕入取引はすべて掛けによるものとし，当期中に貸倒れは発生していない。</li>
-<li>給料，支払家賃，広告料，旅費交通費，水道光熱費は発生した全額を現金で支払っている。</li>
-<li>利息及び配当金の受取額と利息の支払額は「営業活動によるキャッシュ・フロー」の区分に記載する。</li>
-<li>現金預金のうち前期末540千円，当期末840千円は，満期が3ヶ月を超える定期預金である。また当期中に定期預金（3ヶ月超）の新規預入れ ？ 千円と払戻し550千円があった。</li>
-<li>当期中に有価証券の一部を ？ 千円で売却した。また有価証券を1,460千円で購入した。代金はどちらも現金で決済している。なお，決算整理前残高は11,080千円である。</li>
-<li>関係会社株式については， ？ 千円で購入し，代金は現金で支払っている。</li>
-<li>短期借入金については，現金で38,400千円の新規借入れと ？ 千円の返済をしている。</li>
-<li>長期貸付金については，現金で ？ 千円の新規貸付けと830千円の回収をしている。</li>
-<li>事業規模拡大のため，株式20,000千円を発行し，全額の引き受け・払い込みを受け，払込金は当座預金とした。ただし，資本金とする額は会社法が規定する原則を適用する。</li>
-<li>当期に剰余金の配当として，株主に対し ？ 千円を現金で支払うとともに，会社法の規定に基づいて利益準備金 ？ 千円を積み立てている。</li>
-</ol>
-<p>解答用紙：キャッシュ・フロー計算書（×7年4月1日から×8年3月31日まで，単位：千円）</p>
-<p>営業活動によるキャッシュ・フロー：〔　　〕( )／減価償却費( )／貸倒引当金の増減額( )／受取利息及び受取配当金( )／支払利息( )／有価証券評価益( )／有価証券売却益( )／売上債権の増減額( )／棚卸資産の増減額( )／仕入債務の増減額( )／未払金の増減額( )／小計( )／利息及び配当金の受取額( )／利息の支払額( )／法人税等の支払額( )／営業活動によるキャッシュ・フロー( )</p>
-<p>投資活動によるキャッシュ・フロー：定期預金の預入による支出( )／定期預金の払戻による収入( )／有価証券の取得による支出( )／有価証券の売却による収入( )／関係会社株式の取得による支出( )／長期貸付による支出( )／長期貸付金の回収による収入( )／投資活動によるキャッシュ・フロー( )</p>
-<p>財務活動によるキャッシュ・フロー：短期借入れによる収入( )／短期借入金の返済による支出( )／株式の発行による収入( )／配当金の支払額( )／財務活動によるキャッシュ・フロー( )</p>
-<p>現金及び現金同等物の増減額（△は減少）( )／現金及び現金同等物の期首残高( )／現金及び現金同等物の期末残高( )</p>
+                    <p>ⅱ 貸倒引当金に関する資料<br>⑴ 当社は金銭債権を「一般債権」，「貸倒懸念債権」，「破産更生債権等」に区分している。<br>⑵
+                      一般債権については貸倒実績率法，貸倒懸念債権についてはキャッシュ・フロー見積法，破産更生債権等については財務内容評価法に基づき貸倒見積高を算定している。<br>⑶
+                      貸倒引当金は差額補充法により設定する。なお，決算整理前残高試算表の貸倒引当金のうち，貸付金に対する引当金は70,000円，残額は全て一般債権に対するものである。<br>⑷
+                      決算整理前残高試算表の貸付金2,000,000円は，前々期首（×2年4月1日）にA社に対して貸し付けたもの（返済期日：×7年3月31日，利率：年5％，利払日：年1回
+                      3月31日）である。A社は経営破綻に陥っていないが，債務の弁済に重大な問題が生じる可能性があるため，貸倒懸念債権とする。当期末において利息を受け取った後，A社から条件緩和の申し出を受け入れ，次期以降の利率を年3％に引き下げた。なお，当社は当期以前にこれ以外に貸付金を保有していない。また，割引計算をする際には下記の〈現価係数〉及び〈年金現価係数〉を用いること。
+                    </p>
+                    <div aria-label="現価係数・年金現価係数" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>現価係数 3％</th>
+                            <th>現価係数 5％</th>
+                            <th>年金現価係数 3％</th>
+                            <th>年金現価係数 5％</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1年</td>
+                            <td>0.9709</td>
+                            <td>0.9524</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>2年</td>
+                            <td>0.9426</td>
+                            <td>0.9070</td>
+                            <td>1.9135</td>
+                            <td>1.8594</td>
+                          </tr>
+                          <tr>
+                            <td>3年</td>
+                            <td>0.9151</td>
+                            <td>0.8638</td>
+                            <td>2.8286</td>
+                            <td>2.7232</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                  </blockquote>
-                </details>
-                <!-- END OFFICIAL QUESTION 4 -->
-                <section aria-label="問題4の一般的な解法" class="general-method">
-                  <h4>一般的な解法</h4>
-                  <p class="method-title">間接法キャッシュ・フロー計算書の作成</p>
-                  <ol><li>営業ＣＦは税引前当期純利益から出発し、非資金費用（減価償却費・引当金増加）を加算、営業外・特別損益を除外（受取利息等は減算、支払利息は加算）、営業資産の増加は減算・営業負債の増加は加算して小計を出す。</li><li>小計の下で利息・配当金の受取額、利息の支払額、法人税等の支払額（期首未払 ＋ 当期計上 － 期末未払）を調整する。</li><li>投資・財務ＣＦの「？」は勘定の増減（期首 ＋ 増加 － 減少 ＝ 期末）から逆算する。現金同等物には3か月超の定期預金を含めない。</li></ol>
-                </section>
-<div class="content-title-orange"><strong>営業活動によるキャッシュ・フロー</strong></div><p class="explanation-text">　出発点は税引前当期純利益15,200千円です。</p>
-<div class="explanation-box-green">減価償却費 ＋6,050　貸倒引当金の増減額 540 － 480 = ＋60<br>受取利息及び受取配当金 △(290 ＋ 280) = △570　支払利息 ＋470<br>有価証券評価益 △160　有価証券売却益 △130<br>売上債権の増減額 24,000 → 27,000：△3,000（増加は減算）<br>棚卸資産の増減額 187,100 → 192,200：△5,100<br>仕入債務の増減額 44,240 → 56,700：＋12,460（増加は加算）<br>未払金の増減額 15,300 → 12,100：△3,200<br>小計 = 15,200 ＋ 6,050 ＋ 60 － 570 ＋ 470 － 160 － 130 － 3,000 － 5,100 ＋ 12,460 － 3,200 = 22,080</div>
-<div class="explanation-box-green">利息及び配当金の受取額 ＋570　利息の支払額 △470<br>法人税等の支払額：期首未払 2,680 ＋ 当期計上 4,560 － 期末未払 2,900 = 4,340 → △4,340<br>営業活動によるＣＦ = 22,080 ＋ 570 － 470 － 4,340 = 17,840</div>
-<div class="content-title-orange"><strong>投資活動によるキャッシュ・フロー</strong></div><p class="explanation-text">　「？」を勘定の増減から逆算します。</p>
-<div class="explanation-box-green">定期預金：540 ＋ 預入 － 550 = 840 → 預入 850 → △850、払戻 ＋550<br>有価証券：期首 11,040 ＋ 購入 1,460 － 売却簿価 = 決算整理前 11,080 → 売却簿価 1,420<br>　売却収入 = 1,420 ＋ 売却益 130 = 1,550 → ＋1,550、取得 △1,460<br>　（確認）決算整理前 11,080 ＋ 評価益 160 = 期末 11,240<br>関係会社株式：2,230 － 1,050 = 1,180 → △1,180<br>長期貸付金：18,300 ＋ 新規 － 830 = 21,030 → 新規 3,560 → △3,560、回収 ＋830<br>投資活動によるＣＦ = △850 ＋ 550 － 1,460 ＋ 1,550 － 1,180 － 3,560 ＋ 830 = △4,120</div>
-<div class="content-title-orange"><strong>財務活動によるキャッシュ・フロー</strong></div>
-<div class="explanation-box-green">短期借入金：45,160 ＋ 38,400 － 返済 = 38,200 → 返済 45,360 → △45,360、借入 ＋38,400<br>株式の発行：＋20,000（資本金 160,000 → 180,000。会社法の原則どおり全額を資本金）<br>配当金：利益準備金の積立 17,850 － 17,000 = 850 は配当額の1/10<br>　（資本準備金 18,100 ＋ 利益準備金 17,850 = 35,950 は資本金 180,000 × 1/4 = 45,000 未満なので1/10全額を積立）<br>　配当額 = 850 × 10 = 8,500 → △8,500<br>　（確認）繰越利益剰余金 40,420 ＋ 10,640 － 8,500 － 850 = 41,710 ✓<br>財務活動によるＣＦ = 38,400 － 45,360 ＋ 20,000 － 8,500 = 4,540</div>
-<div class="explanation-box-green">現金及び現金同等物の増減額 = 17,840 － 4,120 ＋ 4,540 = 18,260<br>期首残高 = 11,140 － 540（3か月超定期預金）= 10,600<br>期末残高 = 10,600 ＋ 18,260 = 28,860（＝ 29,700 － 840 ✓）</div>
-<p class="note explanation-text">解答用紙の〔　〕には「税引前当期純利益」が入ります。当期純利益から始める形式もありますが、法人税等の支払額を別に調整する本問の様式では税引前から始めます。</p>
-                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>配当金の額は「利益準備金の積立額 × 10」で逆算しますが、準備金の合計が資本金の1/4に達していないことを確認する必要があります。有価証券の売却収入は<strong>売却簿価 ＋ 売却益</strong>で、簿価は「決算整理前残高」から逆算します（期末残高11,240は評価益込みなので使いません）。現金同等物の期首・期末残高から3か月超の定期預金を除くのを忘れると、増減額と一致しなくなります。</p></aside><div class="answer">答え　〔税引前当期純利益〕15,200／減価償却費 6,050／貸倒引当金の増減額 60／受取利息及び受取配当金 △570／支払利息 470／有価証券評価益 △160／有価証券売却益 △130／売上債権の増減額 △3,000／棚卸資産の増減額 △5,100／仕入債務の増減額 12,460／未払金の増減額 △3,200／小計 22,080／利息及び配当金の受取額 570／利息の支払額 △470／法人税等の支払額 △4,340／営業活動によるＣＦ 17,840／定期預金の預入 △850／払戻 550／有価証券の取得 △1,460／売却 1,550／関係会社株式の取得 △1,180／長期貸付 △3,560／回収 830／投資活動によるＣＦ △4,120／短期借入れ 38,400／返済 △45,360／株式の発行 20,000／配当金の支払額 △8,500／財務活動によるＣＦ 4,540／増減額 18,260／期首残高 10,600／期末残高 28,860</div>
-              </section>
-
-              <section class="question-section reveal" id="q5">
-                <div class="question-main-title"><h2>第５問</h2></div>
-                <div class="question-subheader-blue">連結損益及び包括利益計算書を作成する（のれん・未実現利益・税効果）</div>
-
-                <!-- BEGIN OFFICIAL QUESTION 5 -->
-                <details class="official-question official-question--placeholder">
-                  <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
-                  <blockquote class="official-question__body">
-                    <!-- 第5問の問題文欄 -->
-                    <div aria-hidden="true" class="official-question__space">
-                      <p>親会社および子会社の×7年3月31日（決算年1回）における資料に基づき，解答用紙の連結損益及び包括利益計算書を完成しなさい。なお，法人税等の実効税率は30％とする。また，法人税等調整額の金額がマイナスの場合には，数字の前に△を付すこと。</p>
-<p>〈資料1〉×7年3月31日における個別財務諸表（単位：千円）</p>
-<div aria-label="個別貸借対照表（単位：千円）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>資産</th><th>親会社</th><th>子会社</th><th>負債・純資産</th><th>親会社</th><th>子会社</th></tr></thead><tbody>
-<tr><td>現金及び預金</td><td>633,300</td><td>300,300</td><td>買掛金</td><td>383,800</td><td>311,000</td></tr>
-<tr><td>売掛金</td><td>670,000</td><td>140,000</td><td>短期借入金</td><td>629,600</td><td>92,800</td></tr>
-<tr><td>貸倒引当金</td><td>△6,700</td><td>△1,400</td><td>長期借入金</td><td>1,066,400</td><td>80,000</td></tr>
-<tr><td>商品</td><td>113,700</td><td>77,800</td><td>繰延税金負債</td><td>―</td><td>11,200</td></tr>
-<tr><td>短期貸付金</td><td>618,000</td><td>36,000</td><td>資本金</td><td>204,400</td><td>214,400</td></tr>
-<tr><td>貸倒引当金</td><td>△61,800</td><td>△1,600</td><td>利益剰余金</td><td>654,100</td><td>68,400</td></tr>
-<tr><td>建物</td><td>105,000</td><td>360,000</td><td>その他有価証券評価差額金</td><td>260,000</td><td>―</td></tr>
-<tr><td>減価償却累計額</td><td>△77,700</td><td>△180,000</td><td></td><td></td><td></td></tr>
-<tr><td>土地</td><td>85,600</td><td>46,700</td><td></td><td></td><td></td></tr>
-<tr><td>その他有価証券</td><td>718,900</td><td>―</td><td></td><td></td><td></td></tr>
-<tr><td>子会社株式</td><td>300,000</td><td>―</td><td></td><td></td><td></td></tr>
-<tr><td>繰延税金資産</td><td>100,000</td><td>―</td><td></td><td></td><td></td></tr>
-<tr><td>合計</td><td>3,198,300</td><td>777,800</td><td>合計</td><td>3,198,300</td><td>777,800</td></tr>
-</tbody></table></div>
-<div aria-label="個別損益計算書（単位：千円）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>費用</th><th>親会社</th><th>子会社</th><th>収益</th><th>親会社</th><th>子会社</th></tr></thead><tbody>
-<tr><td>売上原価</td><td>2,294,900</td><td>719,000</td><td>売上高</td><td>2,635,400</td><td>991,600</td></tr>
-<tr><td>貸倒引当金繰入額</td><td>4,400</td><td>280</td><td>受取利息</td><td>41,600</td><td>1,900</td></tr>
-<tr><td>減価償却費</td><td>2,100</td><td>9,000</td><td>受取配当金</td><td>101,900</td><td>―</td></tr>
-<tr><td>その他の営業費用</td><td>117,200</td><td>207,620</td><td>土地売却益</td><td>13,000</td><td>10,000</td></tr>
-<tr><td>支払利息</td><td>59,900</td><td>8,200</td><td></td><td></td><td></td></tr>
-<tr><td>法人税等</td><td>30,300</td><td>15,900</td><td></td><td></td><td></td></tr>
-<tr><td>法人税等調整額</td><td>5,300</td><td>1,500</td><td></td><td></td><td></td></tr>
-<tr><td>当期純利益</td><td>277,800</td><td>42,000</td><td></td><td></td><td></td></tr>
-<tr><td>合計</td><td>2,791,900</td><td>1,003,500</td><td>合計</td><td>2,791,900</td><td>1,003,500</td></tr>
-</tbody></table></div>
-<div aria-label="株主資本等変動計算書（単位：千円）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>株主資本等変動計算書</th><th>親会社</th><th>子会社</th></tr></thead><tbody>
-<tr><td>資本金当期首残高</td><td>204,400</td><td>214,400</td></tr>
-<tr><td>資本金当期末残高</td><td>204,400</td><td>214,400</td></tr>
-<tr><td>利益剰余金当期首残高</td><td>428,900</td><td>41,400</td></tr>
-<tr><td>剰余金の配当</td><td>△52,600</td><td>△15,000</td></tr>
-<tr><td>当期純利益</td><td>277,800</td><td>42,000</td></tr>
-<tr><td>利益剰余金当期末残高</td><td>654,100</td><td>68,400</td></tr>
-<tr><td>その他有価証券評価差額金当期首残高</td><td>254,900</td><td>―</td></tr>
-<tr><td>当期変動額</td><td>5,100</td><td>―</td></tr>
-<tr><td>その他有価証券評価差額金当期末残高</td><td>260,000</td><td>―</td></tr>
-</tbody></table></div>
-<p>〈資料2〉連結に関する事項</p>
-<ol>
-<li>親会社は×6年3月31日に300,000千円で子会社の発行済株式の80％を取得した。取得時の子会社の資産および負債の時価について，土地（帳簿価額：10,000千円，時価：16,000千円）を除いて時価と帳簿価額は同一であった。土地の評価差額については，税効果会計を適用する。また，取得時における子会社の資本の金額は，資本金：214,400千円，利益剰余金：41,400千円であった。</li>
-<li>子会社の当期純利益〈資料1〉のうち非支配株主持分割合に相当する額は，非支配株主持分に振り替える。</li>
-<li>のれんは，発生年度の翌年から20年間にわたって定額法により償却する。</li>
-<li>4－1．当期首から，親会社は子会社に商品を販売している。なお，当期中に親会社は子会社に対して商品を200,000千円で掛け販売した。<br>4－2．子会社の期末商品のうち，42,000千円は当期に親会社から仕入れたものである。なお，親会社が子会社に販売する際の価格は原価の20％増しで設定しており，未実現利益の消去にあたっては，税効果会計を考慮して処理する。また，子会社の期首商品に親会社から仕入れたものはなかった。</li>
-<li>親会社の期末売掛金のうち，100,000千円は子会社に対するものである。親会社は期末売掛金に対して1％の貸倒引当金を設定している。これについて税効果会計を考慮して処理する。この貸倒引当金は，税務上，損金算入が認められたため，個別上，繰延税金資産を計上していない。なお，当期首時点では，親会社の売掛金のうち子会社に対するものはなかった。</li>
-<li>当期首において，子会社は親会社に対して帳簿価額12,000千円の土地を20,000千円で売却した。当期末現在，親会社はこの土地を保有している。なお，これについて税効果会計を考慮して処理する。</li>
-<li>子会社の短期貸付金のうち，20,000千円は親会社に対するものである。この貸付金は，当期首に利率年3％，利払日3月末日（年1回），期間1年で貸し付けたものである。なお，利息の受け払いは既に行われている。また，子会社はこの貸付金に対する貸倒引当金を設定していない。</li>
-<li>親会社および子会社が，当期中に株主に対して支払った利益剰余金を原資とする配当金は，次のとおりである。親会社 52,600千円　子会社 15,000千円</li>
-<li>親会社の繰延税金資産と繰延税金負債，子会社の繰延税金資産と繰延税金負債については，それぞれ相殺を行なう。</li>
-</ol>
-<p>解答用紙：連結損益及び包括利益計算書（×6年4月1日から×7年3月31日まで，単位：千円）</p>
-<p>Ⅰ 売上高( )／Ⅱ 売上原価( )／売上総利益( )／Ⅲ 販売費及び一般管理費：貸倒引当金繰入額( )・減価償却費( )・のれん償却額( )・その他の営業費用 324,820／営業利益( )／Ⅳ 営業外収益：受取利息( )・受取配当金( )／Ⅴ 営業外費用：支払利息( )／経常利益( )／Ⅵ 特別利益：土地売却益( )／税金等調整前当期純利益( )／法人税、住民税及び事業税 46,200／法人税等調整額( )／法人税等合計( )／当期純利益( )／（内訳）親会社株主に帰属する当期純利益( )・非支配株主に帰属する当期純利益( )／その他の包括利益：その他有価証券評価差額金 5,100／包括利益( )／（内訳）親会社株主に係る包括利益( )・非支配株主に係る包括利益( )</p>
+                    <p>⑸
+                      売掛金のうち3,000,000円はB社に対するものであり，当期にB社が経営破綻に陥ったため，破産更生債権等とする。なお，B社より担保として提供されている土地の処分見込額は400,000円であり，債権総額から担保の処分見込額を控除した残額を貸倒見積高とする。<br>⑹
+                      一般債権については，一般債権の期末残高に対する次期の貸倒損失発生額により，各期の貸倒実績率を求め，過去3年間の平均値により当期末の一般債権に対する貸倒実績率を算定する。なお，一般債権の平均回収期間は1年未満であり，貸倒損失はすべて翌期に発生している。過去3年間の一般債権の期末残高と貸倒損失発生額は下記のとおりであった。
+                    </p>
+                    <div aria-label="一般債権残高と貸倒損失発生額" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>×2年3月31日</th>
+                            <th>×3年3月31日</th>
+                            <th>×4年3月31日</th>
+                            <th>×5年3月31日</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>一般債権残高</td>
+                            <td>8,250,000円</td>
+                            <td>9,380,000円</td>
+                            <td>9,040,000円</td>
+                            <td>（各自推定）</td>
+                          </tr>
+                          <tr>
+                            <td>貸倒損失発生額</td>
+                            <td>－</td>
+                            <td>330,000円</td>
+                            <td>281,400円</td>
+                            <td>180,800円</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                  </blockquote>
-                </details>
-                <!-- END OFFICIAL QUESTION 5 -->
-                <section aria-label="問題5の一般的な解法" class="general-method">
-                  <h4>一般的な解法</h4>
-                  <p class="method-title">連結損益計算書の作成手順</p>
-                  <ol><li>支配獲得時の資本（資本金＋利益剰余金＋評価差額）× 親会社持分と取得原価の差額がのれん。評価差額は税効果後（× 0.7）で計算し、のれんは翌年から償却する。</li><li>内部取引（売上・仕入、利息、配当）を相殺し、期末棚卸資産・固定資産の未実現利益を消去する。税効果は消去額 × 30％を法人税等調整額で調整する。</li><li>子会社当期純利益 × 非支配株主持分割合を非支配株主に帰属する当期純利益とし、アップストリーム（子会社→親会社）の未実現利益は非支配株主にも按分する。包括利益 ＝ 当期純利益 ＋ その他の包括利益。</li></ol>
-                </section>
-<div class="content-title-orange"><strong>1．のれんの計算</strong></div><p class="explanation-text">　土地の評価差額 16,000 － 10,000 ＝ 6,000 に税効果を適用し、繰延税金負債 1,800、評価差額 4,200 とします。</p>
-<div class="explanation-box-green">支配獲得時の子会社資本：214,400 ＋ 41,400 ＋ 4,200 = 260,000<br>親会社持分：260,000 × 80％ = 208,000　非支配株主持分：260,000 × 20％ = 52,000<br>のれん：300,000 － 208,000 = 92,000<br>のれん償却額（当期から20年）：92,000 ÷ 20年 = 4,600</div>
-<div class="content-title-orange"><strong>2．内部取引の相殺と未実現利益の消去</strong></div>
-<div class="explanation-box-green">4－1 売上高と売上原価の相殺：△200,000（両方）<br>4－2 期末商品の未実現利益：42,000 × 0.2 ÷ 1.2 = 7,000 → 売上原価 ＋7,000、商品 △7,000<br>　税効果：7,000 × 30％ = 2,100 → 繰延税金資産 2,100、法人税等調整額 △2,100<br>5 売掛金・買掛金 100,000 の相殺。貸倒引当金 100,000 × 1％ = 1,000 の修正 → 貸倒引当金繰入額 △1,000<br>　税効果：1,000 × 30％ = 300 → 法人税等調整額 ＋300、繰延税金負債 300<br>6 土地の未実現利益（子→親：アップストリーム）：20,000 － 12,000 = 8,000 → 土地売却益 △8,000<br>　税効果：8,000 × 30％ = 2,400 → 繰延税金資産 2,400、法人税等調整額 △2,400<br>　非支配株主への按分：(8,000 － 2,400) × 20％ = 1,120 → 非支配株主に帰属する当期純利益 △1,120<br>7 貸付金・借入金 20,000 の相殺。利息 20,000 × 3％ = 600 → 受取利息 △600、支払利息 △600<br>8 子会社配当 15,000：親会社受取分 15,000 × 80％ = 12,000 → 受取配当金 △12,000、非支配株主分 3,000</div>
-<div class="content-title-orange"><strong>3．連結損益計算書の各行</strong></div>
-<div aria-label="表（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0"><table class="calc-table"><thead><tr><th>科目</th><th>計算</th><th>金額</th></tr></thead><tbody>
-<tr><td>売上高</td><td>2,635,400 ＋ 991,600 － 200,000</td><td>3,427,000</td></tr>
-<tr><td>売上原価</td><td>2,294,900 ＋ 719,000 － 200,000 ＋ 7,000</td><td>2,820,900</td></tr>
-<tr><td>売上総利益</td><td>3,427,000 － 2,820,900</td><td>606,100</td></tr>
-<tr><td>貸倒引当金繰入額</td><td>4,400 ＋ 280 － 1,000</td><td>3,680</td></tr>
-<tr><td>減価償却費</td><td>2,100 ＋ 9,000</td><td>11,100</td></tr>
-<tr><td>のれん償却額</td><td>92,000 ÷ 20</td><td>4,600</td></tr>
-<tr><td>その他の営業費用</td><td>117,200 ＋ 207,620</td><td>324,820</td></tr>
-<tr><td>営業利益</td><td>606,100 － 3,680 － 11,100 － 4,600 － 324,820</td><td>261,900</td></tr>
-<tr><td>受取利息</td><td>41,600 ＋ 1,900 － 600</td><td>42,900</td></tr>
-<tr><td>受取配当金</td><td>101,900 － 12,000</td><td>89,900</td></tr>
-<tr><td>支払利息</td><td>59,900 ＋ 8,200 － 600</td><td>67,500</td></tr>
-<tr><td>経常利益</td><td>261,900 ＋ 42,900 ＋ 89,900 － 67,500</td><td>327,200</td></tr>
-<tr><td>土地売却益</td><td>13,000 ＋ 10,000 － 8,000</td><td>15,000</td></tr>
-<tr><td>税金等調整前当期純利益</td><td>327,200 ＋ 15,000</td><td>342,200</td></tr>
-<tr><td>法人税、住民税及び事業税</td><td>30,300 ＋ 15,900</td><td>46,200</td></tr>
-<tr><td>法人税等調整額</td><td>5,300 ＋ 1,500 － 2,100 ＋ 300 － 2,400</td><td>2,600</td></tr>
-<tr><td>法人税等合計</td><td>46,200 ＋ 2,600</td><td>48,800</td></tr>
-<tr><td>当期純利益</td><td>342,200 － 48,800</td><td>293,400</td></tr>
-<tr><td>非支配株主に帰属する当期純利益</td><td>42,000 × 20％ － 1,120</td><td>7,280</td></tr>
-<tr><td>親会社株主に帰属する当期純利益</td><td>293,400 － 7,280</td><td>286,120</td></tr>
-<tr><td>その他の包括利益（その他有価証券評価差額金）</td><td>親会社の当期変動額</td><td>5,100</td></tr>
-<tr><td>包括利益</td><td>293,400 ＋ 5,100</td><td>298,500</td></tr>
-<tr><td>親会社株主に係る包括利益</td><td>286,120 ＋ 5,100</td><td>291,220</td></tr>
-<tr><td>非支配株主に係る包括利益</td><td>7,280</td><td>7,280</td></tr>
-</tbody></table></div>
-<p class="note explanation-text">法人税等調整額は個別の合計 6,800 に連結修正（△2,100 ＋ 300 － 2,400）を加えた 2,600 で、プラスなので△は付きません。その他有価証券評価差額金は親会社のみなので、包括利益の内訳は全額親会社株主分です。</p>
-                <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong><p>未実現利益は「原価の20％増し」なので、42,000 × 20％ ではなく 42,000 × 0.2 ÷ 1.2 ＝ 7,000 で計算します。土地の売却は子会社→親会社（アップストリーム）なので、消去した利益（税効果後5,600）の20％を非支配株主にも負担させる点を落としやすい問題です。のれんは「発生年度の翌年から」償却なので×6年3月31日取得なら当期（×6年度）から償却が始まります。子会社からの受取配当金12,000を消去し忘れると経常利益以下がすべてずれます。</p></aside><div class="answer">答え　売上高 3,427,000／売上原価 2,820,900／売上総利益 606,100／貸倒引当金繰入額 3,680／減価償却費 11,100／のれん償却額 4,600／営業利益 261,900／受取利息 42,900／受取配当金 89,900／支払利息 67,500／経常利益 327,200／土地売却益 15,000／税金等調整前当期純利益 342,200／法人税等調整額 2,600／法人税等合計 48,800／当期純利益 293,400／親会社株主に帰属する当期純利益 286,120／非支配株主に帰属する当期純利益 7,280／包括利益 298,500／親会社株主に係る包括利益 291,220／非支配株主に係る包括利益 7,280</div>
+                    <p>
+                      解答欄：（ア）当期に計上する受取利息　円　（イ）キャッシュ・フロー見積法による貸倒見積高　円　（ウ）破産更生債権等に対する貸倒見積高　円　（エ）当期末の一般債権に対する貸倒実績率　％　（オ）当期末の一般債権に対する貸倒見積高　円　（カ）当期の貸倒引当金繰入額　円
+                    </p>
+                  </div>
+                </blockquote>
+              </details>
+              <div class="q3rdh-rp"><span class="q3rdh-tx">貸付金に関する事項</span></div>
+              <p class="explanation-text">
+                当期末利息は従前通り利率５％で計算する。<br>
+                貸倒懸念債権であるため、キャッシュ・フロー見積法により引当金を設定する。<br>
+                将来回収する金額（利息及び元本）を<b>当初の約定利子率</b>で割り引き、帳簿価額との差額を貸倒見積高とする。<br>
+                なお、貸付金には既に70,000円の貸倒引当金が計上されているため、繰入額を計算する際は注意する。
+              </p>
+              <div class="explanation-box-green">
+                利息額：2,000,000 × 5％ = <span class="red-u">100,000</span><br>
+                将来CF<br>
+                　元本：2,000,000 × 0.9070 ＝ 1,814,000<br>
+                　利息回収額：2,000,000 × ３% × 1.8594 ＝ 111,564<br>
+                　合計：1,814,000 ＋ 111,564 ＝ 1,925,564<br>
+                貸倒見積高：2,000,000 － 1,925,564 ＝ <span class="red-u">74,436</span><br>
+                貸倒引当金繰入額：74,436 － 70,000 ＝ <u>4,436</u>
+              </div>
+              
+              <div class="q3rdh-rp"><span class="q3rdh-tx">売掛金（破産更生債権等）に関する事項</span></div>
+              <p class="explanation-text">
+                売掛金のうち、3,000,000は破産更生債権等となる。<br>
+                破産更生債権等は担保額を控除した残額すべてを貸倒見積高とする。
+              </p>
+              <div class="explanation-box-green">
+                貸倒見積高：3,000,000 － 400,000 ＝ <span class="red-u">2,600,000</span><br>
+                （破産更生債権等に対する貸倒引当金は設定されていないため、繰入額も同じ）
+              </div>
+
+              <div class="q3rdh-rp"><span class="q3rdh-tx">一般債権に関する事項</span></div>
+              <p class="explanation-text">
+                一般債権（受取手形及び破産更生債権等に該当しない売掛金）は、貸倒実績率法により求める。<br>
+                貸倒損失発生額をその債権が発生した期（損失発生の前期）の債権残高で割り、３か年平均した率で貸倒引当金を設定する方法。<br>
+                なお、一般債権に対する貸倒引当金残高は破産更生債権である貸付金に対する70,000円を除いた65,600円である。
+              </p>
+              <div class="explanation-box-green">
+                実積率の計算
+                　×2年度末：330,000 ÷ 8,250,000 = 4％<br>
+                　×3年度末：281,400 ÷ 9,380,000 = 3％<br>
+                　×4年度末：180,800 ÷ 9,040,000 = 2％<br>
+                　平均：(4 ＋ 3 ＋ 2) ÷ 3 = <span class="red-u">3％</span><br>
+                一般債権残高：受取手形 5,000,000 ＋ 売掛金(一般債権部分) 4,000,000 ＝ 9,000,000<br>
+                貸倒見積高：9,000,000 × ３% ＝ <span class="red-u">270,000</span><br>
+                貸倒引当金繰入額：270,000 － 65,600 ＝ <u>204,400</u><br>
+                <br>
+                貸倒引当金繰入額合計：4,436 ＋ 2,600,000 ＋ 204,400 ＝ <span class="red-u">2,808,836</span>
+              </div>
+
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>
+                  （イ）は、割引率を緩和後の3％にしてしまう誤りが最も多く、<strong>当初の約定利子率5％</strong>の係数を使います。<br>
+                  （オ）の一般債権から破産更生債権3,000,000円を除くのを忘れないようにしましょう。
+                </p>
+              </aside>
+              <div class="answer">答え　問2 （ア）100,000円　（イ）74,436円　（ウ）2,600,000円　（エ）3％　（オ）270,000円　（カ）2,808,836円</div>
+            </section>
+
+            <section class="question-section reveal" id="q4">
+              <div class="question-main-title">
+                <h2>第４問</h2>
+              </div>
+              <div class="question-subheader-blue">キャッシュ・フロー計算書（間接法）</div>
+
+              <!-- BEGIN OFFICIAL QUESTION 4 -->
+              <details class="official-question official-question--placeholder">
+                <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                <blockquote class="official-question__body">
+                  <!-- 第4問の問題文欄 -->
+                  <div aria-hidden="true" class="official-question__space">
+                    <p>
+                      以下の貸借対照表，損益計算書（決算日3月31日，決算年1回）及び〔その他の資料〕に基づき，解答用紙に示した間接法による×7年度のキャッシュ・フロー計算書を完成しなさい。なお，金額がマイナスの場合には，△を付すこと。
+                    </p>
+                    <div aria-label="貸借対照表（単位：千円）" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th>資産</th>
+                            <th>×6年度末</th>
+                            <th>×7年度末</th>
+                            <th>負債・純資産</th>
+                            <th>×6年度末</th>
+                            <th>×7年度末</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>現金預金</td>
+                            <td>11,140</td>
+                            <td>29,700</td>
+                            <td>買掛金</td>
+                            <td>44,240</td>
+                            <td>56,700</td>
+                          </tr>
+                          <tr>
+                            <td>売掛金</td>
+                            <td>24,000</td>
+                            <td>27,000</td>
+                            <td>短期借入金</td>
+                            <td>45,160</td>
+                            <td>38,200</td>
+                          </tr>
+                          <tr>
+                            <td>貸倒引当金</td>
+                            <td>△480</td>
+                            <td>△540</td>
+                            <td>未払金</td>
+                            <td>15,300</td>
+                            <td>12,100</td>
+                          </tr>
+                          <tr>
+                            <td>有価証券</td>
+                            <td>11,040</td>
+                            <td>11,240</td>
+                            <td>未払法人税等</td>
+                            <td>2,680</td>
+                            <td>2,900</td>
+                          </tr>
+                          <tr>
+                            <td>商品</td>
+                            <td>187,100</td>
+                            <td>192,200</td>
+                            <td>資本金</td>
+                            <td>160,000</td>
+                            <td>180,000</td>
+                          </tr>
+                          <tr>
+                            <td>建物</td>
+                            <td>242,000</td>
+                            <td>242,000</td>
+                            <td>資本準備金</td>
+                            <td>18,100</td>
+                            <td>18,100</td>
+                          </tr>
+                          <tr>
+                            <td>減価償却累計額</td>
+                            <td>△151,250</td>
+                            <td>△157,300</td>
+                            <td>利益準備金</td>
+                            <td>17,000</td>
+                            <td>17,850</td>
+                          </tr>
+                          <tr>
+                            <td>関係会社株式</td>
+                            <td>1,050</td>
+                            <td>2,230</td>
+                            <td>繰越利益剰余金</td>
+                            <td>40,420</td>
+                            <td>41,710</td>
+                          </tr>
+                          <tr>
+                            <td>長期貸付金</td>
+                            <td>18,300</td>
+                            <td>21,030</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>合計</td>
+                            <td>342,900</td>
+                            <td>367,560</td>
+                            <td>合計</td>
+                            <td>342,900</td>
+                            <td>367,560</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div aria-label="損益計算書（単位：千円）" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th>損益計算書</th>
+                            <th>金額</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>売上高</td>
+                            <td>672,000</td>
+                          </tr>
+                          <tr>
+                            <td>売上原価</td>
+                            <td>519,000</td>
+                          </tr>
+                          <tr>
+                            <td>売上総利益</td>
+                            <td>153,000</td>
+                          </tr>
+                          <tr>
+                            <td>給料</td>
+                            <td>72,000</td>
+                          </tr>
+                          <tr>
+                            <td>支払家賃</td>
+                            <td>36,000</td>
+                          </tr>
+                          <tr>
+                            <td>広告料</td>
+                            <td>13,160</td>
+                          </tr>
+                          <tr>
+                            <td>貸倒引当金繰入額</td>
+                            <td>60</td>
+                          </tr>
+                          <tr>
+                            <td>旅費交通費</td>
+                            <td>1,500</td>
+                          </tr>
+                          <tr>
+                            <td>減価償却費</td>
+                            <td>6,050</td>
+                          </tr>
+                          <tr>
+                            <td>水道光熱費</td>
+                            <td>9,420</td>
+                          </tr>
+                          <tr>
+                            <td>営業利益</td>
+                            <td>14,810</td>
+                          </tr>
+                          <tr>
+                            <td>受取利息</td>
+                            <td>290</td>
+                          </tr>
+                          <tr>
+                            <td>受取配当金</td>
+                            <td>280</td>
+                          </tr>
+                          <tr>
+                            <td>有価証券評価益</td>
+                            <td>160</td>
+                          </tr>
+                          <tr>
+                            <td>有価証券売却益</td>
+                            <td>130</td>
+                          </tr>
+                          <tr>
+                            <td>支払利息</td>
+                            <td>470</td>
+                          </tr>
+                          <tr>
+                            <td>経常利益</td>
+                            <td>15,200</td>
+                          </tr>
+                          <tr>
+                            <td>税引前当期純利益</td>
+                            <td>15,200</td>
+                          </tr>
+                          <tr>
+                            <td>法人税，住民税及び事業税</td>
+                            <td>4,560</td>
+                          </tr>
+                          <tr>
+                            <td>当期純利益</td>
+                            <td>10,640</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>〔その他の資料〕</p>
+                    <ol>
+                      <li>売上及び仕入取引はすべて掛けによるものとし，当期中に貸倒れは発生していない。</li>
+                      <li>給料，支払家賃，広告料，旅費交通費，水道光熱費は発生した全額を現金で支払っている。</li>
+                      <li>利息及び配当金の受取額と利息の支払額は「営業活動によるキャッシュ・フロー」の区分に記載する。</li>
+                      <li>現金預金のうち前期末540千円，当期末840千円は，満期が3ヶ月を超える定期預金である。また当期中に定期預金（3ヶ月超）の新規預入れ ？ 千円と払戻し550千円があった。</li>
+                      <li>当期中に有価証券の一部を ？ 千円で売却した。また有価証券を1,460千円で購入した。代金はどちらも現金で決済している。なお，決算整理前残高は11,080千円である。</li>
+                      <li>関係会社株式については， ？ 千円で購入し，代金は現金で支払っている。</li>
+                      <li>短期借入金については，現金で38,400千円の新規借入れと ？ 千円の返済をしている。</li>
+                      <li>長期貸付金については，現金で ？ 千円の新規貸付けと830千円の回収をしている。</li>
+                      <li>事業規模拡大のため，株式20,000千円を発行し，全額の引き受け・払い込みを受け，払込金は当座預金とした。ただし，資本金とする額は会社法が規定する原則を適用する。</li>
+                      <li>当期に剰余金の配当として，株主に対し ？ 千円を現金で支払うとともに，会社法の規定に基づいて利益準備金 ？ 千円を積み立てている。</li>
+                    </ol>
+                    <p>解答用紙：キャッシュ・フロー計算書（×7年4月1日から×8年3月31日まで，単位：千円）</p>
+                    <p>営業活動によるキャッシュ・フロー：〔　　〕( )／減価償却費( )／貸倒引当金の増減額( )／受取利息及び受取配当金( )／支払利息( )／有価証券評価益( )／有価証券売却益(
+                      )／売上債権の増減額( )／棚卸資産の増減額( )／仕入債務の増減額( )／未払金の増減額( )／小計( )／利息及び配当金の受取額( )／利息の支払額( )／法人税等の支払額(
+                      )／営業活動によるキャッシュ・フロー( )</p>
+                    <p>投資活動によるキャッシュ・フロー：定期預金の預入による支出( )／定期預金の払戻による収入( )／有価証券の取得による支出( )／有価証券の売却による収入( )／関係会社株式の取得による支出(
+                      )／長期貸付による支出( )／長期貸付金の回収による収入( )／投資活動によるキャッシュ・フロー( )</p>
+                    <p>財務活動によるキャッシュ・フロー：短期借入れによる収入( )／短期借入金の返済による支出( )／株式の発行による収入( )／配当金の支払額( )／財務活動によるキャッシュ・フロー( )</p>
+                    <p>現金及び現金同等物の増減額（△は減少）( )／現金及び現金同等物の期首残高( )／現金及び現金同等物の期末残高( )</p>
+                  </div>
+                </blockquote>
+              </details>
+              <!-- END OFFICIAL QUESTION 4 -->
+              <section aria-label="問題4の一般的な解法" class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">間接法キャッシュ・フロー計算書の作成</p>
+                <ol>
+                  <li>
+                    営業ＣＦは税引前当期純利益から出発し、非資金費用（減価償却費・引当金増加）を加算、営業外・特別損益を除外（受取利息等は減算、支払利息は加算）、営業資産の増加は減算・営業負債の増加は加算して小計を出す。
+                  </li>
+                  <li>小計の下で利息・配当金の受取額、利息の支払額、法人税等の支払額（期首未払 ＋ 当期計上 － 期末未払）を調整する。</li>
+                  <li>投資・財務ＣＦの「？」は勘定の増減（期首 ＋ 増加 － 減少 ＝ 期末）から逆算する。</li>
+                  <li>満期が３か月超の定期預金は、現金及び現金同等物に当たらない。</li>
+                </ol>
               </section>
-            </main>
-            <aside aria-label="解説動画とページ内目次" class="exam-learning-aside">
-              <section aria-labelledby="exam-video-title" class="exam-video-panel" id="examVideoPanel">
-                <h2 class="exam-video-panel__heading" id="exam-video-title"><span>解説動画</span><button aria-controls="examVideoContent" aria-expanded="true" class="exam-video-toggle" id="examVideoToggle" type="button"><span aria-hidden="true" class="exam-video-toggle__icon">⌃</span><span class="exam-video-toggle__label">動画を隠す</span></button></h2>
-                <div class="exam-video-body" id="examVideoContent">
+              <p class="explanation-text">
+                キャッシュ・フロー計算書は営業CFの書き方によって直接法と間接法の２つに分かれます。<br>
+                直接法では、主要取引ごとにキャッシュの動きを明確にして営業CFを求める方法です。<br>
+                間接法では、税引前当期純利益に、営業CFとのズレの理由を加減算して営業CFを求めていく方法です。B/S・P/Lをもとに作成できるため、簡単に作成できるというメリットがあります。<br>
+                営業CFの「小計」から下は、両者で同じになります。<br>
+                基本的に、解答欄の上から順番に対象のものを埋めていけば解答できます。</p>
+              <div class="content-title-orange"><strong>営業活動によるキャッシュ・フロー</strong></div>
+              <p class="explanation-text">
+                間接法による営業CFの計算は、あくまで税引前当期純利益を営業CFに合わせるための計算なので、符号が直感と異なる場合があります。<br>
+                その理由としては、主に以下の３つの調整項目があり、<br>
+                １．営業外・特別損益項目　→　営業活動とは関係なく、営業CFの計算から除外するため、損失は利益に加算、収益は減算する。<br>
+                ２．非資金損益項目　→　実際にキャッシュ・フローが発生しているわけではないため、損失は利益に加算、収益は減算する。<br>
+                ３．営業資産・負債　→　実際にキャッシュ・フローが発生しているわけではないため、減少は利益に加算、増加は減算する。<br>
+                これらのズレを解消させるのが営業CF計算です。<br>
+                なお、一番頭の括弧には「税引前当期純利益」が入ります。間接法は当期純利益に加減算していくこと、法人税支払額の項目があることから"税引前"の当期純利益額を記入すると考えましょう。
+              </p>
+              <div class="explanation-box-green">
+                税引前当期純利益：（PL）<span class="red-u">15,200</span><br>
+                減価償却費：（PL）<span class="red-u">6,050</span><br>
+                貸倒引当金の増減額：△（－540(7末B/S) －（－480）(6末B/S)） = <span class="red-u">60</span><br>
+                受取利息及び受取配当金：（PL）△(290 ＋ 280) = <span class="red-u">△570</span><br>
+                支払利息：（PL）<span class="red-u">470</span><br>
+                有価証券評価益：（PL）<span class="red-u">△160</span><br>
+                有価証券売却益：（PL）<span class="red-u">△130</span><br>
+                売上債権の増減額：△（27,000(7末B/S) － 24,000(6末B/S)）：<span class="red-u">△3,000</span><br>
+                棚卸資産の増減額：△（192,200(7末B/S) － 187,100(6末B/S)）：<span class="red-u">△5,100</span><br>
+                仕入債務の増減額：△（56,700(7末B/S) － 44,240(6末B/S)）：<span class="red-u">12,460</span><br>
+                未払金の増減額：△（12,100(7末B/S) － 15,300(6末B/S)）：<span class="red-u">△3,200</span><br>
+                小計 = 15,200 ＋ 6,050 ＋ 60 － 570 ＋ 470 － 160 － 130 － 3,000 － 5,100 ＋ 12,460 － 3,200 = <span class="red-u">22,080</span>
+              </div>
+              <p class="explanation-text">以降は符号はキャッシュの増減通りです。</p>
+              <div class="explanation-box-green">
+                利息及び配当金の受取額：<span class="red-u">570</span><br>
+                利息の支払額：<span class="red-u">△470</span><br>
+                法人税等の支払額：期首未払 2,680 ＋ 当期計上 4,560 － 期末未払 2,900 = 4,340 → <span class="red-u">△4,340</span><br>
+                営業活動によるＣＦ = 22,080 ＋ 570 － 470 － 4,340 = <span class="red-u">17,840</span>
+              </div>
+
+              <div class="content-title-orange"><strong>投資活動によるキャッシュ・フロー</strong></div>
+              <p class="explanation-text">　「？」を勘定の増減から逆算します。</p>
+              <div class="explanation-box-green">
+                定期預金：<br>
+                　前期末540 ＋ 預入？ － 払戻550 = 当期末840<br>
+                　預入 ＝ 840 － 540 ＋ 550 ＝ 850 → <span class="red-u">△850</span><br>
+                　払戻 <span class="red-u">550</span><br>
+                有価証券：<br>
+                　取得：<span class="red-u">△1,460</span>（購入代価）<br>
+                　前期末11,040 ＋ 購入1,460 － 売却簿価 = 決算整理前 11,080<br>
+                　売却簿価 ＝ －11,080 ＋ 11,040 ＋ 1,460 → <u>1,420</u><br>
+                　売却収入：1,420 ＋ 売却益130 = <span class="red-u">1,550</span><br>
+                関係会社株式の取得：<br>
+                　当期末2,230 － 前期末1,050 = 1,180 → <span class="red-u">△1,180</span><br>
+                長期貸付金：
+                　前期末18,300 ＋ 新規？ － 回収830 = 当期末21,030<br>
+                　新規 ＝ 21,030 － 18,300 ＋ 830 ＝ 3,560 → <span class="red-u">△3,560</span><br>
+                　回収：<span class="red-u">830</span><br>
+                投資活動によるＣＦ ＝ － 850 ＋ 550 － 1,460 ＋ 1,550 － 1,180 － 3,560 ＋ 830 = <span class="red-u">△4,120</span></div>
+
+              <div class="content-title-orange"><strong>財務活動によるキャッシュ・フロー</strong></div>
+              <div class="explanation-box-green">
+                短期借入金：
+                　新規借入：<span class="red-u">38,400</span><br>
+                　前期末45,160 ＋ 新規38,400 － 返済？ = 当期末38,200<br>
+                　返済 ＝ －38,200 ＋ 45,160 ＋ 38,400 ＝ 45,360 → <span class="red-u">△45,360</span><br>
+                株式の発行：<span class="red-u">20,000</span><br>
+                配当金：
+                　利益準備金：当期末17,850 － 前期末17,000 = 850(利益準備金積立額)より、積立額は配当額の1/10（（資本準備金 18,100 ＋ 利益準備金 17,850 = 35,950 は資本金 180,000 × 1/4 = 45,000 未満なので1/10全額を積立））なので、<br>
+                　配当額 ＝ 850 × 10 ＝ 8,500 → <span class="red-u">△8,500</span><br>
+                財務活動によるＣＦ = 38,400 － 45,360 ＋ 20,000 － 8,500 = <span class="red-u">4,540</span>
+              </div>
+              <div class="explanation-box-green">
+                現金及び現金同等物の増減額 = 17,840 － 4,120 ＋ 4,540 = <span class="red-u">18,260</span><br>
+                期首残高 = 11,140 － 540（3か月超定期預金）= <span class="red-u">10,600</span><br>
+                期末残高 = 10,600 ＋ 18,260 = <span class="red-u">28,860</span>（＝ 29,700 － 840）
+              </div>
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>配当金の額は「利益準備金の積立額 × 10」で逆算しますが、準備金の合計が資本金の1/4に達していないことを確認する必要があります。有価証券の売却収入は<strong>売却簿価 ＋
+                    売却益</strong>で、簿価は「決算整理前残高」から逆算します（期末残高11,240は評価益込みなので使いません）。現金同等物の期首・期末残高から3か月超の定期預金を除くのを忘れると、増減額と一致しなくなります。
+                </p>
+              </aside>
+            </section>
+
+            <section class="question-section reveal" id="q5">
+              <div class="question-main-title">
+                <h2>第５問</h2>
+              </div>
+              <div class="question-subheader-blue">連結会計</div>
+
+              <!-- BEGIN OFFICIAL QUESTION 5 -->
+              <details class="official-question official-question--placeholder">
+                <summary class="official-question__header">問題文・資料を確認する（クリックで開閉）</summary>
+                <blockquote class="official-question__body">
+                  <!-- 第5問の問題文欄 -->
+                  <div aria-hidden="true" class="official-question__space">
+                    <p>
+                      親会社および子会社の×7年3月31日（決算年1回）における資料に基づき，解答用紙の連結損益及び包括利益計算書を完成しなさい。なお，法人税等の実効税率は30％とする。また，法人税等調整額の金額がマイナスの場合には，数字の前に△を付すこと。
+                    </p>
+                    <p>〈資料1〉×7年3月31日における個別財務諸表（単位：千円）</p>
+                    <div aria-label="個別貸借対照表（単位：千円）" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th>資産</th>
+                            <th>親会社</th>
+                            <th>子会社</th>
+                            <th>負債・純資産</th>
+                            <th>親会社</th>
+                            <th>子会社</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>現金及び預金</td>
+                            <td>633,300</td>
+                            <td>300,300</td>
+                            <td>買掛金</td>
+                            <td>383,800</td>
+                            <td>311,000</td>
+                          </tr>
+                          <tr>
+                            <td>売掛金</td>
+                            <td>670,000</td>
+                            <td>140,000</td>
+                            <td>短期借入金</td>
+                            <td>629,600</td>
+                            <td>92,800</td>
+                          </tr>
+                          <tr>
+                            <td>貸倒引当金</td>
+                            <td>△6,700</td>
+                            <td>△1,400</td>
+                            <td>長期借入金</td>
+                            <td>1,066,400</td>
+                            <td>80,000</td>
+                          </tr>
+                          <tr>
+                            <td>商品</td>
+                            <td>113,700</td>
+                            <td>77,800</td>
+                            <td>繰延税金負債</td>
+                            <td>―</td>
+                            <td>11,200</td>
+                          </tr>
+                          <tr>
+                            <td>短期貸付金</td>
+                            <td>618,000</td>
+                            <td>36,000</td>
+                            <td>資本金</td>
+                            <td>204,400</td>
+                            <td>214,400</td>
+                          </tr>
+                          <tr>
+                            <td>貸倒引当金</td>
+                            <td>△61,800</td>
+                            <td>△1,600</td>
+                            <td>利益剰余金</td>
+                            <td>654,100</td>
+                            <td>68,400</td>
+                          </tr>
+                          <tr>
+                            <td>建物</td>
+                            <td>105,000</td>
+                            <td>360,000</td>
+                            <td>その他有価証券評価差額金</td>
+                            <td>260,000</td>
+                            <td>―</td>
+                          </tr>
+                          <tr>
+                            <td>減価償却累計額</td>
+                            <td>△77,700</td>
+                            <td>△180,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>土地</td>
+                            <td>85,600</td>
+                            <td>46,700</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>その他有価証券</td>
+                            <td>718,900</td>
+                            <td>―</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>子会社株式</td>
+                            <td>300,000</td>
+                            <td>―</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>繰延税金資産</td>
+                            <td>100,000</td>
+                            <td>―</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>合計</td>
+                            <td>3,198,300</td>
+                            <td>777,800</td>
+                            <td>合計</td>
+                            <td>3,198,300</td>
+                            <td>777,800</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div aria-label="個別損益計算書（単位：千円）" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th>費用</th>
+                            <th>親会社</th>
+                            <th>子会社</th>
+                            <th>収益</th>
+                            <th>親会社</th>
+                            <th>子会社</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>売上原価</td>
+                            <td>2,294,900</td>
+                            <td>719,000</td>
+                            <td>売上高</td>
+                            <td>2,635,400</td>
+                            <td>991,600</td>
+                          </tr>
+                          <tr>
+                            <td>貸倒引当金繰入額</td>
+                            <td>4,400</td>
+                            <td>280</td>
+                            <td>受取利息</td>
+                            <td>41,600</td>
+                            <td>1,900</td>
+                          </tr>
+                          <tr>
+                            <td>減価償却費</td>
+                            <td>2,100</td>
+                            <td>9,000</td>
+                            <td>受取配当金</td>
+                            <td>101,900</td>
+                            <td>―</td>
+                          </tr>
+                          <tr>
+                            <td>その他の営業費用</td>
+                            <td>117,200</td>
+                            <td>207,620</td>
+                            <td>土地売却益</td>
+                            <td>13,000</td>
+                            <td>10,000</td>
+                          </tr>
+                          <tr>
+                            <td>支払利息</td>
+                            <td>59,900</td>
+                            <td>8,200</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>法人税等</td>
+                            <td>30,300</td>
+                            <td>15,900</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>法人税等調整額</td>
+                            <td>5,300</td>
+                            <td>1,500</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>当期純利益</td>
+                            <td>277,800</td>
+                            <td>42,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>合計</td>
+                            <td>2,791,900</td>
+                            <td>1,003,500</td>
+                            <td>合計</td>
+                            <td>2,791,900</td>
+                            <td>1,003,500</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div aria-label="株主資本等変動計算書（単位：千円）" class="table-scroll" role="region" tabindex="0">
+                      <table class="calc-table">
+                        <thead>
+                          <tr>
+                            <th>株主資本等変動計算書</th>
+                            <th>親会社</th>
+                            <th>子会社</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>資本金当期首残高</td>
+                            <td>204,400</td>
+                            <td>214,400</td>
+                          </tr>
+                          <tr>
+                            <td>資本金当期末残高</td>
+                            <td>204,400</td>
+                            <td>214,400</td>
+                          </tr>
+                          <tr>
+                            <td>利益剰余金当期首残高</td>
+                            <td>428,900</td>
+                            <td>41,400</td>
+                          </tr>
+                          <tr>
+                            <td>剰余金の配当</td>
+                            <td>△52,600</td>
+                            <td>△15,000</td>
+                          </tr>
+                          <tr>
+                            <td>当期純利益</td>
+                            <td>277,800</td>
+                            <td>42,000</td>
+                          </tr>
+                          <tr>
+                            <td>利益剰余金当期末残高</td>
+                            <td>654,100</td>
+                            <td>68,400</td>
+                          </tr>
+                          <tr>
+                            <td>その他有価証券評価差額金当期首残高</td>
+                            <td>254,900</td>
+                            <td>―</td>
+                          </tr>
+                          <tr>
+                            <td>当期変動額</td>
+                            <td>5,100</td>
+                            <td>―</td>
+                          </tr>
+                          <tr>
+                            <td>その他有価証券評価差額金当期末残高</td>
+                            <td>260,000</td>
+                            <td>―</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>〈資料2〉連結に関する事項</p>
+                    <ol>
+                      <li>
+                        親会社は×6年3月31日に300,000千円で子会社の発行済株式の80％を取得した。取得時の子会社の資産および負債の時価について，土地（帳簿価額：10,000千円，時価：16,000千円）を除いて時価と帳簿価額は同一であった。土地の評価差額については，税効果会計を適用する。また，取得時における子会社の資本の金額は，資本金：214,400千円，利益剰余金：41,400千円であった。
+                      </li>
+                      <li>子会社の当期純利益〈資料1〉のうち非支配株主持分割合に相当する額は，非支配株主持分に振り替える。</li>
+                      <li>のれんは，発生年度の翌年から20年間にわたって定額法により償却する。</li>
+                      <li>
+                        4－1．当期首から，親会社は子会社に商品を販売している。なお，当期中に親会社は子会社に対して商品を200,000千円で掛け販売した。<br>4－2．子会社の期末商品のうち，42,000千円は当期に親会社から仕入れたものである。なお，親会社が子会社に販売する際の価格は原価の20％増しで設定しており，未実現利益の消去にあたっては，税効果会計を考慮して処理する。また，子会社の期首商品に親会社から仕入れたものはなかった。
+                      </li>
+                      <li>
+                        親会社の期末売掛金のうち，100,000千円は子会社に対するものである。親会社は期末売掛金に対して1％の貸倒引当金を設定している。これについて税効果会計を考慮して処理する。この貸倒引当金は，税務上，損金算入が認められたため，個別上，繰延税金資産を計上していない。なお，当期首時点では，親会社の売掛金のうち子会社に対するものはなかった。
+                      </li>
+                      <li>
+                        当期首において，子会社は親会社に対して帳簿価額12,000千円の土地を20,000千円で売却した。当期末現在，親会社はこの土地を保有している。なお，これについて税効果会計を考慮して処理する。
+                      </li>
+                      <li>
+                        子会社の短期貸付金のうち，20,000千円は親会社に対するものである。この貸付金は，当期首に利率年3％，利払日3月末日（年1回），期間1年で貸し付けたものである。なお，利息の受け払いは既に行われている。また，子会社はこの貸付金に対する貸倒引当金を設定していない。
+                      </li>
+                      <li>親会社および子会社が，当期中に株主に対して支払った利益剰余金を原資とする配当金は，次のとおりである。親会社 52,600千円　子会社 15,000千円</li>
+                      <li>親会社の繰延税金資産と繰延税金負債，子会社の繰延税金資産と繰延税金負債については，それぞれ相殺を行なう。</li>
+                    </ol>
+                    <p>解答用紙：連結損益及び包括利益計算書（×6年4月1日から×7年3月31日まで，単位：千円）</p>
+                    <p>Ⅰ 売上高( )／Ⅱ 売上原価( )／売上総利益( )／Ⅲ 販売費及び一般管理費：貸倒引当金繰入額( )・減価償却費( )・のれん償却額( )・その他の営業費用 324,820／営業利益(
+                      )／Ⅳ 営業外収益：受取利息( )・受取配当金( )／Ⅴ 営業外費用：支払利息( )／経常利益( )／Ⅵ 特別利益：土地売却益( )／税金等調整前当期純利益( )／法人税、住民税及び事業税
+                      46,200／法人税等調整額( )／法人税等合計( )／当期純利益( )／（内訳）親会社株主に帰属する当期純利益( )・非支配株主に帰属する当期純利益(
+                      )／その他の包括利益：その他有価証券評価差額金 5,100／包括利益( )／（内訳）親会社株主に係る包括利益( )・非支配株主に係る包括利益( )</p>
+                  </div>
+                </blockquote>
+              </details>
+              <!-- END OFFICIAL QUESTION 5 -->
+              <section aria-label="問題5の一般的な解法" class="general-method">
+                <h4>一般的な解法</h4>
+                <p class="method-title">連結会計の手順</p>
+                <ol>
+                  <li>PL → SS → BSの順で作成する。</li>
+                  <li>まずは、親会社と子会社のF/Sを合算。そこに連結修正仕訳を加えていく。</li>
+                  <li>SSを作成するときのため、SS項目の仕訳は「期首残高」と「当期変動額」を区別する。</li>
+                </ol>
+              </section>
+              <p class="explanation-text">ここでは割愛しますが、まず初めに、両社のF/S数値を合算して、修正前の連結財務諸表を作成しましょう。<br>その数値に修正仕訳を加味することで、正しい連結財務諸表が求まります。<br>小見出しの番号は＜資料２＞の番号に対応します。</p>
+
+              <div class="content-title-orange"><strong>Ａ．資本連結</strong></div>
+              <div class="q3rdh-rp"><span class="q3rdh-tx">１（ａ）．土地の評価替え</span></div>
+              <p class="explanation-text">
+                通常、取引を行う上で発生した資産・負債は時価で評価されます。同様に、子会社のものも期末で取得したと考え、時価によって評価替えを行います。<br>
+                また、税効果会計を適用します。これは、税務上は時価評価を行わないため、仮に評価替後の期末時点で売却を行うと税務上と会計上で利益がズレ、よって税額もズレるためです。税率は30％です。
+              </p>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">土地</td>
+                      <td class="journal-value">6,000</td>
+                      <td class="journal-label">評価差額</td>
+                      <td class="journal-value">4,200</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label"></td>
+                      <td class="journal-value"></td>
+                      <td class="journal-label">繰延税金負債</td>
+                      <td class="journal-value">1,800</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="explanation-box-green">
+                土地価額増分：16,000 － 10,000 ＝ <u>6,000</u><br>
+                繰延税金負債：6,000 × 30% ＝ <u>1,800</u>
+              </div>
+
+              <div class="q3rdh-rp"><span class="q3rdh-tx">１（ｂ）．投資と資本の相殺消去</span></div>
+              <p class="explanation-text">
+                現在の連結財務諸表には子会社に対する投資額とそれに対応する資本がそれぞれ計上されています。連結財務諸表の資本はあくまでも親会社のもののみについて考えますから、これらは相殺消去する必要があります。<br>
+                親会社の子会社株式と、子会社の資本、評価差額を消去します。<br>
+                加えて、親会社による余剰投資分（購入した株式持分に対応する資本額以上に投資した金額）である「のれん」と、親会社以外の持分に対応する資本額である「非支配株主持分」を計上します。<br>
+                なお、その計算の資本額には「評価差額」も加味して計算します。
+              </p>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">資本金当期首残高</td>
+                      <td class="journal-value">214,400</td>
+                      <td class="journal-label">子会社株式</td>
+                      <td class="journal-value">300,000</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label">利益剰余金当期首残高</td>
+                      <td class="journal-value">41,400</td>
+                      <td class="journal-label">非支配株主持分当期首残高</td>
+                      <td class="journal-value">52,000</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label">評価差額</td>
+                      <td class="journal-value">4,200</td>
+                      <td class="journal-label"></td>
+                      <td class="journal-value"></td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label">のれん</td>
+                      <td class="journal-value">92,000</td>
+                      <td class="journal-label"></td>
+                      <td class="journal-value"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="explanation-box-green">
+                資本金、利益剰余金、評価差額、子会社株式　→　資料等から<br>
+                のれん：300,000 －（214,400 ＋ 41,400 ＋ 4,200）× 80% ＝ <u>92,000</u><br>
+                非支配株主持分：（214,400 ＋ 41,400 ＋ 4,200）× 20% ＝ <u>52,000</u><br>
+                （のれん・非支配株主持分どちらかを算定し、残りを貸借差額としてもよい）
+              </div>
+
+              <div class="q3rdh-rp"><span class="q3rdh-tx">２．当期純利益の按分</span></div>
+              <p class="explanation-text">
+                子会社の当期純利益のうち、非支配株主持分にあたる部分を「非支配株主持分に帰属する当期純利益（費用）」に振り替え、親会社に帰属する利益の計算に役立てます。
+              </p>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">非支配株主持分に帰属する当期純利益</td>
+                      <td class="journal-value">8,400</td>
+                      <td class="journal-label">非支配株主持分当期変動額</td>
+                      <td class="journal-value">8,400</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="explanation-box-green">
+                非支配株主に帰属する当期純利益：子会社当期純利益 42,000 × 20% ＝ <u>8,400</u><br>
+              </div>
+
+              <div class="q3rdh-rp"><span class="q3rdh-tx">８．配当金の修正</span></div>
+              <p class="explanation-text">
+                子会社の配当金について、親会社に対するものは内部取引のため振り戻し、非支配株主に対するものは、資本（非支配株主持分）の払い戻しの性格を有するため、振り戻します。結果的に配当はなかったことになります。
+              </p>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">受取配当金</td>
+                      <td class="journal-value">12,000</td>
+                      <td class="journal-label">利益剰余金当期変動額</td>
+                      <td class="journal-value">15,000</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label">非支配株主持分当期変動額</td>
+                      <td class="journal-value">3,000</td>
+                      <td class="journal-label"></td>
+                      <td class="journal-value"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="explanation-box-green">
+                親会社受取配当金：15,000 × 80% ＝ <u>12,000</u><br>
+                非支配株主持分：貸借差額
+              </div>
+
+              <div class="q3rdh-rp"><span class="q3rdh-tx">３．のれんの償却</span></div>
+              <p class="explanation-text">
+                のれんは、発生年度の翌年から20年間以下の期間にわたって定額法により償却します。<br>
+                本問では20年で償却されます。
+              </p>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">のれん償却額</td>
+                      <td class="journal-value">4,600</td>
+                      <td class="journal-label">のれん</td>
+                      <td class="journal-value">4,600</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="explanation-box-green">
+                償却額：のれん 92,000 ÷ 20 ＝ <u>4,600</u><br>
+              </div>
+
+              <div class="content-title-orange"><strong>Ｂ．成果連結</strong></div>
+              <div class="q3rdh-rp"><span class="q3rdh-tx">４－１．内部取引の相殺消去（ダウンストリーム）</span></div>
+              <p class="explanation-text">
+                内部取引によって増えたP/L項目は、本来計上されないものですから相殺消去します。<br>
+                なお、買掛金等のB/S項目は決済されれば消去されますから、ここでは一旦考慮しません。<br>
+                なお、期末P/Lには「売上原価」勘定があるため、仕入勘定は用いません。
+              </p>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">売上高</td>
+                      <td class="journal-value">200,000</td>
+                      <td class="journal-label">売上原価</td>
+                      <td class="journal-value">200,000</td>
+                    </tr>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="q3rdh-rp"><span class="q3rdh-tx">４－２．期末未実現利益の消去</span></div>
+              <p class="explanation-text">
+                基本的に４－１と同じですが、未実現利益については控除する必要があります。<br>
+                また、税効果会計も考慮されます。
+              </p>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">売上原価</td>
+                      <td class="journal-value">7,000</td>
+                      <td class="journal-label">商品</td>
+                      <td class="journal-value">7,000</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label">繰延税金資産</td>
+                      <td class="journal-value">2,100</td>
+                      <td class="journal-label">法人税等調整額</td>
+                      <td class="journal-value">2,100</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="explanation-box-green">
+                税額：7,000 × 30% ＝ <u>2,100</u><br>
+              </div>
+
+              <div class="q3rdh-rp"><span class="q3rdh-tx">５．売掛／買掛金の相殺</span></div>
+              <p class="explanation-text">
+                売掛／買掛金を相殺消去するとともに、それに対する貸倒引当金も修正します。また、それによって利益が変動するため、税効果会計も適用します。
+              </p>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">買掛金</td>
+                      <td class="journal-value">100,000</td>
+                      <td class="journal-label">売掛金</td>
+                      <td class="journal-value">100,000</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label">貸倒引当金</td>
+                      <td class="journal-value">1,000</td>
+                      <td class="journal-label">貸倒引当金繰入額</td>
+                      <td class="journal-value">1,000</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label">法人税等調整額</td>
+                      <td class="journal-value">300</td>
+                      <td class="journal-label">繰延税金負債</td>
+                      <td class="journal-value">300</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="explanation-box-green">
+                貸倒引当金：100,000 × １% ＝ <u>1,000</u><br>
+                税効果：1,000 × 30% ＝ <u>300</u>
+              </div>
+
+              <div class="q3rdh-rp"><span class="q3rdh-tx">６．固定資産売却（アップストリーム）</span></div>
+              <p class="explanation-text">
+                これも内部取引ですので、本来は売却益を計上してはいけません。<br>
+                また、アップストリーム（子会社から親会社への売却）に係る未実現利益の消去ですので、非支配株主にも利益が帰属します。そのため、税効果考慮分を除いた変動利益について、非支配株主に帰属する当期純利益の調整も行う必要があります。
+              </p>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">固定資産売却益</td>
+                      <td class="journal-value">8,000</td>
+                      <td class="journal-label">土地</td>
+                      <td class="journal-value">8,000</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label">繰延税金資産</td>
+                      <td class="journal-value">2,400</td>
+                      <td class="journal-label">法人税等調整額</td>
+                      <td class="journal-value">2,400</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label">非支配株主持分当期変動額</td>
+                      <td class="journal-value">1,120</td>
+                      <td class="journal-label">非支配株主に帰属する当期純利益</td>
+                      <td class="journal-value">1,120</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="explanation-box-green">
+                売却益：20,000 － 12,000 ＝ <u>8,000</u><br>
+                税効果：8,000 × 30% ＝ <u>2,400</u><br>
+                非支配株主に帰属する当期純利益：（8,000 － 2,400）× 20% ＝ <u>1,120</u>
+              </div>
+
+              <div class="q3rdh-rp"><span class="q3rdh-tx">７．貸付金</span></div>
+              <p class="explanation-text">
+                貸付金・利息支払いは内部取引ですので相殺消去します。
+              </p>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">短期借入金</td>
+                      <td class="journal-value">20,000</td>
+                      <td class="journal-label">短期貸付金</td>
+                      <td class="journal-value">20,000</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label">受取利息</td>
+                      <td class="journal-value">600</td>
+                      <td class="journal-label">支払利息</td>
+                      <td class="journal-value">600</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="explanation-box-green">
+                利息額：20,000 × ３% ＝ <u>600</u><br>
+              </div>
+
+              <div class="q3rdh-rp"><span class="q3rdh-tx">９．繰延税金資産／負債の相殺</span></div>
+              <p class="explanation-text">
+                同一納税主体の繰延税金資産／負債は相殺表示できるため、相殺します。親子間の相殺はできません。<br>
+                親会社分は、４－２、５<br>
+                子会社分は、１（ａ）、６<br>
+                の取引にかかる税効果会計の影響を受けます。よって、個別B/Sに計上されているものも加味すると、<br>
+                親会社：繰延税金資産 102,100、繰延税金負債 300<br>
+                子会社：繰延税金資産 2,400、繰延税金負債 13,000<br>
+                の残高があります。これについて、それぞれ相殺消去をすることができます。
+              </p>
+              <div aria-label="仕訳（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table aria-label="仕訳" class="journal-table">
+                  <tbody>
+                    <tr>
+                      <td class="journal-label">繰延税金負債</td>
+                      <td class="journal-value">300</td>
+                      <td class="journal-label">繰延税金資産</td>
+                      <td class="journal-value">300</td>
+                    </tr>
+                    <tr>
+                      <td class="journal-label">繰延税金負債</td>
+                      <td class="journal-value">2,400</td>
+                      <td class="journal-label">繰延税金資産</td>
+                      <td class="journal-value">2,400</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="content-title-orange"><strong>３．連結損益計算書の各行</strong></div>
+              <details>
+                <summary class="official-question__header">資料を確認する（クリックで開閉）</summary>
+              <div aria-label="表（横方向にスクロールできます）" class="table-scroll" role="region" tabindex="0">
+                <table class="calc-table">
+                  <thead>
+                    <tr>
+                      <th>科目</th>
+                      <th>計算</th>
+                      <th>金額</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>売上高</td>
+                      <td>2,635,400 ＋ 991,600 － 200,000</td>
+                      <td>3,427,000</td>
+                    </tr>
+                    <tr>
+                      <td>売上原価</td>
+                      <td>2,294,900 ＋ 719,000 － 200,000 ＋ 7,000</td>
+                      <td>2,820,900</td>
+                    </tr>
+                    <tr>
+                      <td>売上総利益</td>
+                      <td>3,427,000 － 2,820,900</td>
+                      <td>606,100</td>
+                    </tr>
+                    <tr>
+                      <td>貸倒引当金繰入額</td>
+                      <td>4,400 ＋ 280 － 1,000</td>
+                      <td>3,680</td>
+                    </tr>
+                    <tr>
+                      <td>減価償却費</td>
+                      <td>2,100 ＋ 9,000</td>
+                      <td>11,100</td>
+                    </tr>
+                    <tr>
+                      <td>のれん償却額</td>
+                      <td>92,000 ÷ 20</td>
+                      <td>4,600</td>
+                    </tr>
+                    <tr>
+                      <td>その他の営業費用</td>
+                      <td>117,200 ＋ 207,620</td>
+                      <td>324,820</td>
+                    </tr>
+                    <tr>
+                      <td>営業利益</td>
+                      <td>606,100 － 3,680 － 11,100 － 4,600 － 324,820</td>
+                      <td>261,900</td>
+                    </tr>
+                    <tr>
+                      <td>受取利息</td>
+                      <td>41,600 ＋ 1,900 － 600</td>
+                      <td>42,900</td>
+                    </tr>
+                    <tr>
+                      <td>受取配当金</td>
+                      <td>101,900 － 12,000</td>
+                      <td>89,900</td>
+                    </tr>
+                    <tr>
+                      <td>支払利息</td>
+                      <td>59,900 ＋ 8,200 － 600</td>
+                      <td>67,500</td>
+                    </tr>
+                    <tr>
+                      <td>経常利益</td>
+                      <td>261,900 ＋ 42,900 ＋ 89,900 － 67,500</td>
+                      <td>327,200</td>
+                    </tr>
+                    <tr>
+                      <td>土地売却益</td>
+                      <td>13,000 ＋ 10,000 － 8,000</td>
+                      <td>15,000</td>
+                    </tr>
+                    <tr>
+                      <td>税金等調整前当期純利益</td>
+                      <td>327,200 ＋ 15,000</td>
+                      <td>342,200</td>
+                    </tr>
+                    <tr>
+                      <td>法人税、住民税及び事業税</td>
+                      <td>30,300 ＋ 15,900</td>
+                      <td>46,200</td>
+                    </tr>
+                    <tr>
+                      <td>法人税等調整額</td>
+                      <td>5,300 ＋ 1,500 － 2,100 ＋ 300 － 2,400</td>
+                      <td>2,600</td>
+                    </tr>
+                    <tr>
+                      <td>法人税等合計</td>
+                      <td>46,200 ＋ 2,600</td>
+                      <td>48,800</td>
+                    </tr>
+                    <tr>
+                      <td>当期純利益</td>
+                      <td>342,200 － 48,800</td>
+                      <td>293,400</td>
+                    </tr>
+                    <tr>
+                      <td>非支配株主に帰属する当期純利益</td>
+                      <td>42,000 × 20％ － 1,120</td>
+                      <td>7,280</td>
+                    </tr>
+                    <tr>
+                      <td>親会社株主に帰属する当期純利益</td>
+                      <td>293,400 － 7,280</td>
+                      <td>286,120</td>
+                    </tr>
+                    <tr>
+                      <td>その他の包括利益（その他有価証券評価差額金）</td>
+                      <td>親会社の当期変動額</td>
+                      <td>5,100</td>
+                    </tr>
+                    <tr>
+                      <td>包括利益</td>
+                      <td>293,400 ＋ 5,100</td>
+                      <td>298,500</td>
+                    </tr>
+                    <tr>
+                      <td>親会社株主に係る包括利益</td>
+                      <td>286,120 ＋ 5,100</td>
+                      <td>291,220</td>
+                    </tr>
+                    <tr>
+                      <td>非支配株主に係る包括利益</td>
+                      <td>7,280</td>
+                      <td>7,280</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              </details>
+              <p class="note explanation-text">法人税等調整額は個別の合計 6,800 に連結修正（△2,100 ＋ 300 － 2,400）を加えた 2,600
+                で、プラスなので△は付きません。その他有価証券評価差額金は親会社のみなので、包括利益の内訳は全額親会社株主分です。</p>
+              <aside aria-label="失点しやすいポイント" class="exam-tip"><strong>失点しやすいポイント</strong>
+                <p>未実現利益は「原価の20％増し」なので、42,000 × 20％ ではなく 42,000 × 0.2 ÷ 1.2 ＝ 7,000
+                  で計算します。土地の売却は子会社→親会社（アップストリーム）なので、消去した利益（税効果後5,600）の20％を非支配株主にも負担させる点を落としやすい問題です。のれんは「発生年度の翌年から」償却なので×6年3月31日取得なら当期（×6年度）から償却が始まります。子会社からの受取配当金12,000を消去し忘れると経常利益以下がすべてずれます。
+                </p>
+              </aside>
+            </section>
+          </main>
+          <aside aria-label="解説動画とページ内目次" class="exam-learning-aside">
+            <section aria-labelledby="exam-video-title" class="exam-video-panel" id="examVideoPanel">
+              <h2 class="exam-video-panel__heading" id="exam-video-title"><span>解説動画</span><button
+                  aria-controls="examVideoContent" aria-expanded="true" class="exam-video-toggle" id="examVideoToggle"
+                  type="button"><span aria-hidden="true" class="exam-video-toggle__icon">⌃</span><span
+                    class="exam-video-toggle__label">動画を隠す</span></button></h2>
+              <div class="exam-video-body" id="examVideoContent">
                 <!-- 動画完成後、このプレースホルダーを .exam-video-frame の iframe に差し替えます。 -->
                 <div aria-label="解説動画は準備中です" class="exam-video-placeholder" role="img">
                   <span aria-hidden="true" class="exam-video-placeholder__icon">▶</span>
@@ -534,122 +1920,125 @@
                     <span>公開後、この場所で動画を視聴しながら解説を読めます。</span>
                   </span>
                 </div>
-                              </div>
-              </section>
-              <nav aria-labelledby="exam-toc-title" class="exam-desktop-toc">
-                <h2 id="exam-toc-title">このページの目次</h2>
-                <ul class="exam-toc-overview">
-                  <li><a href="#usage-title">解答するときの注意</a></li>
-                  <li><a href="#legend-title">解説の凡例</a></li>
-                  <li><a href="#question-list">設問一覧</a></li>
-                  <li><a href="#answers">正答一覧</a></li>
-                </ul>
-                <p class="exam-toc-label">問題別解説</p>
-                <ol class="exam-toc-questions">
-                  <li><a href="#q1">1</a></li>
-                  <li><a href="#q2">2</a></li>
-                  <li><a href="#q3">3</a></li>
-                  <li><a href="#q4">4</a></li>
-                  <li><a href="#q5">5</a></li>
-                </ol>
-              </nav>
-            </aside>
-          </section>
-        </div>
+              </div>
+            </section>
+            <nav aria-labelledby="exam-toc-title" class="exam-desktop-toc">
+              <h2 id="exam-toc-title">このページの目次</h2>
+              <ul class="exam-toc-overview">
+                <li><a href="#usage-title">解答するときの注意</a></li>
+                <li><a href="#legend-title">解説の凡例</a></li>
+                <li><a href="#question-list">設問一覧</a></li>
+                <li><a href="#answers">正答一覧</a></li>
+              </ul>
+              <p class="exam-toc-label">問題別解説</p>
+              <ol class="exam-toc-questions">
+                <li><a href="#q1">1</a></li>
+                <li><a href="#q2">2</a></li>
+                <li><a href="#q3-1">3-1</a></li>
+                <li><a href="#q3-2">3-2</a></li>
+                <li><a href="#q4">4</a></li>
+                <li><a href="#q5">5</a></li>
+              </ol>
+            </nav>
+          </aside>
+        </section>
       </div>
     </div>
-            <button aria-label="ページ上部へ戻る" class="page-top-button" id="pageTopButton" title="ページ上部へ戻る" type="button">
-              <svg aria-hidden="true" height="24" viewbox="0 0 24 24" width="24">
-                <path d="M6 15l6-6 6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"></path>
-              </svg>
-              <span>上へ</span>
-            </button>
-            <footer class="exam-footer site-footer">
-              <div class="footer-content">
-                <p class="footer-text">本解説は、公式問題・公式解式を参照して独自に作成した学習用コンテンツです。全国商業高等学校協会による公式解説・認定教材ではありません。</p>
-                <p class="footer-text">© 2026 全商関係hp. All Rights Reserved.</p>
-              </div>
-            </footer>
-            <script src="../../js/main.js"></script>
-            <script>
-            (() => {
-              const topButton = document.getElementById('pageTopButton');
+  </div>
+  <button aria-label="ページ上部へ戻る" class="page-top-button" id="pageTopButton" title="ページ上部へ戻る" type="button">
+    <svg aria-hidden="true" height="24" viewbox="0 0 24 24" width="24">
+      <path d="M6 15l6-6 6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2.4"></path>
+    </svg>
+    <span>上へ</span>
+  </button>
+  <footer class="exam-footer site-footer">
+    <div class="footer-content">
+      <p class="footer-text">本解説は、公式問題・公式解式を参照して独自に作成した学習用コンテンツです。全国商業高等学校協会による公式解説・認定教材ではありません。</p>
+      <p class="footer-text">© 2026 全商関係hp. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="../../js/main.js"></script>
+  <script>
+    (() => {
+      const topButton = document.getElementById('pageTopButton');
 
-              const updateTopButton = () => {
-                if (topButton) {
-                  topButton.classList.toggle('is-visible', window.scrollY > 480);
-                }
-              };
+      const updateTopButton = () => {
+        if (topButton) {
+          topButton.classList.toggle('is-visible', window.scrollY > 480);
+        }
+      };
 
-              if (topButton) {
-                topButton.addEventListener('click', () => {
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                });
-                window.addEventListener('scroll', updateTopButton, { passive: true });
-                updateTopButton();
-              }
+      if (topButton) {
+        topButton.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        window.addEventListener('scroll', updateTopButton, { passive: true });
+        updateTopButton();
+      }
 
-              const tocLinks = Array.from(document.querySelectorAll('.exam-desktop-toc a[href^="#"]'));
-              const tocTargets = tocLinks
-                .map((link) => ({
-                  link,
-                  target: document.querySelector(link.getAttribute('href'))
-                }))
-                .filter((item) => item.target);
-              let tocUpdatePending = false;
+      const tocLinks = Array.from(document.querySelectorAll('.exam-desktop-toc a[href^="#"]'));
+      const tocTargets = tocLinks
+        .map((link) => ({
+          link,
+          target: document.querySelector(link.getAttribute('href'))
+        }))
+        .filter((item) => item.target);
+      let tocUpdatePending = false;
 
-              const updateCurrentTocItem = () => {
-                if (!tocTargets.length) {
-                  return;
-                }
+      const updateCurrentTocItem = () => {
+        if (!tocTargets.length) {
+          return;
+        }
 
-                let currentItem = tocTargets[0];
-                const headerOffset = 180;
+        let currentItem = tocTargets[0];
+        const headerOffset = 180;
 
-                tocTargets.forEach((item) => {
-                  if (item.target.getBoundingClientRect().top <= headerOffset) {
-                    currentItem = item;
-                  }
-                });
+        tocTargets.forEach((item) => {
+          if (item.target.getBoundingClientRect().top <= headerOffset) {
+            currentItem = item;
+          }
+        });
 
-                tocTargets.forEach((item) => {
-                  const isCurrent = item === currentItem;
-                  item.link.classList.toggle('is-current', isCurrent);
-                  if (isCurrent) {
-                    item.link.setAttribute('aria-current', 'location');
-                  } else {
-                    item.link.removeAttribute('aria-current');
-                  }
-                });
-                tocUpdatePending = false;
-              };
+        tocTargets.forEach((item) => {
+          const isCurrent = item === currentItem;
+          item.link.classList.toggle('is-current', isCurrent);
+          if (isCurrent) {
+            item.link.setAttribute('aria-current', 'location');
+          } else {
+            item.link.removeAttribute('aria-current');
+          }
+        });
+        tocUpdatePending = false;
+      };
 
-              const requestTocUpdate = () => {
-                if (!tocUpdatePending) {
-                  tocUpdatePending = true;
-                  window.requestAnimationFrame(updateCurrentTocItem);
-                }
-              };
+      const requestTocUpdate = () => {
+        if (!tocUpdatePending) {
+          tocUpdatePending = true;
+          window.requestAnimationFrame(updateCurrentTocItem);
+        }
+      };
 
-              window.addEventListener('scroll', requestTocUpdate, { passive: true });
-              window.addEventListener('resize', requestTocUpdate);
-              updateCurrentTocItem();
+      window.addEventListener('scroll', requestTocUpdate, { passive: true });
+      window.addEventListener('resize', requestTocUpdate);
+      updateCurrentTocItem();
 
-              if ('IntersectionObserver' in window) {
-                const observer = new IntersectionObserver((entries) => {
-                  entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                      entry.target.classList.add('active');
-                      observer.unobserve(entry.target);
-                    }
-                  });
-                }, { threshold: 0.08 });
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.08 });
 
-                document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
-              } else {
-                document.querySelectorAll('.reveal').forEach((element) => element.classList.add('active'));
-              }
-            })();
-            </script>
-          </body>
-          </html>
+        document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+      } else {
+        document.querySelectorAll('.reveal').forEach((element) => element.classList.add('active'));
+      }
+    })();
+  </script>
+</body>
+
+</html>
