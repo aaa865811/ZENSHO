@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <meta name="description" content="ページが見つかりませんでした。全商検定の過去問解説一覧、またはトップページからお探しのページをご確認ください。">
+  <title>404｜ページが見つかりません - 全商検定 過去問解説</title>
+
+  <!-- サイトの既存CSSはそのまま利用します。 -->
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/header.css">
+  <!-- 404ページだけに適用される、新規のCSSです。 -->
+  <link rel="stylesheet" href="css/404.css">
+</head>
+<body class="page-wrapper exam-learning-page error404-page" id="top">
+  <a class="error404-skip" href="#main-content">本文へ移動</a>
+
+  <!-- 既存ページと同じヘッダー構造。404では有効な移動先のみ表示します。 -->
+  <header class="header">
+    <a class="logo" href="index.html" aria-label="全商検定 過去問解説・サイトトップへ">
+      <img class="header__logo--img" src="img/ZenSho-PAST.png" alt="全商検定 過去問解説">
+    </a>
+    <nav class="header__nav" aria-label="メインメニュー">
+      <ul>
+        <li>
+          <a href="explanation_pastexams/index.html">
+            <span class="nav__en">PAST EXAMS</span>
+            <span class="nav__jp">検定過去問解説</span>
+          </a>
+        </li>
+        <li>
+          <a href="index.html">
+            <span class="nav__en">HOME</span>
+            <span class="nav__jp">サイトトップ</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <header class="header__res">
+    <a class="logo" href="index.html" aria-label="全商検定 過去問解説・サイトトップへ">
+      <img class="header__logo--img" src="img/ZenSho-PAST.png" alt="全商検定 過去問解説">
+    </a>
+    <nav class="header__nav" aria-label="スマートフォン用メニュー">
+      <ul class="heder__nav--list" id="error404-mobile-nav">
+        <li>
+          <a href="explanation_pastexams/index.html">
+            <span class="nav__en">PAST EXAMS</span>
+            <span class="nav__jp">検定過去問解説</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="nav__en">HOME</span>
+            <span class="nav__jp">サイトトップ</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <button class="burger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="error404-mobile-nav">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </button>
+  </header>
+
+  <div id="root" class="error404-root">
+    <div class="app-container">
+      <main class="error404-main" id="main-content">
+        <section class="error404-card" aria-labelledby="error404-title">
+          <div class="error404-card__visual" aria-hidden="true">
+            <span class="error404-card__code">404</span>
+            <span class="error404-card__english">PAGE NOT FOUND</span>
+          </div>
+
+          <div class="error404-card__content">
+            <p class="error404-card__eyebrow">お探しのページについて</p>
+            <h1 id="error404-title">ページが<br class="error404-break">見つかりません</h1>
+            <p class="error404-card__description">
+              指定されたページは、移動または削除されたか、URLに誤りがある可能性があります。
+            </p>
+            <p class="error404-card__guide">
+              お手数ですが、URLをご確認いただくか、以下のリンクから目的のページをお探しください。
+            </p>
+            <nav class="error404-actions" aria-label="別のページへ移動">
+              <a class="error404-button error404-button--primary" href="explanation_pastexams/index.html">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"></path>
+                </svg>
+                過去問解説一覧へ
+              </a>
+              <a class="error404-button error404-button--outline" href="index.html">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m3 10 9-7 9 7"></path>
+                  <path d="M5 9v12h14V9"></path>
+                  <path d="M9 21v-7h6v7"></path>
+                </svg>
+                サイトトップへ
+              </a>
+            </nav>
+          </div>
+        </section>
+        <p class="error404-bottom-note">全商検定の問題・解説は「過去問解説一覧」から探せます。</p>
+      </main>
+    </div>
+  </div>
+
+  <footer class="exam-footer site-footer">
+    <div class="footer-content">
+      <p class="footer-text">© 2026 全商関係hp. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- スマートフォンの開閉はサイト既存のJSを使用します。 -->
+  <script src="/js/main.js"></script>
+  <script>
+    // 既存のメニュー開閉処理に、支援技術向けの状態表示を追加します。
+    function initError404MenuAccessibility() {
+      const menuButton = document.querySelector('.error404-page .burger');
+      if (!menuButton) return;
+
+      menuButton.addEventListener('click', () => {
+        const expanded = menuButton.classList.contains('toggle');
+        menuButton.setAttribute('aria-expanded', String(expanded));
+        menuButton.setAttribute('aria-label', expanded ? 'メニューを閉じる' : 'メニューを開く');
+      });
+    }
+
+    // 共通main.jsのクリック処理が登録されてから状態更新を登録します。
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initError404MenuAccessibility);
+    } else {
+      initError404MenuAccessibility();
+    }
+  </script>
+</body>
+</html>

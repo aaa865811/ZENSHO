@@ -1,0 +1,284 @@
+/* 404ページ専用スタイル。既存の site.css / header.css は変更しません。 */
+
+.error404-page {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.error404-page .error404-root {
+  width: 100%;
+}
+
+.error404-page .app-container {
+  margin-top: 80px;
+  min-height: calc(100vh - 80px - 98px);
+  background: linear-gradient(160deg, #f8fbff 0%, #f6f8fb 60%, #f3f9f6 100%);
+}
+
+.error404-page .error404-main {
+  width: min(100% - 40px, 1060px);
+  margin: 0 auto;
+  padding: clamp(58px, 9vh, 106px) 0 clamp(40px, 8vh, 80px);
+}
+
+.error404-page .error404-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.87fr) minmax(0, 1.35fr);
+  align-items: center;
+  gap: clamp(26px, 4.5vw, 64px);
+  padding: 30px 0px;
+  border: 1px solid #dae3ed;
+  border-top: 5px solid var(--exam-accent, #235a9f);
+  border-radius: 18px;
+  background-color: #fff;
+  box-shadow: 0 16px 48px rgba(33, 62, 96, .065);
+}
+
+.error404-page .error404-card__visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 0;
+  border-right: 1px solid #e3eaf2;
+  text-align: center;
+}
+
+.error404-page .error404-card__code {
+  color: var(--exam-accent-dark, #184579);
+  font-size: clamp(6.2rem, 12vw, 9.5rem);
+  font-weight: 800;
+  letter-spacing: -.085em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.error404-page .error404-card__english {
+  margin-top: 12px;
+  padding-top: 15px;
+  border-top: 4px solid #a5d8eb;
+  color: #667b93;
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  white-space: nowrap;
+}
+
+.error404-page .error404-card__content {
+  min-width: 0;
+}
+
+.error404-page .error404-card__eyebrow {
+  margin: 0 0 12px;
+  color: var(--exam-accent, #235a9f);
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+}
+
+.error404-page .error404-card h1 {
+  margin: 0 0 22px;
+  color: #20242a;
+  font-size: clamp(1.9rem, 3.4vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: -.025em;
+  line-height: 1.45;
+}
+
+.error404-page .error404-break {
+  display: none;
+}
+
+.error404-page .error404-card__description,
+.error404-page .error404-card__guide {
+  max-width: 33rem;
+  margin: 0;
+  color: #465568;
+  font-size: clamp(.94rem, 1.4vw, 1.02rem);
+  line-height: 1.9;
+}
+
+.error404-page .error404-card__guide {
+  margin-top: 10px;
+  color: #667085;
+}
+
+.error404-page .error404-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.error404-page .error404-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 50px;
+  padding: 12px 19px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: .94rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .18s ease, border-color .18s ease, transform .18s ease;
+}
+
+.error404-page .error404-button svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+}
+
+.error404-page .error404-button--primary {
+  color: #fff;
+  background: var(--exam-accent-dark, #184579);
+  border-color: var(--exam-accent-dark, #184579);
+}
+
+.error404-page .error404-button--primary:hover {
+  background: #235a9f;
+  border-color: #235a9f;
+  transform: translateY(-2px);
+}
+
+.error404-page .error404-button--outline {
+  color: var(--exam-accent-dark, #184579);
+  background: #fff;
+  border-color: #c8d6e6;
+}
+
+.error404-page .error404-button--outline:hover {
+  background: #eef5ff;
+  border-color: var(--exam-accent, #235a9f);
+  transform: translateY(-2px);
+}
+
+.error404-page .error404-bottom-note {
+  margin: 25px 0 0;
+  color: #667085;
+  font-size: .9rem;
+  text-align: center;
+}
+
+.error404-page .site-footer {
+  margin-top: 0;
+  background: #fff;
+}
+
+.error404-page .exam-footer .footer-content {
+  text-align: center;
+}
+
+.error404-page .burger {
+  appearance: none;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.error404-page .error404-skip {
+  position: fixed;
+  top: -100px;
+  left: 12px;
+  z-index: 2000;
+  padding: 10px 16px;
+  border-radius: 6px;
+  background: #fff;
+  color: #184579;
+  font-weight: 700;
+}
+
+.error404-page .error404-skip:focus {
+  top: 12px;
+}
+
+.error404-page a:focus-visible,
+.error404-page button:focus-visible {
+  outline: 3px solid #f7a838;
+  outline-offset: 3px;
+}
+
+@media (max-width: 1024px) {
+  .error404-page .app-container {
+    margin-top: 60px;
+    min-height: calc(100vh - 60px - 98px);
+  }
+
+  .error404-page .header__res .logo {
+    display: flex;
+    align-items: center;
+    flex: 0 1 285px;
+    width: min(70vw, 285px);
+    height: 54px;
+    overflow: hidden;
+  }
+
+  .error404-page .header__res .header__logo--img {
+    width: 100%;
+    max-height: 54px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 760px) {
+  .error404-page .error404-main {
+    width: min(100% - 28px, 580px);
+    padding: 35px 0 44px;
+  }
+
+  .error404-page .error404-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 28px 23px 32px;
+    border-radius: 14px;
+  }
+
+  .error404-page .error404-card__visual {
+    padding: 4px 0 15px;
+    border-right: 0;
+    border-bottom: 1px solid #e3eaf2;
+  }
+
+  .error404-page .error404-card__code {
+    font-size: clamp(5.5rem, 21vw, 7rem);
+  }
+
+  .error404-page .error404-card__english {
+    margin-top: 6px;
+    padding-top: 10px;
+    border-top-width: 3px;
+  }
+
+  .error404-page .error404-card h1 {
+    margin-bottom: 14px;
+    font-size: clamp(1.75rem, 7vw, 2.15rem);
+  }
+
+  .error404-page .error404-actions {
+    margin-top: 25px;
+  }
+
+  .error404-page .error404-button {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .error404-page .error404-break {
+    display: inline;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .error404-page .error404-button {
+    transition: none;
+  }
+
+  .error404-page .error404-button:hover {
+    transform: none;
+  }
+}

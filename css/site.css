@@ -207,7 +207,7 @@ table {
 .explanation-text {
   font-size: 16px;
   line-height: 1.7;
-  padding-left: 0.5rem;
+  padding: 0.5rem 0rem 0rem 0.5rem;
 }
 
 .answer-red-underline {
@@ -1139,7 +1139,7 @@ a {
 @media (min-width: 768px) {
   .content-wrapper {
     /* padding: 3rem 1.5rem; */
-    width: 90%;
+    width: 95%;
   }
 }
 
@@ -2007,7 +2007,7 @@ html {
 
 .exam-main .official-question__body {
   margin: 0;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border: 0;
   border-radius: 0.5rem;
   background-color: #f2f2f2;
@@ -2015,11 +2015,6 @@ html {
 }
 
 /*第152回：追従動画エリアとPC用ページ内目次*/
-
-.exam-learning-page .exam-learning-aside {
-  color: var(--exam-ink);
-  line-height: 1.55;
-}
 
 .exam-learning-page .exam-video-panel,
 .exam-learning-page .exam-desktop-toc {
@@ -2192,9 +2187,10 @@ html {
     position: sticky;
     top: 96px;
     max-height: calc(100vh - 112px);
-    padding-right: 4px;
     overflow-y: auto;
     scrollbar-gutter: stable;
+    color: var(--exam-ink);
+    line-height: 1.55;
   }
 }
 
@@ -2550,4 +2546,15 @@ table.ledger td:nth-child(4) {
 table.ledger .ledger-total td:nth-child(3n) {
   border-top: 1px solid var(--total-color);
   border-bottom: 4px double var(--total-color);
+}
+
+@media (max-width: 768px){
+  .res-pc{
+    display: none;
+  }
+}
+@media (min-width: 769px){
+  .res-ph{
+    display: none;
+  }
 }
